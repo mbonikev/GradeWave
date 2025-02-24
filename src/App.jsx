@@ -1,10 +1,7 @@
-import "./App.css";
-import { Logo } from "./assets";
+import React from "react";
 
 function App() {
-  return <div>
-    App
-  </div>;
+  return <div>App</div>;
 }
 
 export default App;

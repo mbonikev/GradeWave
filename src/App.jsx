@@ -3,7 +3,7 @@ import { Logo } from "./assets";
 
 function App() {
   return <div>
-    <img src={Logo} alt="" />
+    <img src={Logo} className="fill-red-700" />
   </div>;
 }
 

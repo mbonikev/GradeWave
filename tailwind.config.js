@@ -11,7 +11,7 @@ export default {
         Kanit: ["Kanit", "sans-serif"],
       },
       colors: {
-        "main-color": "#3d8bff",
+        "main-color": "#5d78a8",
         "text-color": "#111111",
         "text-color-weak": "#5d5d5d",
         "card-weak": "#f5f6f8",

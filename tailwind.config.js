@@ -12,9 +12,9 @@ export default {
       },
       colors: {
         "main-color": "#3d8bff",
-        "dark-text": "#111111",
-        "dark-text-weak": "#5d5d5d",
-        "": "",
+        "text-color": "#111111",
+        "text-color-weak": "#5d5d5d",
+        "card-weak": "#f5f6f8",
         "": "",
         "": "",
       },

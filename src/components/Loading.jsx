@@ -1,9 +1,18 @@
 import React from "react";
 
-function Loading() {
+function Loading({ size }) {
   return (
-    <div class="loader">
-    </div>
+    <div
+      className={`loader ${
+        size === "small"
+          ? "small"
+          : size === "medium"
+          ? "medium"
+          : size === "large"
+          ? "large"
+          : ""
+      }`}
+    ></div>
   );
 }
 

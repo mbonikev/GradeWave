@@ -79,7 +79,7 @@ function Login() {
                 // onClick={() => login()}
                 required
                 placeholder="XXXX-XXX-XXXX"
-                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
               />
               <h1 className="text-base font-normal opacity-80 mt-4 mb-3">
                 Password
@@ -90,7 +90,7 @@ function Login() {
                 required
                 placeholder="Password"
                 type="password"
-                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
               />
 
               <button className="bg-main-color text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl">
@@ -107,7 +107,7 @@ function Login() {
                 // onClick={() => login()}
                 required
                 placeholder="XXX-XXXX"
-                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
               />
               <h1 className="text-base font-normal opacity-80 mt-4 mb-3">
                 Password
@@ -118,7 +118,7 @@ function Login() {
                 required
                 placeholder="Password"
                 type="password"
-                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
               />
 
               <button className="bg-main-color text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl">
@@ -133,7 +133,7 @@ function Login() {
           </div>
           {loading ? (
             <div className="">
-              <Loading />
+              <Loading size="small" />
             </div>
           ) : role === "student" ? (
             <Link

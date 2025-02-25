@@ -1,10 +1,160 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { ImageStudents, LogoBlack, LogoWhite } from "../assets";
+import { PiGraduationCapDuotone } from "react-icons/pi";
+import { BsPersonVideo } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
+import { CgSpinner } from "react-icons/cg";
+import { LuArrowRight, LuSchool } from "react-icons/lu";
 
 function Login() {
+  const [role, setRole] = useState("student");
+  const [loading, setLoading] = useState(false)
   return (
-    <div>Login <Link to="/student_dashboard">student dashboard</Link></div>
-  )
+    <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 relative overflow-y-auto">
+      {/* 1 */}
+      <div className="w-full h-full p-6 flex flex-col">
+        {/* logo */}
+        <div className="flex items-center justify-start gap-1">
+          <img src={LogoBlack} className="size-8" />
+          <h1 className="text-xl font-medium">Grade Wave</h1>
+        </div>
+
+        {/* form */}
+        <form className="w-full flex-1 py-[100px] flex flex-col items-start justify-center max-w-[400px] mx-auto">
+          <h1 className="text-xl font-medium mb-5">Welcome Back</h1>
+          {/* auth options */}
+          <h1 className="text-base font-normal opacity-80 mt-2 mb-3">
+            What's your Role?
+          </h1>
+          <div className="w-full h-fit  bg-stone-200/60 p-1 rounded-2xl">
+            <div className="w-full flex select-none items-center justify-start gap-1 relative">
+              {/* indicator */}
+              <div
+                className={`w-1/2 h-full bg-white absolute top-0 left-0 transition-all duration-200 rounded-xl ease-in-out ${
+                  role === "student" ? "translate-x-0 " : "translate-x-full"
+                }`}
+              ></div>
+              {/* student */}
+              <div
+                onClick={() => setRole("student")}
+                className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
+                  role === "student"
+                    ? ""
+                    : "border-white/40 text-text-color-weak"
+                }`}
+              >
+                <PiGraduationCapDuotone className="text-xl" />
+                <p className="text-sm font-medium">STUDENT</p>
+              </div>
+              {/* school */}
+              <div
+                onClick={() => setRole("tutor")}
+                className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
+                  role === "tutor" ? "" : "border-white/40 text-text-color-weak"
+                }`}
+              >
+                <LuSchool className="text-xl" />
+                <p className="text-sm font-medium">SHOOOL</p>
+              </div>
+            </div>
+          </div>
+
+          {role === "student" ? (
+            <>
+              <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
+                Student ID
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="XXXX-XXX-XXXX"
+                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+              <h1 className="text-base font-normal opacity-80 mt-4 mb-3">
+                Password
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="Password"
+                type="password"
+                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+
+              <button className="bg-main-color text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl">
+                Continue
+              </button>
+            </>
+          ) : (
+            <>
+              <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
+                School ID
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="XXX-XXXX"
+                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+              <h1 className="text-base font-normal opacity-80 mt-4 mb-3">
+                Password
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="Password"
+                type="password"
+                className="border-2 border-stone-200 focus-within:border-main-color font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+
+              <button className="bg-main-color text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl">
+                Continue
+              </button>
+            </>
+          )}
+          <div className="my-7 w-full h-0.5 bg-stone-200 relative">
+            <p className="bg-white absolute -top-3 left-0 right-0 mx-auto w-fit px-4">
+              Or
+            </p>
+          </div>
+          <Link to="/" className="flex items-center justify-start gap-2">
+            Continue as a guest{" "}
+            <LuArrowRight className="text-lg translate-y-[1px]" />
+          </Link>
+        </form>
+        <p className="text-sm font-normal text-text-color-weak mb-2">
+          By Signing in you agree to our{" "}
+          <a className="cursor-pointer">Terms of service</a> and{" "}
+          <a className="cursor-pointer">Privacy Policy</a>
+        </p>
+      </div>
+      {/* 2 */}
+      <div className="w-full p-5 h-full sticky top-0 max-lg:hidden">
+        <div
+          className="w-full h-full rounded-2xl overflow-hidden relative"
+          style={{
+            backgroundImage: `url(${ImageStudents})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 text-[#f1f1f1] to-black/20 flex items-start justify-between p-10">
+            <h1 className="text-lg font-medium text-[#f1f1f19d] max-w-[500px] text-left h-full flex items-end">
+              Log in to get started!
+            </h1>
+            <div className="flex items-center justify-start gap-1 w-fit h-fit opacity-90 mb-5">
+              <img src={LogoWhite} className="size-9" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Login
+export default Login;

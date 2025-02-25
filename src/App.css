@@ -6,9 +6,7 @@
 @tailwind utilities;
 
 body {
-  /* font-family: "Inter", sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: white;
 }
 
@@ -52,5 +50,33 @@ input {
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #7e7e7e99;
+  }
+}
+
+a {
+  color: #3277f0;
+}
+
+a:hover {
+  color: #0f50c0;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #3278f027;
+  border-bottom-color: #3277f0;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

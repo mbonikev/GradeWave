@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -11,7 +8,8 @@ export default {
         Kanit: ["Kanit", "sans-serif"],
       },
       colors: {
-        "main-color": "#5d78a8",
+        "main-color": "#3277f0",
+        "main-color-dark": "#0f50c0",
         "text-color": "#111111",
         "text-color-weak": "#5d5d5d",
         "card-weak": "#f5f6f8",
@@ -25,4 +23,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

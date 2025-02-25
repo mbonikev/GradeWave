@@ -62,14 +62,14 @@ a:hover {
 }
 
 .loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #3278f027;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3278f027;
   border-bottom-color: #3277f0;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  animation: rotation .55s linear infinite;
 }
 
 @keyframes rotation {

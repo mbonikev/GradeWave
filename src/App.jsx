@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import StudentDashboard from "./pages/student/StudentDashboard";
+import SchoolDashboard from "./pages/schools/SchoolDashboard";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
         <Route exact path="/" element={<Login />} />
         <Route path="*" element={<NotFound />} />
 
-        {/* student */}
+        {/* Student */}
         <Route path="/student_dashboard" element={<StudentDashboard />} />
+
+        {/* School */}
+        <Route path="/school_dashboard" element={<SchoolDashboard />} />
       </Routes>
     </Router>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 
-function Loader() {
+function Loading() {
   return (
     <div class="loader">
     </div>
   );
 }
 
-export default Loader;
+export default Loading;

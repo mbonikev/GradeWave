@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ImageStudents, LogoBlack, LogoWhite } from "../assets";
 import { PiGraduationCapDuotone } from "react-icons/pi";
@@ -6,10 +6,19 @@ import { BsPersonVideo } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { CgSpinner } from "react-icons/cg";
 import { LuArrowRight, LuSchool } from "react-icons/lu";
+import Loading from "../components/Loading";
 
 function Login() {
   const [role, setRole] = useState("student");
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 400);
+  }, [role]);
+
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 relative overflow-y-auto">
       {/* 1 */}
@@ -122,10 +131,27 @@ function Login() {
               Or
             </p>
           </div>
-          <Link to="/" className="flex items-center justify-start gap-2">
-            Continue as a guest{" "}
-            <LuArrowRight className="text-lg translate-y-[1px]" />
-          </Link>
+          {loading ? (
+            <div className="">
+              <Loading />
+            </div>
+          ) : role === "student" ? (
+            <Link
+              to="/student_dashboard"
+              className="flex items-center justify-start gap-2"
+            >
+              Continue as a Guest
+              <LuArrowRight className="text-lg translate-y-[1px]" />
+            </Link>
+          ) : (
+            <Link
+              to="/school_dashboard"
+              className="flex items-center justify-start gap-2"
+            >
+              Continue as a Guest
+              <LuArrowRight className="text-lg translate-y-[1px]" />
+            </Link>
+          )}
         </form>
         <p className="text-sm font-normal text-text-color-weak mb-2">
           By Signing in you agree to our{" "}

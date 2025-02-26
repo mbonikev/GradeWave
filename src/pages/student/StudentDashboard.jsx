@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import { LuArrowUpRight } from "react-icons/lu";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -47,28 +48,28 @@ function StudentDashboard() {
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">
-                  service name
-                </p>
-                <div className="w-full flex items-start justify-start"></div>
+                <p className="text-base font-semibold ">service name</p>
+                <div className="w-full flex items-start justify-start">
+                  <LuArrowUpRight />
+                </div>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">
-                  service name
-                </p>
-                <div className="w-full flex items-start justify-start"></div>
+                <p className="text-base font-semibold ">service name</p>
+                <div className="w-full flex items-start justify-start">
+                  <LuArrowUpRight />
+                </div>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">
-                  service name
-                </p>
-                <div className="w-full flex items-start justify-start"></div>
+                <p className="text-base font-semibold ">service name</p>
+                <div className="w-full flex items-start justify-start">
+                  <LuArrowUpRight />
+                </div>
               </div>
             </div>
           </div>

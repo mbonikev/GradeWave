@@ -1,5 +1,5 @@
 import React from "react";
-import { FiCommand } from "react-icons/fi";
+import { FiCommand, FiLogOut } from "react-icons/fi";
 import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
@@ -46,7 +46,7 @@ function StudentNavbar({ title, openSidebar }) {
           onClick={handleLoginStudent}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          <FiCommand className="text-xl" />
+          <FiLogOut className="text-xl" />
         </button>
       </div>
     </div>

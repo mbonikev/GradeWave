@@ -28,31 +28,32 @@ function App() {
   }, []);
   return (
     <div>
-      {/* loading */}
-      {fetching && <LoadingScreen animateFetching={animateFetching} />}
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route path="*" element={<NotFound />} />
+          <div className="relative w-full h-full ">
+            {/* loading */}
+            {fetching && <LoadingScreen animateFetching={animateFetching} />}
 
-          {/* Student */}
-          <Route path="/student_dashboard" element={<StudentDashboard />} />
-          <Route path="/student_schools" element={<StudentSchools />} />
-          <Route
-            path="/student_register_for_exams"
-            element={<StudentRegisterForExams />}
-          />
-          <Route
-            path="/student_check_results"
-            element={<StudentCheckResults />}
-          />
-          <Route
-            path="/student_notifications"
-            element={<StudentNotifications />}
-          />
-          <Route path="/student_profile" element={<StudentPofile />} />
-          <Route path="/student_settings" element={<StudentSettings />} />
-
+            {/* Student */}
+            <Route path="/student_dashboard" element={<StudentDashboard />} />
+            <Route path="/student_schools" element={<StudentSchools />} />
+            <Route
+              path="/student_register_for_exams"
+              element={<StudentRegisterForExams />}
+            />
+            <Route
+              path="/student_check_results"
+              element={<StudentCheckResults />}
+            />
+            <Route
+              path="/student_notifications"
+              element={<StudentNotifications />}
+            />
+            <Route path="/student_profile" element={<StudentPofile />} />
+            <Route path="/student_settings" element={<StudentSettings />} />
+          </div>
           {/* School */}
           <Route path="/school_dashboard" element={<SchoolDashboard />} />
         </Routes>

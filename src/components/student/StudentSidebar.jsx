@@ -22,6 +22,7 @@ import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
+import { GrAnnounce } from "react-icons/gr";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -128,8 +129,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <span className="flex items-center gap-2">
-            <LuBell className="text-xl max-lg:text-2xl" />
-            <p className="text-lightBlackText/70">Notifications</p>
+            <GrAnnounce className="text-xl max-lg:text-2xl" />
+            <p className="text-lightBlackText/70">Announcements</p>
           </span>
           <span className="text-xs ">2</span>
         </Link>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
@@ -7,6 +7,8 @@ import StudentNavbar from "../../components/student/StudentNavbar";
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [fetching, setFetching] = useState(true);
+
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -19,6 +21,11 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
+  useEffect(() => {
+    setTimeout(() => {
+      setFetching(false);
+    }, 1000);
+  }, []);
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />

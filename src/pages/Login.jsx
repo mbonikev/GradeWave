@@ -146,6 +146,7 @@ function Login() {
             </Link>
           ) : (
             <Link
+              reloadDocument
               to="/school_dashboard"
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >

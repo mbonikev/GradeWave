@@ -30,19 +30,19 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           to="/"
           className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-orange-500 text-white">
+          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             G
           </div>
           <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
             Guest
           </h1>
         </Link>
-        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
+        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
           <LuQrCode className="text-xl" />
         </button>
         <button
           onClick={closeSidebar}
-          className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-stone-100 rounded-xl"
+          className="text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
           <LuX className="text-xl" />
         </button>
@@ -55,7 +55,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -69,7 +69,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/wallet"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -82,7 +82,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/contacts"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -98,7 +98,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/history"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -112,7 +112,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/notifications"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -121,7 +121,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             <LuBell className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Notifications</p>
           </span>
-          <span className="bg-mainColor/10 text-mainColor text-[12px] font-bold h-[24px] flex items-center justify-center aspect-square rounded-full">
+          <span className="bg-mainColor/10 text-main-color text-[12px] font-bold h-[24px] flex items-center justify-center aspect-square rounded-full">
             0
           </span>
         </Link>
@@ -130,7 +130,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/analysis"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -144,7 +144,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/settings"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}
@@ -157,7 +157,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"
-              ? "active_sidebar_link bg-stone-200/50 text-mainColor"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
           `}

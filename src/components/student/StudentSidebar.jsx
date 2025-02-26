@@ -33,8 +33,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K
           </div>
-          <div className="flex flex-col flex-1 truncate w-full">
-            <h1 className="leading-4 text-sm relative font-medium w-full text-lightBlackText/70 truncate w-full">
+          <div className=" truncate w-full">
+            <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
               Guest 28409-0943-49
             </h1>
           </div>

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 import LoadingScreen from "../../components/LoadingScreen";
 
 function StudentDashboard() {
+  const location = useLocation();
+  const state = location.state || {};
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [fetching, setFetching] = useState(true);
@@ -32,7 +34,7 @@ function StudentDashboard() {
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       {/* loading */}
       {fetching && <LoadingScreen />}
-
+      {state.pageBehavior}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

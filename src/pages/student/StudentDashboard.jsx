@@ -49,12 +49,14 @@ function StudentDashboard() {
                 { name: "Check N. Exam Results", path: "/student_dashboard" },
                 { name: "Check N. Exam Results", path: "/student_dashboard" },
                 { name: "Check N. Exam Results", path: "/student_dashboard" },
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
               ].map((service, index) => (
                 <div
                   index={index}
                   className="group w-fit h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0"
                 >
-                  <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
+                  <h1 className="capitalize text-base leading-5 font-semibold group-hover:text-main-color ">
                     {service.name}
                   </h1>
                   <div className="w-full flex items-start justify-start group-hover:text-main-color mt-3 text-xl">

@@ -37,7 +37,12 @@ function App() {
           <Route path="*" element={<NotFound />} />
 
           {/* Student */}
-          <Route path="/student_dashboard" element={<StudentDashboard />} />
+          <Route
+            path="/student_dashboard"
+            element={<StudentDashboard />}
+            keyProp={'wdi0wnf0ei'}
+            key={randomGen()}
+          />
           <Route path="/student_schools" element={<StudentSchools />} />
           <Route
             path="/student_register_for_exams"

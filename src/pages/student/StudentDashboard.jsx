@@ -83,7 +83,7 @@ function StudentDashboard() {
               <div className="w-full ring-1 ring-card-bg-weak shadow-sm rounded-2xl p-4 font-medium tracking-tight mt-16 text-text-color/80 flex items-start gap-1 justify-start flex-col">
                 <h1 className="">Grobal Ranking</h1>
                 <h1 className="text-base text-text-color-weak"><strong className="">Top 3</strong> of 2,342 Students</h1>
-                <div className=""></div>
+                <div className="w-full h-1 border-b-[1px] border-dashed my-3 border-card-bg-weak"></div>
               </div>
             </div>
           </div>

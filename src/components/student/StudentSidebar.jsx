@@ -20,6 +20,7 @@ import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar } from "react-icons/hi";
 import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
+import { SiReaddotcv } from "react-icons/si";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -96,7 +97,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <BsClipboardPlus className="text-xl max-lg:text-2xl" />
+          <SiReaddotcv className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Register for exams</p>
         </Link>
         <Link

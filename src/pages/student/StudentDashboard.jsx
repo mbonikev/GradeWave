@@ -23,11 +23,11 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
+  console.log(state.pageBehavior);
 
   useEffect(() => {
     setTimeout(() => {
       setFetching(false);
-      console.log(state.pageBehavior);
     }, 1500);
   }, []);
 

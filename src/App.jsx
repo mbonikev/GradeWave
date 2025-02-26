@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import StudentDashboard from "./pages/student/StudentDashboard";
 import SchoolDashboard from "./pages/schools/SchoolDashboard";
 import StudentSchools from "./pages/student/StudentSchools";
+import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         {/* Student */}
         <Route path="/student_dashboard" element={<StudentDashboard />} />
         <Route path="/student_schools" element={<StudentSchools />} />
-        <Route path="/student_register_for_exams" element={<StudentDashboard />} />
-        <Route path="/student_check_results" element={<StudentDashboard />} />
+        <Route path="/student_register_for_exams" element={<StudentRegisterForExams />} />
+        <Route path="/student_check_results" element={<StudentCheckResults/>} />
         <Route path="/student_notifications" element={<StudentDashboard />} />
         <Route path="/student_profile" element={<StudentDashboard />} />
         <Route path="/student_settings" element={<StudentDashboard />} />

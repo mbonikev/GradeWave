@@ -5,7 +5,7 @@ import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
-import { RiApps2AddFill, RiLogoutCircleRLine } from "react-icons/ri";
+import { RiApps2AddFill, RiApps2AddLine, RiLogoutCircleRLine } from "react-icons/ri";
 import Loading from '../Loading'
 
 function StudentNavbar({ title, openSidebar }) {
@@ -44,7 +44,7 @@ function StudentNavbar({ title, openSidebar }) {
           <LuSearch className="text-xl" />
         </button> */}
         <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
-          <RiApps2AddFill className="text-2xl" />
+          <RiApps2AddLine className="text-2xl" />
         </button>
         <button
           title="logout"

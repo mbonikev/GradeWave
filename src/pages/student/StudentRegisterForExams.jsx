@@ -43,9 +43,7 @@ function StudentRegisterForExams() {
           </h1>
           <div className="w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak p-3 flex items-center">
             <div className="flex flex-col">
-              <h1>
-                <strong>Exam Title</strong>National Examination 2025
-              </h1>
+              <h1 className="text-2xl font-bold mb-3">National Examination 2025</h1>
               <h1>
                 <strong>Registration Status:</strong> In Progress
               </h1>

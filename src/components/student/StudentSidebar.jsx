@@ -128,20 +128,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           </span>
           <span className="text-xs ">2</span>
         </Link>
-        <Link
-          to="/analysis"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/analysis"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
-          }
-          `}
-        >
-          <HiOutlineChartBar className="text-xl max-lg:text-2xl" />
-          Analysis
-        </Link>
-
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
         <Link

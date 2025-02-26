@@ -51,7 +51,11 @@ function StudentDashboard() {
         )}
         <StudentNavbar openSidebar={openSidebar} />
         <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative">
-          {state.pageBehavior}
+          {state.pageBehavior ? (
+            <p>{state.pageBehavior}</p> // This will render "silent"
+          ) : (
+            <p>No page behavior passed</p>
+          )}
         </div>
       </div>
     </div>

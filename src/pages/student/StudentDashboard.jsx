@@ -37,10 +37,12 @@ function StudentDashboard() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} />
+        <div className="sticky top-0 ">
+          <StudentNavbar openSidebar={openSidebar} />
+        </div>
         <div className="w-full flex-1 flex flex-col gap-0 py-5 px-3 max-lg:px-5 relative">
           {/* content */}
-          <div className="w-full h-fit max-w-[1100px] mx-auto">
+          <div className="w-full h-fit max-w-[1100px] min-h-[2000px] mx-auto">
             <h1 className="text-[28px] font-semibold">Dashboard</h1>
 
             <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 mt-3 py-1">

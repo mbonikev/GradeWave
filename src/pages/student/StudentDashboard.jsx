@@ -43,9 +43,9 @@ function StudentDashboard() {
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
             <div className="w-full h-fit grid grid-cols-3 gap-3">
-              <div className="w-full h-fit"></div>
-              <div className="w-full h-fit"></div>
-              <div className="w-full h-fit"></div>
+              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
+              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
+              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
             </div>
           </div>
         </div>

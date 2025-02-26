@@ -22,7 +22,7 @@ function StudentDashboard() {
   };
 
   return (
-    <div className="w-full min-h-svh flex-1 flex">
+    <div className="w-full h-fit flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

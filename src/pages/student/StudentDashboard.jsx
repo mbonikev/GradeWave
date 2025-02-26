@@ -45,8 +45,8 @@ function StudentDashboard() {
 
             <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 gap-4 mt-3 py-1">
               {[
-                { name: "Check N. Exam Results", path: "/student_dashboard" },
-                { name: "", path: "/student_dashboard" },
+                { name: "Check Results", path: "/student_dashboard" },
+                { name: "Register For Exams", path: "/student_dashboard" },
                 { name: "Check N. Exam Results", path: "/student_dashboard" },
                 { name: "Check N. Exam Results", path: "/student_dashboard" },
               ].map((service, index) => (

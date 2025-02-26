@@ -24,7 +24,7 @@ function StudentDashboard() {
   useEffect(() => {
     setTimeout(() => {
       setFetching(false);
-    }, 1000);
+    }, 3500);
   }, []);
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">

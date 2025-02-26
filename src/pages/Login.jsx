@@ -136,13 +136,14 @@ function Login() {
               <Loading size="small" />
             </div>
           ) : role === "student" ? (
-            <a
-              href="/#/student_dashboard"
+            <Link
+              hred="/student_dashboard"
+              replace={true}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
-            </a>
+            </Link>
           ) : (
             <Link
               to="/school_dashboard"

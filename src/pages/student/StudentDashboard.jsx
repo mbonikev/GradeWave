@@ -25,6 +25,7 @@ function StudentDashboard() {
   };
 
   useEffect(() => {
+    console.log(state)
     setTimeout(() => {
       setFetching(false);
     }, 1500);
@@ -33,8 +34,8 @@ function StudentDashboard() {
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       {/* loading */}
-      {fetching && <LoadingScreen />}
-      {state.pageBehavior}
+      {/* {fetching && <LoadingScreen />} */}
+
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

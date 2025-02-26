@@ -20,7 +20,7 @@ function Login() {
   }, [role]);
 
   return (
-    <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 relative overflow-y-auto">
+    <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-50 bg-body-bg relative overflow-y-auto">
       {/* 1 */}
       <div className="w-full h-full p-6 flex flex-col">
         {/* logo */}

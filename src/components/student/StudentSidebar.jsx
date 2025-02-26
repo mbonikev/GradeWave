@@ -25,10 +25,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         showSidebar ? "w-[255px] max-sm:w-full" : "w-[225px] max-lg:w-0"
       } transition-all duration-300 z-30 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100 overflow-y-auto`}
     >
-      <div className="w-full flex px-2 pt-2 gap-1 select-none">
+      <div className="w-full flex items-center justify-between px-2 pt-2 gap-1 select-none">
         <Link
           to="/"
-          className={`w-full max-w-[60%]  pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
+          className={`w-full max-w-[60%] flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
         >
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K

@@ -20,7 +20,7 @@ import { HiOutlineChartBar } from "react-icons/hi";
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
   return (
-    <div className="w-[255px] min-w-[255px] max-sm:w-full z-10 h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100  overflow-y-auto">
+    <div className={`w-[255px] min-w-[255px] max-sm:w-full z-10 h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100  overflow-y-auto`}>
       <div className="flex items-center justify-between px-2 pt-2 gap-1 select-none">
         <Link
           to="/"

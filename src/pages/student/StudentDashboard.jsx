@@ -24,13 +24,22 @@ function StudentDashboard() {
   };
 
   useEffect(() => {
-    setAnimateFetching(true);
-    setTimeout(() => {
-      setAnimateFetching(false);
-    }, 1500);
-    setTimeout(() => {
-      setFetching(false);
-    }, 2000);
+    const handleReload = () => {
+      setFetching(true);
+      setAnimateFetching(true);
+      setTimeout(() => {
+        setAnimateFetching(false);
+      }, 1500);
+      setTimeout(() => {
+        setFetching(false);
+      }, 2000);
+    };
+
+    window.addEventListener("load", handleReload);
+
+    return () => {
+      window.removeEventListener("load", handleReload);
+    };
   }, []);
 
   return (

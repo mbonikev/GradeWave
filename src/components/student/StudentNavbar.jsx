@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiCommand, FiLogOut } from "react-icons/fi";
 import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 
 function StudentNavbar({ title, openSidebar }) {
+  const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
     setTimeout(() => {
@@ -48,7 +49,11 @@ function StudentNavbar({ title, openSidebar }) {
           onClick={handleLoginStudent}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          <RiLogoutCircleRLine className="text-xl" />
+          {loggingOut ? (
+            <RiLogoutCircleRLine className="text-xl" />
+          ) : (
+            <RiLogoutCircleRLine className="text-xl" />
+          )}
         </button>
       </div>
     </div>

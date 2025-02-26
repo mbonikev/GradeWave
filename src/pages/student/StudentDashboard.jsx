@@ -42,10 +42,10 @@ function StudentDashboard() {
           <div className="w-full h-fit max-w-[1100px] mx-auto">
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
-            <div className="w-full h-fit grid grid-cols-3 gap-3">
-              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
-              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
-              <div className="w-full h-fit bg-card-bg-weak rounded-2xl p-3"></div>
+            <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3">
+              <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4"></div>
+              <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4"></div>
+              <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4"></div>
             </div>
           </div>
         </div>

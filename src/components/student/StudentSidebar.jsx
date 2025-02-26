@@ -1,8 +1,8 @@
 import React from "react";
 import {
   LuBell,
+  LuChartPie,
   LuHistory,
-  LuPieChart,
   LuPlus,
   LuQrCode,
   LuSettings,

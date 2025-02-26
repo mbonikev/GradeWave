@@ -138,7 +138,6 @@ function Login() {
           ) : role === "student" ? (
             <Link
               to="/student_dashboard"
-              replace={true}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest

@@ -50,7 +50,7 @@ function StudentDashboard() {
                   Check N. Exam Results
                 </h1>{" "}
                 {/* <p className="text-sm text-text-color-weak font-medium">service name</p> */}
-                <div className="w-full flex items-start justify-start group-hover:text-main-color mt-5 text-xl">
+                <div className="w-full flex items-start justify-start group-hover:text-main-color mt-3 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>

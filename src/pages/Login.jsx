@@ -19,6 +19,10 @@ function Login() {
     }, 400);
   }, [role]);
 
+  const handleLogin = () => {
+    
+  };
+
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-[60] bg-body-bg relative overflow-y-auto">
       {/* 1 */}

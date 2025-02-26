@@ -45,7 +45,7 @@ function StudentDashboard() {
 
             <div className="w-full h-fit flex items-center gap-4 mt-3 py-1">
               {/* {[{name: "Check N. Exam Results"}]} */}
-              <div className="group w-fit h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-5 pr-7 flex flex-col justify-between items-start gap-0">
+              <div className="group w-fit h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
                   Check N. Exam Results
                 </h1>{" "}

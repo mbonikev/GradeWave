@@ -38,7 +38,6 @@ function StudentNavbar({ title, openSidebar }) {
         <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
           <FiCommand className="text-xl" />
         </button>
-        <div></div>
       </div>
     </div>
   );

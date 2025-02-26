@@ -7,7 +7,7 @@ function ProtectedAuthStudent({ children }) {
 
   useEffect(() => {
     if (loggedIn === 'true') {
-      navigate("/student_dashboard");
+      return navigate("/student_dashboard");
     }
   }, [loggedIn, navigate]);
 

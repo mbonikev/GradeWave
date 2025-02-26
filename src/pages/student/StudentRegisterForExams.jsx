@@ -43,23 +43,23 @@ function StudentRegisterForExams() {
           </h1>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">Open examinations</h1>
           <div className="w-full max-w-[340px] mt-3 rounded-2xl ring-1 ring-card-bg-weak shadow-sm p-3 flex items-center">
-            <div className="flex flex-col text-sm ">
-              <h1 className="text-base font-medium mb-1 text-text-color/80">National Examination 2025</h1>
+            <div className="flex flex-col gap-1 text-sm ">
+              <h1 className="text-base font-medium text-text-color/80">National Examination 2025</h1>
               <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>
-              <h1 className="text-text-color-weak">
-                <strong className="font-medium">Registration Due Date:</strong> <i>March 10, 2025</i> 
-              </h1>
-              <h1 className="text-text-color-weak">
+              {/* <h1 className="text-text-color-weak">
+                <strong className="font-medium">Registration Due Date:</strong> <i> </i> 
+              </h1> */}
+              {/* <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam Start Date:</strong> <i>July 25, 2025</i> 
-              </h1>
-              <h1 className="text-text-color-weak">
+              </h1> */}
+              {/* <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam End Date:</strong> <i>July 25, 2025</i> 
-              </h1>
-              <h1 className="text-text-color-weak">
+              </h1> */}
+              {/* <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam Center:</strong> <i>Groupe Scolaire Ruyenzi</i> 
-              </h1>
+              </h1> */}
             </div>
           </div>
         </div>

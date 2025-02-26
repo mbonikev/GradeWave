@@ -49,7 +49,7 @@ function StudentRegisterForExams() {
               <h1 className="text-base font-bold text-text-color/80">
                 ORDINARY LEVEL NATIONAL EXAMINATION, 2025-2026
               </h1>
-              <h1 className="text-text-color/80">
+              <h1 className="text-text-color/50">
                 <strong className="font-medium">Registration Status:</strong>{" "}
                 <span className="text-green-500 font-bold">In Progress</span>
               </h1>

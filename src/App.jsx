@@ -18,7 +18,10 @@ function App() {
   const [animateFetching, setAnimateFetching] = useState(false);
 
   useEffect(() => {
-    setAnimateFetching(true)
+    setAnimateFetching(true);
+    setTimeout(() => {
+      setAnimateFetching(false);
+    }, 1500);
     setTimeout(() => {
       setFetching(false);
     }, 2000);
@@ -26,7 +29,7 @@ function App() {
   return (
     <div>
       {/* loading */}
-      <LoadingScreen animateFetching={animateFetching} /> 
+      <LoadingScreen animateFetching={animateFetching} />
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />

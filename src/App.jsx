@@ -20,7 +20,7 @@ function App() {
         <Route path="/student_check_results" element={<StudentDashboard />} />
         <Route path="/student_notifications" element={<StudentDashboard />} />
         <Route path="/student_profile" element={<StudentDashboard />} />
-        <Route path="/student_dashboard" element={<StudentDashboard />} />
+        <Route path="/student_settings" element={<StudentDashboard />} />
 
         {/* School */}
         <Route path="/school_dashboard" element={<SchoolDashboard />} />

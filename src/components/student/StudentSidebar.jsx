@@ -66,7 +66,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"Schools"} />
         <Link
           to="/contacts"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/contacts"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"

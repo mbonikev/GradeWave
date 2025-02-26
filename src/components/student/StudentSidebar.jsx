@@ -1,23 +1,13 @@
 import React from "react";
 import {
-  LuActivity,
-  LuBadgeAlert,
   LuBell,
-  LuChevronsLeftRight,
-  LuChevronUp,
-  LuGauge,
   LuHistory,
-  LuPanelLeftClose,
   LuPieChart,
   LuPlus,
   LuQrCode,
-  LuSearch,
   LuSettings,
-  LuUserPlus,
-  LuUsers,
   LuUsers,
   LuWallet,
-  LuWalletCards,
   LuX,
 } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";

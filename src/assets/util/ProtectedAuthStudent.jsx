@@ -1,11 +1,11 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 function ProtectedAuthStudent({ children }) {
   const loggedIn = sessionStorage.getItem('loggedInStudent') === 'true';
 
   if (!loggedIn) {
-    return <Redirect to="/student_dashboard" />;
+    return <Navigate to="/student_dashboard" />;
   }
 
   return <>{children}</>;

@@ -7,7 +7,7 @@ import LoadingScreen from "../../components/LoadingScreen";
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [fetching, setFetching] = useState(true);
+  const [fetching, setFetching] = useState(sessionStorage.getItem("firstLoad") === null);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -15,27 +15,31 @@ function StudentDashboard() {
       setAnimateShowSidebar(true);
     }, 50);
   };
+  
   const closeSidebar = () => {
     setAnimateShowSidebar(false);
     setTimeout(() => {
       setShowSidebar(false);
     }, 100);
   };
+
   useEffect(() => {
-    setTimeout(() => {
-      setFetching(false);
-    }, 1500);
-  }, []);
+    if (fetching === null) {
+      sessionStorage.setItem("firstLoad", "false");
+      setTimeout(() => {
+        setFetching(false);
+      }, 1500);
+    }
+  }, [fetching]);
+
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
-      {/* loading */}
-      {fetching ? <LoadingScreen /> : <></>}
+      {/* Show loading only on reload */}
+      {fetching && <LoadingScreen />}
 
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
-        className={`${
-          showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-body-bg relative`}
+        className={`max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-body-bg relative`}
       >
         {showSidebar && (
           <div

@@ -14,34 +14,51 @@ import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
+  const [fetching, setFetching] = useState(true);
+  const [animateFetching, setAnimateFetching] = useState(true);
+
+  useEffect(() => {
+    setAnimateFetching(true);
+    setTimeout(() => {
+      setAnimateFetching(false);
+    }, 1500);
+    setTimeout(() => {
+      setFetching(false);
+    }, 2000);
+  }, []);
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
+    <div>
+      {/* loading */}
+      {fetching && <LoadingScreen animateFetching={animateFetching} />}
 
-        {/* Student */}
-        <Route path="/student_dashboard" element={<StudentDashboard />} />
-        <Route path="/student_schools" element={<StudentSchools />} />
-        <Route
-          path="/student_register_for_exams"
-          element={<StudentRegisterForExams />}
-        />
-        <Route
-          path="/student_check_results"
-          element={<StudentCheckResults />}
-        />
-        <Route
-          path="/student_notifications"
-          element={<StudentNotifications />}
-        />
-        <Route path="/student_profile" element={<StudentProfile />} />
-        <Route path="/student_settings" element={<StudentSettings />} />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
 
-        {/* School */}
-        <Route path="/school_dashboard" element={<SchoolDashboard />} />
-      </Routes>
-    </Router>
+          {/* Student */}
+          <Route path="/student_dashboard" element={<StudentDashboard />} />
+          <Route path="/student_schools" element={<StudentSchools />} />
+          <Route
+            path="/student_register_for_exams"
+            element={<StudentRegisterForExams />}
+          />
+          <Route
+            path="/student_check_results"
+            element={<StudentCheckResults />}
+          />
+          <Route
+            path="/student_notifications"
+            element={<StudentNotifications />}
+          />
+          <Route path="/student_profile" element={<StudentProfile />} />
+          <Route path="/student_settings" element={<StudentSettings />} />
+
+          {/* School */}
+          <Route path="/school_dashboard" element={<SchoolDashboard />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

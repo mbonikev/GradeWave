@@ -27,7 +27,6 @@ function Login() {
     }, 500);
   };
 
-
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-[60] bg-body-bg relative overflow-y-auto">
       {/* 1 */}
@@ -141,7 +140,8 @@ function Login() {
             </p>
           </div>
           {loading ? (
-            <div className="">
+            <div className="flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark">
+              Continue as a Guest
               <Loading size="small" />
             </div>
           ) : role === "student" ? (

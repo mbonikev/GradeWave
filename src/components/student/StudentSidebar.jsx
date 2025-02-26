@@ -133,7 +133,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <HiOutlineChartBar className="text-xl max-lg:text-2xl" />
           Analysis
         </Link>
-        <SidebarSectionTitle title={"Support"} />
+        <SidebarSectionTitle title={"customize"} />
         <Link
           to="/settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium

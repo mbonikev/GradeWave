@@ -9,16 +9,13 @@ function ProtectedAuthStudent({ children }) {
 
   useEffect(() => {
     if (loggedIn === "true") {
-      setRedirecting(true);
       navigate("/student_dashboard");
+    } else {
+      setShowContent(true);
     }
-  }, [loggedIn, navigate]);
+  }, [loggedIn]);
 
-  if (redirecting) {
-    return null;
-  }
-
-  return <>{showContent ? children : ''}</>;
+  return <>{showContent ? children : null}</>;
 }
 
 export default ProtectedAuthStudent;

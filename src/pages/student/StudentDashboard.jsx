@@ -66,27 +66,7 @@ function StudentDashboard() {
             ))}
           </div>
 
-          <div className="w-full grid grid-cols-2 max-md:grid-cols-1">
-            <div className="w-full">
-              <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
-                Updates
-                <Link
-                  to="/student_dashboard"
-                  className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
-                >
-                  View all <LuArrowRight />
-                </Link>
-              </div>
-              <div className="w-full h-fit fle"></div>
-            </div>
-            <div className="w-full">
-              <div className="w-full ring-1 ring-card-bg-weak shadow-sm rounded-2xl p-4 font-medium tracking-tight mt-16 text-text-color/80 flex items-start gap-1 justify-start flex-col">
-                <h1 className="">Grobal Ranking</h1>
-                <h1 className="text-base text-text-color-weak"><strong className="">Top 3</strong> of 2,342 Students</h1>
-                <div className="w-full h-1 border-b-[2px] border-dashed my-3 border-card-bg-weak"></div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

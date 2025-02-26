@@ -17,7 +17,7 @@ body {
 }
 
 :root{
-  --main-color: #3277f0;
+  --main-color: var(--main-color);
 }
 
 button,
@@ -77,19 +77,19 @@ video{
   width: 18px;
   height: 18px;
   border: 2px solid #3278f027;
-  border-bottom-color: #3277f0;
+  border-bottom-color: var(--main-color);
 }
 .loader.medium {
   width: 28px;
   height: 28px;
   border: 3px solid #3278f027;
-  border-bottom-color: #3277f0;
+  border-bottom-color: var(--main-color);
 }
 .loader.large {
   width: 40px;
   height: 40px;
   border: 4px solid #3278f027;
-  border-bottom-color: #3277f0;
+  border-bottom-color: var(--main-color);
 }
 
 @keyframes rotation {

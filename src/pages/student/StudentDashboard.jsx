@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
-import { LuArrowUpRight } from "react-icons/lu";
+import { LuArrowRight, LuArrowUpRight } from "react-icons/lu";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -70,13 +70,23 @@ function StudentDashboard() {
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Updates
-                <Link to='/student_dashboard' className="text-sm px-5 text-text-color-weak hover:text-main-color">view all</Link>
+                <Link
+                  to="/student_dashboard"
+                  className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
+                >
+                  view all <LuArrowRight />
+                </Link>
               </div>
             </div>
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Grobal Ranking
-                <Link to='/student_dashboard' className="text-sm px-5 text-text-color-weak hover:text-main-color">view all</Link>
+                <Link
+                  to="/student_dashboard"
+                  className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
+                >
+                  view all <LuArrowRight />
+                </Link>
               </div>
             </div>
           </div>

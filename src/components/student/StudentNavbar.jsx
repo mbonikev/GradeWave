@@ -54,7 +54,7 @@ function StudentNavbar({ title, openSidebar }) {
           {!loggingOut ? (
             <RiLogoutCircleRLine className="text-xl" />
           ) : (
-            <Loading />
+            <Loading size="small" />
           )}
         </button>
       </div>

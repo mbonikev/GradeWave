@@ -48,8 +48,8 @@ function StudentDashboard() {
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">service name</p>
-                <div className="w-full flex items-start justify-start">
+                <p className="text-base font-normal">service name</p>
+                <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>
@@ -57,8 +57,8 @@ function StudentDashboard() {
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">service name</p>
-                <div className="w-full flex items-start justify-start">
+                <p className="text-base font-normal">service name</p>
+                <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>
@@ -66,8 +66,8 @@ function StudentDashboard() {
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
-                <p className="text-base font-semibold ">service name</p>
-                <div className="w-full flex items-start justify-start">
+                <p className="text-base font-normal">service name</p>
+                <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>

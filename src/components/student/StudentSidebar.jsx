@@ -3,6 +3,7 @@ import {
   LuBell,
   LuChartPie,
   LuHistory,
+  LuMedal,
   LuPlus,
   LuQrCode,
   LuSchool,
@@ -103,7 +104,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <PiExam className="text-xl max-lg:text-2xl" />
+          <LuMedal className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Check Result</p>
         </Link>
         <SidebarSectionTitle title={"updates"} />

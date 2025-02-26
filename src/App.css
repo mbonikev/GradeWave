@@ -96,3 +96,17 @@ video{
     transform: rotate(360deg);
   }
 }
+
+.active_sidebar_link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -10px;
+  height: 0;
+  width: 5px;
+  border-radius: 15px;
+  background-color: var(--main-color);
+  animation: indicatorSidebarLink 0.2s forwards;
+}

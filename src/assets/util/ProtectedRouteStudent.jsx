@@ -1,5 +1,6 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import {useNavigate } from 'react-router-dom';
+
 
 function ProtectedRouteStudent({ children }) {
   const loggedIn =

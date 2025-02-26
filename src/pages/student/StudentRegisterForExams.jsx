@@ -44,8 +44,8 @@ function StudentRegisterForExams() {
           <h1 className="text-sm font-normal my-4 text-text-color-weak">
             # Open Exams
           </h1>
-          <div className="w-full grid grid-cols-3">
-            <div className="w-full max-md:max-w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak/70 shadow-sm p-3 flex items-center">
+          <div className="w-full grid grid-cols-3 mt-2">
+            <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak/70 shadow-sm p-3 flex items-center">
               <div className="w-full flex flex-col gap-1 text-sm ">
                 <h1 className="text-base font-bold text-text-color/80">
                   ORDINARY LEVEL NATIONAL EXAMINATION, 2025-2026

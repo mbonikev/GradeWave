@@ -77,19 +77,13 @@ function StudentDashboard() {
                   View all <LuArrowRight />
                 </Link>
               </div>
-              <div className="w-full h-fit">
-                
+              <div className="w-full h-fit fle">
+
               </div>
             </div>
             <div className="w-full">
-              <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
-                Grobal Ranking
-                <Link
-                  to="/student_dashboard"
-                  className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
-                >
-                  View all <LuArrowRight />
-                </Link>
+              <div className="w-full ring-1 ring-card-bg-weak shadow-md font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between">
+                
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ function StudentDashboard() {
         {showSidebar && (
           <div
             onClick={closeSidebar}
-            className={`w-full h-full absolute top-0 left-0 bg-black/10 z-30 transition-all duration-300 ease-in-out ${
+            className={`w-full h-full absolute top-0 left-0 bg-black/60 z-30 transition-all duration-300 ease-in-out ${
               animateShowSidebar ? "opacity-100" : "opacity-0"
             }`}
           ></div>

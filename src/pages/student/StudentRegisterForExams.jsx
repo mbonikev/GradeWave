@@ -47,7 +47,7 @@ function StudentRegisterForExams() {
           <div className="w-full max-w-[340px] max-md:max-w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak/70 shadow-sm p-3 flex items-center">
             <div className="w-full flex flex-col gap-1 text-sm ">
               <h1 className="text-base font-bold text-text-color/80">
-                National Examination 2025
+                ORDINARY LEVEL NATIONAL EXAMINATIONS, 2023-2024
               </h1>
               <h1 className="text-text-color/80">
                 <strong className="font-medium">Registration Status:</strong>{" "}

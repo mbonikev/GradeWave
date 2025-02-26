@@ -58,7 +58,7 @@ function StudentSidebar({ closeSidebar }) {
           }
           `}
         >
-          <LuPieChart className="text-xl max-lg:text-2xl" />
+          <LuChartPie className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Dashboard</p>
         </Link>
         <SidebarSectionTitle title={"Management"} />

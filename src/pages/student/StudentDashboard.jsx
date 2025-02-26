@@ -25,7 +25,7 @@ function StudentDashboard() {
 
   useEffect(() => {
     if (fetching === null) {
-      sessionStorage.setItem("firstLoad", "false");
+      sessionStorage.setItem("firstLoad", "true");
       setTimeout(() => {
         setFetching(false);
       }, 1500);

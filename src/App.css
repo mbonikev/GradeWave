@@ -16,8 +16,8 @@ body {
   outline-color: #e7e7e7;
 }
 
-:root{
-  --main-color: var(--main-color);
+:root {
+  --main-color: #3277f0;
 }
 
 button,
@@ -61,7 +61,7 @@ video::-webkit-media-controls {
   display: none !important;
 }
 
-video{
+video {
   pointer-events: none;
   user-select: none;
 }

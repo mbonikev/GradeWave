@@ -2,10 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function ProtectedRouteStudent({ children }) {
-  const loggedIn =
-    sessionStorage.getItem("loggedInStudent") === "false" || null;
+  const loggedIn = sessionStorage.getItem("loggedInStudent");
 
-  if (loggedIn) {
+  if (loggedIn === true) {
     return navigate("/student_dashboard");
   }
 

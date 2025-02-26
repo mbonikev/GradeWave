@@ -26,17 +26,14 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       } transition-all duration-300 z-30 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100 overflow-y-auto`}
     >
       <div className="w-full flex items-center justify-between px-2 pt-2 gap-1 select-none">
-        <Link
-          to="/"
-          className={`w-full max-w-[160px] flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
-        >
+        <div className="w-full">
           {/* <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K
           </div> */}
           <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
             Guest 28409-0943-49
           </h1>
-        </Link>
+        </div>
         <button className=" max-lg:hidden text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
           <LuQrCode className="text-xl" />
         </button>

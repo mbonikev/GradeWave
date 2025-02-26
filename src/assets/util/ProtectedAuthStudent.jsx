@@ -18,7 +18,7 @@ function ProtectedAuthStudent({ children }) {
     return null;
   }
 
-  return <>{showContent ? children : <></>}</>;
+  return <>{showContent ? children : ''}</>;
 }
 
 export default ProtectedAuthStudent;

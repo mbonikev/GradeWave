@@ -140,7 +140,7 @@ function Login() {
             </p>
           </div>
           {loading ? (
-            <div className="flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark">
+            <div className="w-full flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark">
               Continue as a Guest
               <Loading size="small" />
             </div>

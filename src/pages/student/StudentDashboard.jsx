@@ -67,9 +67,16 @@ function StudentDashboard() {
           </div>
 
           <div className="w-full grid grid-cols-2">
-            <h1 className="text-xl font-medium tracking-tight mt-16 text-text-color/80">
-              Updates
-            </h1>
+            <div className="w-full">
+              <h1 className="text-xl font-medium tracking-tight mt-16 text-text-color/80">
+                Updates
+              </h1>
+            </div>
+            <div className="w-full">
+              <h1 className="text-xl font-medium tracking-tight mt-16 text-text-color/80">
+                Grobal Ranking
+              </h1>
+            </div>
           </div>
         </div>
       </div>

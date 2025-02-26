@@ -82,7 +82,7 @@ function StudentDashboard() {
               </div>
             </div>
             <div className="w-full">
-              <div className="w-full ring-1 ring-card-bg-weak shadow-sm rounded-2xl p-4 font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-start flex-row-reverse">
+              <div className="w-full ring-1 ring-card-bg-weak shadow-sm rounded-2xl p-4 font-medium tracking-tight mt-16 text-text-color/80 flex items-start justify-start flex-col">
                 <h1 className="">Grobal Ranking</h1>
                 <h1><span className="text-2xl font-bold">#3</span> Grobal Ranking</h1>
               </div>

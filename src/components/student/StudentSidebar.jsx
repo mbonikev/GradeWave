@@ -17,6 +17,7 @@ import SidebarSectionTitle from "./SidebarSectionTitle";
 import { TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar } from "react-icons/hi";
+import { PiExam } from "react-icons/pi";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -101,7 +102,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuWallet className="text-xl max-lg:text-2xl" />
+          <PiExam className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Check Result</p>
         </Link>
         <SidebarSectionTitle title={"updates"} />

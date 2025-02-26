@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiCommand, FiLogOut } from "react-icons/fi";
 import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
-import { LuSearch } from "react-icons/lu";
+import { LuQrCode, LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import { RiApps2AddFill, RiApps2AddLine, RiLogoutCircleRLine } from "react-icons/ri";
@@ -40,8 +40,8 @@ function StudentNavbar({ title, openSidebar }) {
         <img src={LogoBlue} className="hidden max-sm:flex h-8 ml-2" />
       </div>
       <div className="flex items-center justify-end gap-0 max-lg:gap-2">
-        <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
-          <LuSearch className="text-xl" />
+        <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square hidden max-lg:flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
+          <LuQrCode className="text-2xl" />
         </button>
         <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
           <RiApps2AddLine className="text-2xl" />

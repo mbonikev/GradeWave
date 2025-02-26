@@ -65,19 +65,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         <SidebarSectionTitle title={"Schools"} />
         <Link
-          to="/"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/wallet"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
-          }
-          `}
-        >
-          <LuWallet className="text-xl max-lg:text-2xl" />
-          <p className="text-lightBlackText/70"></p>
-        </Link>
-        <Link
           to="/contacts"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between gap-2 group px-3 h-[35px] font-medium
           ${
@@ -87,11 +74,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <span className="flex items-center gap-2">
-            <LuUsers className="text-xl max-lg:text-2xl" />
-            <p className="text-lightBlackText/70">Schools</p>
-          </span>
-          <span className="text-xs ">234</span>
+          <LuUsers className="text-xl max-lg:text-2xl" />
+          <p className="text-lightBlackText/70">Schools</p>
         </Link>
         <Link
           to="/history"
@@ -105,6 +89,19 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         >
           <LuHistory className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Register for exams</p>
+        </Link>
+        <Link
+          to="/"
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          ${
+            location.pathname === "/wallet"
+              ? "active_sidebar_link bg-stone-200/50 text-main-color"
+              : "text-lightBlackText/70 hover:bg-stone-100"
+          }
+          `}
+        >
+          <LuWallet className="text-xl max-lg:text-2xl" />
+          <p className="text-lightBlackText/70">Check Result</p>
         </Link>
         <SidebarSectionTitle title={"updates"} />
         <Link

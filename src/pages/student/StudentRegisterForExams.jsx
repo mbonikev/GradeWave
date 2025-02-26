@@ -66,6 +66,8 @@ function StudentRegisterForExams() {
               </h1> */}
             </div>
           </div>
+          <h1 className="text-sm font-normal my-4 text-text-color-weak mt-10"># Past Exams</h1>
+          <div className=""></div>
         </div>
       </div>
     </div>

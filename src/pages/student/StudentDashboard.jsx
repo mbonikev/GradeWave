@@ -39,7 +39,7 @@ function StudentDashboard() {
         )}
         <StudentNavbar openSidebar={openSidebar} />
         {/* content */}
-        <div className="w-full h-fit max-w-[1100px] min-h-[1000px] mx-auto">
+        <div className="w-full h-fit max-w-[1100px] min-h-[1000px] mx-auto px-3">
           <h1 className="text-[28px] font-semibold">Dashboard</h1>
 
           <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 mt-3 py-1">
@@ -54,7 +54,7 @@ function StudentDashboard() {
                 index={index}
                 className="group w-full h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0"
               >
-                <h1 className="capitalize text-base leading-6 font-normal tracking-tight group-hover:text-main-color ">
+                <h1 className="capitalize text-base leading-6 font-medium tracking-tight group-hover:text-main-color ">
                   {service.name}
                 </h1>
                 <div className="w-full flex items-start justify-start text-main-color mt-4 text-xl">

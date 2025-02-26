@@ -25,6 +25,7 @@ function StudentDashboard() {
 
   useEffect(() => {
     const handleReload = () => {
+      setFetching(true);
       setTimeout(() => {
         setFetching(false);
       }, 2000);

@@ -1,11 +1,12 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 function ProtectedRouteStudent({ children }) {
-  const loggedIn = sessionStorage.getItem('loggedInStudent') === 'false' || null;
+  const loggedIn =
+    sessionStorage.getItem("loggedInStudent") === "false" || null;
 
   if (!loggedIn) {
-    return <Redirect to="/" />;
+    return <Navigate to="/" />;
   }
 
   return <>{children}</>;

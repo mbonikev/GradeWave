@@ -40,7 +40,7 @@ function StudentDashboard() {
         <StudentNavbar openSidebar={openSidebar} />
         <div className="w-full flex-1 overflow-y-auto flex flex-col gap-0 py-5 relative">
           {/* content */}
-          <div className="w-full h-fit max-w-[1100px] mx-auto">
+          <div className="w-full h-fit max-w-[1100px] mx-auto px-2.5">
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3">

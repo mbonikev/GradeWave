@@ -22,7 +22,9 @@ function Login() {
   const handleLogin = () => {
     sessionStorage.setItem("loggedIn", true);
     setLoading(true);
-    setTimeout(() => {}, 500);
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
   };
 
   return (

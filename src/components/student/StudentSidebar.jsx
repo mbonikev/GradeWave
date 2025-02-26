@@ -91,7 +91,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             <LuUsers className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Contacts</p>
           </span>
-          <span className="text-xs">234</span>
+          <span className="text-xs ">234</span>
         </Link>
         <Link
           to="/history"
@@ -121,9 +121,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             <LuBell className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Notifications</p>
           </span>
-          <span className="bg-text-color-weak/10 text-text-color text-[12px] font-bold h-[24px] flex items-center justify-center aspect-square rounded-full">
-            0
-          </span>
+          <span className="text-xs ">234</span>
         </Link>
         <Link
           to="/analysis"

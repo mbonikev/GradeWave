@@ -15,7 +15,7 @@ function LoadingScreen({ animateFetching }) {
         autoPlay
         playsInline
         src={IntroGif}
-        className="h-[120px]"
+        className="h-[100px]"
       ></video>
     </div>
   );

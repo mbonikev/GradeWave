@@ -6,6 +6,7 @@ import { LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import { RiLogoutCircleRLine } from "react-icons/ri";
+import Loading from '../Loading'
 
 function StudentNavbar({ title, openSidebar }) {
   const [loggingOut, setLoggingOut] = useState(false);
@@ -52,7 +53,7 @@ function StudentNavbar({ title, openSidebar }) {
           {loggingOut ? (
             <RiLogoutCircleRLine className="text-xl" />
           ) : (
-            <RiLogoutCircleRLine className="text-xl" />
+            <Loading />
           )}
         </button>
       </div>

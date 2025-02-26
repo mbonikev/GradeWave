@@ -42,22 +42,22 @@ function StudentRegisterForExams() {
             Register For Exams
           </h1>
           <div className="w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak p-3 flex items-center">
-            <div className="flex flex-col text-sm">
+            <div className="flex flex-col text-sm ">
               <h1 className="text-2xl font-bold mb-3">National Examination 2025</h1>
               <h1>
-                <strong>Registration Status:</strong> In Progress
+                <strong className="font-medium">Registration Status:</strong> In Progress
               </h1>
               <h1>
-                <strong>Registration Due Date:</strong> March 10, 2025
+                <strong className="font-medium">Registration Due Date:</strong> March 10, 2025
               </h1>
               <h1>
-                <strong>Exam Start Date:</strong> July 25, 2025
+                <strong className="font-medium">Exam Start Date:</strong> July 25, 2025
               </h1>
               <h1>
-                <strong>Exam End Date:</strong> July 25, 2025
+                <strong className="font-medium">Exam End Date:</strong> July 25, 2025
               </h1>
               <h1>
-                <strong>Exam Center:</strong> Groupe Scolaire Ruyenzi
+                <strong className="font-medium">Exam Center:</strong> Groupe Scolaire Ruyenzi
               </h1>
             </div>
           </div>

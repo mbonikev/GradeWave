@@ -5,7 +5,7 @@ function ProtectedRouteStudent({ children }) {
   const loggedIn = sessionStorage.getItem("loggedInStudent");
 
   if (loggedIn === true) {
-    return navigate("/student_dashboard");
+    return navigate("/");
   }
 
   return <>{children}</>;

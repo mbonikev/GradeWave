@@ -20,7 +20,7 @@ function StudentDashboard() {
     }, 100);
   };
   return (
-    <div className="w-full min-h-svh overflow-y-auto flex-1">
+    <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} />
       <div
         className={`${

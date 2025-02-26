@@ -25,9 +25,9 @@ function StudentDashboard() {
   };
 
   useEffect(() => {
-    console.log(state)
     setTimeout(() => {
       setFetching(false);
+      console.log(state.pageBehavior);
     }, 1500);
   }, []);
 

@@ -14,8 +14,8 @@ import {
   LuSearch,
   LuSettings,
   LuUserPlus,
-  LuUserPlus2,
-  LuUsers2,
+  LuUsers,
+  LuUsers,
   LuWallet,
   LuWalletCards,
   LuX,
@@ -96,7 +96,7 @@ function StudentSidebar({ closeSidebar }) {
           `}
         >
           <span className="flex items-center gap-2">
-            <LuUsers2 className="text-xl max-lg:text-2xl" />
+            <LuUsers className="text-xl max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Contacts</p>
           </span>
           <span className="text-xs">234</span>

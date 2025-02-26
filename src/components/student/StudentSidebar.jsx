@@ -65,7 +65,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         <SidebarSectionTitle title={"Management"} />
         <Link
-          to="/wallet"
+          to="/"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/wallet"
@@ -75,7 +75,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuWallet className="text-xl max-lg:text-2xl" />
-          <p className="text-lightBlackText/70">Wallet</p>
+          <p className="text-lightBlackText/70">Check Result</p>
         </Link>
         <Link
           to="/contacts"
@@ -89,7 +89,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         >
           <span className="flex items-center gap-2">
             <LuUsers className="text-xl max-lg:text-2xl" />
-            <p className="text-lightBlackText/70">Contacts</p>
+            <p className="text-lightBlackText/70">Schools</p>
           </span>
           <span className="text-xs ">234</span>
         </Link>

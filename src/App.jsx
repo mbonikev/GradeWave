@@ -13,6 +13,7 @@ import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
+import ProtectedAuthStudent from "./assets/util/ProtectedAuthStudent";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -50,7 +51,15 @@ function App() {
 
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <ProtectedAuthStudent>
+                <Login />
+              </ProtectedAuthStudent>
+            }
+          />
 
           {/* Protect all routes except '/' */}
           {protectedRoutes.map((route, index) => (

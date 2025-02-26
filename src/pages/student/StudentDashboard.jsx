@@ -25,7 +25,7 @@ function StudentDashboard() {
       <div
         className={`${
           showSidebar && "max-lg:ml-[255px] max-sm:ml-[100%]"
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full flex flex-col z-20 bg-red-400 relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-20 bg-red-400 relative`}
       >
         {showSidebar && (
           <div

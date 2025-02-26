@@ -48,7 +48,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </button>
       </div>
       {/* middle links */}
-      <div className="flex-1 flex flex-col pl-2 pr-2 gap-1 select-none">
+      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none">
         <SidebarSectionTitle title={"General"} />
         <Link
           to="/"

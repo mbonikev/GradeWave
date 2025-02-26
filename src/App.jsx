@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
@@ -14,6 +14,11 @@ import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
+  useEffect(() => {
+    setTimeout(() => {
+      setFetching(false);
+    }, 1500);
+  }, []);
   return (
     <div>
       {/* loading */}

@@ -46,7 +46,7 @@ function StudentDashboard() {
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3 py-1">
               <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
-                  service name
+                  Check N. Exam Results
                 </h1>{" "}
                 <p className="text-sm text-text-color-weak font-medium">service name</p>
                 <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">

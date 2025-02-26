@@ -46,7 +46,7 @@ function StudentDashboard() {
             {[
               { name: "Check Results", path: "/student_dashboard" },
               { name: "Register For Exams", path: "/student_dashboard" },
-              { name: "Check N. Exam Results", path: "/student_dashboard" },
+              { name: "Submit ", path: "/student_dashboard" },
               { name: "Check N. Exam Results", path: "/student_dashboard" },
             ].map((service, index) => (
               <Link

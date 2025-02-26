@@ -12,9 +12,10 @@ function StudentNavbar({ title, openSidebar }) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
+    setLoggingOut(true)
     setTimeout(() => {
       window.location.reload();
-    }, 100);
+    }, 300);
   };
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 sticky top-0 bg-white z-20 border-b border-stone-100">
@@ -50,7 +51,7 @@ function StudentNavbar({ title, openSidebar }) {
           onClick={handleLoginStudent}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          {loggingOut ? (
+          {!loggingOut ? (
             <RiLogoutCircleRLine className="text-xl" />
           ) : (
             <Loading />

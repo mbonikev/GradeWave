@@ -138,7 +138,7 @@ function Login() {
           ) : role === "student" ? (
             <Link
               to="/student_dashboard"
-              className="flex items-center justify-start gap-2 text-main-color"
+              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
@@ -146,7 +146,7 @@ function Login() {
           ) : (
             <Link
               to="/school_dashboard"
-              className="flex items-center justify-start gap-2 text-main-color"
+              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />

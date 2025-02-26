@@ -57,7 +57,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <Link
           to={{
             pathname: "/student_dashboard",
-            state: { userRole: "student" }, // Example state
+            state: { pageBehavior: "silent" }, // Example state
           }}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${

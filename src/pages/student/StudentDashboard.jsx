@@ -44,6 +44,7 @@ function StudentDashboard() {
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3 py-1">
+              
               <div className="group w-full h-full cursor-pointer ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
                   Check N. Exam Results

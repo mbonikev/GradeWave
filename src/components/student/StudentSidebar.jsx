@@ -55,7 +55,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none">
         <SidebarSectionTitle title={"General"} />
         <Link
-          to="/student_dashboard"
+          to={{
+            pathname: "/student_dashboard",
+            state: { userRole: "student" }, // Example state
+          }}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
@@ -109,7 +112,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <LuMedal className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Check Result</p>
         </Link>
-        
+
         {/* section */}
         <SidebarSectionTitle title={"updates"} />
         <Link

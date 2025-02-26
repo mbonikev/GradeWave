@@ -20,7 +20,7 @@ function Login() {
   }, [role]);
 
   const handleLoginStudent = () => {
-    sessionStorage.setItem("loggedIn", true);
+    sessionStorage.setItem("loggedInStudent", true);
     setLoading(true);
     setTimeout(() => {
       window.location.reload();

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
-import LoadingScreen from "../../components/LoadingScreen";
 
 function StudentDashboard() {
-  const location = useLocation();
-  const state = location.state || "";
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [fetching, setFetching] = useState(true);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -24,17 +20,8 @@ function StudentDashboard() {
     }, 100);
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      setFetching(false);
-    }, 1500);
-  }, []);
-
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
-      {/* loading */}
-      {/* {fetching && <LoadingScreen />} */}
-
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
@@ -50,13 +37,7 @@ function StudentDashboard() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
-        <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative">
-          {state.pageBehavior ? (
-            <p>{state.pageBehavior}</p> // This will render "silent"
-          ) : (
-            <p>No page behavior passed</p>
-          )}
-        </div>
+        <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative"></div>
       </div>
     </div>
   );

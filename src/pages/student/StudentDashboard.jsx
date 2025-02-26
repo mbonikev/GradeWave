@@ -42,7 +42,11 @@ function StudentDashboard() {
           <div className="w-full h-fit max-w-[1100px] mx-auto">
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
-            <div className=""></div>
+            <div className="w-full h-fit grid grid-cols-3 gap-3">
+              <div className="w-full h-fit"></div>
+              <div className="w-full h-fit"></div>
+              <div className="w-full h-fit"></div>
+            </div>
           </div>
         </div>
       </div>

@@ -74,29 +74,6 @@ function StudentRegisterForExams() {
               </h1> */}
             </div>
           </div>
-          <h1 className="text-sm font-normal my-4 text-text-color-weak mt-10">
-            # Past Exams
-          </h1>
-          <div className="w-full grid grid-cols-3">
-            <div className="w-full max-w-[340px] max-md:max-w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak/70 shadow-sm p-3 flex items-center">
-              <div className="w-full flex flex-col gap-1 text-sm ">
-                <h1 className="text-base font-bold text-text-color/80">
-                  National Examination 2025
-                </h1>
-                <h1 className="text-text-color/80">
-                  <strong className="font-medium">Registration Status:</strong>{" "}
-                  <span className="text-text-color/80 font-bold">Closed</span>
-                </h1>
-
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-card-bg hover:bg-stone-200 text-text-color select-none text-sm font-medium px-3 py-2 w-full flex items-center justify-center gap-2 mt-5 rounded-xl"
-                >
-                  View Papers
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ import StudentNotifications from "./pages/student/StudentNotifications";
 import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
-import ProtectedRoute from "./ProtectedRoute"; // Import your ProtectedRoute component
+import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -57,7 +57,9 @@ function App() {
             <Route
               key={index}
               path={route.path}
-              element={<ProtectedRoute>{route.element}</ProtectedRoute>}
+              element={
+                <ProtectedRouteStudent>{route.element}</ProtectedRouteStudent>
+              }
             />
           ))}
 

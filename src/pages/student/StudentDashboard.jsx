@@ -27,7 +27,7 @@ function StudentDashboard() {
       <div
         className={`${
           showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-body-bg relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-sidebar-bg relative`}
       >
         {showSidebar && (
           <div
@@ -38,7 +38,7 @@ function StudentDashboard() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
-        <div className="w-full flex-1 overflow-y-auto flex flex-col gap-0 py-5 px-3 max-lg:px-5 relative bg-sidebar-bg">
+        <div className="w-full flex-1 overflow-y-auto flex flex-col gap-0 py-5 px-3 max-lg:px-5 relative">
           {/* content */}
           <div className="w-full h-fit max-w-[1100px] mx-auto">
             <h1 className="text-[28px] font-semibold">Dashboard</h1>

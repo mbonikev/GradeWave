@@ -66,8 +66,8 @@ function StudentDashboard() {
             ))}
           </div>
 
-          <h1 className="text-[28px] font-bold tracking-tight mt-16 text-text-color/80">
-            Dashboard
+          <h1 className="text-xl font-medium tracking-tight mt-16 text-text-color/80">
+            Announcements
           </h1>
         </div>
       </div>

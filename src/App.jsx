@@ -7,6 +7,7 @@ import StudentDashboard from "./pages/student/StudentDashboard";
 import SchoolDashboard from "./pages/schools/SchoolDashboard";
 import StudentSchools from "./pages/student/StudentSchools";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
+import StudentCheckResults from "./pages/student/StudentCheckResults";
 
 function App() {
   return (

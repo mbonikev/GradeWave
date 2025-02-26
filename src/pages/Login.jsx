@@ -19,13 +19,14 @@ function Login() {
     }, 400);
   }, [role]);
 
-  const handleLogin = () => {
+  const handleLoginStudent = () => {
     sessionStorage.setItem("loggedIn", true);
     setLoading(true);
     setTimeout(() => {
       window.location.reload();
     }, 500);
   };
+
 
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-[60] bg-body-bg relative overflow-y-auto">
@@ -145,7 +146,7 @@ function Login() {
             </div>
           ) : role === "student" ? (
             <button
-              onClick={handleLogin}
+              onClick={handleLoginStudent}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest

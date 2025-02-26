@@ -97,10 +97,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <p className="text-lightBlackText/70">Register for exams</p>
         </Link>
         <Link
-          to="/"
+          to="/student_check_results"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/wallet"
+            location.pathname === "/student_check_results"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
@@ -113,10 +113,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         {/* section */}
         <SidebarSectionTitle title={"updates"} />
         <Link
-          to="/notifications"
+          to="/student_notifications"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/notifications"
+            location.pathname === "/student_notifications"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
@@ -144,10 +144,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           Profile
         </Link>
         <Link
-          to="/settings"
+          to="/student_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/settings"
+            location.pathname === "/student_settings"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }

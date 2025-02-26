@@ -141,7 +141,7 @@ function Login() {
           </div>
           {loading ? (
             <div className="group w-full flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark">
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
                 Continue as a Guest
                 <LuArrowRight className="text-lg translate-y-[1px]" />
               </div>

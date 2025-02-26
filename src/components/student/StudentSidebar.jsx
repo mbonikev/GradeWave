@@ -56,7 +56,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"General"} />
         <Link
           to="/student_dashboard"
-          replace={true}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"

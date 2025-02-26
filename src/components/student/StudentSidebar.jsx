@@ -18,6 +18,7 @@ import { TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar } from "react-icons/hi";
 import { PiExam } from "react-icons/pi";
+import { BsClipboardPlus } from "react-icons/bs";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -89,7 +90,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuHistory className="text-xl max-lg:text-2xl" />
+          <BsClipboardPlus className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Register for exams</p>
         </Link>
         <Link

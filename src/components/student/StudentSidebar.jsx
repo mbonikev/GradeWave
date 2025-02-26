@@ -63,7 +63,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <LuChartPie className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Dashboard</p>
         </Link>
-        <SidebarSectionTitle title={"Management"} />
+        <SidebarSectionTitle title={"Schools"} />
         <Link
           to="/"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium

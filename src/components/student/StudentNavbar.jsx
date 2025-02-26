@@ -7,6 +7,10 @@ import { LogoBlue } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 
 function StudentNavbar({ title, openSidebar }) {
+  const handleLoginStudent = () => {
+    sessionStorage.removeItem("loggedInStudent");
+    window.location.reload();
+  };
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 sticky top-0 bg-white z-20 border-b border-stone-100">
       <div className="flex items-center gap-2 max-sm:gap-0">

@@ -107,7 +107,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <LuMedal className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Check Result</p>
         </Link>
-        <SidebarSectionTitle title={"updates"} />
+        {/* <SidebarSectionTitle title={"updates"} /> */}
         <Link
           to="/notifications"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
@@ -137,7 +137,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <HiOutlineChartBar className="text-xl max-lg:text-2xl" />
           Analysis
         </Link>
-        <SidebarSectionTitle title={"customize"} />
+        <SidebarSectionTitle title={"tweaks"} />
         <Link
           to="/settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

@@ -85,12 +85,12 @@ function StudentRegisterForExams() {
                 </h1>
                 <h1 className="text-text-color/80">
                   <strong className="font-medium">Registration Status:</strong>{" "}
-                  <span className="text-text-color font-bold">Closed</span>
+                  <span className="text-text-color/80 font-bold">Closed</span>
                 </h1>
 
                 <Link
                   to="/student_register_for_exams"
-                  className="bg-card-bg hover:brightness-125 text-text-color select-none text-sm font-medium px-3 py-2 w-full flex items-center justify-center gap-2 mt-5 rounded-xl"
+                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full flex items-center justify-center gap-2 mt-5 rounded-xl"
                 >
                   Register
                 </Link>

@@ -149,7 +149,10 @@ function Login() {
               onClick={handleLoginStudent}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
-              Continue as a Guest
+              <div className="flex items-center justify-start gap-2">
+                Continue as a Guest
+                <LuArrowRight className="text-lg translate-y-[1px]" />
+              </div>
               <LuArrowRight className="text-lg translate-y-[1px]" />
             </button>
           ) : (

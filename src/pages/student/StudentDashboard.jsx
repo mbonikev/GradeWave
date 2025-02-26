@@ -6,7 +6,7 @@ import LoadingScreen from "../../components/LoadingScreen";
 
 function StudentDashboard() {
   const location = useLocation();
-  const state = location.state || {};
+  const state = location.state || "";
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [fetching, setFetching] = useState(true);
@@ -23,7 +23,6 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
-  console.log(state.pageBehavior);
 
   useEffect(() => {
     setTimeout(() => {
@@ -51,7 +50,9 @@ function StudentDashboard() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
-        <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative"></div>
+        <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative">
+          {state.pageBehavior}
+        </div>
       </div>
     </div>
   );

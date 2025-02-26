@@ -21,10 +21,10 @@ function StudentDashboard() {
   };
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
-      <StudentSidebar closeSidebar={closeSidebar} />
+      <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
-          showSidebar && "max-lg:ml-[255px] max-sm:ml-[100%]"
+          showSidebar && ""
         } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-20 bg-body-bg relative`}
       >
         {showSidebar && (

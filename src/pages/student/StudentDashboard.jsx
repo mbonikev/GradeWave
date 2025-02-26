@@ -50,6 +50,7 @@ function StudentDashboard() {
                 <p className="text-base font-semibold ">
                   service name
                 </p>
+                <div className="w-full flex items-start justify-start"></div>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
@@ -58,6 +59,7 @@ function StudentDashboard() {
                 <p className="text-base font-semibold ">
                   service name
                 </p>
+                <div className="w-full flex items-start justify-start"></div>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
@@ -66,6 +68,7 @@ function StudentDashboard() {
                 <p className="text-base font-semibold ">
                   service name
                 </p>
+                <div className="w-full flex items-start justify-start"></div>
               </div>
             </div>
           </div>

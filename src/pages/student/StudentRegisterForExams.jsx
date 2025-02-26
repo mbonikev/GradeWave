@@ -46,6 +46,10 @@ function StudentRegisterForExams() {
               <h1>National Examination 2025</h1>
               <h1>In Progress</h1>
             </div>
+            <div className="flex items-center gap-2">
+              <h1>July 15, 2025</h1>
+              <h1>July 25, 2025</h1>
+            </div>
           </div>
         </div>
       </div>

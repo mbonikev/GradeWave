@@ -71,7 +71,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuChartPie className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color/85 ">Dashboard</p>
+          Dashboard
         </Link>
 
         {/* section */}
@@ -87,7 +87,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuSchool className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color/85 ">My Schools</p>
+          My Schools
         </Link>
         <Link
           to="/student_register_for_exams"
@@ -100,7 +100,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <RiStickyNoteAddLine className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color/85 ">Register for exams</p>
+          Register for exams
         </Link>
         <Link
           to="/student_check_results"
@@ -113,7 +113,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color/85 ">Check Result</p>
+          Check Result
         </Link>
 
         {/* section */}
@@ -130,7 +130,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         >
           <span className="flex items-center gap-2">
             <GrAnnounce className="text-xl max-lg:text-2xl" />
-            <p className="text-text-color/85 ">Announcements</p>
+            Announcements
           </span>
           <span className="text-xs ">2</span>
         </Link>

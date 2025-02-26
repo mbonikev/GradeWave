@@ -54,7 +54,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"General"} />
         <Link
           to="/student_dashboard"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -68,7 +68,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"School"} />
         <Link
           to="/contacts"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/contacts"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -81,7 +81,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         <Link
           to="/history"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/history"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -94,7 +94,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         <Link
           to="/"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/wallet"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -108,7 +108,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"updates"} />
         <Link
           to="/notifications"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/notifications"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -124,7 +124,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         <Link
           to="/analysis"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/analysis"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -138,7 +138,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"customize"} />
         <Link
           to="/settings"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/settings"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
@@ -154,7 +154,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="flex flex-col p-2">
         <Link
           to="/"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"

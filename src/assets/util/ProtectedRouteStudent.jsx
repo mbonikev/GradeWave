@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 
 function ProtectedRouteStudent({ children }) {
-  const loggedIn = sessionStorage.getItem('loggedIn') === 'true';
+  const loggedIn = sessionStorage.getItem('loggedInStudent') === 'false' || null;
 
   if (!loggedIn) {
     return <Redirect to="/" />;

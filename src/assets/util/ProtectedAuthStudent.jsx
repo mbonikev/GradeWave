@@ -17,7 +17,7 @@ function ProtectedAuthStudent({ children }) {
     return null;
   }
 
-  return <>{children}</>;
+  return <>{redirecting && children}</>;
 }
 
 export default ProtectedAuthStudent;

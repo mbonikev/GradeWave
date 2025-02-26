@@ -9,7 +9,7 @@ import StudentSchools from "./pages/student/StudentSchools";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 import StudentCheckResults from "./pages/student/StudentCheckResults";
 import StudentNotifications from "./pages/student/StudentNotifications";
-import StudentPofile from "./pages/student/StudentPofile";
+import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
@@ -51,7 +51,7 @@ function App() {
               path="/student_notifications"
               element={<StudentNotifications />}
             />
-            <Route path="/student_profile" element={<StudentPofile />} />
+            <Route path="/student_profile" element={<StudentProfile />} />
             <Route path="/student_settings" element={<StudentSettings />} />
           </div>
           {/* School */}

@@ -5,7 +5,7 @@ function LoadingScreen({ animateFetching }) {
   return (
     <div
       className={`w-full h-svh fixed top-0 left-0 z-50 bg-white flex items-center justify-center ${
-        animateFetching ? "opacity-100" : "opacity-0 transition-all ease-out duration-500"
+        animateFetching ? "opacity-100" : "opacity-0 transition-all ease-out duration-300"
       }`}
     >
       <video

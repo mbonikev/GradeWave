@@ -44,7 +44,7 @@ function StudentDashboard() {
         )}
         <StudentNavbar openSidebar={openSidebar} />
         <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative">
-          {fetching ? <LoadingScren /> : <></>}
+          {fetching ? <LoadingScreen /> : <></>}
         </div>
       </div>
     </div>

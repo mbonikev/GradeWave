@@ -49,25 +49,7 @@ function StudentDashboard() {
                   service name
                 </h1>{" "}
                 <p className="text-sm text-text-color-weak font-medium">service name</p>
-                <div className="w-full flex items-start justify-end text-main-color mt-5 text-xl">
-                  <LuArrowUpRight />
-                </div>
-              </div>
-              <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
-                <h1 className="capitalize text-base font-semibold ">
-                  service name
-                </h1>{" "}
-                <p className="text-sm text-text-color-weak font-medium">service name</p>
-                <div className="w-full flex items-start justify-end text-main-color mt-5 text-xl">
-                  <LuArrowUpRight />
-                </div>
-              </div>
-              <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
-                <h1 className="capitalize text-base font-semibold ">
-                  service name
-                </h1>{" "}
-                <p className="text-sm text-text-color-weak font-medium">service name</p>
-                <div className="w-full flex items-start justify-end text-main-color mt-5 text-xl">
+                <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>

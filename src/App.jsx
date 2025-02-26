@@ -14,21 +14,35 @@ import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
-  const [fetching, setFetching] = useState(true);
-  const [animateFetching, setAnimateFetching] = useState(true);
+  const [fetching, setFetching] = useState(false);
+  const [animateFetching, setAnimateFetching] = useState(false);
+  const location = useLocation(); // Track route changes
 
   useEffect(() => {
+    // Show loading screen when the route changes
+    setFetching(true);
     setAnimateFetching(true);
-    setTimeout(() => {
-      setAnimateFetching(false);
+
+    // Simulate loading screen animation
+    const timer = setTimeout(() => {
+      setAnimateFetching(false); // End animation after 1.5s
     }, 1500);
-    setTimeout(() => {
+
+    // Simulate data fetching and hide the loading screen after 2s
+    const fetchTimer = setTimeout(() => {
       setFetching(false);
     }, 2000);
-  }, []);
+
+    // Clean up timers on component unmount or before the next route change
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(fetchTimer);
+    };
+  }, [location]); // Dependency on location ensures this runs when the route changes
+
   return (
     <div>
-      {/* loading */}
+      {/* Show loading screen when fetching is true */}
       {fetching && <LoadingScreen animateFetching={animateFetching} />}
 
       <Router>

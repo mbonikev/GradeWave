@@ -90,9 +90,9 @@ function StudentRegisterForExams() {
 
                 <Link
                   to="/student_register_for_exams"
-                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full flex items-center justify-center gap-2 mt-5 rounded-xl"
+                  className="bg-card-bg hover:bg-stone-200 text-text-color select-none text-sm font-medium px-3 py-2 w-full flex items-center justify-center gap-2 mt-5 rounded-xl"
                 >
-                  Register
+                  View Papers
                 </Link>
               </div>
             </div>

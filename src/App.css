@@ -16,6 +16,10 @@ body {
   outline-color: #e7e7e7;
 }
 
+:root{
+  --main-color: #3277f0;
+}
+
 button,
 input {
   outline: none;

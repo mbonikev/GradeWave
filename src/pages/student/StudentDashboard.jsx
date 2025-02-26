@@ -44,16 +44,24 @@ function StudentDashboard() {
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
             <div className="w-full h-fit flex items-center gap-4 mt-3 py-1">
-              {[{name: "Check N. Exam Results", path: "/student_dashboard"}]}
-              <div className="group w-fit h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0">
-                <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
-                  Check N. Exam Results
-                </h1>{" "}
-                {/* <p className="text-sm text-text-color-weak font-medium">service name</p> */}
-                <div className="w-full flex items-start justify-start group-hover:text-main-color mt-3 text-xl">
-                  <LuArrowUpRight />
+              {[
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
+                { name: "Check N. Exam Results", path: "/student_dashboard" },
+              ].map((service, index) => (
+                <div
+                  index={index}
+                  className="group w-fit h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0"
+                >
+                  <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
+                    {service.name}
+                  </h1>
+                  <div className="w-full flex items-start justify-start group-hover:text-main-color mt-3 text-xl">
+                    <LuArrowUpRight />
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

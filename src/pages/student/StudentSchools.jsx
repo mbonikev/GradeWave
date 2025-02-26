@@ -4,7 +4,7 @@ import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 
-function StudentDashboard() {
+function StudentSchools() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const openSidebar = () => {
@@ -41,4 +41,4 @@ function StudentDashboard() {
   );
 }
 
-export default StudentDashboard;
+export default StudentSchools;

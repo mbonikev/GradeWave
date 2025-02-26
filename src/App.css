@@ -53,13 +53,6 @@ input {
   }
 }
 
-a {
-  color: #111111c0;
-}
-
-a:hover {
-  color: #0f50c0;
-}
 video::-webkit-media-controls {
   display: none !important;
 }

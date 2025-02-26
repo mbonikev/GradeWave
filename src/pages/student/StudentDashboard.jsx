@@ -77,16 +77,13 @@ function StudentDashboard() {
                   View all <LuArrowRight />
                 </Link>
               </div>
-              <div className="w-full h-fit fle">
-
-              </div>
+              <div className="w-full h-fit fle"></div>
             </div>
             <div className="w-full">
               <div className="w-full ring-1 ring-card-bg-weak shadow-sm rounded-2xl p-4 font-medium tracking-tight mt-16 text-text-color/80 flex items-start gap-1 justify-start flex-col border-b">
                 <h1 className="">Grobal Ranking</h1>
-                <h1><span className="text-2xl font-medium ">#<strong className="pl-0.5">3</strong></span><span className="text-text-color-weak/80 font-normal"> of 2,342 Students</span></h1>
+                <h1 className="text-xl font-bold">Top 3 of 2,342 Students</h1>
               </div>
-
             </div>
           </div>
         </div>

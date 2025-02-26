@@ -155,8 +155,8 @@ function Login() {
         </form>
         <p className="text-sm font-normal text-text-color-weak mb-2">
           By Signing in you agree to our{" "}
-          <a className="cursor-pointer">Terms of service</a> and{" "}
-          <a className="cursor-pointer">Privacy Policy</a>
+          <a className="cursor-pointer text-main-color hover:text-main-color-dark">Terms of service</a> and{" "}
+          <a className="cursor-pointer text-main-color hover:text-main-color-dark">Privacy Policy</a>
         </p>
       </div>
       {/* 2 */}

@@ -66,7 +66,7 @@ function StudentDashboard() {
             ))}
           </div>
 
-          <div className="w-full grid grid-cols-2">
+          <div className="w-full grid grid-cols-2 max-md:grid-cols-1">
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Updates
@@ -77,6 +77,7 @@ function StudentDashboard() {
                   View all <LuArrowRight />
                 </Link>
               </div>
+              <div className=""></div>
             </div>
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">

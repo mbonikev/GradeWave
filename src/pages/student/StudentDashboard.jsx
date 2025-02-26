@@ -70,13 +70,13 @@ function StudentDashboard() {
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Updates
-                <Link to='/student_dashboard text-xs'>view all</Link>
+                <Link to='/student_dashboard' className="text-sm px-5">view all</Link>
               </div>
             </div>
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Grobal Ranking
-                <Link to='/student_dashboard text-xs'>view all</Link>
+                <Link to='/student_dashboard' className="text-sm px-5">view all</Link>
               </div>
             </div>
           </div>

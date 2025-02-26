@@ -41,13 +41,15 @@ function StudentRegisterForExams() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
             Register For Exams
           </h1>
-          <h1 className="text-sm font-normal my-4 text-text-color-weak">Open examinations</h1>
+          <h1 className="text-sm font-normal my-4 text-text-color-weak"># Open Exams</h1>
           <div className="w-full max-w-[340px] max-md:max-w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak shadow-sm p-3 flex items-center">
             <div className="flex flex-col gap-1 text-sm ">
               <h1 className="text-base font-medium text-text-color/80">National Examination 2025</h1>
               <h1 className="text-text-color/80">
                 <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>
+
+              <link rel="stylesheet" href="" />
               {/* <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Due Date:</strong> <i> </i> 
               </h1> */}

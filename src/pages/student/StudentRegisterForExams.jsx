@@ -45,19 +45,19 @@ function StudentRegisterForExams() {
           <div className="w-full max-w-[340px] mt-3 rounded-2xl ring-1 ring-card-bg-weak p-3 flex items-center">
             <div className="flex flex-col text-sm ">
               <h1 className="text-xl font-bold mb-2 text-text-color/80">National Examination 2025</h1>
-              <h1>
+              <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Status:</strong> In Progress
               </h1>
-              <h1>
+              <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Due Date:</strong> March 10, 2025
               </h1>
-              <h1>
+              <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam Start Date:</strong> July 25, 2025
               </h1>
-              <h1>
+              <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam End Date:</strong> July 25, 2025
               </h1>
-              <h1>
+              <h1 className="text-text-color-weak">
                 <strong className="font-medium">Exam Center:</strong> Groupe Scolaire Ruyenzi
               </h1>
             </div>

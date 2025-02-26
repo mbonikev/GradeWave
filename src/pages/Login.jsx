@@ -136,14 +136,13 @@ function Login() {
               <Loading size="small" />
             </div>
           ) : role === "student" ? (
-            <Link
-              reloadDocument
-              to="/student_dashboard"
+            <button
+              onClick={handleLogin}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
-            </Link>
+            </button>
           ) : (
             <Link
               reloadDocument

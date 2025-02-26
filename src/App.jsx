@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       {/* loading */}
-      {fetching ? <LoadingScreen /> : <></>}
+      <LoadingScreen /> 
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />

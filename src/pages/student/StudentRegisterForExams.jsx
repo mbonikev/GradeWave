@@ -46,7 +46,7 @@ function StudentRegisterForExams() {
             <div className="flex flex-col text-sm ">
               <h1 className="text-base font-medium mb-1 text-text-color/80">National Examination 2025</h1>
               <h1 className="text-text-color-weak">
-                <strong className="font-medium">Registration Status:</strong> In Progress
+                <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>
               <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Due Date:</strong> March 10, 2025

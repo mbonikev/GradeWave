@@ -80,7 +80,7 @@ function StudentRegisterForExams() {
             <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak/70 shadow-sm p-3 flex items-center">
               <div className="w-full flex flex-col gap-1 text-sm ">
                 <h1 className="text-base font-bold text-text-color/80">
-                  ORDINARY LEVEL NATIONAL EXAMINATION, 2025-2026
+                  ADVANCED LEVEL NATIONAL EXAMINATION, 2025-2026
                 </h1>
                 <h1 className="text-text-color/50">
                   <strong className="font-medium">Registration Status:</strong>{" "}

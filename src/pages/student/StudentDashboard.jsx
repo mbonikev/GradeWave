@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
-import LoadingScreen from "../../components/LoadingScreen";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,16 +20,9 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
-  useEffect(() => {
-    setTimeout(() => {
-      setFetching(false);
-    }, 1500);
-  }, []);
+
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
-      {/* loading */}
-      {fetching ? <LoadingScreen /> : <></>}
-
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

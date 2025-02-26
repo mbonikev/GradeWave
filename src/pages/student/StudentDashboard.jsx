@@ -43,7 +43,7 @@ function StudentDashboard() {
           <div className="w-full h-fit max-w-[1100px] mx-auto px-2.5">
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
-            <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3">
+            <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3 py-1">
               <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name

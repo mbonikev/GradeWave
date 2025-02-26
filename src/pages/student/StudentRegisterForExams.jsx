@@ -38,12 +38,12 @@ function StudentRegisterForExams() {
         <StudentNavbar openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-2.5 max-lg:px-5 min-h-[1000px] mx-auto">
-          <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak">
+          <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
             Register For Exams
           </h1>
           <div className="w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak p-3 flex items-center">
             <div className="flex flex-col text-sm ">
-              <h1 className="text-2xl font-bold mb-3">National Examination 2025</h1>
+              <h1 className="text-xl font-bold mb-2 text-text-color/80">National Examination 2025</h1>
               <h1>
                 <strong className="font-medium">Registration Status:</strong> In Progress
               </h1>

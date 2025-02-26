@@ -20,10 +20,9 @@ function Login() {
   }, [role]);
 
   const handleLogin = () => {
-    sessionStorage.setItem('loggedIn', true)
-    setTimeout(() => {
-      
-    }, 500);
+    sessionStorage.setItem("loggedIn", true);
+    setLoading(true);
+    setTimeout(() => {}, 500);
   };
 
   return (

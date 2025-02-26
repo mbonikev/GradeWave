@@ -15,7 +15,7 @@ import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
   const [fetching, setFetching] = useState(true);
-  const [animateFetching, setAnimateFetching] = useState(false);
+  const [animateFetching, setAnimateFetching] = useState(true);
 
   useEffect(() => {
     setAnimateFetching(true);
@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       {/* loading */}
-      <LoadingScreen animateFetching={animateFetching} />
+      {fetching && <LoadingScreen animateFetching={animateFetching} />}
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />

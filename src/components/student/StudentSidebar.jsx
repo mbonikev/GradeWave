@@ -35,7 +35,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="w-full flex items-center justify-between px-2 pt-2 gap-1 select-none">
         <Link
           to="/student_profile"
-          className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
+          className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-card-bg-weak`}
         >
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             G
@@ -44,12 +44,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             Guest
           </h1>
         </Link>
-        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
+        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-card-bg-weak rounded-xl">
           <LuQrCode className="text-xl" />
         </button>
         <button
           onClick={closeSidebar}
-          className="text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-stone-100 rounded-xl"
+          className="text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-card-bg-weak rounded-xl"
         >
           <LuX className="text-xl" />
         </button>
@@ -65,8 +65,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -81,8 +81,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_schools"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -94,8 +94,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_register_for_exams"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -107,8 +107,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_check_results"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -123,8 +123,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_notifications"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -141,8 +141,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_profile"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -154,8 +154,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_settings"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >
@@ -164,14 +164,14 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
       </div>
       {/* bottom link */}
-      <div className="flex flex-col p-2">
+      <div className="flex flex-col py-2 pl-5 pr-2">
         <Link
           to="/"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"
-              ? "active_sidebar_link bg-stone-200/50 text-main-color"
-              : "text-lightBlackText/70 hover:bg-stone-100"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-lightBlackText/70 hover:bg-card-bg-weak"
           }
           `}
         >

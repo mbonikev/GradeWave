@@ -45,8 +45,9 @@ function StudentRegisterForExams() {
             <div className="flex flex-col">
               <h1>National Examination 2025</h1>
               <h1>Registration Status: In Progress</h1>
-              <h1>Registration Due Date: July 15, 2025</h1>
+              <h1>Registration Due Date: March 10, 2025</h1>
               <h1>Exam Start Date: July 25, 2025</h1>
+              <h1>Exam End Date: July 25, 2025</h1>
             </div>
           </div>
         </div>

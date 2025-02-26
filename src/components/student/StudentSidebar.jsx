@@ -28,7 +28,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="w-full flex items-center justify-between px-2 pt-2 gap-1 select-none">
         <Link
           to="/"
-          className={`w-full max-w-[160px] flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
+          className={`w-[60%] max-w-[160px] flex items-center gap-2 pl-2 pr-4 max-sm:pr-2 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
         >
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K

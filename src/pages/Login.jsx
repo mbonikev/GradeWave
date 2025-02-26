@@ -16,8 +16,8 @@ function Login() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
-  }, [role]);
+    }, 2000);
+  }, []);
 
   const handleLoginStudent = () => {
     sessionStorage.setItem("loggedInStudent", true);

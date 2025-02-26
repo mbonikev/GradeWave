@@ -26,9 +26,9 @@ function StudentSidebar({ closeSidebar }) {
           to="/"
           className={`w-fit max-sm:w-full text-base flex items-center justify-start gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-mainColor text-white">
-                          K
-                        </div>
+          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
+            K
+          </div>
           <div className="flex flex-col flex-1 truncate w-full">
             <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
               Kevin Dermot
@@ -167,7 +167,7 @@ function StudentSidebar({ closeSidebar }) {
       {/* bottom link */}
       <div className="flex flex-col p-2">
         <button className="h-[35px] px-4 rounded-xl flex items-center justify-center gap-1 bg-mainColor text-white text-sm font-semibold">
-        <LuPlus className="text-lg" />
+          <LuPlus className="text-lg" />
           Add Contact
         </button>
       </div>

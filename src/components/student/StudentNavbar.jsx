@@ -2,7 +2,7 @@ import React from "react";
 import { FiCommand } from "react-icons/fi";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
-import { LuSearch } from "react-icons/lu";
+import { LuSearch, LuSquareMenu } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
 
 function StudentNavbar({ title, openSidebar }) {
@@ -13,7 +13,7 @@ function StudentNavbar({ title, openSidebar }) {
           onClick={openSidebar}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square hidden max-lg:flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          <HiMenuAlt2 className="text-xl" />
+          <LuSquareMenu className="text-xl" />
         </button>
         {title ? (
           <h1 className="text-xl max-lg:text-2xl font-medium text-lightBlackText/80 max-sm:hidden">

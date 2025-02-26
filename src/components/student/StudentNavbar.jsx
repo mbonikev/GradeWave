@@ -5,6 +5,7 @@ import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
+import { RiLogoutCircleRLine } from "react-icons/ri";
 
 function StudentNavbar({ title, openSidebar }) {
   const handleLoginStudent = () => {
@@ -43,10 +44,11 @@ function StudentNavbar({ title, openSidebar }) {
           <IoCardOutline className="text-2xl" />
         </button> */}
         <button
+          title="logout"
           onClick={handleLoginStudent}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          <FiLogOut className="text-xl" />
+          <RiLogoutCircleRLine className="text-xl" />
         </button>
       </div>
     </div>

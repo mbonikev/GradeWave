@@ -85,7 +85,7 @@ function StudentRegisterForExams() {
                 </h1>
                 <h1 className="text-text-color/80">
                   <strong className="font-medium">Registration Status:</strong>{" "}
-                  <span className="text-green-500 font-bold">In Progress</span>
+                  <span className="text-text-color font-bold">Closed</span>
                 </h1>
 
                 <Link

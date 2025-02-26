@@ -7,7 +7,8 @@ import LoadingScreen from "../../components/LoadingScreen";
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [fetching, setFetching] = useState(true);
+  const [fetching, setFetching] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
   const openSidebar = () => {
     setShowSidebar(true);

@@ -22,8 +22,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
   return (
     <div
       className={`${
-        showSidebar ? "max-lg:w-0" : "max-lg:w-0"
-      } w-[255px] min-w-[255px] max-sm:w-full z-20 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100  overflow-y-auto`}
+        showSidebar ? "max-lg:w-[225px]" : "max-lg:w-0"
+      } w-[255px] min-w-[255px] max-sm:w-full z-40 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100 overflow-y-auto`}
     >
       <div className="flex items-center justify-between px-2 pt-2 gap-1 select-none">
         <Link

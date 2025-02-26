@@ -49,16 +49,16 @@ function StudentRegisterForExams() {
                 <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>
               <h1 className="text-text-color-weak">
-                <strong className="font-medium">Registration Due Date:</strong> March 10, 2025
+                <strong className="font-medium">Registration Due Date:</strong> <i>March 10, 2025</i> 
               </h1>
               <h1 className="text-text-color-weak">
-                <strong className="font-medium">Exam Start Date:</strong> July 25, 2025
+                <strong className="font-medium">Exam Start Date:</strong> <i>July 25, 2025</i> 
               </h1>
               <h1 className="text-text-color-weak">
-                <strong className="font-medium">Exam End Date:</strong> July 25, 2025
+                <strong className="font-medium">Exam End Date:</strong> <i>July 25, 2025</i> 
               </h1>
               <h1 className="text-text-color-weak">
-                <strong className="font-medium">Exam Center:</strong> Groupe Scolaire Ruyenzi
+                <strong className="font-medium">Exam Center:</strong> <i>Groupe Scolaire Ruyenzi</i> 
               </h1>
             </div>
           </div>

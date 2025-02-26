@@ -54,10 +54,10 @@ function StudentDashboard() {
                   index={index}
                   className="group w-full h-full cursor-pointer text-text-color/90 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl py-4 pl-4 pr-5 shadow-sm flex flex-col justify-between items-start gap-0"
                 >
-                  <h1 className="capitalize text-base leading-5 font-semibold group-hover:text-main-color ">
+                  <h1 className="capitalize text-base leading-6 font-semibold group-hover:text-main-color ">
                     {service.name}
                   </h1>
-                  <div className="w-full flex items-start justify-start group-hover:text-main-color mt-3 text-xl">
+                  <div className="w-full flex items-start justify-start text-main-color mt-3 text-xl">
                     <LuArrowUpRight />
                   </div>
                 </div>

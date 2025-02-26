@@ -6,7 +6,6 @@ import StudentNavbar from "../../components/student/StudentNavbar";
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [fetching, setFetching] = useState(true);
 
   const openSidebar = () => {
     setShowSidebar(true);

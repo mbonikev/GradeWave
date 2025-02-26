@@ -38,7 +38,7 @@ function StudentDashboard() {
         )}
         <StudentNavbar openSidebar={openSidebar} />
         <div className="w-full flex-1 overflow-y-auto py-1 flex flex-col gap-0 pt-5 relative">
-          <h1 className="text-2xl"></h1>
+          <h1 className="text-[28px] font-semibold">Explore</h1>
         </div>
       </div>
     </div>

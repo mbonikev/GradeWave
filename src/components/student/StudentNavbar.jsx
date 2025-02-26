@@ -22,7 +22,7 @@ function StudentNavbar({ title, openSidebar }) {
     }, 300);
   };
   return (
-    <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 border-stone-100">
       <div className="w-full h-fit flex items-center justify-between gap-2 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 max-sm:gap-0">
           <button

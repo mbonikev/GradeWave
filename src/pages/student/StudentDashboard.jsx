@@ -44,13 +44,13 @@ function StudentDashboard() {
 
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3">
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4">
-                <h1 className="capitalize text-2xl ">service name</h1>
+                <h1 className="capitalize text-base font-semibold ">service name</h1>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4">
-                <h1 className="capitalize text-2xl ">service name</h1>
+                <h1 className="capitalize text-base font-semibold ">service name</h1>
               </div>
               <div className="w-full h-full bg-card-bg-weak rounded-2xl p-3 flex flex-col justify-between items-start gap-4">
-                <h1 className="capitalize text-2xl ">service name</h1>
+                <h1 className="capitalize text-base font-semibold ">service name</h1>
               </div>
             </div>
           </div>

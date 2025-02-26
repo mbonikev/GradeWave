@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import LoadingScreen from "../../components/LoadingScreen";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [fetching, setFetching] = useState(true);
+  const [animateFetching, setAnimateFetching] = useState(true);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -19,6 +22,16 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
+
+  useEffect(() => {
+    setAnimateFetching(true);
+    setTimeout(() => {
+      setAnimateFetching(false);
+    }, 1500);
+    setTimeout(() => {
+      setFetching(false);
+    }, 2000);
+  }, []);
 
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">

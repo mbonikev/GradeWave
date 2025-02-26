@@ -4,7 +4,7 @@ import { IntroGif } from "../assets";
 function LoadingScreen({ animateFetching }) {
   return (
     <div
-      className={`w-full h-svh absolute top-0 left-0 z-40 bg-white flex items-center justify-center ${
+      className={`w-full h-svh absolute top-0 left-0 z-50 bg-white flex items-center justify-center ${
         animateFetching ? "opacity-100" : "opacity-0 transition-all ease-out duration-300"
       }`}
     >

@@ -9,7 +9,9 @@ import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 function StudentNavbar({ title, openSidebar }) {
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
-    window.location.reload();
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   };
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 sticky top-0 bg-white z-20 border-b border-stone-100">
@@ -40,7 +42,10 @@ function StudentNavbar({ title, openSidebar }) {
         <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
           <IoCardOutline className="text-2xl" />
         </button>
-        <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
+        <button
+          onClick={handleLoginStudent}
+          className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
+        >
           <FiCommand className="text-xl" />
         </button>
       </div>

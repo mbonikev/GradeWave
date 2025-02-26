@@ -4,16 +4,17 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
+import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 
 function StudentNavbar({ title, openSidebar }) {
   return (
-    <div className="flex items-center justify-between text-lightBlackText p-0 sticky top-0 bg-white z-20 border-b border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText p-2 sticky top-0 bg-white z-20 border-b border-stone-100">
       <div className="flex items-center gap-2 max-sm:gap-0">
         <button
           onClick={openSidebar}
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square hidden max-lg:flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
-          <Menu className="text-xl" />
+          <TbLayoutSidebarLeftExpand className="text-2xl" />
         </button>
         {title ? (
           <h1 className="text-xl max-lg:text-2xl font-medium text-lightBlackText/80 max-sm:hidden">

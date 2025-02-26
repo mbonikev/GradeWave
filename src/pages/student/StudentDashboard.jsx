@@ -41,6 +41,8 @@ function StudentDashboard() {
           {/* content */}
           <div className="w-full h-fit max-w-[1100px] mx-auto">
             <h1 className="text-[28px] font-semibold">Explore</h1>
+
+            <div className=""></div>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ import SidebarSectionTitle from "./SidebarSectionTitle";
 import { TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar } from "react-icons/hi";
-import { PiExam } from "react-icons/pi";
+import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
@@ -154,8 +154,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuSettings className="text-xl max-lg:text-2xl" />
-          Settings
+          <PiUserBold className="text-xl max-lg:text-2xl" />
+          Profile
         </Link>
         <Link
           to="/settings"

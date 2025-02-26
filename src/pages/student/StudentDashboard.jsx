@@ -45,12 +45,12 @@ function StudentDashboard() {
 
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3 py-1">
               {/* {[{name: "Check N. Exam Results"}]} */}
-              <div className="group w-full h-full cursor-pointer ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
+              <div className="group w-full h-full cursor-pointer text-text-color/80 ring-1 ring-card-bg-weak hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold group-hover:text-main-color ">
                   Check N. Exam Results
                 </h1>{" "}
                 {/* <p className="text-sm text-text-color-weak font-medium">service name</p> */}
-                <div className="w-full flex items-start justify-start text-main-color mt-5 text-xl">
+                <div className="w-full flex items-start justify-start group-hover:text-main-color mt-5 text-xl">
                   <LuArrowUpRight />
                 </div>
               </div>

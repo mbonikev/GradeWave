@@ -40,7 +40,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             G
           </div>
-          <h1 className="leading-4 text-sm relative font-medium text-text-color-weak truncate w-full">
+          <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
             Guest
           </h1>
         </Link>
@@ -66,12 +66,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_dashboard"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <LuChartPie className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color-weak">Dashboard</p>
+          <p className="text-text-color/85 ">Dashboard</p>
         </Link>
 
         {/* section */}
@@ -82,12 +82,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_schools"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <LuSchool className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color-weak">My Schools</p>
+          <p className="text-text-color/85 ">My Schools</p>
         </Link>
         <Link
           to="/student_register_for_exams"
@@ -95,12 +95,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_register_for_exams"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <RiStickyNoteAddLine className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color-weak">Register for exams</p>
+          <p className="text-text-color/85 ">Register for exams</p>
         </Link>
         <Link
           to="/student_check_results"
@@ -108,12 +108,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_check_results"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          <p className="text-text-color-weak">Check Result</p>
+          <p className="text-text-color/85 ">Check Result</p>
         </Link>
 
         {/* section */}
@@ -124,13 +124,13 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_notifications"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <span className="flex items-center gap-2">
             <GrAnnounce className="text-xl max-lg:text-2xl" />
-            <p className="text-text-color-weak">Announcements</p>
+            <p className="text-text-color/85 ">Announcements</p>
           </span>
           <span className="text-xs ">2</span>
         </Link>
@@ -142,7 +142,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_profile"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
@@ -155,7 +155,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/student_settings"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
@@ -171,7 +171,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           ${
             location.pathname === "/help-center"
               ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color-weak hover:bg-card-bg-weak"
+              : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >

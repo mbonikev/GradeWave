@@ -71,10 +71,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         {/* section */}
         <SidebarSectionTitle title={"School"} />
         <Link
-          to="/contacts"
+          to="/student_schools"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/contacts"
+            location.pathname === "/student_schools"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }
@@ -84,10 +84,10 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <p className="text-lightBlackText/70">My Schools</p>
         </Link>
         <Link
-          to="/history"
+          to="/student_register_for_exams"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/history"
+            location.pathname === "/student_register_for_exams"
               ? "active_sidebar_link bg-stone-200/50 text-main-color"
               : "text-lightBlackText/70 hover:bg-stone-100"
           }

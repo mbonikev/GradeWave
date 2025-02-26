@@ -7,7 +7,7 @@ import LoadingScreen from "../../components/LoadingScreen";
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [fetching, setFetching] = useState(sessionStorage.getItem("firstLoad") === true);
+  const [fetching, setFetching] = useState(sessionStorage.getItem("firstLoad") === null);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -25,7 +25,7 @@ function StudentDashboard() {
 
   useEffect(() => {
     if (fetching) {
-      sessionStorage.setItem("firstLoad", "true");
+      sessionStorage.setItem("firstLoad", "false");
       setTimeout(() => {
         setFetching(false);
       }, 1500);

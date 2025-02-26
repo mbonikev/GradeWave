@@ -5,6 +5,7 @@ import {
   LuHistory,
   LuPlus,
   LuQrCode,
+  LuSchool,
   LuSettings,
   LuUsers,
   LuWallet,
@@ -74,7 +75,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuUsers className="text-xl max-lg:text-2xl" />
+          <LuSchool className="text-xl max-lg:text-2xl" />
           <p className="text-lightBlackText/70">My Schools</p>
         </Link>
         <Link

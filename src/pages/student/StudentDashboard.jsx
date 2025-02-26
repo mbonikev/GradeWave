@@ -77,7 +77,9 @@ function StudentDashboard() {
                   View all <LuArrowRight />
                 </Link>
               </div>
-              <div className=""></div>
+              <div className="w-full h-fit">
+                
+              </div>
             </div>
             <div className="w-full">
               <div className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">

@@ -147,6 +147,9 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <LuSettings className="text-xl max-lg:text-2xl" />
           Settings
         </Link>
+      </div>
+      {/* bottom link */}
+      <div className="flex flex-col p-2">
         <Link
           to="/"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
@@ -160,13 +163,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <TbHeadset className="text-xl max-lg:text-2xl" />
           Help Center
         </Link>
-      </div>
-      {/* bottom link */}
-      <div className="flex flex-col p-2">
-        <button className="h-[35px] px-4 rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-semibold">
-          <LuPlus className="text-lg" />
-          Add Contact
-        </button>
       </div>
     </div>
   );

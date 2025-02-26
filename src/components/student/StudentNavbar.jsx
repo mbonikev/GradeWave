@@ -39,7 +39,7 @@ function StudentNavbar({ title, openSidebar }) {
         )}
         <img src={LogoBlue} className="hidden max-sm:flex h-8 ml-2" />
       </div>
-      <div className="flex items-center justify-end gap-0 max[lg:gap-1">
+      <div className="flex items-center justify-end gap-0 max-lg:gap-2">
         {/* <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl">
           <LuSearch className="text-xl" />
         </button> */}

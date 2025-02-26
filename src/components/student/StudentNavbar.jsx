@@ -7,7 +7,7 @@ import { LogoBlue } from "../../assets";
 
 function StudentNavbar({ title, openSidebar }) {
   return (
-    <div className="flex items-center justify-between text-lightBlackText px-4 sticky top-0 bg-white z-20 border-b border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText px-0 py-2 sticky top-0 bg-white z-20 border-b border-stone-100">
       <div className="flex items-center gap-2 max-sm:gap-0">
         <button
           onClick={openSidebar}

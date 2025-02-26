@@ -33,11 +33,9 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K
           </div>
-          <div className=" truncate w-full">
-            <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
-              Guest 28409-0943-49
-            </h1>
-          </div>
+          <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
+            Guest 28409-0943-49
+          </h1>
         </Link>
         <button className=" max-lg:hidden text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
           <LuQrCode className="text-xl" />

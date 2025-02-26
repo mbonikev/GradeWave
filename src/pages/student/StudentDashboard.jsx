@@ -8,7 +8,6 @@ function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [fetching, setFetching] = useState(false);
-  const [animateFetching, setAnimateFetching] = useState(true);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -26,10 +25,6 @@ function StudentDashboard() {
   useEffect(() => {
     const handleReload = () => {
       setFetching(true);
-      setAnimateFetching(true);
-      setTimeout(() => {
-        setAnimateFetching(false);
-      }, 1500);
       setTimeout(() => {
         setFetching(false);
       }, 2000);
@@ -45,7 +40,7 @@ function StudentDashboard() {
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       {/* loading */}
-      {fetching && <LoadingScreen animateFetching={animateFetching} />}
+      {fetching && <LoadingScreen />}
 
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div

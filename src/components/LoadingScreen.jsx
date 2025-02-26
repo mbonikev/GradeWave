@@ -1,4 +1,5 @@
 import React from "react";
+import { IntroGif } from "../assets";
 
 function LoadingScreen() {
   return (

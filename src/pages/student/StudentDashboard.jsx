@@ -43,7 +43,7 @@ function StudentDashboard() {
           <div className="w-full h-fit max-w-[1100px] mx-auto">
             <h1 className="text-[28px] font-semibold">Dashboard</h1>
 
-            <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 gap-4 mt-3 py-1">
+            <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 mt-3 py-1">
               {[
                 { name: "Check Results", path: "/student_dashboard" },
                 { name: "Register For Exams", path: "/student_dashboard" },

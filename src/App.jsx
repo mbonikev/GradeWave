@@ -14,23 +14,10 @@ import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
-  const [fetching, setFetching] = useState(true);
-  const [animateFetching, setAnimateFetching] = useState(true);
-
-  useEffect(() => {
-    setAnimateFetching(true);
-    setTimeout(() => {
-      setAnimateFetching(false);
-    }, 1500);
-    setTimeout(() => {
-      setFetching(false);
-    }, 2000);
-  }, []);
+  
   return (
     <div>
-      {/* loading */}
-      {fetching && <LoadingScreen animateFetching={animateFetching} />}
-
+      
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />

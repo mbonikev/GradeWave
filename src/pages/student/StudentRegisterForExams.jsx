@@ -49,7 +49,9 @@ function StudentRegisterForExams() {
                 <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>
 
-              <link rel="stylesheet" href="" />
+              <Link to="/" className="bg-main-color hover:bg-main-color-dark text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl">
+                Continue
+              </Link>
               {/* <h1 className="text-text-color-weak">
                 <strong className="font-medium">Registration Due Date:</strong> <i> </i> 
               </h1> */}

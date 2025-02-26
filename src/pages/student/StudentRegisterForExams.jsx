@@ -41,7 +41,7 @@ function StudentRegisterForExams() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Register For Exams
           </h1>
-          
+          <div className="w-full mt-3 rounded-2xl"></div>
         </div>
       </div>
     </div>

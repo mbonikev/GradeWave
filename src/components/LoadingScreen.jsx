@@ -1,9 +1,13 @@
 import React from "react";
 import { IntroGif } from "../assets";
 
-function LoadingScreen({animateFetching}) {
+function LoadingScreen({ animateFetching }) {
   return (
-    <div className="w-full h-svh fixed top-0 left-0 z-50 bg-white/90 flex items-center justify-center">
+    <div
+      className={`w-full h-svh fixed top-0 left-0 z-50 bg-white/90 flex items-center justify-center ${
+        animateFetching ? "opacity-0" : ""
+      }`}
+    >
       <video
         muted
         loop

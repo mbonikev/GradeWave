@@ -137,6 +137,7 @@ function Login() {
             </div>
           ) : role === "student" ? (
             <Link
+              reloadDocument
               to="/student_dashboard"
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
             >

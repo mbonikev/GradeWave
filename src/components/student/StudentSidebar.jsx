@@ -35,7 +35,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           </div>
           <div className="flex flex-col flex-1 truncate w-full">
             <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
-              Kevin Dermot
+              G
             </h1>
           </div>
         </Link>

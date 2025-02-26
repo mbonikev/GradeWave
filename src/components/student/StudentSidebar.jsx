@@ -30,9 +30,9 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           to="/"
           className={`w-full max-w-[160px] flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
+          {/* <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             K
-          </div>
+          </div> */}
           <h1 className="leading-4 text-sm relative font-medium text-lightBlackText/70 truncate w-full">
             Guest 28409-0943-49
           </h1>

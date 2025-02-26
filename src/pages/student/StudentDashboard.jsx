@@ -22,12 +22,12 @@ function StudentDashboard() {
   };
 
   return (
-    <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+    <div className="w-full min-h-svh flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
           showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-sidebar-bg relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-sidebar-bg overflow-y-auto relative relative`}
       >
         {showSidebar && (
           <div

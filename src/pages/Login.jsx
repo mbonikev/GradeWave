@@ -140,7 +140,7 @@ function Login() {
             </p>
           </div>
           {loading ? (
-            <div className="group w-full flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark">
+            <div className="group w-full flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark pointer-events-none select-none">
               <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
                 Continue as a Guest
                 <LuArrowRight className="text-lg translate-y-[1px]" />
@@ -150,7 +150,7 @@ function Login() {
           ) : role === "student" ? (
             <button
               onClick={handleLoginStudent}
-              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
+              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark select-none"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
@@ -159,7 +159,7 @@ function Login() {
             <Link
               reloadDocument
               to="/school_dashboard"
-              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark"
+              className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark select-none"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />

@@ -25,12 +25,12 @@ function StudentDashboard() {
       <div
         className={`${
           showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-20 bg-body-bg relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-body-bg relative`}
       >
         {showSidebar && (
           <div
             onClick={closeSidebar}
-            className={`w-full h-full absolute top-0 left-0 bg-black/60 z-30 transition-all duration-300 ease-in-out ${
+            className={`w-full h-full absolute top-0 left-0 bg-black/60 z-20 transition-all duration-300 ease-in-out ${
               animateShowSidebar ? "opacity-100" : "opacity-0"
             }`}
           ></div>

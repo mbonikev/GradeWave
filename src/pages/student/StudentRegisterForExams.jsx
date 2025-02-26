@@ -48,6 +48,7 @@ function StudentRegisterForExams() {
               <h1>Registration Due Date: March 10, 2025</h1>
               <h1>Exam Start Date: July 25, 2025</h1>
               <h1>Exam End Date: July 25, 2025</h1>
+              <h1>Exam Center: To be assigned</h1>
             </div>
           </div>
         </div>

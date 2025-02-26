@@ -13,35 +13,53 @@ import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
-const App = () => (
-  <Router>
-    <LoadingWrapper />
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="*" element={<NotFound />} />
-      <Route path="/student_dashboard" element={<StudentDashboard />} />
-      <Route path="/student_schools" element={<StudentSchools />} />
-      <Route path="/student_register_for_exams" element={<StudentRegisterForExams />} />
-      <Route path="/student_check_results" element={<StudentCheckResults />} />
-      <Route path="/student_notifications" element={<StudentNotifications />} />
-      <Route path="/student_profile" element={<StudentProfile />} />
-      <Route path="/student_settings" element={<StudentSettings />} />
-      <Route path="/school_dashboard" element={<SchoolDashboard />} />
-    </Routes>
-  </Router>
-);
-
-const LoadingWrapper = () => {
-  const [fetching, setFetching] = useState(false);
-  const location = useLocation();
+function App() {
+  const [fetching, setFetching] = useState(true);
+  const [animateFetching, setAnimateFetching] = useState(true);
 
   useEffect(() => {
-    setFetching(true);
-    const timer = setTimeout(() => setFetching(false), 2000); // Simulate loading for 2s
-    return () => clearTimeout(timer); // Cleanup on route change
-  }, [location]);
+    setAnimateFetching(true);
+    setTimeout(() => {
+      setAnimateFetching(false);
+    }, 1500);
+    setTimeout(() => {
+      setFetching(false);
+    }, 2000);
+  }, []);
+  return (
+    <div>
+      {/* loading */}
+      {fetching && <LoadingScreen animateFetching={animateFetching} />}
 
-  return fetching && <LoadingScreen animateFetching={true} />;
-};
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+
+          {/* Student */}
+          <Route path="/student_dashboard" element={<StudentDashboard />} />
+          <Route path="/student_schools" element={<StudentSchools />} />
+          <Route
+            path="/student_register_for_exams"
+            element={<StudentRegisterForExams />}
+          />
+          <Route
+            path="/student_check_results"
+            element={<StudentCheckResults />}
+          />
+          <Route
+            path="/student_notifications"
+            element={<StudentNotifications />}
+          />
+          <Route path="/student_profile" element={<StudentProfile />} />
+          <Route path="/student_settings" element={<StudentSettings />} />
+
+          {/* School */}
+          <Route path="/school_dashboard" element={<SchoolDashboard />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
 
 export default App;

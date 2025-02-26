@@ -62,7 +62,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuChartPie className="text-xl max-lg:text-2xl" />
+          <LuChartPie className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Dashboard</p>
         </Link>
         <SidebarSectionTitle title={"Management"} />
@@ -76,7 +76,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuWallet className="text-xl max-lg:text-2xl" />
+          <LuWallet className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           <p className="text-lightBlackText/70">Wallet</p>
         </Link>
         <Link
@@ -90,7 +90,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <span className="flex items-center gap-2">
-            <LuUsers className="text-xl max-lg:text-2xl" />
+            <LuUsers className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Contacts</p>
           </span>
           <span className="text-xs">234</span>
@@ -105,7 +105,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuHistory className="text-xl max-lg:text-2xl" />
+          <LuHistory className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           <p className="text-lightBlackText/70">History</p>
         </Link>
         <SidebarSectionTitle title={"updates"} />
@@ -120,7 +120,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <span className="flex items-center gap-2">
-            <LuBell className="text-xl max-lg:text-2xl" />
+            <LuBell className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Notifications</p>
           </span>
           <span className="bg-mainColor/10 text-mainColor text-[12px] font-bold h-[24px] flex items-center justify-center aspect-square rounded-full">
@@ -137,7 +137,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <HiOutlineChartBar className="text-xl max-lg:text-2xl" />
+          <HiOutlineChartBar className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           Analysis
         </Link>
         <SidebarSectionTitle title={"Support"} />
@@ -151,7 +151,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuSettings className="text-xl max-lg:text-2xl" />
+          <LuSettings className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           Settings
         </Link>
         <Link
@@ -164,7 +164,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <TbHeadset className="text-xl max-lg:text-2xl" />
+          <TbHeadset className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
           Help Center
         </Link>
       </div>

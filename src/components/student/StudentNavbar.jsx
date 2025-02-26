@@ -7,7 +7,7 @@ import { LogoBlue } from "../../assets";
 
 function StudentNavbar({ title, openSidebar }) {
   return (
-    <div className="flex items-center justify-between text-lightBlackText p-4 sticky top-0 bg-white z-20 border-b border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText px-4 sticky top-0 bg-white z-20 border-b border-stone-100">
       <div className="flex items-center gap-2 max-sm:gap-0">
         <button
           onClick={openSidebar}
@@ -22,11 +22,7 @@ function StudentNavbar({ title, openSidebar }) {
         ) : (
           <div className="flex flex-col max-sm:hidden">
             <h1 className="text-sm font-medium tracking-tight text-lightBlackText/80">
-              Good Morning, Kevin!
-            </h1>
-            <h1 className="text-sm font-medium text-lightBlackText/60">
-              You have <span className="text-mainColor">23 unread</span>{" "}
-              notifications
+              Good Morning, Guest!
             </h1>
           </div>
         )}

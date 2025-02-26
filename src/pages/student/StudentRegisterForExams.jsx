@@ -36,6 +36,12 @@ function StudentRegisterForExams() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
+        {/* content */}
+        <div className="w-full h-fit max-w-[1120px] px-2.5 max-lg:px-5 min-h-[1000px] mx-auto">
+          <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
+            Dashboard
+          </h1>
+        </div>
       </div>
     </div>
   );

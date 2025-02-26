@@ -25,7 +25,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         showSidebar ? "w-[255px] max-sm:w-full" : "w-[225px] max-lg:w-0"
       } transition-all duration-300 z-30 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100 overflow-y-auto`}
     >
-      <div className="flex items-center justify-between px-2 pt-2 gap-1 select-none">
+      <div className="grid grid-cols-3 px-2 pt-2 gap-1 select-none">
         <Link
           to="/"
           className={`w-auto flex-1 min-w-fit max-sm:w-full text-base flex items-center justify-start gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-stone-200/50`}
@@ -37,12 +37,12 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             Guest 28409-0943-49
           </h1>
         </Link>
-        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
+        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-stone-100 rounded-xl">
           <LuQrCode className="text-xl" />
         </button>
         <button
           onClick={closeSidebar}
-          className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-stone-100 rounded-xl"
+          className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
           <LuX className="text-xl" />
         </button>

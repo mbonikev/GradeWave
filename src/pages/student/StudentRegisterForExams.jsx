@@ -41,11 +41,11 @@ function StudentRegisterForExams() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
             Register For Exams
           </h1>
-          <h1 className="text-xl font-bold mb-2 text-text-color/80">Open examinations</h1>
+          <h1 className="text-sm font-normal my-4 text-text-color-weak">Open examinations</h1>
           <div className="w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak p-3 flex items-center">
             <div className="flex flex-col text-sm ">
               <h1 className="text-xl font-bold mb-2 text-text-color/80">National Examination 2025</h1>
-              <h1>
+              {/* <h1>
                 <strong className="font-medium">Registration Status:</strong> In Progress
               </h1>
               <h1>
@@ -59,7 +59,7 @@ function StudentRegisterForExams() {
               </h1>
               <h1>
                 <strong className="font-medium">Exam Center:</strong> Groupe Scolaire Ruyenzi
-              </h1>
+              </h1> */}
             </div>
           </div>
         </div>

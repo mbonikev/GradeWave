@@ -9,7 +9,6 @@ import StudentSchools from "./pages/student/StudentSchools";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 import StudentCheckResults from "./pages/student/StudentCheckResults";
 import StudentNotifications from "./pages/student/StudentNotifications";
-import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 

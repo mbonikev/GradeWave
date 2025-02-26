@@ -22,6 +22,9 @@ function StudentDashboard() {
 
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+      {/* loading */}
+      {fetching && <LoadingScreen animateFetching={animateFetching} />}
+
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

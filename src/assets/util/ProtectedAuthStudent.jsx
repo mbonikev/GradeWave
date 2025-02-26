@@ -1,13 +1,15 @@
-import React from 'react';
-import {useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ProtectedAuthStudent({ children }) {
   const loggedIn = sessionStorage.getItem('loggedInStudent');
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  if (loggedIn === 'true') {
-    return navigate("/student_dashboard");
-  }
+  useEffect(() => {
+    if (loggedIn === 'true') {
+      navigate("/student_dashboard");
+    }
+  }, [loggedIn, navigate]);
 
   return <>{children}</>;
 }

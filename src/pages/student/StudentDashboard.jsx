@@ -74,7 +74,7 @@ function StudentDashboard() {
                   to="/student_dashboard"
                   className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
                 >
-                  view all <LuArrowRight />
+                  View all <LuArrowRight />
                 </Link>
               </div>
             </div>
@@ -85,7 +85,7 @@ function StudentDashboard() {
                   to="/student_dashboard"
                   className="text-sm px-5 text-text-color-weak hover:text-main-color flex items-center  gap-1"
                 >
-                  view all <LuArrowRight />
+                  View all <LuArrowRight />
                 </Link>
               </div>
             </div>

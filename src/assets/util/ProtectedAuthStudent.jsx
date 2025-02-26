@@ -2,7 +2,7 @@ import React from 'react';
 import {useNavigate } from 'react-router-dom';
 
 function ProtectedAuthStudent({ children }) {
-  const loggedIn = sessionStorage.getItem('loggedInStudent') === 'true';
+  const loggedIn = sessionStorage.getItem('loggedInStudent');
   const navigate = useNavigate()
 
   if (!loggedIn) {

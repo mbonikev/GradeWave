@@ -4,7 +4,7 @@ import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
 import { LogoBlue } from "../../assets";
-import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
+import { TbLayoutSidebarLeftExpand, TbLogout } from "react-icons/tb";
 import { RiApps2AddFill, RiApps2AddLine, RiLogoutCircleRLine } from "react-icons/ri";
 import Loading from '../Loading'
 
@@ -52,7 +52,7 @@ function StudentNavbar({ title, openSidebar }) {
           className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-stone-100 hover:bg-stone-100 rounded-xl"
         >
           {!loggingOut ? (
-            <RiLogoutCircleRLine className="text-xl" />
+            <TbLogout className="text-xl" />
           ) : (
             <Loading size="small" />
           )}

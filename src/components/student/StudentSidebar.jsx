@@ -51,7 +51,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none">
         <SidebarSectionTitle title={"General"} />
         <Link
-          to="/"
+          to="/student_dashboard"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
@@ -121,7 +121,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             <LuBell className="text-xl text-text-color-weak/70 max-lg:text-2xl" />
             <p className="text-lightBlackText/70">Notifications</p>
           </span>
-          <span className="text-xs ">234</span>
+          <span className="text-xs ">2</span>
         </Link>
         <Link
           to="/analysis"

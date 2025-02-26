@@ -75,7 +75,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuWallet className="text-xl max-lg:text-2xl" />
-          <p className="text-lightBlackText/70">Check Result</p>
+          <p className="text-lightBlackText/70"></p>
         </Link>
         <Link
           to="/contacts"
@@ -104,7 +104,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuHistory className="text-xl max-lg:text-2xl" />
-          <p className="text-lightBlackText/70">History</p>
+          <p className="text-lightBlackText/70">Register for exams</p>
         </Link>
         <SidebarSectionTitle title={"updates"} />
         <Link

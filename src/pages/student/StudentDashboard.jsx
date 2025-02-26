@@ -76,7 +76,7 @@ function StudentDashboard() {
             <div className="w-full">
               <h1 className="text-xl font-medium tracking-tight mt-16 text-text-color/80 flex items-center justify-between w-full">
                 Grobal Ranking
-                <Link to='/student_dashboard'>view all</Link>
+                <Link to='/student_dashboard text-sm'>view all</Link>
               </h1>
             </div>
           </div>

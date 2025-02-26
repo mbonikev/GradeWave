@@ -44,7 +44,7 @@ function StudentRegisterForExams() {
           <h1 className="text-sm font-normal my-4 text-text-color-weak"># Open Exams</h1>
           <div className="w-full max-w-[340px] max-md:max-w-full mt-3 rounded-2xl ring-1 ring-card-bg-weak shadow-sm p-3 flex items-center">
             <div className="w-full flex flex-col gap-1 text-sm ">
-              <h1 className="text-xl font-medium text-text-color/80">National Examination 2025</h1>
+              <h1 className="text-xl font-bold text-text-color/80">National Examination 2025</h1>
               <h1 className="text-text-color/80">
                 <strong className="font-medium">Registration Status:</strong> <span className="text-green-500 font-bold">In Progress</span>
               </h1>

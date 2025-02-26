@@ -1,14 +1,14 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-function ProtectedRouteStudent({ children }) {
-  const loggedIn = sessionStorage.getItem('loggedInStudent') === 'false' || null;
+function ProtectedAuthStudent({ children }) {
+  const loggedIn = sessionStorage.getItem('loggedInStudent') === 'true';
 
   if (!loggedIn) {
-    return <Redirect to="/" />;
+    return <Redirect to="/student_dashboard" />;
   }
 
   return <>{children}</>;
 }
 
-export default ProtectedRouteStudent;
+export default ProtectedAuthStudent;

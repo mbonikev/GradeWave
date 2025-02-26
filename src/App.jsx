@@ -55,7 +55,9 @@ function App() {
             exact
             path="/"
             element={
+              <ProtectedAuthStudent>
                 <Login />
+              </ProtectedAuthStudent>
             }
           />
 

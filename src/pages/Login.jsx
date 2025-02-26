@@ -16,7 +16,7 @@ function Login() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 400);
+    }, 1500);
   }, [role]);
 
   const handleLoginStudent = () => {

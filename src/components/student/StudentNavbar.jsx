@@ -3,6 +3,7 @@ import { FiCommand } from "react-icons/fi";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { IoCardOutline } from "react-icons/io5";
 import { LuSearch } from "react-icons/lu";
+import { LogoBlue } from "../../assets";
 
 function StudentNavbar({ title, openSidebar }) {
   return (

@@ -44,7 +44,7 @@ function StudentDashboard() {
             <h1 className="text-[28px] font-semibold">Explore</h1>
 
             <div className="w-full h-fit grid grid-cols-3 gap-4 mt-3">
-              <div className="w-full h-full bg-card-bg-weak hover:bg-main-color/20 rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
+              <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
@@ -53,7 +53,7 @@ function StudentDashboard() {
                   <LuArrowUpRight />
                 </div>
               </div>
-              <div className="w-full h-full bg-card-bg-weak hover:bg-main-color/20 rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
+              <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}
@@ -62,7 +62,7 @@ function StudentDashboard() {
                   <LuArrowUpRight />
                 </div>
               </div>
-              <div className="w-full h-full bg-card-bg-weak hover:bg-main-color/20 rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
+              <div className="w-full h-full ring-1 ring-card-bg hover:bg-card-bg-weak rounded-2xl p-4 flex flex-col justify-between items-start gap-0">
                 <h1 className="capitalize text-base font-semibold ">
                   service name
                 </h1>{" "}

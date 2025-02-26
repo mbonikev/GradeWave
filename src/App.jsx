@@ -13,73 +13,35 @@ import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 
-function App() {
-  return (
-    <Router>
-      <LoadingWrapper />
-      <Routes>
-        <Route exact path="/" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
+const App = () => (
+  <Router>
+    <LoadingWrapper />
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="*" element={<NotFound />} />
+      <Route path="/student_dashboard" element={<StudentDashboard />} />
+      <Route path="/student_schools" element={<StudentSchools />} />
+      <Route path="/student_register_for_exams" element={<StudentRegisterForExams />} />
+      <Route path="/student_check_results" element={<StudentCheckResults />} />
+      <Route path="/student_notifications" element={<StudentNotifications />} />
+      <Route path="/student_profile" element={<StudentProfile />} />
+      <Route path="/student_settings" element={<StudentSettings />} />
+      <Route path="/school_dashboard" element={<SchoolDashboard />} />
+    </Routes>
+  </Router>
+);
 
-        {/* Student */}
-        <Route path="/student_dashboard" element={<StudentDashboard />} />
-        <Route path="/student_schools" element={<StudentSchools />} />
-        <Route
-          path="/student_register_for_exams"
-          element={<StudentRegisterForExams />}
-        />
-        <Route
-          path="/student_check_results"
-          element={<StudentCheckResults />}
-        />
-        <Route
-          path="/student_notifications"
-          element={<StudentNotifications />}
-        />
-        <Route path="/student_profile" element={<StudentProfile />} />
-        <Route path="/student_settings" element={<StudentSettings />} />
-
-        {/* School */}
-        <Route path="/school_dashboard" element={<SchoolDashboard />} />
-      </Routes>
-    </Router>
-  );
-}
-
-// Wrapper to show loading screen based on route change
 const LoadingWrapper = () => {
   const [fetching, setFetching] = useState(false);
-  const [animateFetching, setAnimateFetching] = useState(false);
-  const location = useLocation(); // Now inside the Router context
+  const location = useLocation();
 
   useEffect(() => {
-    // Show loading screen when the route changes
     setFetching(true);
-    setAnimateFetching(true);
+    const timer = setTimeout(() => setFetching(false), 2000); // Simulate loading for 2s
+    return () => clearTimeout(timer); // Cleanup on route change
+  }, [location]);
 
-    // Simulate loading screen animation
-    const timer = setTimeout(() => {
-      setAnimateFetching(false); // End animation after 1.5s
-    }, 1500);
-
-    // Simulate data fetching and hide the loading screen after 2s
-    const fetchTimer = setTimeout(() => {
-      setFetching(false);
-    }, 2000);
-
-    // Clean up timers on component unmount or before the next route change
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(fetchTimer);
-    };
-  }, [location]); // Dependency on location ensures this runs when the route changes
-
-  return (
-    <>
-      {/* Show loading screen when fetching is true */}
-      {fetching && <LoadingScreen animateFetching={animateFetching} />}
-    </>
-  );
+  return fetching && <LoadingScreen animateFetching={true} />;
 };
 
 export default App;

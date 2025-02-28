@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import StudentDashboard from "./pages/student/StudentDashboard";
 import SchoolDashboard from "./pages/schools/SchoolDashboard";
-import StudentSchools from "./pages/student/StudentSchools";
+import StudentPapers from "./pages/student/StudentPapers";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 import StudentCheckResults from "./pages/student/StudentCheckResults";
 import StudentNotifications from "./pages/student/StudentNotifications";
@@ -32,7 +32,7 @@ function App() {
   // List of routes to protect
   const protectedRoutes = [
     { path: "/student_dashboard", element: <StudentDashboard /> },
-    { path: "/student_schools", element: <StudentSchools /> },
+    { path: "/student_past_papers", element: <StudentPapers /> },
     {
       path: "/student_register_for_exams",
       element: <StudentRegisterForExams />,

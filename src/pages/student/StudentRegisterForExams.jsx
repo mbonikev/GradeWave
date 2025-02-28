@@ -20,12 +20,12 @@ function StudentRegisterForExams() {
     }, 100);
   };
   return (
-    <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+    <div className="w-full h-fit overflow-y-auto flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
           showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-full min-h-svh flex flex-col z-10 bg-body-bg relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-svh flex flex-col z-10 overflow-y-auto relative bg-body-bg relative`}
       >
         {showSidebar && (
           <div
@@ -53,7 +53,7 @@ function StudentRegisterForExams() {
                 </h1>
                 <h1 className="text-text-color/50">
                   <strong className="font-medium">Registration Status:</strong>{" "}
-                  <span className="text-green-500 font-bold">In Progress</span>
+                  <span className="text-green-700/80 font-medium">In Progress</span>
                 </h1>
 
                 <Link
@@ -84,7 +84,7 @@ function StudentRegisterForExams() {
                 </h1>
                 <h1 className="text-text-color/50">
                   <strong className="font-medium">Registration Status:</strong>{" "}
-                  <span className="text-green-500 font-bold">In Progress</span>
+                  <span className="text-green-700/80 font-medium">In Progress</span>
                 </h1>
 
                 <Link

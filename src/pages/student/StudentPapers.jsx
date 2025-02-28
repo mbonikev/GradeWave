@@ -4,7 +4,7 @@ import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 
-function StudentSchools() {
+function StudentPapers() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const openSidebar = () => {
@@ -41,4 +41,4 @@ function StudentSchools() {
   );
 }
 
-export default StudentSchools;
+export default StudentPapers;

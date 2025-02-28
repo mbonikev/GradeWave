@@ -15,14 +15,14 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import { Avatar, Space } from "antd";
 import SidebarSectionTitle from "./SidebarSectionTitle";
-import { TbHeadset } from "react-icons/tb";
+import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
-import { HiOutlineChartBar } from "react-icons/hi";
+import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";
 import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
-import { GrAnnounce } from "react-icons/gr";
+import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -75,20 +75,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
 
         {/* section */}
-        <SidebarSectionTitle title={"School"} />
-        <Link
-          to="/student_schools"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/student_schools"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <LuSchool className="text-xl max-lg:text-2xl" />
-          My Schools
-        </Link>
+        <SidebarSectionTitle title={"Exams"} />
         <Link
           to="/student_register_for_exams"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
@@ -113,7 +100,20 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          Check Result
+          Check Results
+        </Link>
+        <Link
+          to="/student_past_papers"
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
+          ${
+            location.pathname === "/student_past_papers"
+              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              : "text-text-color/85  hover:bg-card-bg-weak"
+          }
+          `}
+        >
+          <GrDocumentText className="text-xl max-lg:text-2xl" />
+          Past Papers
         </Link>
 
         {/* section */}

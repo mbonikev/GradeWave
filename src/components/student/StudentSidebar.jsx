@@ -65,7 +65,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_dashboard"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -81,7 +81,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_register_for_exams"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -94,7 +94,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_check_results"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -107,7 +107,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_past_papers"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -123,7 +123,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_notifications"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -136,25 +136,25 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         </Link>
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
-        <Link
+        {/* <Link
           to="/student_profile"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_profile"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
         >
           <PiUserBold className="text-xl max-lg:text-2xl" />
           Profile
-        </Link>
+        </Link> */}
         <Link
           to="/student_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/student_settings"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -170,7 +170,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"
-              ? "active_sidebar_link bg-card-bg-weak text-main-color"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}

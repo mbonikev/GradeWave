@@ -40,7 +40,7 @@ function StudentCheckResults() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
-        <div className="w-full h-fit max-w-[1120px] px-2.5 max-lg:px-5 min-h-[1000px] mx-auto">
+        <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
           <h1 className="text-[28px] font-bold text-center tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
             National Examination Results
           </h1>

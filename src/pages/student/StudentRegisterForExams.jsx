@@ -25,7 +25,7 @@ function StudentRegisterForExams() {
       <div
         className={`${
           showSidebar && ""
-        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-svh flex flex-col z-10 overflow-y-auto relative bg-body-bg relative`}
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-svh flex flex-col z-10 overflow-y-auto relative bg-body-bg`}
       >
         {showSidebar && (
           <div

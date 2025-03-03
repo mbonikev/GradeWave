@@ -23,6 +23,7 @@ import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
 import { GrAnnounce, GrDocumentText } from "react-icons/gr";
+import { BiBox } from "react-icons/bi";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -112,8 +113,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <GrDocumentText className="text-xl max-lg:text-2xl" />
-          Past Papers
+          <BiBox className="text-xl max-lg:text-2xl" />
+          Resources
         </Link>
 
         {/* section */}

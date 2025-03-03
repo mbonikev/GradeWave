@@ -46,10 +46,13 @@ function StudentDashboard() {
 
           <div className="w-full h-fit grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 mt-3 py-1">
             {[
-              { name: "Check Results", path: "/student_dashboard" },
-              { name: "Register For Exams", path: "/student_dashboard" },
+              { name: "Check Results", path: "/student_check_results" },
+              {
+                name: "Register For Exams",
+                path: "/student_register_for_exams",
+              },
               { name: "Submit a complaint", path: "/student_dashboard" },
-              { name: "Resources", path: "/student_dashboard" },
+              { name: "Resources", path: "/student_past_papers" },
             ].map((service, index) => (
               <Link
                 to={service.path}
@@ -65,8 +68,6 @@ function StudentDashboard() {
               </Link>
             ))}
           </div>
-
-
         </div>
       </div>
     </div>

@@ -36,6 +36,11 @@ function StudentPapers() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
+        <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto">
+          <h1 className="text-[28px] font-bold text-left tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
+            Past Papers
+          </h1>
+        </div>
       </div>
     </div>
   );

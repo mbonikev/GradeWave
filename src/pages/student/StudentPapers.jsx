@@ -42,7 +42,7 @@ function StudentPapers() {
       }
     };
 
-    getExmas()
+    getExmas();
   }, [level]);
 
   return (
@@ -131,7 +131,9 @@ function StudentPapers() {
                   </div>
                 ))
               : results.map((exam, index) => (
-                  <div
+                  <Link
+                    to={exam.url}
+                    target="_blank"
                     key={index}
                     className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
                   >
@@ -139,7 +141,7 @@ function StudentPapers() {
                       <FaFilePdf className="text-2xl text-red-600/70" />
                     </div>
                     <div className="py-3 flex-1">{exam.name}</div>
-                  </div>
+                  </Link>
                 ))}
           </div>
         </div>

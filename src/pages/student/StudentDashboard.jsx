@@ -92,7 +92,7 @@ function StudentDashboard() {
                   key={index}
                   className="w-full h-fit p-4 bg-card-bg-weak/70 rounded-xl"
                 >
-                  <div className="w-full flex items-center gap-2 mb-3">
+                  <div className="w-full flex items-center gap-4 mb-3">
                     <div className="size-10 rounded-full bg-main-color p-1 aspect-square">
                       <img
                         src={annoucement.pfp}
@@ -106,7 +106,7 @@ function StudentDashboard() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className="text-sm">{annoucement.message}</h1>
+                  <h1 className="text-sm pl-14">{annoucement.message}</h1>
                   <div className="flex items-center justify-end flex-wrap mt-2">
                     <button title="share" className="outline-none border-none size-9 rounded-full text-text-color-weak hover:text-main-color flex items-center justify-center">
                       <LuShare2 className="text-lg" />

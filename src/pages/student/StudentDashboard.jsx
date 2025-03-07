@@ -78,7 +78,7 @@ function StudentDashboard() {
             <div className="w-full h-fit flex flex-col gap-4 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 text-text-color/80 flex items-center justify-between">
                 Announcements
-                <Link to="/student_notifications"></Link>
+                <Link to="/student_notifications" className="text-text-color-weak/60 hover:text-main-color">View all</Link>
               </h1>
               {[
                 {

@@ -51,7 +51,7 @@ function StudentSettings() {
           <div className="w-full flex-1 overflow-y-auto p-0 relative">
             <div className="w-full h-full flex flex-col">
               {/* tabs */}
-              <div className="h-[45px] max-md:h-[55px] hidden_scrollbar w-full overflow-x-auto border-b px-5 border-stone-100 flex flex-row gap-0">
+              <div className="h-[45px] max-md:h-[55px] hidden_scrollbar w-full overflow-x-auto border-b border-stone-100 flex flex-row gap-0">
                 {tabs.map((tab, index) => (
                   <button
                     key={index}

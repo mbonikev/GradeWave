@@ -72,7 +72,15 @@ function StudentDashboard() {
             <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
               Announcements
             </h1>
-            {/* {[{pfp: "", name: "Admin", publishedAt: "24/02/2025", message: "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue submit a "}]} */}
+            {[
+              {
+                pfp: "",
+                name: "Admin",
+                publishedAt: "24/02/2025",
+                message:
+                  "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue, reach out via email.",
+              },
+            ]}
           </div>
         </div>
       </div>

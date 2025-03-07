@@ -16,10 +16,10 @@ function BasicInfo() {
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h1 className="text-base font-medium">Kevin Dermot</h1>
+          <h1 className="text-lg leading-5 font-medium">Guest</h1>
           <Link
             to="/"
-            className="text-sm font-medium text-mainColor hover:underline"
+            className="text-sm font-medium text-main-color hover:underline"
           >
             Change photo
           </Link>

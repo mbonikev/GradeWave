@@ -45,7 +45,7 @@ function BasicInfo() {
           />
         </div>
         <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">Country</h1>
+          <h1 className="text-sm font-normal">Current School</h1>
           <input
             type="text"
             name="country"

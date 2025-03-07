@@ -151,7 +151,7 @@ function StudentDashboard() {
                 <GiSportMedal className="text-4xl text-stone-400" />
                 <h1 className="flex-1 text-left text-sm flex flex-col gap-0.5">
                   <span>Ineza Raissa</span>
-                  <span className="text-xs text-text-color-weak/60">MPC</span>
+                  <span className="text-xs text-text-color-weak/60">Software Development</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>

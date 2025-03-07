@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IntroGif, Pfp } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import { LuShare2 } from "react-icons/lu";
 
 function StudentNotifications() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -38,13 +39,10 @@ function StudentNotifications() {
         <StudentNavbar openSidebar={openSidebar} />
         <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto pb-10">
           <h1 className="text-[28px] font-bold text-left tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
-            Past Papers
+            Announcements
           </h1>
 
           <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-            <h1 className="text-base font-medium tracking-tight mt-3 mb-2 text-text-color/80 flex items-center justify-start gap-3">
-              Announcements
-            </h1>
             {[
               {
                 pfp: Pfp,

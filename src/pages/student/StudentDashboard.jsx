@@ -139,9 +139,10 @@ function StudentDashboard() {
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 7,543
               </h1>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl p-3">
                 <GiTrophy className="text-4xl text-yellow-600" />
                 <h1>Mugisha Kenny</h1>
+                <h1>1st</h1>
               </div>
             </div>
           </div>

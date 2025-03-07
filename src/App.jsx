@@ -9,7 +9,6 @@ import StudentPapers from "./pages/student/StudentPapers";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 import StudentCheckResults from "./pages/student/StudentCheckResults";
 import StudentNotifications from "./pages/student/StudentNotifications";
-import StudentProfile from "./pages/student/StudentProfile";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
@@ -39,7 +38,6 @@ function App() {
     },
     { path: "/student_check_results", element: <StudentCheckResults /> },
     { path: "/student_notifications", element: <StudentNotifications /> },
-    { path: "/student_profile", element: <StudentProfile /> },
     { path: "/student_settings", element: <StudentSettings /> },
     { path: "/school_dashboard", element: <SchoolDashboard /> },
   ];

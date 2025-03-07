@@ -16,7 +16,7 @@ function BasicInfo() {
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h1 className="text-lg leading-5 font-medium">Guest</h1>
+          <h1 className="text-lg leading-6 font-medium">Guest</h1>
           <Link
             to="/"
             className="text-sm font-medium text-main-color hover:underline"

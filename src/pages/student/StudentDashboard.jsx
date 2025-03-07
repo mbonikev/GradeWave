@@ -86,7 +86,7 @@ function StudentDashboard() {
                   name: "Admin",
                   publishedAt: "24/02/2025",
                   message:
-                    "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue, reach out via email.",
+                    "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
                 },
               ].map((annoucement, index) => (
                 <div
@@ -107,7 +107,7 @@ function StudentDashboard() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className="text-sm ">{annoucement.message}</h1>
+                  <h1 className="text-sm text-text-color/90">{annoucement.message}</h1>
                   <div className="flex items-center justify-end flex-wrap mt-2">
                     <button title="share" className="outline-none border-none p-1 text-text-color-weak hover:text-main-color flex items-center justify-center">
                       <LuShare2 className="text-lg" />

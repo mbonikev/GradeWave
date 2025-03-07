@@ -43,28 +43,33 @@ function StudentSettings() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
+        <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto pb-10">
+          <h1 className="text-[28px] font-bold text-left tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
+            Settings
+          </h1>
 
-        <div className="w-full flex-1 overflow-y-auto p-0 relative">
-          <div className="w-full h-full flex flex-col">
-            {/* tabs */}
-            <div className="h-[45px] max-md:h-[55px] hidden_scrollbar w-full overflow-x-auto border-b px-5 border-stone-100 flex flex-row gap-0">
-              {tabs.map((tab, index) => (
-                <button
-                  key={index}
-                  className={`w-fit h-full whitespace-nowrap px-3 text-sm font-medium transition duration-200 ${
-                    activeTab === tab.title
-                      ? "border-b-2 border-mainColor text-lightBlackText/80"
-                      : "border-b-0 border-transparent text-lightBlackText/50"
-                  }`}
-                  onClick={() => setActiveTab(tab.title)}
-                >
-                  {tab.title}
-                </button>
-              ))}
-            </div>
-            {/* tab contents */}
-            <div className="w-full h-fit flex-1 overflow-y-auto">
-              {tabs.find((tab) => tab.title === activeTab)?.element}
+          <div className="w-full flex-1 overflow-y-auto p-0 relative">
+            <div className="w-full h-full flex flex-col">
+              {/* tabs */}
+              <div className="h-[45px] max-md:h-[55px] hidden_scrollbar w-full overflow-x-auto border-b px-5 border-stone-100 flex flex-row gap-0">
+                {tabs.map((tab, index) => (
+                  <button
+                    key={index}
+                    className={`w-fit h-full whitespace-nowrap px-3 text-sm font-medium transition duration-200 ${
+                      activeTab === tab.title
+                        ? "border-b-2 border-mainColor text-lightBlackText/80"
+                        : "border-b-0 border-transparent text-lightBlackText/50"
+                    }`}
+                    onClick={() => setActiveTab(tab.title)}
+                  >
+                    {tab.title}
+                  </button>
+                ))}
+              </div>
+              {/* tab contents */}
+              <div className="w-full h-fit flex-1 overflow-y-auto">
+                {tabs.find((tab) => tab.title === activeTab)?.element}
+              </div>
             </div>
           </div>
         </div>

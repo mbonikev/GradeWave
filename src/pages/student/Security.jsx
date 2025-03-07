@@ -26,7 +26,7 @@ function Security() {
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
           />
         </div>
-        <button className="h-[35px] mt-1 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-mainColor text-white text-sm font-medium">
+        <button className="h-[35px] mt-1 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
           <LuCheck className="text-lg" />
           Submit
         </button>

@@ -27,7 +27,7 @@ function BasicInfo() {
       </div>
       <form className="w-full flex flex-col gap-4 mt-2 max-w-[300px] max-md:max-w-full">
         <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">Username</h1>
+          <h1 className="text-sm font-normal">Full Names</h1>
           <input
             type="text"
             name="username"

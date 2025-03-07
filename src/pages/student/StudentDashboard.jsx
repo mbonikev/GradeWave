@@ -58,8 +58,8 @@ function StudentDashboard() {
                 name: "Register For Exams",
                 path: "/student_register_for_exams",
               },
-              { name: "Get Help", path: "/student_dashboard" },
               { name: "Resources", path: "/student_past_papers" },
+              { name: "Get Help", path: "/student_dashboard" },
             ].map((service, index) => (
               <Link
                 to={service.path}
@@ -145,9 +145,7 @@ function StudentDashboard() {
                 <GiSportMedal className="text-4xl text-stone-400" />
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Ineza Raissa</span>
-                  <span className="text-sm text-text-color-weak/80">
-                    MCE
-                  </span>
+                  <span className="text-sm text-text-color-weak/80">MCE</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>

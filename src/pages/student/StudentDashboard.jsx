@@ -79,12 +79,6 @@ function StudentDashboard() {
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-start gap-3">
                 Announcements
-                <Link
-                  to="/student_notifications"
-                  className="text-text-color-weak/60 text-xs hover:text-main-color"
-                >
-                  View all
-                </Link>
               </h1>
               {[
                 {
@@ -151,7 +145,9 @@ function StudentDashboard() {
                 <GiSportMedal className="text-4xl text-stone-400" />
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Ineza Raissa</span>
-                  <span className="text-sm text-text-color-weak/80">Software Development</span>
+                  <span className="text-sm text-text-color-weak/80">
+                    Software Development
+                  </span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>

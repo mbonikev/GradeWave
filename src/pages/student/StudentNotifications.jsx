@@ -83,7 +83,7 @@ function StudentNotifications() {
                     <LuShare2 className="text-lg" />
                   </button>
                 </div>
-                <h1 className="text-sm text-text-color/90 line-clamp-2">
+                <h1 className="text-sm text-text-color/90 line-clamp-2 max-w-[500px]">
                   {annoucement.message}
                 </h1>
               </div>

@@ -146,7 +146,7 @@ function StudentDashboard() {
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Ineza Raissa</span>
                   <span className="text-sm text-text-color-weak/80">
-                    Software Development
+                    MCE
                   </span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>

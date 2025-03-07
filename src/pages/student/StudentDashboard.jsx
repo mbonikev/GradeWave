@@ -88,10 +88,10 @@ function StudentDashboard() {
                   className="w-full h-fit p-4 bg-card-bg-weak rounded-xl"
                 >
                   <div className="w-full flex items-center">
-                    <div className="w-fit h-fit rounded-full bg-main-color p-2 aspect-square">
+                    <div className="size-10 rounded-full bg-main-color p-1 aspect-square">
                       <img
                         src={annoucement.pfp}
-                        className="size-9 rounded-full"
+                        className="w-full h-full object-cover rounded-full"
                       />
                     </div>
                     <div className="w-full flex items-start justify-center flex-col"></div>

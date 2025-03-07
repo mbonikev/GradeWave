@@ -75,8 +75,8 @@ function StudentDashboard() {
             ))}
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3 py-1">
-            <div className="w-full h-fit flex flex-col gap-4 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 text-text-color/80 flex items-center justify-between">
+            <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
                 Announcements
                 <Link to="/student_notifications" className="text-text-color-weak/60 text-sm hover:text-main-color">View all</Link>
               </h1>
@@ -98,7 +98,7 @@ function StudentDashboard() {
               ].map((annoucement, index) => (
                 <div
                   key={index}
-                  className="w-full h-fit p-4 bg-card-bg-weak rounded-2xl"
+                  className="w-full h-fit p-4 hover:bg-card-bg-weak rounded-2xl"
                 >
                   <div className="w-full flex items-center gap-3 mb-3">
                     <div className="size-11 rounded-full bg-main-color p-1 aspect-square">

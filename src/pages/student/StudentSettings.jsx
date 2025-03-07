@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import BasicInfo from "./BasicInfo";
+import Security from "./Security";
 
 function StudentSettings() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -23,8 +25,6 @@ function StudentSettings() {
   const tabs = [
     { title: "Basic info", element: <BasicInfo /> },
     { title: "Security", element: <Security /> },
-    { title: "Appearance", element: <Appearance /> },
-    { title: "Default Currency", element: <DefaultCurrency /> },
   ];
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">

@@ -57,8 +57,8 @@ function StudentSettings() {
                     key={index}
                     className={`w-fit h-full whitespace-nowrap px-3 text-sm font-medium transition duration-200 ${
                       activeTab === tab.title
-                        ? "border-b-2 border-mainColor text-lightBlackText/80"
-                        : "border-b-0 border-transparent text-lightBlackText/50"
+                        ? "border-b-2 border-main-color text-text-color"
+                        : "border-b-0 border-transparent text-text-color-weak"
                     }`}
                     onClick={() => setActiveTab(tab.title)}
                   >

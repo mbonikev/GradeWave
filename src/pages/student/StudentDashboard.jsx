@@ -77,7 +77,7 @@ function StudentDashboard() {
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3 py-1">
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-start gap-3">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-2 text-text-color/80 flex items-center justify-start gap-3">
                 Announcements
               </h1>
               {[
@@ -120,7 +120,7 @@ function StudentDashboard() {
                       <LuShare2 className="text-lg" />
                     </button>
                   </div>
-                  <h1 className="text-sm text-text-color/90">
+                  <h1 className="text-sm text-text-color/90 line-clamp-2">
                     {annoucement.message}
                   </h1>
                 </div>

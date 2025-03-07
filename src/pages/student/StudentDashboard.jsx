@@ -141,7 +141,10 @@ function StudentDashboard() {
               </h1>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                 <GiTrophy className="text-4xl text-[#e5a953]" />
-                <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
+                <h1 className="flex-1 text-left text-sm flex flex-col">
+                  <span>Mugisha Kenny</span>
+                  <span className="text-sm text-text-color-weak/60">MPC</span>
+                </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">1st</h1>
               </div><div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                 <GiSportMedal className="text-4xl text-stone-400" />

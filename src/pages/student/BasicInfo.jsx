@@ -11,7 +11,7 @@ function BasicInfo() {
       <div className="w-fit flex items-center gap-3 text-lightBlackText/80">
         <div className="h-[55px] aspect-square rounded-full overflow-hidden">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jCoAOgRVSf64y8kj2iEpwweXcsRpSq7YYw&s"
+            src="https://images.generated.photos/8XNA1ro5eHGfTVPn4AAkftQu8vOePXx4w7ZTb9AGABc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjU0NDIzLmpwZw.jpg"
             className="h-full w-full object-cover"
           />
         </div>

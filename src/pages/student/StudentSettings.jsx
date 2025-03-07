@@ -19,6 +19,13 @@ function StudentSettings() {
       setShowSidebar(false);
     }, 100);
   };
+  const [activeTab, setActiveTab] = useState("Basic info");
+  const tabs = [
+    { title: "Basic info", element: <BasicInfo /> },
+    { title: "Security", element: <Security /> },
+    { title: "Appearance", element: <Appearance /> },
+    { title: "Default Currency", element: <DefaultCurrency /> },
+  ];
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />

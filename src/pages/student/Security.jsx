@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Security() {
   return (
-    <div className="p-8 max-md:p-5 w-full h-fit flex flex-col gap-5 text-lightBlackText/80">
+    <div className="py-5 px-3 w-full h-fit flex flex-col gap-5 text-lightBlackText/80">
       <form className="w-full flex flex-col gap-4 max-w-[300px] max-md:max-w-full">
         {/* section title */}
         <h1 className="text-lg ">Change Password</h1>

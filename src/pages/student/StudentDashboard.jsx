@@ -113,7 +113,7 @@ function StudentDashboard() {
                       />
                     </div>
                     <div className="w-full flex items-start justify-center flex-col">
-                      <h1>{annoucement.name}</h1>
+                      <h1 className="text-sm">{annoucement.name}</h1>
                       <h1 className="text-xs text-text-color-weak">
                         {annoucement.publishedAt}
                       </h1>

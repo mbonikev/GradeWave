@@ -104,7 +104,7 @@ function StudentDashboard() {
               ].map((annoucement, index) => (
                 <div
                   key={index}
-                  className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
+                  className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak ring-1 ring-card-bg-weak rounded-2xl"
                 >
                   <div className="w-full flex items-center justify-start gap-3 mb-3">
                     <div className="size-9 rounded-full bg-main-color p-1 aspect-square">
@@ -142,16 +142,16 @@ function StudentDashboard() {
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                 <GiTrophy className="text-4xl text-[#e5a953]" />
                 <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
-                <h1 className="text-text-color-weak/70">1st</h1>
+                <h1 className="text-text-color-weak text-sm font-bold">1st</h1>
               </div><div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                 <GiSportMedal className="text-4xl text-stone-400" />
                 <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
-                <h1 className="text-text-color-weak/70">2nd</h1>
+                <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                 <GiSportMedal className="text-4xl text-[#e3a782]" />
                 <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
-                <h1 className="text-text-color-weak/70">3rd</h1>
+                <h1 className="text-text-color-weak text-sm font-bold">3rd</h1>
               </div>
             </div>
           </div>

@@ -141,25 +141,25 @@ function StudentDashboard() {
               </h1>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
                 <GiTrophy className="text-4xl text-[#e5a953]" />
-                <h1 className="flex-1 text-left text-sm flex flex-col gap-0.5">
+                <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Mugisha Kenny</span>
-                  <span className="text-xs text-text-color-weak/60">MPC</span>
+                  <span className="text-sm text-text-color-weak/80">MPC</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">1st</h1>
               </div>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
                 <GiSportMedal className="text-4xl text-stone-400" />
-                <h1 className="flex-1 text-left text-sm flex flex-col gap-0.5">
+                <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Ineza Raissa</span>
-                  <span className="text-xs text-text-color-weak/60">Software Development</span>
+                  <span className="text-sm text-text-color-weak/80">Software Development</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
                 <GiSportMedal className="text-4xl text-[#e3a782]" />
-                <h1 className="flex-1 text-left text-sm flex flex-col gap-0.5">
+                <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Uwase abatoni Stecy</span>
-                  <span className="text-xs text-text-color-weak/60">HEG</span>
+                  <span className="text-sm text-text-color-weak/80">HEG</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">3rd</h1>
               </div>

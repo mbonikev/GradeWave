@@ -64,7 +64,7 @@ function BasicInfo() {
         </div>
         <button className="h-[35px] mt-1 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
         <LuCheck className="text-lg" />
-          Save
+          Save Changes
         </button>
       </form>
     </div>

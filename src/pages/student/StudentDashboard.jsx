@@ -81,7 +81,15 @@ function StudentDashboard() {
                 message:
                   "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue, reach out via email.",
               },
-            ]}
+            ].map((annoucement, index) => (
+              <div useCallback(
+                () => {
+                  first
+                },
+                [second],
+              )
+              ></div>
+            ))}
           </div>
         </div>
       </div>

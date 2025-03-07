@@ -58,7 +58,7 @@ function StudentDashboard() {
                 name: "Register For Exams",
                 path: "/student_register_for_exams",
               },
-              { name: "Submit a complaint", path: "/student_dashboard" },
+              { name: "Get Help", path: "/student_dashboard" },
               { name: "Resources", path: "/student_past_papers" },
             ].map((service, index) => (
               <Link

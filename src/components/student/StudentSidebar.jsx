@@ -45,9 +45,9 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
             Guest
           </h1>
         </Link>
-        <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-card-bg-weak rounded-xl">
+        {/* <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-card-bg-weak rounded-xl">
           <LuQrCode className="text-xl" />
-        </button>
+        </button> */}
         <button
           onClick={closeSidebar}
           className="text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-card-bg-weak rounded-xl"

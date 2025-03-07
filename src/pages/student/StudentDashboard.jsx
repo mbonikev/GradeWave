@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
-import { LuArrowRight, LuArrowUpRight, LuShare } from "react-icons/lu";
+import {
+  LuArrowRight,
+  LuArrowUpRight,
+  LuShare,
+  LuShare2,
+} from "react-icons/lu";
 import { Pfp } from "../../assets";
-import { IoIosShare } from "react-icons/io";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -104,8 +108,7 @@ function StudentDashboard() {
                   </div>
                   <h1 className="text-base">{annoucement.message}</h1>
                   <div className="flex items-center justify-start flex-wrap">
-                    <IoIosShare />
-                    
+                    <LuShare2 />
                   </div>
                 </div>
               ))}

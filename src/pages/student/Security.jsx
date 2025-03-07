@@ -46,7 +46,7 @@ function Security() {
           <input
             type="password"
             name="password"
-            placeholder="enter your password"
+            placeholder="Enter your password"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
           />
         </div>

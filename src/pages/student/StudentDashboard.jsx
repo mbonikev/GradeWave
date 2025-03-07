@@ -149,7 +149,7 @@ function StudentDashboard() {
                 <h1 className="text-text-color-weak/70">1st</h1>
               </div>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
-                <GiSportMedal className="text-4xl text-orange-300" />
+                <GiSportMedal className="text-4xl text-[#e3a782]" />
                 <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
                 <h1 className="text-text-color-weak/70">1st</h1>
               </div>

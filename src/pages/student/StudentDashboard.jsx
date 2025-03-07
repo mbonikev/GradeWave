@@ -109,7 +109,7 @@ function StudentDashboard() {
                   </div>
                   <h1 className="text-sm pl-[52px]">{annoucement.message}</h1>
                   <div className="flex items-center justify-end flex-wrap mt-2">
-                    <button title="share" className="outline-none border-none size-9 rounded-full text-text-color-weak hover:text-main-color flex items-center justify-center">
+                    <button title="share" className="outline-none border-none text-text-color-weak hover:text-main-color flex items-center justify-center">
                       <LuShare2 className="text-lg" />
                     </button>
                   </div>

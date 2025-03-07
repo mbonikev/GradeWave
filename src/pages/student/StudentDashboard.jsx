@@ -91,7 +91,7 @@ function StudentDashboard() {
               ].map((annoucement, index) => (
                 <div
                   key={index}
-                  className="w-full h-fit p-4 bg-card-bg-weak/70 rounded-xl"
+                  className="w-full h-fit p-4 bg-card-bg-weak rounded-2xl"
                 >
                   <div className="w-full flex items-center gap-3 mb-3">
                     <div className="size-11 rounded-full bg-main-color p-1 aspect-square">
@@ -109,7 +109,7 @@ function StudentDashboard() {
                   </div>
                   <h1 className="text-sm pl-[52px]">{annoucement.message}</h1>
                   <div className="flex items-center justify-end flex-wrap mt-2">
-                    <button title="share" className="outline-none border-none text-text-color-weak hover:text-main-color flex items-center justify-center">
+                    <button title="share" className="outline-none border-none p-1 text-text-color-weak hover:text-main-color flex items-center justify-center">
                       <LuShare2 className="text-lg" />
                     </button>
                   </div>

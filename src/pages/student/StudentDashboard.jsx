@@ -70,25 +70,31 @@ function StudentDashboard() {
             ))}
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-4 mt-3 py-1">
-          <div className="w-full h-fit flex flex-col gap-4 mt-3 py-1">
-            <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
-              Announcements
-            </h1>
-            {[
-              {
-                pfp: Pfp,
-                name: "Admin",
-                publishedAt: "24/02/2025",
-                message:
-                  "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue, reach out via email.",
-              },
-            ].map((annoucement, index) => (
-              <div key={index} className="w-full h-fit p-4 bg-card-bg-weak rounded-xl">
-                <div className="w-full flex items-center"></div>
-              </div>
-            ))}
+            <div className="w-full h-fit flex flex-col gap-4 mt-3 py-1">
+              <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
+                Announcements
+              </h1>
+              {[
+                {
+                  pfp: Pfp,
+                  name: "Admin",
+                  publishedAt: "24/02/2025",
+                  message:
+                    "Reminder: students 4 days left to register for exams, the applications are closing on 28th February, 2025. If you have any issue, reach out via email.",
+                },
+              ].map((annoucement, index) => (
+                <div
+                  key={index}
+                  className="w-full h-fit p-4 bg-card-bg-weak rounded-xl"
+                >
+                  <div className="w-full flex items-center">
+                    <img src={annoucement.pfp} className="size-9" />
+                    <div className="w-full flex items-start justify-center flex-col"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

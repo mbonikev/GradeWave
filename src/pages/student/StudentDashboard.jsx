@@ -70,7 +70,7 @@ function StudentDashboard() {
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-4 mt-3 py-1">
             <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
-              Dashboard
+              Announcements
             </h1>
           </div>
         </div>

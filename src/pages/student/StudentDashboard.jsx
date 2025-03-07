@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 import { LuArrowRight, LuArrowUpRight } from "react-icons/lu";
+import { Pfp } from "../../assets";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -74,7 +75,7 @@ function StudentDashboard() {
             </h1>
             {[
               {
-                pfp: "",
+                pfp: Pfp,
                 name: "Admin",
                 publishedAt: "24/02/2025",
                 message:

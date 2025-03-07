@@ -74,7 +74,7 @@ function StudentDashboard() {
               </Link>
             ))}
           </div>
-          <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3 py-1">
+          <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-10 mt-3 py-1">
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
                 Announcements
@@ -130,6 +130,11 @@ function StudentDashboard() {
                   </h1>
                 </div>
               ))}
+            </div>
+            <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
+                Glrobal Ranking 2024
+              </h1>
             </div>
           </div>
         </div>

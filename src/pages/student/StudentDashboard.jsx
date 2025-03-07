@@ -79,12 +79,12 @@ function StudentDashboard() {
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
                 Announcements
-                {/* <Link
+                <Link
                   to="/student_notifications"
                   className="text-text-color-weak/60 text-sm hover:text-main-color"
                 >
                   View all
-                </Link> */}
+                </Link>
               </h1>
               {[
                 {
@@ -139,7 +139,7 @@ function StudentDashboard() {
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 7,543 Students
               </h1>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
+              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
                 <GiTrophy className="text-4xl text-[#e5a953]" />
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Mugisha Kenny</span>
@@ -147,7 +147,7 @@ function StudentDashboard() {
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">1st</h1>
               </div>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
+              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
                 <GiSportMedal className="text-4xl text-stone-400" />
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Ineza Raissa</span>
@@ -155,7 +155,7 @@ function StudentDashboard() {
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
               </div>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3.5 mb-1">
+              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
                 <GiSportMedal className="text-4xl text-[#e3a782]" />
                 <h1 className="flex-1 text-left flex flex-col gap-0.5">
                   <span className="text-base">Uwase abatoni Stecy</span>

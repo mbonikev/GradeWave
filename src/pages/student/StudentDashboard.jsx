@@ -141,8 +141,8 @@ function StudentDashboard() {
               </h1>
               <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl p-3">
                 <GiTrophy className="text-4xl text-yellow-600" />
-                <h1>Mugisha Kenny</h1>
-                <h1>1st</h1>
+                <h1 className="flex-1 text-left text-sm">Mugisha Kenny</h1>
+                <h1 className="text-text-color-weak/70">1st</h1>
               </div>
             </div>
           </div>

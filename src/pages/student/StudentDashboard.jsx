@@ -101,7 +101,7 @@ function StudentDashboard() {
                       </h1>
                     </div>
                   </div>
-                  <h1>{annoucement.message}</h1>
+                  <h1 className="text-sm">{annoucement.message}</h1>
                 </div>
               ))}
             </div>

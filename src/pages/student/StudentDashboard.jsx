@@ -72,6 +72,7 @@ function StudentDashboard() {
             <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
               Announcements
             </h1>
+            {[{pfp: "", name: "Admin"}]}
           </div>
         </div>
       </div>

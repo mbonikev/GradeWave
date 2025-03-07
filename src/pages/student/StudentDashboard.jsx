@@ -68,6 +68,7 @@ function StudentDashboard() {
               </Link>
             ))}
           </div>
+          <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-4 mt-3 py-1"></div>
         </div>
       </div>
     </div>

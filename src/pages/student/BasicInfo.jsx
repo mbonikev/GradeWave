@@ -58,7 +58,7 @@ function BasicInfo() {
           <input
             type="text"
             name="phone"
-            placeholder="phone number"
+            placeholder="Phone number"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
           />
         </div>

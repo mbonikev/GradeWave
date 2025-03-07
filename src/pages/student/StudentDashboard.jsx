@@ -87,14 +87,17 @@ function StudentDashboard() {
                   key={index}
                   className="w-full h-fit p-4 bg-card-bg-weak rounded-xl"
                 >
-                  <div className="w-full flex items-center">
+                  <div className="w-full flex items-center gap-3">
                     <div className="size-10 rounded-full bg-main-color p-1 aspect-square">
                       <img
                         src={annoucement.pfp}
                         className="w-full h-full object-cover rounded-full"
                       />
                     </div>
-                    <div className="w-full flex items-start justify-center flex-col"></div>
+                    <div className="w-full flex items-start justify-center flex-col">
+                      <h1>{annoucement.name}</h1>
+                      <h1>{annoucement.publishedAt}</h1>
+                    </div>
                   </div>
                 </div>
               ))}

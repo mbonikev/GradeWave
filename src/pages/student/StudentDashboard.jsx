@@ -98,7 +98,7 @@ function StudentDashboard() {
               ].map((annoucement, index) => (
                 <div
                   key={index}
-                  className="w-full h-fit p-4 hover:bg-card-bg-weak rounded-2xl"
+                  className="w-full h-fit p-5 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                 >
                   <div className="w-full flex items-center gap-3 mb-3">
                     <div className="size-11 rounded-full bg-main-color p-1 aspect-square">

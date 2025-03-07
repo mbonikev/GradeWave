@@ -71,7 +71,7 @@ function StudentDashboard() {
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-4 mt-3 py-1">
             <div className="w-full h-fit flex flex-col gap-4 mt-3 py-1">
-              <h1 className="text-xl font-medium tracking-tight mt-3 text-text-color/80">
+              <h1 className="text-base font-medium tracking-tight mt-3 text-text-color/80">
                 Announcements
               </h1>
               {[
@@ -102,6 +102,9 @@ function StudentDashboard() {
                     </div>
                   </div>
                   <h1 className="text-sm">{annoucement.message}</h1>
+                  <div className="flex items-center justify-start flex-wrap">
+                    
+                  </div>
                 </div>
               ))}
             </div>

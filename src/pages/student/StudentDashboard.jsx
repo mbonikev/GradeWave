@@ -107,9 +107,9 @@ function StudentDashboard() {
                     </div>
                   </div>
                   <h1 className="text-base">{annoucement.message}</h1>
-                  <div className="flex items-center justify-start flex-wrap mt-4">
-                    <button className="outline-none border-none size-7 rounded-full hover:bg-card-bg">
-                      <LuShare2 />
+                  <div className="flex items-center justify-start flex-wrap mt-2">
+                    <button className="outline-none border-none size-9 rounded-full hover:bg-card-bg flex items-center justify-center">
+                      <LuShare2 className="text-xl" />
                     </button>
                   </div>
                 </div>

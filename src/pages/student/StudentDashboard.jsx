@@ -141,7 +141,7 @@ function StudentDashboard() {
               </h1>
               <div className="flex items-center gap-3">
                 <GiTrophy className="text-4xl text-yellow-600" />
-                <h1></h1>
+                <h1>Mugisha Kenny</h1>
               </div>
             </div>
           </div>

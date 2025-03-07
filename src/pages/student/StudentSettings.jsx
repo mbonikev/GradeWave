@@ -43,6 +43,31 @@ function StudentSettings() {
           ></div>
         )}
         <StudentNavbar openSidebar={openSidebar} />
+
+        <div className="w-full flex-1 overflow-y-auto p-0 relative">
+          <div className="w-full h-full flex flex-col">
+            {/* tabs */}
+            <div className="h-[45px] max-md:h-[55px] hidden_scrollbar w-full overflow-x-auto border-b px-5 border-stone-100 flex flex-row gap-0">
+              {tabs.map((tab, index) => (
+                <button
+                  key={index}
+                  className={`w-fit h-full whitespace-nowrap px-3 text-sm font-medium transition duration-200 ${
+                    activeTab === tab.title
+                      ? "border-b-2 border-mainColor text-lightBlackText/80"
+                      : "border-b-0 border-transparent text-lightBlackText/50"
+                  }`}
+                  onClick={() => setActiveTab(tab.title)}
+                >
+                  {tab.title}
+                </button>
+              ))}
+            </div>
+            {/* tab contents */}
+            <div className="w-full h-fit flex-1 overflow-y-auto">
+              {tabs.find((tab) => tab.title === activeTab)?.element}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

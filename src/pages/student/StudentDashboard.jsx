@@ -132,8 +132,11 @@ function StudentDashboard() {
               ))}
             </div>
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
                 Glrobal Ranking 2024
+              </h1>
+              <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/90 flex items-center justify-between">
+                #3 of 7,543
               </h1>
             </div>
           </div>

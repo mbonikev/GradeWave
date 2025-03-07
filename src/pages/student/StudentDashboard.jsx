@@ -9,6 +9,7 @@ import {
   LuShare2,
 } from "react-icons/lu";
 import { Pfp } from "../../assets";
+import { GiTrophy } from "react-icons/gi";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -139,7 +140,9 @@ function StudentDashboard() {
                 #3 of 7,543
               </h1>
             </div>
-            
+            <div className="flex items-center">
+              <GiTrophy className="text-2xl text-yellow-700" />
+            </div>
           </div>
         </div>
       </div>

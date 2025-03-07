@@ -79,12 +79,12 @@ function StudentDashboard() {
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
                 Announcements
-                <Link
+                {/* <Link
                   to="/student_notifications"
                   className="text-text-color-weak/60 text-sm hover:text-main-color"
                 >
                   View all
-                </Link>
+                </Link> */}
               </h1>
               {[
                 {
@@ -159,7 +159,7 @@ function StudentDashboard() {
                 <GiSportMedal className="text-4xl text-[#e3a782]" />
                 <h1 className="flex-1 text-left text-sm flex flex-col gap-0.5">
                   <span>Uwase abatoni Stecy</span>
-                  <span className="text-xs text-text-color-weak/60">MPC</span>
+                  <span className="text-xs text-text-color-weak/60">HEG</span>
                 </h1>
                 <h1 className="text-text-color-weak text-sm font-bold">3rd</h1>
               </div>

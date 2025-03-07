@@ -77,11 +77,11 @@ function StudentDashboard() {
           </div>
           <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3 py-1">
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-between">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-3 text-text-color/80 flex items-center justify-start gap-3">
                 Announcements
                 <Link
                   to="/student_notifications"
-                  className="text-text-color-weak/60 text-sm hover:text-main-color"
+                  className="text-text-color-weak/60 text-xs hover:text-main-color"
                 >
                   View all
                 </Link>

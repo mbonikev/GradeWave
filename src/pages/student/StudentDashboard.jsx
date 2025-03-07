@@ -107,7 +107,7 @@ function StudentDashboard() {
                     </div>
                   </div>
                   <h1 className="text-base">{annoucement.message}</h1>
-                  <div className="flex items-center justify-start flex-wrap">
+                  <div className="flex items-center justify-start flex-wrap mt-4">
                     <LuShare2 />
                   </div>
                 </div>

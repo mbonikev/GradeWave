@@ -138,7 +138,8 @@ function StudentNavbar({ title, openSidebar }) {
               setLogoutWarn(false);
               setShowNotifPopup(true);
             }}
-            className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl"
+            className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl relative"
+            
           >
             <IoNotificationsOutline className="text-2xl" />
           </button>

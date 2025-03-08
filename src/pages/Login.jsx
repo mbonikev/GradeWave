@@ -138,7 +138,7 @@ function Login() {
               />
 
               <button
-                className={` bg-main-color-school hover:bg-main-color-school-dark text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl`}
+                className={` bg-main-color-school hover:bg-main-color-dark-school text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl`}
               >
                 Continue
               </button>
@@ -168,7 +168,7 @@ function Login() {
           ) : (
             <button
               onClick={handleLoginSchool}
-              className="flex items-center justify-start gap-2 text-main-color-school hover:text-main-color-school-dark select-none"
+              className="flex items-center justify-start gap-2 text-main-color-school hover:text-main-color-dark-school select-none"
             >
               Continue as a Guest School
               <LuArrowRight className="text-lg translate-y-[1px]" />

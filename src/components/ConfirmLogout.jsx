@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import Reveal from "react-awesome-reveal";
-
+import Reveal, { Fade } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+import { TiWarning } from "react-icons/ti";
+import Loading from "./Loading";
 function ConfirmLogout() {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {

@@ -71,7 +71,7 @@ function StudentNavbar({ title, openSidebar }) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
   return (
-    <div className="flex items-center justify-between text-lightBlackText p-2 z-50 max-lg:border-b sticky top-0 bg-white border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText p-2 max-lg:border-b sticky top-0 bg-white border-stone-100">
       {/* confirm */}
       {logoutWarn && (
         <Fade duration={200} triggerOnce>

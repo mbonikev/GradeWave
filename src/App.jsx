@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     if (sessionStorage.getItem("loggedInSchool") === "true") {
-      document.documentElement.style.setProperty("--main-color", "#f97316");
+      document.documentElement.style.setProperty("--main-color", "#fe9a00");
     }
   }, []);
 

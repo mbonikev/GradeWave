@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         "main-color": "var(--main-color)",
-        "main-color-school": "#f97316",
+        "main-color-school": "#00bc7d",
         "main-color-dark": "#0f50c0",
         "text-color": "#111111",
         "text-color-weak": "#5d5d5d",

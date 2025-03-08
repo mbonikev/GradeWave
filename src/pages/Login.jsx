@@ -43,6 +43,12 @@ function Login() {
         "--main-color-weak",
         "#00bc7d27"
       );
+    } else {
+      document.documentElement.style.setProperty("--main-color", "#00bc7d");
+      document.documentElement.style.setProperty(
+        "--main-color-weak",
+        "#00bc7d27"
+      );
     }
   };
 

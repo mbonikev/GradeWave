@@ -224,9 +224,10 @@ function StudentDashboard() {
             className="w-full h-full"
           >
             <div className="w-full h-full relative flex items-center justify-center">
-              <div className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10">
-                s
-              </div>
+              <div
+                onClick={() => setLogoutWarn(false)}
+                className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
+              ></div>
               <div
                 className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
                   logoutWarn ? "scale-100 transition-all " : "scale-75"

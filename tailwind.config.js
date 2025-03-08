@@ -21,6 +21,7 @@ export default {
       animation: {
         spinLoader: "spin .5s linear infinite",
         spinSlow: "spin 3s linear infinite",
+        sidebarIndicator: "indicatorSidebarLink 0.2s forwards",
       },
     },
   },

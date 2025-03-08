@@ -215,11 +215,16 @@ function StudentDashboard() {
       {/* confirm */}
       {logoutWarn && (
         <div
-          className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}
+          className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}
         >
-          <Reveal duration={200} triggerOnce keyframes={customAnimation} className="w-full h-full">
+          <Reveal
+            duration={200}
+            triggerOnce
+            keyframes={customAnimation}
+            className="w-full h-full"
+          >
             <div className="w-full h-full relative flex items-center justify-center">
-              <div className=" w-full h-full absolute top-0 left-0 bg-red-400 z-10">
+              <div className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10">
                 s
               </div>
               <div

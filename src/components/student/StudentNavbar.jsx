@@ -28,18 +28,9 @@ to{
 }
 `;
 function StudentNavbar({ title, openSidebar }) {
-  const [loggingOut, setLoggingOut] = useState(false);
-  const [logoutWarn, setLogoutWarn] = useState(false);
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);
   const notifpopupRef = useRef(null);
-  const handleLoginStudent = () => {
-    sessionStorage.removeItem("loggedInStudent");
-    setLoggingOut(true);
-    setTimeout(() => {
-      window.location.reload();
-    }, 300);
-  };
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -72,7 +63,6 @@ function StudentNavbar({ title, openSidebar }) {
   }, []);
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 bg-white border-stone-100">
-      {/* confirm */}
       
       <div className="w-full h-fit flex items-center justify-between gap-2 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 max-sm:gap-0">

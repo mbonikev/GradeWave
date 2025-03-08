@@ -37,7 +37,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         <div
           className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-orange-500 text-white">
+          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             S
           </div>
           <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
@@ -49,7 +49,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         </button> */}
         <button
           onClick={closeSidebar}
-          className="text-lightBlackText/80 hover:text-main-color-school p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-card-bg-weak rounded-xl"
+          className="text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square items-center justify-center hidden max-lg:flex max-lg:bg-stone-100 hover:bg-card-bg-weak rounded-xl"
         >
           <LuX className="text-xl" />
         </button>
@@ -65,7 +65,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_dashboard"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -78,7 +78,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_register_for_exams"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -91,7 +91,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_check_results"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -104,7 +104,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_past_papers"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -120,7 +120,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_profile"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}
@@ -133,7 +133,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_settings"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
           `}

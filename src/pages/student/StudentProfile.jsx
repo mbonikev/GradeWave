@@ -41,7 +41,7 @@ function StudentProfile() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} />
+        <StudentNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
       </div>
     </div>
   );

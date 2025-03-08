@@ -14,7 +14,7 @@ import {
 } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
 import { Avatar, Space } from "antd";
-import SidebarSectionTitle from "./SidebarSectionTitle";
+import SidebarSectionTitle from "../SidebarSectionTitle";
 import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";

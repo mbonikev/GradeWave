@@ -12,7 +12,7 @@ import StudentNotifications from "./pages/student/StudentNotifications";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
-import ProtectedAuthStudent from "./assets/util/ProtectedAuth";
+import ProtectedAuth from "./assets/util/ProtectedAuth";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -57,9 +57,9 @@ function App() {
             exact
             path="/"
             element={
-              <ProtectedAuthStudent>
+              <ProtectedAuth>
                 <Login />
-              </ProtectedAuthStudent>
+              </ProtectedAuth>
             }
           />
 

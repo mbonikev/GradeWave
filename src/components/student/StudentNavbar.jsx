@@ -73,40 +73,7 @@ function StudentNavbar({ title, openSidebar }) {
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 bg-white border-stone-100">
       {/* confirm */}
-      {logoutWarn && (
-        <Fade duration={200} triggerOnce>
-          <div
-            className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15`}
-          >
-            <Reveal duration={200} triggerOnce keyframes={customAnimation}>
-              <div
-                className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 ${
-                  logoutWarn ? "scale-100 " : "scale-75"
-                } `}
-              >
-                <TiWarning className="text-[40px] mx-auto text-amber-500" />
-                <h1 className="mb-5 text-lg text-center max-w-[200px] mx-auto">
-                  Are you sure you want to log out?
-                </h1>
-                <div className="w-full flex items-center flex-col gap-2">
-                  <button
-                    onClick={handleLoginStudent}
-                    className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
-                  >
-                    {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
-                  </button>
-                  <button
-                    onClick={() => setLogoutWarn(false)}
-                    className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </Fade>
-      )}
+      
       <div className="w-full h-fit flex items-center justify-between gap-2 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 max-sm:gap-0">
           <button

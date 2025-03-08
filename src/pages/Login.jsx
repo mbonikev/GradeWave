@@ -36,12 +36,15 @@ function Login() {
   };
 
   const handleRole = (e) => {
-    setRole(e)
-    if(e === "student"){
+    setRole(e);
+    if (e === "school") {
       document.documentElement.style.setProperty("--main-color", "#00bc7d");
-      document.documentElement.style.setProperty("--main-color-weak", "#00bc7d27");
+      document.documentElement.style.setProperty(
+        "--main-color-weak",
+        "#00bc7d27"
+      );
     }
-  }
+  };
 
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-[60] bg-body-bg relative overflow-y-auto">
@@ -84,7 +87,9 @@ function Login() {
               <div
                 onClick={() => handleRole("school")}
                 className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
-                  role === "school" ? "" : "border-white/40 text-text-color-weak"
+                  role === "school"
+                    ? ""
+                    : "border-white/40 text-text-color-weak"
                 }`}
               >
                 <LuSchool className="text-xl" />

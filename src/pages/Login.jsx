@@ -138,9 +138,7 @@ function Login() {
               />
 
               <button
-                className={`${
-                  role === "student" ? "bg-main-color" : "bg-main-color-school"
-                } hover:bg-main-color-dark text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl`}
+                className={` bg-main-color-school hover:bg-main-color-school-dark text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl`}
               >
                 Continue
               </button>

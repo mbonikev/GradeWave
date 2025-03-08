@@ -100,7 +100,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          Results
+          Combinations
         </Link>
         <Link
           to="/school_past_papers"

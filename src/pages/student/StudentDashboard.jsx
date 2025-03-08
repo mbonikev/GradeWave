@@ -17,17 +17,6 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import ConfirmLogout from "../../components/ConfirmLogout";
 
-const customAnimation = keyframes`
-from{
-  // transform: scale(.9);
-  opacity: 0;
-}
-to{
-  // transform: scale(1);
-  opacity: 1;
-}
-`;
-
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);

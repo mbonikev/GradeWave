@@ -55,8 +55,8 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         </button>
       </div>
       {/* middle links */}
-      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none">
-        <SidebarSectionTitle title={"General"} />
+      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none mt-5">
+        {/* <SidebarSectionTitle title={"General"} /> */}
         <Link
           to={{
             pathname: "/school_dashboard",
@@ -75,7 +75,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         </Link>
 
         {/* section */}
-        <SidebarSectionTitle title={"Exams"} />
+        {/* <SidebarSectionTitle title={"Exams"} /> */}
         <Link
           to="/school_register_for_exams"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
@@ -105,7 +105,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
 
 
         {/* section */}
-        <SidebarSectionTitle title={"tweaks"} />
+        {/* <SidebarSectionTitle title={"tweaks"} /> */}
         {/* <Link
           to="/school_profile"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

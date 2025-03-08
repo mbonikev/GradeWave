@@ -11,9 +11,9 @@ import StudentCheckResults from "./pages/student/StudentCheckResults";
 import StudentNotifications from "./pages/student/StudentNotifications";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
-import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
-import ProtectedRouteSchool from "./assets/util/ProtectedRouteSchool"; // Use a separate route protection for schools
-import ProtectedAuth from "./assets/util/ProtectedAuth";
+import ProtectedRouteStudent from "./util/ProtectedRouteStudent";
+import ProtectedRouteSchool from "./util/ProtectedRouteSchool"; // Use a separate route protection for schools
+import ProtectedAuth from "./util/ProtectedAuth";
 
 function App() {
   const [fetching, setFetching] = useState(true);

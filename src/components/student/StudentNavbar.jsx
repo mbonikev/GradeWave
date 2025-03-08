@@ -140,7 +140,7 @@ function StudentNavbar({ title, openSidebar }) {
             }}
             className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl relative"
           >
-            <div className="bg-red-600 text-white aspect-square rounded-full h-5 text-sm font-medium absolute top-0 -right-0 ">2</div>
+            <div className="bg-red-600 text-white aspect-square rounded-full h-5 text-sm font-medium absolute top-0 right-0 ring-2 ring-body-bg ">2</div>
             <IoNotificationsOutline className="text-2xl" />
           </button>
           <button

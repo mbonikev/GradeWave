@@ -139,8 +139,8 @@ function StudentNavbar({ title, openSidebar }) {
               setShowNotifPopup(true);
             }}
             className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl relative"
-            
           >
+            <span className="bg-red-600 text-white aspect-square h-fit p-1">2</span>
             <IoNotificationsOutline className="text-2xl" />
           </button>
           <button

@@ -4,7 +4,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import StudentDashboard from "./pages/student/StudentDashboard";
-import SchoolDashboard from "./pages/schools/SchoolDashboard";
+import SchoolDashboard from "./pages/school/SchoolDashboard";
 import StudentPapers from "./pages/student/StudentPapers";
 import StudentRegisterForExams from "./pages/student/StudentRegisterForExams";
 import StudentCheckResults from "./pages/student/StudentCheckResults";

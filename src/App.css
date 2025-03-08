@@ -18,6 +18,7 @@ body {
 
 :root {
   --main-color: #3277f0;
+  --main-color-weak: #3277f027;
 }
 
 select {
@@ -74,19 +75,19 @@ video {
 .loader.small {
   width: 18px;
   height: 18px;
-  border: 2px solid #3278f027;
+  border: 2px solid var(--main-color-weak);
   border-bottom-color: var(--main-color);
 }
 .loader.medium {
   width: 28px;
   height: 28px;
-  border: 3px solid #3278f027;
+  border: 3px solid var(--main-color-weak);
   border-bottom-color: var(--main-color);
 }
 .loader.large {
   width: 40px;
   height: 40px;
-  border: 4px solid #3278f027;
+  border: 4px solid var(--main-color-weak);
   border-bottom-color: var(--main-color);
 }
 

@@ -63,7 +63,7 @@ function App() {
             }
           />
 
-          {/* Protect all routes except '/' */}
+          {/* Protect all routes for student */}
           {protectedRoutes.map((route, index) => (
             <Route
               key={index}

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function ProtectedRouteSchool({ children }) {
-  const loggedIn = sessionStorage.getItem("loggedInStudent");
+  const loggedIn = sessionStorage.getItem("loggedInSchool");
   const navigate = useNavigate();
 
   useEffect(() => {

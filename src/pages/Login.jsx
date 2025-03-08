@@ -35,6 +35,10 @@ function Login() {
     }, 500);
   };
 
+  const handleRole = (e) => {
+    setRole(e)
+  }
+
   return (
     <div className="w-full h-svh grid grid-cols-2 max-lg:grid-cols-1 z-[60] bg-body-bg relative overflow-y-auto">
       {/* 1 */}
@@ -62,7 +66,7 @@ function Login() {
               ></div>
               {/* student */}
               <div
-                onClick={() => setRole("student")}
+                onClick={() => handleRole("student")}
                 className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
                   role === "student"
                     ? ""
@@ -74,7 +78,7 @@ function Login() {
               </div>
               {/* school */}
               <div
-                onClick={() => setRole("tutor")}
+                onClick={() => handleRole("tutor")}
                 className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
                   role === "tutor" ? "" : "border-white/40 text-text-color-weak"
                 }`}

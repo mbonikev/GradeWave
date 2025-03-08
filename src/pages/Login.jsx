@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ImageStudents, LogoBlack, LogoWhite } from "../assets";
+import { ImageSchool, ImageStudents, LogoBlack, LogoWhite } from "../assets";
 import { PiGraduationCapDuotone } from "react-icons/pi";
 import { BsPersonVideo } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -216,7 +216,7 @@ function Login() {
         <div
           className="w-full h-full rounded-2xl overflow-hidden relative"
           style={{
-            backgroundImage: `url(${ImageStudents})`,
+            backgroundImage: `url(${role === 'student' ? ImageStudents : ImageSchool})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

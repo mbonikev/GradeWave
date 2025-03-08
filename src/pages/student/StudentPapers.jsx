@@ -7,6 +7,7 @@ import { Exams, Levels } from "../../content/Exams";
 import { BsFolderFill } from "react-icons/bs";
 import { LuArrowLeft } from "react-icons/lu";
 import { FaFilePdf } from "react-icons/fa";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function StudentPapers() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -14,6 +15,7 @@ function StudentPapers() {
   const [year, setYear] = useState(null);
   const [level, setLevel] = useState(null);
   const [results, setResults] = useState([]);
+  const [logoutWarn, setLogoutWarn] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -47,6 +49,10 @@ function StudentPapers() {
 
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

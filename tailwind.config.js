@@ -23,6 +23,12 @@ export default {
         spinSlow: "spin 3s linear infinite",
         sidebarIndicator: "indicatorSidebarLink 0.2s forwards",
       },
+      keyframes: {
+        indicatorSidebarLink: {
+          from: { height: "0", opacity: "0" },
+          to: { height: "70%" },
+        },
+      },
     },
   },
   plugins: [],

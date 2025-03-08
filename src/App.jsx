@@ -12,7 +12,7 @@ import StudentNotifications from "./pages/student/StudentNotifications";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
-import ProtectedAuthStudent from "./assets/util/ProtectedAuthStudent";
+import ProtectedAuthStudent from "./assets/util/ProtectedAuth";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -65,6 +65,17 @@ function App() {
 
           {/* Protect all routes for student */}
           {protectedRoutes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={
+                <ProtectedRouteStudent>{route.element}</ProtectedRouteStudent>
+              }
+            />
+          ))}
+
+          {/* Protect all routes for student */}
+          {protectedRoutesSchool.map((route, index) => (
             <Route
               key={index}
               path={route.path}

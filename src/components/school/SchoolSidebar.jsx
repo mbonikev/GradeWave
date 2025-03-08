@@ -102,19 +102,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           <LuMedal className="text-xl max-lg:text-2xl" />
           Combinations
         </Link>
-        <Link
-          to="/school_past_papers"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_past_papers"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color-school"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <BiBox className="text-xl max-lg:text-2xl" />
-          Resources
-        </Link>
+
 
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />

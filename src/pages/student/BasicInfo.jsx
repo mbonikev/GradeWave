@@ -25,7 +25,7 @@ function BasicInfo() {
           </Link>
         </div>
       </div>
-      <form className="w-full flex flex-col gap-4 mt-2 max-w-[300px] max-md:max-w-full">
+      <form className="w-full flex flex-col gap-4 mt-2 max-w-[500px] max-md:max-w-full">
         <div className="w-full flex flex-col gap-1">
           <h1 className="text-sm font-normal">Full Names</h1>
           <input
@@ -62,8 +62,47 @@ function BasicInfo() {
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
           />
         </div>
-        <button className="h-[35px] mt-1 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
-        <LuCheck className="text-lg" />
+
+        {/* section title */}
+        <h1 className="text-lg mt-5">Identification Numbers</h1>
+        <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">National ID Number</h1>
+          <input
+            type="text"
+            name="phone"
+            placeholder="11980XXXXXXXXXXX"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
+          />
+        </div>
+        <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">Primary Index Number</h1>
+          <input
+            type="text"
+            name="phone"
+            placeholder="0000PR000000"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
+          />
+        </div>
+        <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">O-Level Index Number</h1>
+          <input
+            type="text"
+            name="phone"
+            placeholder="0000PR000000"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
+          />
+        </div>
+        <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">A-Level Index Number</h1>
+          <input
+            type="text"
+            name="phone"
+            placeholder="XXXXXCODEXXXXX"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-lightBlackText/30"
+          />
+        </div>
+        <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
+          <LuCheck className="text-lg" />
           Save Changes
         </button>
       </form>

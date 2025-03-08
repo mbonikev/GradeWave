@@ -27,7 +27,7 @@ to{
   opacity: 1;
 }
 `;
-function StudentNavbar({ title, openSidebar }) {
+function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);
   const notifpopupRef = useRef(null);

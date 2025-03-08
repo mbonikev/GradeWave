@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import StudentSidebar from "../../components/student/StudentSidebar";
+import SchoolNavbar from "../../components/student/SchoolNavbar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 
@@ -45,7 +45,7 @@ function SchoolDashboard() {
             }`}
           ></div>
         )}
-        <StudentNavbar
+        <SchoolNavbar
           setLogoutWarn={setLogoutWarn}
           openSidebar={openSidebar}
         />

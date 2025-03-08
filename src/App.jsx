@@ -20,6 +20,12 @@ function App() {
   const [animateFetching, setAnimateFetching] = useState(true);
 
   useEffect(() => {
+    if (sessionStorage.getItem("loggedInSchool") === "school") {
+      document.documentElement.style.setProperty("--main-color", "orange");
+    }
+  }, []);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setAnimateFetching(false);
       setTimeout(() => {

@@ -243,7 +243,7 @@ function StudentDashboard() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} />
+        <StudentNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">

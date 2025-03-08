@@ -32,7 +32,7 @@ function BasicInfo() {
             type="text"
             name="username"
             placeholder="create a username"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -41,7 +41,7 @@ function BasicInfo() {
             type="email"
             name="email"
             placeholder="someone@example.com"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -51,7 +51,7 @@ function BasicInfo() {
             name="country"
             readOnly={true}
             placeholder="Country"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -60,7 +60,7 @@ function BasicInfo() {
             type="text"
             name="phone"
             placeholder="Phone number"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
 
@@ -72,7 +72,7 @@ function BasicInfo() {
             type="text"
             name="phone"
             placeholder="11980XXXXXXXXXXX"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -81,7 +81,7 @@ function BasicInfo() {
             type="text"
             name="phone"
             placeholder="0000PR000000"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -90,7 +90,7 @@ function BasicInfo() {
             type="text"
             name="phone"
             placeholder="0000PR000000"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
@@ -99,7 +99,7 @@ function BasicInfo() {
             type="text"
             name="phone"
             placeholder="XXXXXCODEXXXXX"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color/50"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">

@@ -223,7 +223,7 @@ function Login() {
         >
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 text-[#f1f1f1] to-black/20 flex items-start justify-between p-10">
             <h1 className="text-base font-medium text-[#f1f1f1c7] max-w-[500px] text-left h-full flex items-end">
-              Login to Continue
+              Login to Continue.
             </h1>
             <div className="flex items-center justify-start gap-1 w-fit h-fit opacity-90 mb-5">
               <img src={LogoWhite} className="size-9" />

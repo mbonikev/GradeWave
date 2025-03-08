@@ -10,10 +10,17 @@ import {
 } from "react-icons/lu";
 import { Pfp } from "../../assets";
 import { GiSportMedal, GiTrophy } from "react-icons/gi";
+import LoadingScreen from "../../components/LoadingScreen";
+import Loading from "../../components/Loading";
+import { Fade } from "react-awesome-reveal";
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [level, setLevel] = useState("senior-3"); // Default to Senior 3
+  const [gradesData, setGradesData] = useState([]);
+  const [fetching, setFetching] = useState(false);
+  const [marks, setMarks] = useState(87);
 
   const openSidebar = () => {
     setShowSidebar(true);
@@ -27,6 +34,154 @@ function StudentDashboard() {
       setShowSidebar(false);
     }, 100);
   };
+
+  const gradeLevels = [
+    { title: "Excellent", colorCode: "#4CAF50", range: "70% - 100%" }, // Green
+    { title: "Average Performance", colorCode: "#FF9800", range: "50% - 69%" }, // Orange
+    { title: "Fail", colorCode: "#F44336", range: "Below 45%" }, // Red
+  ];
+
+  const getGrade = (percentage) => {
+    if (percentage >= 90) return "A+";
+    if (percentage >= 85) return "A";
+    if (percentage >= 80) return "A-";
+    if (percentage >= 75) return "B+";
+    if (percentage >= 70) return "B";
+    if (percentage >= 65) return "B-";
+    if (percentage >= 60) return "C+";
+    if (percentage >= 55) return "C";
+    if (percentage >= 50) return "C-";
+    if (percentage >= 45) return "D";
+    return "Fail"; // Anything below 45
+  };
+
+  const getColor = (percentage) => {
+    if (percentage >= 70) return "#4CAF50"; // Green (Safe Zone)
+    if (percentage >= 50) return "#FF9800"; // Orange (Warning)
+    return "#F44336"; // Red (Fail)
+  };
+
+  const Progress = ({ percentage }) => {
+    const circumference = 251.2;
+    const offset = circumference - (percentage / 100) * circumference;
+    const grade = getGrade(percentage);
+    const strokeColor = getColor(percentage);
+
+    return (
+      <svg width="150" height="150" viewBox="0 0 100 100">
+        {/* Background Circle */}
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="#dddddd90"
+          strokeWidth="12"
+          fill="none"
+        />
+
+        {/* Progress Arc (Dynamic Color) */}
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke={strokeColor}
+          strokeWidth="12"
+          fill="none"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+          transform="rotate(-90 50 50)"
+        />
+
+        {/* Center Text (Grade) */}
+        <text
+          x="50"
+          y="58"
+          fontSize="22"
+          fontWeight="600"
+          textAnchor="middle"
+          fill="#414141"
+        >
+          {grade}
+        </text>
+      </svg>
+    );
+  };
+
+  const GradeTable = ({ grades }) => {
+    return (
+      <div className="overflow-x-auto rounded-2xl border border-card-bg">
+        <table className="w-full text-left">
+          <thead className="bg-card-bg-weak">
+            <tr>
+              <th className="px-4 py-2">Subject</th>
+              <th className="px-4 py-2">Percentage</th>
+              <th className="px-4 py-2">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            {grades.map((grade, index) => (
+              <tr key={index} className="border-t">
+                <td className="px-4 py-2">{grade.subject}</td>
+                <td className="px-4 py-2">{grade.percentage}%</td>
+                <td
+                  className="px-4 py-2 font-semibold"
+                  style={{ color: grade.color }}
+                >
+                  {grade.grade}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  // Subjects for Primary 6 (P6)
+  const p6Subjects = [
+    { subject: "Mathematics", percentage: 85, grade: "A", color: "#569458" },
+    { subject: "English", percentage: 78, grade: "B+", color: "#569458" },
+    { subject: "Kinyarwanda", percentage: 80, grade: "A", color: "#569458" },
+    { subject: "Science", percentage: 70, grade: "B", color: "#FF9800" },
+    {
+      subject: "Social Studies",
+      percentage: 65,
+      grade: "C+",
+      color: "#FF9800",
+    },
+    { subject: "Creative Arts", percentage: 60, grade: "C", color: "#FF9800" },
+  ];
+
+  // Subjects for Senior 3 O-Level
+  const senior3Subjects = [
+    { subject: "Mathematics", percentage: 85, grade: "A", color: "#569458" },
+    { subject: "English", percentage: 72, grade: "B", color: "#569458" },
+    { subject: "Biology", percentage: 70, grade: "B", color: "#569458" },
+    { subject: "Chemistry", percentage: 60, grade: "C+", color: "#FF9800" },
+    { subject: "Physics", percentage: 40, grade: "Fail", color: "#F44336" },
+    { subject: "Kinyarwanda", percentage: 80, grade: "A", color: "#569458" },
+    { subject: "Geography", percentage: 75, grade: "B+", color: "#569458" },
+    { subject: "History", percentage: 65, grade: "C", color: "#FF9800" },
+    { subject: "Entrepreneurship", percentage: 88, grade: "A", color: "#569458" },
+  ];
+
+  // Update grades based on the selected level
+  useEffect(() => {
+    setFetching(true);
+    setTimeout(() => {
+      if (level === "p6") {
+        setGradesData(p6Subjects);
+        setMarks(45);
+      } else if (level === "senior-3") {
+        setGradesData(senior3Subjects);
+        setMarks(87);
+      }
+    }, 100);
+    setTimeout(() => {
+      setFetching(false);
+    }, 600);
+  }, [level]);
 
   return (
     <div className="w-full h-fit flex-1 flex">
@@ -46,7 +201,7 @@ function StudentDashboard() {
         )}
         <StudentNavbar openSidebar={openSidebar} />
         {/* content */}
-        <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
+        <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
@@ -75,57 +230,65 @@ function StudentDashboard() {
               </Link>
             ))}
           </div>
-          <div className="w-full h-fit grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3 py-1">
-            <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-2 text-text-color/80 flex items-center justify-start gap-3">
-                Announcements
-              </h1>
-              {[
-                {
-                  pfp: Pfp,
-                  name: "Adminstrator",
-                  publishedAt: "24/02/2025",
-                  message:
-                    "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
-                },
-                {
-                  pfp: Pfp,
-                  name: "Adminstrator",
-                  publishedAt: "24/02/2025",
-                  message:
-                    "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
-                },
-              ].map((annoucement, index) => (
-                <div
-                  key={index}
-                  className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak ring-1 ring-card-bg-weak mb-1 rounded-2xl"
-                >
-                  <div className="w-full flex items-center justify-start gap-3 mb-3">
-                    <div className="size-9 rounded-full bg-main-color p-1 aspect-square">
-                      <img
-                        src={annoucement.pfp}
-                        className="w-full h-full object-cover rounded-full"
-                      />
+          <div className="w-full py-1 mt-7 flex flex-col gap-5">
+            {fetching ? (
+              <div className="w-full h-[100px] flex items-center justify-center">
+                <Loading size="medium" />
+              </div>
+            ) : (
+              <div className="w-full h-fit relative flex flex-col gap-5">
+                <Fade duration={200} triggerOnce>
+                  <div className="w-full flex items-start justify-between max-sm:flex-col-reverse">
+                    <div className="w-full flex items-start flex-col gap-5">
+                      {level === "p6" ? "PLE Grades" : "O-level Grades"}
+                      <div className="w-ful h-fit flex items-center gap-10 max-sm:gap-5 mb-6">
+                        <Progress percentage={marks} />
+                        <div className="flex-1 flex flex-col gap-3">
+                          {gradeLevels.map((level, index) => (
+                            <div
+                              key={index}
+                              className="flex items-center space-x-2"
+                            >
+                              <div
+                                className="w-4 h-4 min-w-4 rounded-full"
+                                style={{ backgroundColor: level.colorCode }}
+                              ></div>
+                              <span className="text-sm font-medium text-text-color-weak">
+                                {level.title} ({level.range})
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    <div className="w-full flex items-start justify-center flex-col">
-                      <h1 className="text-sm">{annoucement.name}</h1>
-                      <h1 className="text-xs text-text-color-weak">
-                        {annoucement.publishedAt}
-                      </h1>
+                    <div className="w-full max-w-[300px] max-md:w-[200px] ml-auto flex flex-col gap-2">
+                      <label
+                        for="level"
+                        class="block text-sm font-medium text-text-color"
+                      >
+                        Select Level
+                      </label>
+                      <select
+                        id="level"
+                        name="level"
+                        className="mt-1 block w-full px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+                        value={level}
+                        onChange={(e) => setLevel(e.target.value)} // Update level on selection change
+                      >
+                        <option value="p6">PLE, 2021-2022</option>
+                        <option value="senior-3">O-Level, 2025-2026</option>
+                      </select>
                     </div>
-                    <button
-                      title="share"
-                      className="outline-none border-none p-1 text-text-color-weak hover:text-main-color flex items-center justify-center"
-                    >
-                      <LuShare2 className="text-lg" />
-                    </button>
                   </div>
-                  <h1 className="text-sm text-text-color/90 line-clamp-2">
-                    {annoucement.message}
-                  </h1>
-                </div>
-              ))}
-            </div>
+                </Fade>
+                <GradeTable grades={gradesData} />
+              </div>
+            )}
+          </div>
+          <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5 mt-3 py-1">
+            {/* <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
+              
+            </div> */}
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
                 Glrobal Ranking 2024
@@ -133,29 +296,41 @@ function StudentDashboard() {
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 7,543 Students
               </h1>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
-                <GiTrophy className="text-4xl text-[#e5a953]" />
-                <h1 className="flex-1 text-left flex flex-col gap-0.5">
-                  <span className="text-base">Mugisha Kenny</span>
-                  <span className="text-sm text-text-color-weak/80">MPC</span>
+              <div className="w-full flex items-center justify-normal">
+                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                  1st
                 </h1>
-                <h1 className="text-text-color-weak text-sm font-bold">1st</h1>
+                <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                  <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
+                  <h1 className="flex-1 text-left flex items-center justify-between gap-0">
+                    <span className="text-base">Mugisha Kenny</span>
+                    <span className="text-sm text-text-color-weak/80">MPC</span>
+                  </h1>
+                </div>
               </div>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
-                <GiSportMedal className="text-4xl text-stone-400" />
-                <h1 className="flex-1 text-left flex flex-col gap-0.5">
-                  <span className="text-base">Ineza Raissa</span>
-                  <span className="text-sm text-text-color-weak/80">MCE</span>
+              <div className="w-full flex items-center justify-normal">
+                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                  2nd
                 </h1>
-                <h1 className="text-text-color-weak text-sm font-bold">2nd</h1>
+                <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
+                  <GiSportMedal className="text-4xl text-stone-400" />
+                  <h1 className="flex-1 text-left flex items-center justify-between gap-0">
+                    <span className="text-base">Ineza Raissa</span>
+                    <span className="text-sm text-text-color-weak/80">MCE</span>
+                  </h1>
+                </div>
               </div>
-              <div className="flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2.5 mb-1">
-                <GiSportMedal className="text-4xl text-[#e3a782]" />
-                <h1 className="flex-1 text-left flex flex-col gap-0.5">
-                  <span className="text-base">Uwase abatoni Stecy</span>
-                  <span className="text-sm text-text-color-weak/80">HEG</span>
+              <div className="w-full flex items-center justify-normal">
+                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                  3rd
                 </h1>
-                <h1 className="text-text-color-weak text-sm font-bold">3rd</h1>
+                <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
+                  <GiSportMedal className="text-4xl text-[#e3a782]" />
+                  <h1 className="flex-1 text-left flex items-center justify-between gap-0">
+                    <span className="text-base">Uwase abatoni Stecy</span>
+                    <span className="text-sm text-text-color-weak/80">HEG</span>
+                  </h1>
+                </div>
               </div>
             </div>
           </div>

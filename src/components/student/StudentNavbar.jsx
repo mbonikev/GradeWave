@@ -60,7 +60,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
             onClick={openSidebar}
             className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square hidden max-lg:flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl"
           >
-            <HiOutlineMenuAlt1 className="text-2xl" />
+            <HiOutlineMenuAlt1 className="text-2xl stroke-[2.5px]" />
           </button>
           {title ? (
             <h1 className="text-xl max-lg:text-2xl font-medium text-lightBlackText/80 max-sm:hidden">

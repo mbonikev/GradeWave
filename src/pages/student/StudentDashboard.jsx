@@ -217,9 +217,9 @@ function StudentDashboard() {
         <div
           className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}
         >
-          <Reveal duration={200} triggerOnce keyframes={customAnimation}>
+          <Reveal duration={200} triggerOnce keyframes={customAnimation} className="w-full h-full">
             <div className="w-full h-full relative">
-              <div className=" absolute w-full h-full absolute top-0 left-0 bg-red-400 z-50">
+              <div className=" w-full h-full absolute top-0 left-0 bg-red-400 z-50">
                 s
               </div>
               <div

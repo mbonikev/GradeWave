@@ -15,6 +15,7 @@ import Loading from "../../components/Loading";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 const customAnimation = keyframes`
 from{
@@ -204,9 +205,7 @@ function StudentDashboard() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
-      {logoutWarn && (
-        
-      )}
+      {logoutWarn && <ConfirmLogout setLogoutWarn={setLogoutWarn} />}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

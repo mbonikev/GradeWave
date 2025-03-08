@@ -14,6 +14,7 @@ import LoadingScreen from "../../components/LoadingScreen";
 import Loading from "../../components/Loading";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import { TiWarning } from "react-icons/ti";
 
 const customAnimation = keyframes`
 from{
@@ -215,7 +216,7 @@ function StudentDashboard() {
       {logoutWarn && (
         <Fade duration={200} triggerOnce>
           <div
-            className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15`}
+            className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}
           >
             <Reveal duration={200} triggerOnce keyframes={customAnimation}>
               <div

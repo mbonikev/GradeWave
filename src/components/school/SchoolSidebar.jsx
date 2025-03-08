@@ -87,7 +87,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <RiStickyNoteAddLine className="text-xl max-lg:text-2xl" />
-          Register for exams
+          Manage Students
         </Link>
         <Link
           to="/school_check_results"

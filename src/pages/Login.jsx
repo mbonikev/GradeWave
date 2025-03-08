@@ -166,7 +166,7 @@ function Login() {
           ) : (
             <button
               onClick={handleLoginSchool}
-              className="flex items-center justify-start gap-2 text-main-color-school hover:text-main-color-dark select-none"
+              className="flex items-center justify-start gap-2 text-main-color-school hover:text-main-color-school-dark select-none"
             >
               Continue as a Guest School
               <LuArrowRight className="text-lg translate-y-[1px]" />

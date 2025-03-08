@@ -6,4 +6,4 @@ function ActiveLink() {
   );
 }
 
-export default ActiveSidebarLink;
+export default ActiveLink;

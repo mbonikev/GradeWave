@@ -12,6 +12,7 @@ import StudentNotifications from "./pages/student/StudentNotifications";
 import StudentSettings from "./pages/student/StudentSettings";
 import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./assets/util/ProtectedRouteStudent";
+import ProtectedRouteSchool from "./assets/util/ProtectedRouteSchool"; // Use a separate route protection for schools
 import ProtectedAuth from "./assets/util/ProtectedAuth";
 
 function App() {
@@ -19,17 +20,17 @@ function App() {
   const [animateFetching, setAnimateFetching] = useState(true);
 
   useEffect(() => {
-    setAnimateFetching(true);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setAnimateFetching(false);
+      setTimeout(() => {
+        setFetching(false);
+      }, 500); // Reduced inner timeout for smoother transition
     }, 1500);
-    setTimeout(() => {
-      setFetching(false);
-    }, 2000);
+
+    return () => clearTimeout(timer); // Cleanup timeout on component unmount
   }, []);
 
-  
-  const protectedRoutes = [
+  const studentRoutes = [
     { path: "/student_dashboard", element: <StudentDashboard /> },
     { path: "/student_past_papers", element: <StudentPapers /> },
     {
@@ -39,22 +40,19 @@ function App() {
     { path: "/student_check_results", element: <StudentCheckResults /> },
     { path: "/student_notifications", element: <StudentNotifications /> },
     { path: "/student_settings", element: <StudentSettings /> },
-    { path: "/school_dashboard", element: <SchoolDashboard /> },
   ];
 
-  const protectedRoutesSchool = [
+  const schoolRoutes = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
   ];
 
   return (
     <div>
-      {/* loading */}
       {fetching && <LoadingScreen animateFetching={animateFetching} />}
 
       <Router>
         <Routes>
           <Route
-            exact
             path="/"
             element={
               <ProtectedAuth>
@@ -63,8 +61,8 @@ function App() {
             }
           />
 
-          {/* Protect all routes for student */}
-          {protectedRoutes.map((route, index) => (
+          {/* Protect student routes */}
+          {studentRoutes.map((route, index) => (
             <Route
               key={index}
               path={route.path}
@@ -74,13 +72,13 @@ function App() {
             />
           ))}
 
-          {/* Protect all routes for student */}
-          {protectedRoutesSchool.map((route, index) => (
+          {/* Protect school routes */}
+          {schoolRoutes.map((route, index) => (
             <Route
-              key={index}
+              key={`school-${index}`}
               path={route.path}
               element={
-                <ProtectedRouteStudent>{route.element}</ProtectedRouteStudent>
+                <ProtectedRouteSchool>{route.element}</ProtectedRouteSchool>
               }
             />
           ))}

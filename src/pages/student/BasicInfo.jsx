@@ -46,17 +46,19 @@ function BasicInfo() {
         </div>
         <div className="w-full flex flex-col gap-1">
           <h1 className="text-sm font-normal">Current School</h1>
+          <h1 className="text-sm font-normal mb-1 text-text-color-weak">
+            This field is managed by Schools
+          </h1>
           <input
             type="text"
             name="country"
             readOnly={true}
-            placeholder="Country"
+            placeholder="School name"
             className="ring-1 ring-stone-200 pointer-events-none rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">Shool Name</h1>
-          <h1 className="text-sm font-normal mb-1 text-text-color-weak">Shool Name</h1>
+          <h1 className="text-sm font-normal">Phone number</h1>
           <input
             type="text"
             name="phone"

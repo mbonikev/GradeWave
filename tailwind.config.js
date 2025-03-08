@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         "main-color": "#3277f0",
+        "main-color-school": "#f97316",
         "main-color-dark": "#0f50c0",
         "text-color": "#111111",
         "text-color-weak": "#5d5d5d",

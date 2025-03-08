@@ -150,7 +150,13 @@ function Login() {
             </p>
           </div>
           {loading ? (
-            <div className="group w-full flex items-center justify-between gap-2 text-main-color hover:text-main-color-dark pointer-events-none select-none">
+            <div
+              className={`group w-full flex items-center justify-between gap-2 ${
+                role === "student"
+                  ? "text-main-color hover:text-main-color-dark"
+                  : "text-main-color-school hover:text-main-color-dark-school"
+              }  pointer-events-none select-none`}
+            >
               <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
                 Continue as a Guest
                 <LuArrowRight className="text-lg translate-y-[1px]" />

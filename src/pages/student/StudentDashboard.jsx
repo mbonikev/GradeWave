@@ -219,7 +219,7 @@ function StudentDashboard() {
             <div
               className={`w-full h-full flex items-center justify-center bg-black/15 z-50`}
             >
-              <Reveal duration={200} triggerOnce keyframes={customAnimation}>
+              {/* <Reveal duration={200} triggerOnce keyframes={customAnimation}> */}
                 <div
                   className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 ${
                     logoutWarn ? "scale-100 " : "scale-75"
@@ -244,7 +244,7 @@ function StudentDashboard() {
                     </button>
                   </div>
                 </div>
-              </Reveal>
+              {/* </Reveal> */}
             </div>
           {/* </Fade> */}
         </div>

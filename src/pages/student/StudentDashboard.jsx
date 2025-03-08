@@ -12,7 +12,19 @@ import { Pfp } from "../../assets";
 import { GiSportMedal, GiTrophy } from "react-icons/gi";
 import LoadingScreen from "../../components/LoadingScreen";
 import Loading from "../../components/Loading";
-import { Fade } from "react-awesome-reveal";
+import Reveal, { Fade } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+const customAnimation = keyframes`
+from{
+  transform: scale(.9);
+  opacity: 0;
+}
+to{
+  transform: scale(1);
+  opacity: 1;
+}
+`;
 
 function StudentDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -172,7 +184,12 @@ function StudentDashboard() {
     { subject: "Kinyarwanda", percentage: 80, grade: "A", color: "#569458" },
     { subject: "Geography", percentage: 75, grade: "B+", color: "#569458" },
     { subject: "History", percentage: 65, grade: "C", color: "#FF9800" },
-    { subject: "Entrepreneurship", percentage: 88, grade: "A", color: "#569458" },
+    {
+      subject: "Entrepreneurship",
+      percentage: 88,
+      grade: "A",
+      color: "#569458",
+    },
   ];
 
   // Update grades based on the selected level
@@ -243,7 +260,10 @@ function StudentDashboard() {
             }`}
           ></div>
         )}
-        <StudentNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
+        <StudentNavbar
+          setLogoutWarn={setLogoutWarn}
+          openSidebar={openSidebar}
+        />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">

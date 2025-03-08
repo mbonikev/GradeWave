@@ -177,7 +177,7 @@ function Login() {
               }  pointer-events-none select-none`}
             >
               <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
-                Continue as a Guest
+                Continue as a Guest {role === "school" && "School"}
                 <LuArrowRight className="text-lg translate-y-[1px]" />
               </div>
               <Loading size="small" />
@@ -216,7 +216,9 @@ function Login() {
         <div
           className="w-full h-full rounded-2xl overflow-hidden relative"
           style={{
-            backgroundImage: `url(${role === 'student' ? ImageStudents : ImageSchool})`,
+            backgroundImage: `url(${
+              role === "student" ? ImageStudents : ImageSchool
+            })`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

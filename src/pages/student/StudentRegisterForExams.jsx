@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function StudentRegisterForExams() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [logoutWarn, setLogoutWarn] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -21,6 +23,10 @@ function StudentRegisterForExams() {
   };
   return (
     <div className="w-full h-fit overflow-y-auto flex-1 flex">
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
@@ -35,7 +41,7 @@ function StudentRegisterForExams() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} />
+        <StudentNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-10 text-text-color/80 w-full border-b border-card-bg-weak pb-2">

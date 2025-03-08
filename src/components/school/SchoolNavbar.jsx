@@ -17,7 +17,7 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 
-function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
+function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);
   const notifpopupRef = useRef(null);
@@ -160,4 +160,4 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
   );
 }
 
-export default StudentNavbar;
+export default SchoolNavbar;

@@ -21,6 +21,15 @@ function StudentDashboard() {
   const [gradesData, setGradesData] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [marks, setMarks] = useState(87);
+  const [loggingOut, setLoggingOut] = useState(false);
+  const [logoutWarn, setLogoutWarn] = useState(false);
+  const handleLoginStudent = () => {
+    sessionStorage.removeItem("loggedInStudent");
+    setLoggingOut(true);
+    setTimeout(() => {
+      window.location.reload();
+    }, 300);
+  };
 
   const openSidebar = () => {
     setShowSidebar(true);

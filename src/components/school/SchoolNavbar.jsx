@@ -69,7 +69,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
           ) : (
             <div className="flex flex-col max-sm:hidden px-2.5">
               <h1 className="text-sm font-medium tracking-tight text-lightBlackText/80">
-                Good Morning, Guest!
+                Good Morning, School!
               </h1>
             </div>
           )}

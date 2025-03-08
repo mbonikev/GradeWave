@@ -108,10 +108,10 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
               ref={notifpopupRef}
               className="absolute top-[120%] w-[290px] h-fit min-h-[400px] rounded-2xl ring-1 bg-white dark:bg-card-dark-1 ring-card-bg-weak dark:ring-card-dark-1 shadow-lg p-1.5"
             >
-              <h1 className="text-base font-medium text-left tracking-tight pt-1 pb-2 px-1 border-b border-card-bg-weak text-text-color/80 w-full">
+              <h1 className="text-base font-medium text-left tracking-tight pt-1 pb-2 px-2 border-b border-card-bg-weak text-text-color/80 w-full">
                 Notifications
               </h1>
-              <div className="w-full h-fit flex flex-col gap-1 pt-2">
+              <div className="w-full h-fit flex flex-col gap-1 pt-1.5">
                 {[
                   {
                     pfp: Pfp,

@@ -156,14 +156,13 @@ function Login() {
               <LuArrowRight className="text-lg translate-y-[1px]" />
             </button>
           ) : (
-            <Link
-              reloadDocument
-              to="/school_dashboard"
+            <button
+            onClick={handleLoginStudent}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark select-none"
             >
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
-            </Link>
+            </button>
           )}
         </form>
         <p className="text-sm font-normal text-text-color-weak mb-2">

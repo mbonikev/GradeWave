@@ -8,6 +8,7 @@ function ConfirmLogout({logoutWarn, setLogoutWarn}) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
+    sessionStorage.removeItem("loggedInSchool");
     setLoggingOut(true);
     setTimeout(() => {
       window.location.reload();

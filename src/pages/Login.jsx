@@ -37,6 +37,10 @@ function Login() {
 
   const handleRole = (e) => {
     setRole(e)
+    if(e === "student"){
+      document.documentElement.style.setProperty("--main-color", "#00bc7d");
+      document.documentElement.style.setProperty("--main-color-weak", "#00bc7d27");
+    }
   }
 
   return (
@@ -78,9 +82,9 @@ function Login() {
               </div>
               {/* school */}
               <div
-                onClick={() => handleRole("tutor")}
+                onClick={() => handleRole("school")}
                 className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
-                  role === "tutor" ? "" : "border-white/40 text-text-color-weak"
+                  role === "school" ? "" : "border-white/40 text-text-color-weak"
                 }`}
               >
                 <LuSchool className="text-xl" />

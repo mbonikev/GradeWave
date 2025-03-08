@@ -194,7 +194,9 @@ function StudentDashboard() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
-      {logoutWarn && <ConfirmLogout setLogoutWarn={setLogoutWarn} />}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

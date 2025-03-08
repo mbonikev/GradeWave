@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Reveal from "react-awesome-reveal";
 
 function ConfirmLogout() {
   const [loggingOut, setLoggingOut] = useState(false);
@@ -14,7 +15,7 @@ function ConfirmLogout() {
     <div
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}
     >
-      <Revea
+      <Reveal
         duration={200}
         triggerOnce
         keyframes={customAnimation}
@@ -50,7 +51,7 @@ function ConfirmLogout() {
             </div>
           </div>
         </div>
-      </Revea>
+      </Reveal>
     </div>
   );
 }

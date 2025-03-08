@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { IntroGif } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function StudentProfile() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [logoutWarn, setLogoutWarn] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -21,6 +23,10 @@ function StudentProfile() {
   };
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

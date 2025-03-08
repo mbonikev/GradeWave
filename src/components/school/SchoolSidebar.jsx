@@ -73,9 +73,6 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           <LuChartPie className="text-xl max-lg:text-2xl" />
           Dashboard
         </Link>
-
-        {/* section */}
-        <SidebarSectionTitle title={"Exams"} />
         <Link
           to="/school_register_for_exams"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

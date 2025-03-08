@@ -14,19 +14,9 @@ import Loading from "../Loading";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 import Reveal, { Fade } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
 import { Link } from "react-router-dom";
 
-const customAnimation = keyframes`
-from{
-  transform: scale(.9);
-  opacity: 0;
-}
-to{
-  transform: scale(1);
-  opacity: 1;
-}
-`;
+
 function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);

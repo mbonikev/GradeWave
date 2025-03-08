@@ -59,12 +59,12 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"General"} />
         <Link
           to={{
-            pathname: "/student_dashboard",
+            pathname: "/school_dashboard",
             state: { pageBehavior: "silent" }, // Example state
           }}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_dashboard"
+            location.pathname === "/school_dashboard"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -77,10 +77,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         {/* section */}
         <SidebarSectionTitle title={"Exams"} />
         <Link
-          to="/student_register_for_exams"
+          to="/school_register_for_exams"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_register_for_exams"
+            location.pathname === "/school_register_for_exams"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -90,10 +90,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           Register for exams
         </Link>
         <Link
-          to="/student_check_results"
+          to="/school_check_results"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_check_results"
+            location.pathname === "/school_check_results"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -103,10 +103,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           Results
         </Link>
         <Link
-          to="/student_past_papers"
+          to="/school_past_papers"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_past_papers"
+            location.pathname === "/school_past_papers"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -119,10 +119,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
         {/* <Link
-          to="/student_profile"
+          to="/school_profile"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_profile"
+            location.pathname === "/school_profile"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -132,10 +132,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           Profile
         </Link> */}
         <Link
-          to="/student_settings"
+          to="/school_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/student_settings"
+            location.pathname === "/school_settings"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

@@ -213,14 +213,14 @@ function StudentDashboard() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
-      {!logoutWarn && (
+      {logoutWarn && (
         <div
           className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}
         >
-          {/* <Reveal duration={200} triggerOnce keyframes={customAnimation}> */}
+          <Reveal duration={200} triggerOnce keyframes={customAnimation}>
           <div
             className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 ${
-              logoutWarn ? "scale-100 " : "scale-75"
+              logoutWarn ? "scale-100 transition-all " : "scale-75"
             } `}
           >
             <TiWarning className="text-[40px] mx-auto text-amber-500" />
@@ -242,7 +242,7 @@ function StudentDashboard() {
               </button>
             </div>
           </div>
-          {/* </Reveal> */}
+          </Reveal>
         </div>
       )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />

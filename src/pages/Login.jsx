@@ -161,11 +161,7 @@ function Login() {
                 Continue as a Guest
                 <LuArrowRight className="text-lg translate-y-[1px]" />
               </div>
-              {role === "student" ? (
-                <Loading size="small" />
-              ) : (
-                <Loading size="small" type="school" />
-              )}
+              <Loading size="small" />
             </div>
           ) : role === "student" ? (
             <button

@@ -53,18 +53,6 @@ input {
   background: rgba(100, 100, 100, 0.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #404040;
-    border: 4px solid #212121;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #7e7e7e99;
-  }
-}
 
 video::-webkit-media-controls {
   display: none !important;

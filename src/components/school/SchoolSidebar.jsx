@@ -37,11 +37,11 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         <div
           className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
-            G
+          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-red-500 text-white">
+            S
           </div>
           <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
-            Guest
+            School
           </h1>
         </div>
         {/* <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-card-bg-weak rounded-xl">

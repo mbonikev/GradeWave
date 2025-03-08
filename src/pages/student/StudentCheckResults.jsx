@@ -7,6 +7,7 @@ import { PiGraduationCapDuotone } from "react-icons/pi";
 import { LuArrowLeft, LuArrowRight, LuSchool } from "react-icons/lu";
 import { Fade } from "react-awesome-reveal";
 import Loading from "../../components/Loading";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function StudentCheckResults() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -17,6 +18,7 @@ function StudentCheckResults() {
   const [gradesData, setGradesData] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [marks, setMarks] = useState(87);
+  const [logoutWarn, setLogoutWarn] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -158,7 +160,12 @@ function StudentCheckResults() {
     { subject: "Kinyarwanda", percentage: 80, grade: "A", color: "#569458" },
     { subject: "Geography", percentage: 75, grade: "B+", color: "#569458" },
     { subject: "History", percentage: 65, grade: "C", color: "#FF9800" },
-    { subject: "Entrepreneurship", percentage: 88, grade: "A", color: "#569458" },
+    {
+      subject: "Entrepreneurship",
+      percentage: 88,
+      grade: "A",
+      color: "#569458",
+    },
   ];
 
   // Update grades based on the selected level
@@ -179,6 +186,10 @@ function StudentCheckResults() {
   }, [level]);
   return (
     <div className="w-full h-fit overflow-y-auto flex-1 flex">
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

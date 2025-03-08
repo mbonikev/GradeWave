@@ -55,7 +55,7 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         </button>
       </div>
       {/* middle links */}
-      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none">
+      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none mt-2">
         <SidebarSectionTitle title={"General"} />
         <Link
           to={{

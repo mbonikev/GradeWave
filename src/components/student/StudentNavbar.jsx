@@ -71,12 +71,12 @@ function StudentNavbar({ title, openSidebar }) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
   return (
-    <div className="flex items-center justify-between text-lightBlackText p-2 max-lg:border-b sticky top-0 bg-white border-stone-100">
+    <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 bg-white border-stone-100">
       {/* confirm */}
       {logoutWarn && (
         <Fade duration={200} triggerOnce>
           <div
-            className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}
+            className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-[100]`}
           >
             <Reveal duration={200} triggerOnce keyframes={customAnimation}>
               <div

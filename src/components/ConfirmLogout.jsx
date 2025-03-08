@@ -12,7 +12,16 @@ function ConfirmLogout() {
       window.location.reload();
     }, 300);
   };
-
+  const customAnimation = keyframes`
+  from{
+    // transform: scale(.9);
+    opacity: 0;
+  }
+  to{
+    // transform: scale(1);
+    opacity: 1;
+  }
+  `;
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}

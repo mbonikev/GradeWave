@@ -4,10 +4,12 @@ import { IntroGif, Pfp } from "../../assets";
 import StudentSidebar from "../../components/student/StudentSidebar";
 import StudentNavbar from "../../components/student/StudentNavbar";
 import { LuShare2 } from "react-icons/lu";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function StudentNotifications() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [logoutWarn, setLogoutWarn] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -22,6 +24,10 @@ function StudentNotifications() {
   };
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
       <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${

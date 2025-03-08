@@ -28,7 +28,7 @@ function App() {
     }, 2000);
   }, []);
 
-  // List of routes to protect
+  
   const protectedRoutes = [
     { path: "/student_dashboard", element: <StudentDashboard /> },
     { path: "/student_past_papers", element: <StudentPapers /> },
@@ -39,6 +39,10 @@ function App() {
     { path: "/student_check_results", element: <StudentCheckResults /> },
     { path: "/student_notifications", element: <StudentNotifications /> },
     { path: "/student_settings", element: <StudentSettings /> },
+    { path: "/school_dashboard", element: <SchoolDashboard /> },
+  ];
+
+  const protectedRoutesSchool = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
   ];
 

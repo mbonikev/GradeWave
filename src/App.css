@@ -32,6 +32,7 @@ select {
 button,
 input {
   outline: none;
+  transition: .2s ease !important;
 }
 
 ::-webkit-scrollbar {

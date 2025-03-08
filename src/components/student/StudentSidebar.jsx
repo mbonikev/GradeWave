@@ -34,9 +34,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       } transition-all duration-300 z-30 bg-body-bg h-svh sticky top-0 left-0 max-lg:fixed flex flex-col bg-lightSidebarBg text-lightBlackText border-r border-stone-100 overflow-y-auto`}
     >
       <div className="w-full flex items-center justify-between px-2 pt-2 gap-1 select-none">
-        <Link
-          to="/student_settings"
-          className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl hover:bg-card-bg-weak`}
+        <div
+          className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl`}
         >
           <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
             G
@@ -44,7 +43,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
             Guest
           </h1>
-        </Link>
+        </div>
         {/* <button className=" max-lg:hidden text-lightBlackText/80 hover:text-main-color p-1 h-[40px] min-w-fit aspect-square flex items-center justify-center hover:bg-card-bg-weak rounded-xl">
           <LuQrCode className="text-xl" />
         </button> */}
@@ -101,7 +100,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          Check Results
+          Results
         </Link>
         <Link
           to="/student_past_papers"
@@ -117,24 +116,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           Resources
         </Link>
 
-        {/* section */}
-        <SidebarSectionTitle title={"updates"} />
-        <Link
-          to="/student_notifications"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-between whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/student_notifications"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <span className="flex items-center gap-2">
-            <GrAnnounce className="text-xl max-lg:text-2xl" />
-            Announcements
-          </span>
-          <span className="text-xs ">2</span>
-        </Link>
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
         {/* <Link
@@ -177,7 +158,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <TbHeadset className="text-xl max-lg:text-2xl" />
-          Help Center
+          Get Help
         </Link>
       </div>
     </div>

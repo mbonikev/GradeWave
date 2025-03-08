@@ -213,7 +213,7 @@ function StudentDashboard() {
   return (
     <div className="w-full h-fit flex-1 flex">
       {/* confirm */}
-      {logoutWarn && (
+      {!logoutWarn && (
         <Fade duration={200} triggerOnce>
           <div
             className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/15 z-50`}

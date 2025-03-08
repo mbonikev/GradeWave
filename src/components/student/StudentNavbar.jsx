@@ -3,7 +3,7 @@ import { FiCommand, FiLogOut } from "react-icons/fi";
 import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline, IoNotificationsOutline } from "react-icons/io5";
 import { LuQrCode, LuSearch, LuShare2 } from "react-icons/lu";
-import { LogoBlue, Pfp } from "../../assets";
+import { LogoBlue, LogoWhite, Pfp } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import {
   RiApps2AddFill,
@@ -114,14 +114,14 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
               <div className="w-full h-fit flex flex-col gap-1 pt-1.5">
                 {[
                   {
-                    pfp: Pfp,
+                    pfp: LogoWhite,
                     name: "Adminstrator",
                     publishedAt: "24/02/2025",
                     message:
                       "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
                   },
                   {
-                    pfp: Pfp,
+                    pfp: LogoWhite,
                     name: "Adminstrator",
                     publishedAt: "24/02/2025",
                     message:
@@ -134,7 +134,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
                     className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                   >
                     <div className="w-full flex items-start justify-start gap-3">
-                      <div className="size-8 rounded-full bg-main-color p-1 aspect-square">
+                      <div className="size-8 rounded-full bg-main-color p-1.5 aspect-square">
                         <img
                           src={annoucement.pfp}
                           className="w-full h-full object-cover rounded-full"

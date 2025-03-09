@@ -37,7 +37,6 @@ function SchoolPromotionDetails() {
   }, [filter]);
 
   useEffect(() => {
-    const Filtered = [...filteredStudents];
     if (searchValue === "") {
       const Filtered =
         filter !== "All"

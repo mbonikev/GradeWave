@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
-function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
+function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
   const [studentName, setStudentName] = useState("Ingabire Florence");
   const [studentAge, setStudentAge] = useState(17);
@@ -236,4 +236,4 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
   );
 }
 
-export default AddEditStudent;
+export default AddEditCombination;

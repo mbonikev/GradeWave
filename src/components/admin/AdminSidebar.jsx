@@ -99,7 +99,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <TfiMarkerAlt className="text-xl max-lg:text-2xl" />
+          <TfiMarkerAlt className="text-xl stroke-[0.7px] max-lg:text-2xl" />
           Marking
         </Link>
         <Link

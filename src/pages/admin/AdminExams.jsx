@@ -155,16 +155,16 @@ function AdminExams() {
                   </span>
                 </h1>
               </div>
-              <div className="w-full flex items-end justify-end flex-col gap-2">
+              <div className="w-full flex items-end justify-end flex-col gap-3 max-md:mt-5">
                 <Link
                   to="/student_register_for_exams"
-                  className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
+                  className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
                 >
                   Extend
                 </Link>
                 <Link
                   to="/student_register_for_exams"
-                  className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
+                  className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
                 >
                   Extend
                 </Link>

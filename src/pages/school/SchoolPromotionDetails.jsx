@@ -91,8 +91,8 @@ function SchoolPromotionDetails() {
               onChange={(e) => setFilter(e.target.value)}
             >
               <option value="All">All</option>
-              <option value="Passed">Passed</option>
-              <option value="Failed">Failed</option>
+              <option disabled={year === "2025-2026"} value="Passed">Passed</option>
+              <option disabled={year === "2025-2026"} value="Failed">Failed</option>
             </select>
             <div className="flex-1 max-w-[230px] max-md:max-w-full h-fit relative">
               <LuSearch className="absolute top-0 bottom-0 my-auto left-2.5 text-text-color-weak " />

@@ -77,7 +77,7 @@ function AdminExams() {
               to="/student_register_for_exams"
               className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
             >
-              Close
+              Extend
             </Link>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">

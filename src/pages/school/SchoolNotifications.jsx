@@ -23,7 +23,7 @@ function SchoolNotifications() {
     }, 100);
   };
 
-  const notifications = [
+  const Notifications = [
     {
       pfp: LogoWhite,
       name: "System",
@@ -83,14 +83,7 @@ function SchoolNotifications() {
           </h1>
 
           <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-            {[
-              {
-                pfp: LogoWhite,
-                name: "System",
-                publishedAt: "24/02/2025",
-                message: "4 days left to register Your Students",
-              },
-            ].map((annoucement, index) => (
+            {Notifications.map((annoucement, index) => (
               <div
                 key={index}
                 className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"

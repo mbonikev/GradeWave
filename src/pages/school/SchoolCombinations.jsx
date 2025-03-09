@@ -46,7 +46,7 @@ function SchoolCombinations() {
         <SchoolNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
-          <div className="w-full flex items-center gap-2 justify-between mt-4">
+          <div className="w-full flex items-center gap-2 justify-between mt-3">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight text-text-color/80 flex items-center gap-2">
               Combinations
             </h1>

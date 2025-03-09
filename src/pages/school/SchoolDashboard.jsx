@@ -160,7 +160,7 @@ function SchoolDashboard() {
               </h1>
               <Link
                 to="/school_dashboard"
-                class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color hover:text-main-color-dark whitespace-nowrap"
+                class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
               >
                 View all
                 <LuArrowRight />

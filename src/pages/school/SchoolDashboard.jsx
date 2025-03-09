@@ -120,7 +120,7 @@ function SchoolDashboard() {
               for="level"
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              Select Level:
+              Select Promotion:
             </label>
             <select
               id="level"
@@ -129,8 +129,8 @@ function SchoolDashboard() {
               value={level}
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >
-              <option value="p6">PLE, 2021-2022</option>
-              <option value="senior-3">O-Level, 2025-2026</option>
+              <option value="p6">2023-2024</option>
+              <option value="senior-3">2024-2025</option>
             </select>
           </div>
           <div className="py-6 space-y-6">

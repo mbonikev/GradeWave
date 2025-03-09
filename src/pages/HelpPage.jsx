@@ -1,10 +1,14 @@
 import React from "react";
-import { BannerBlue } from "../assets";
+import { BannerBlue, LogoBlack } from "../assets";
 import { Combinations } from "../content/Combinations";
 
 const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
+      <div className="flex items-center justify-start gap-1">
+        <img src={LogoBlack} className="size-8" />
+        <h1 className="text-xl font-medium">Grade Wave</h1>
+      </div>
       <div className="w-full h-fit relative">
         <h1 className="bg-white z-30 text-text-color/80 font-bold tracking-tight text-2xl w-fit h-fit px-6 py-2 rounded-2xl  absolute left-0 -bottom-5 right-0 mx-auto">
           Help Center

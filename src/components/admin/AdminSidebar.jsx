@@ -74,7 +74,19 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           <LuChartPie className="text-xl max-lg:text-2xl" />
           Dashboard
         </Link>
-
+        <Link
+          to="/admin_exams"
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
+          ${
+            location.pathname === "/school_exams"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
+              : "text-text-color/85  hover:bg-card-bg-weak"
+          }
+          `}
+        >
+          <LuSettings className="text-xl max-lg:text-2xl" />
+          Exams
+        </Link>
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
         <Link
@@ -82,19 +94,6 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_settings"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <LuSettings className="text-xl max-lg:text-2xl" />
-          Settings
-        </Link>
-        <Link
-          to="/admin_exams"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_exams"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

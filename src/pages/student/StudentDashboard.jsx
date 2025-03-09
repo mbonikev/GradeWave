@@ -318,7 +318,7 @@ function StudentDashboard() {
                 <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
                   <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
-                    <span className="text-base w-[200px]">Mugisha Kenny</span>
+                    <span className="text-base w-[35%]">Mugisha Kenny</span>
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Groupe Scolaire Officiel de Butare
                     </span>
@@ -333,7 +333,7 @@ function StudentDashboard() {
                 <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                   <GiSportMedal className="text-4xl text-stone-400" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
-                    <span className="text-base w-[200px]">Ineza Raissa</span>
+                    <span className="text-base w-[35%]">Ineza Raissa</span>
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Ecole des Sciences Byimana
                     </span>
@@ -348,7 +348,7 @@ function StudentDashboard() {
                 <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                   <GiSportMedal className="text-4xl text-[#e3a782]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
-                    <span className="text-base w-[200px]">Uwase abatoni Stecy</span>
+                    <span className="text-base w-[35%]">Uwase abatoni Stecy</span>
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Lycee de Kigali
                     </span>

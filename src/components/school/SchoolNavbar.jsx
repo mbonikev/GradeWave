@@ -123,7 +123,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                   
                 ].map((annoucement, index) => (
                   <Link
-                    to="/student_notifications"
+                    to="/school_notifications"
                     key={index}
                     className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                   >

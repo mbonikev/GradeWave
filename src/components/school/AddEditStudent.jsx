@@ -38,7 +38,6 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
   }
   `;
 
-
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}
@@ -105,11 +104,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     </h1>
                     <select
                       required
-                      value={
-                        editMode
-                          ? combination
-                          : "Select Combination"
-                      }
+                      value={editMode ? combination : "Select Combination"}
                       onChange={(e) => setCombination(e.target.value)}
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
@@ -163,9 +158,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <select
                     required
                     value={
-                      editMode
-                        ? guardianRelationship
-                        : "Select Relationship"
+                      editMode ? guardianRelationship : "Select Relationship"
                     }
                     onChange={(e) => setGuardianRelationship(e.target.value)}
                     className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -193,7 +186,12 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.district : ""}
-                    onChange={(e) => setResidence(e.target.value)}
+                    onChange={(e) =>
+                      setResidence((prevResidence) => ({
+                        ...prevResidence,
+                        [e.target.name]: e.target.value,
+                      }))
+                    }
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -205,7 +203,12 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.sector : ""}
-                    onChange={(e) => setresidence(e.target.value)}
+                    onChange={(e) =>
+                      setResidence((prevResidence) => ({
+                        ...prevResidence,
+                        [e.target.name]: e.target.value,
+                      }))
+                    }
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -217,7 +220,12 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.village : ""}
-                    onChange={(e) => setresidence(e.target.value)}
+                    onChange={(e) =>
+                      setResidence((prevResidence) => ({
+                        ...prevResidence,
+                        [e.target.name]: e.target.value,
+                      }))
+                    }
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

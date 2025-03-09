@@ -67,10 +67,10 @@ function SchoolManageStudents() {
                 <tr>
                   <th className="px-4 py-2">Level</th>
                   <th className="px-4 py-2">Total Students</th>
-                  <th className="px-4 py-2"></th>
-                  <th className="px-4 py-2"></th>
-                  <th className="px-4 py-2">/Year</th>
-                  <th className="px-4 py-2"></th>
+                  <th className="px-4 py-2">Status</th>
+                  <th className="px-4 py-2">Progress</th>
+                  <th className="px-4 py-2">Promotion/Year</th>
+                  <th className="px-4 py-2">Combination</th>
                 </tr>
               </thead>
               <tbody>

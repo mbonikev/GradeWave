@@ -137,7 +137,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
                       <div className={`size-8 rounded-full aspect-square ${annoucement.name === "School" ? 'bg-main-color-school' : 'p-1.5 bg-main-color'}`}>
                         <img
                           src={annoucement.pfp}
-                          className="w-full h-full object-cover rounded-full"
+                          className="w-full h-fit min-h-full object-cover rounded-full"
                         />
                       </div>
 

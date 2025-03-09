@@ -6,15 +6,23 @@ import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
 function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
-  const [studentName, setStudentName] = useState("Ingabire Florence");
-  const [studentAge, setStudentAge] = useState(17);
-  const [combination, setCombination] = useState("MCB");
-  const [guardianName, setGuardianName] = useState("Jeanne Muhoza");
-  const [guardianContact, setGuardianContact] = useState("+250788123456");
-  const [guardianRelationship, setGuardianRelationship] = useState("Mother");
-  const [district, setDistrict] = useState("Kigali");
-  const [sector, setSector] = useState("Nyarugenge");
-  const [village, setVillage] = useState("Nyamirambo");
+  const [studentName, setStudentName] = useState(
+    editMode ? "Ingabire Florence" : ""
+  );
+  const [studentAge, setStudentAge] = useState(editMode ? 17 : "");
+  const [combination, setCombination] = useState(editMode ? "MCB" : "");
+  const [guardianName, setGuardianName] = useState(
+    editMode ? "Jeanne Muhoza" : ""
+  );
+  const [guardianContact, setGuardianContact] = useState(
+    editMode ? "+250788123456" : ""
+  );
+  const [guardianRelationship, setGuardianRelationship] = useState(
+    editMode ? "Mother" : ""
+  );
+  const [district, setDistrict] = useState(editMode ? "Kigali" : "");
+  const [sector, setSector] = useState(editMode ? "Nyarugenge" : "");
+  const [village, setVillage] = useState(editMode ? "Nyamirambo" : "");
 
   const handleAddStudent = () => {
     setAdding(true);

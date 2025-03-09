@@ -198,6 +198,44 @@ function SchoolDashboard() {
                 </div>
               ))}
             </div>
+            {/* o-level */}
+            <div className="w-full flex items-center justify-between mt-6 mb-3">
+              <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+                Top 5 O-level Candidates
+              </h1>
+              <Link
+                to="/school_dashboard"
+                class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
+              >
+                View all
+                <LuArrowRight />
+              </Link>
+            </div>
+            {/* Students Table */}
+            <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+              <table className="w-full text-left">
+                <thead className="bg-card-bg-weak">
+                  <tr>
+                    <th className="px-4 py-2">Student ID</th>
+                    <th className="px-4 py-2">Name</th>
+                    <th className="px-4 py-2">Status</th>
+                    <th className="px-4 py-2">Progress</th>
+                    <th className="px-4 py-2">Promotion/Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {oLevelStudents.map((student) => (
+                    <tr key={student.id} className="border-t">
+                      <td className="px-4 py-2">{student.id}</td>
+                      <td className="px-4 py-2">{student.name}</td>
+                      <td className="px-4 py-2">{student.status}</td>
+                      <td className="px-4 py-2">{student.progress}</td>
+                      <td className="px-4 py-2">{student.promotion}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
             {/* a-level */}
             <div className="w-full flex items-center justify-between mt-6 mb-3">
               <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">

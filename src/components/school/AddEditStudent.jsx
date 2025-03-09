@@ -48,15 +48,15 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             {/* content */}
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit">
               <div className="w-fit h-fit">
-                <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
+                <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
                   School ID
                 </h1>
                 <input
                   // disabled={!isAgree}
                   // onClick={() => login()}
                   required
-                  placeholder="XXX-XXXX"
-                  className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+                  placeholder="Full Names"
+                  className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2"
                 />
               </div>
             </div>

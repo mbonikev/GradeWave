@@ -152,6 +152,80 @@ function AdminDashboard() {
               ))}
             </div>
           </div>
+          {/* o-level */}
+          <div className="w-full flex items-center justify-between mt-6 mb-3">
+            <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+              O-level Glrobal Ranking 2024-2025
+            </h1>
+            <Link
+              to="/school_promotion_details/2024-2025/O-Level"
+              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color whitespace-nowrap"
+            >
+              View all
+              <LuArrowRight />
+            </Link>
+          </div>
+          {/* Students Table */}
+          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+            <table className="w-full text-left">
+              <thead className="bg-card-bg-weak">
+                <tr>
+                  <th className="px-4 py-2 w-[40px] text-center">
+                    <span className="flex gap-0.5 justify-center pl-2 w-full ">
+                      N <sub className="pt-1">o</sub>
+                    </span>
+                  </th>
+                  <th className="px-4 py-2">Name</th>
+                  <th className="px-4 py-2">School</th>
+                  <th className="px-4 py-2">Score</th>
+                  <th className="px-4 py-2 w-[100px]">Combination</th>
+                  <th className="px-4 py-2 w-[90px]"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {topStudentsOlevel.map((student, index) => (
+                  <tr key={index} className="border-t">
+                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
+                      {index + 1}
+                    </td>
+                    <td className="px-4 py-2 w-[200px] whitespace-nowrap">
+                      <Link
+                        // to={`/school_student_results/${student.name}`}
+                        className="hover:text-main-color hover:underline"
+                      >
+                        {student.name}
+                      </Link>
+                    </td>
+                    <td className={`px-4 py-2 whitespace-nowrap`}>
+                      <span>
+                        <Link
+                          // to={`/school_student_results/${student.name}`}
+                          className="hover:text-main-color hover:underline"
+                        >
+                          {student.school}
+                        </Link>
+                      </span>
+                    </td>
+                    <td className={`px-4 py-2 `}>
+                      <span>{student.score}</span>
+                    </td>
+                    <td className="px-4 py-2 w-[100px]">
+                      <span className="text-text-color-weak/60">N/A</span>
+                    </td>
+                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
+                      <button
+                        // onClick={handleEdit}
+                        className="text-main-color"
+                      >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {/* o-level */}
           <div className="w-full flex items-center justify-between mt-6 mb-3">
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
               O-level Glrobal Ranking 2024-2025

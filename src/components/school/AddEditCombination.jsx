@@ -57,7 +57,7 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
             } `}
           >
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
-              Add Student ({level})
+              Add Combination
             </h1>
 
             {/* content */}

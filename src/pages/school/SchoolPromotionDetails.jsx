@@ -70,7 +70,7 @@ function SchoolPromotionDetails() {
             <h1 className="text-[28px] min-w-fit font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
               <Link
                 to="/school_manage_students"
-                className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"
+                className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center flex-wrap"
               >
                 <LuArrowLeft className="text-xl stroke-[3px]" />
               </Link>
@@ -78,7 +78,7 @@ function SchoolPromotionDetails() {
             </h1>
             <button className="h-[35px] mt-3 px-4 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
               <LuPlus className="text-lg" />
-              Add Student
+              <span className="max-sm:hidden">Add Student</span>
             </button>
           </div>
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">

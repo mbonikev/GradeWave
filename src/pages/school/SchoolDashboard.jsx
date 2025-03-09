@@ -42,17 +42,23 @@ function SchoolDashboard() {
     {
       title: "Passed Candidates",
       value: 900,
-      icon: <LuCircleCheckBig className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />,
+      icon: (
+        <LuCircleCheckBig className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />
+      ),
     },
     {
       title: "Average Score",
       value: "78%",
-      icon: <LuChartPie className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-yellow-500" />,
+      icon: (
+        <LuChartPie className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-yellow-500" />
+      ),
     },
     {
       title: "Promotion",
       value: "2024-2025",
-      icon: <LuCalendarDays className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-purple-500" />,
+      icon: (
+        <LuCalendarDays className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-purple-500" />
+      ),
     },
   ];
 
@@ -284,7 +290,14 @@ function SchoolDashboard() {
                   {oLevelStudents.map((student) => (
                     <tr key={student.id} className="border-t">
                       <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                      <td className="px-4 py-2 w-[280px]">{student.name}</td>
+                      <td className="px-4 py-2 w-[280px]">
+                        <Link
+                          to={`/school_student_results/${student.name}`}
+                          className="hover:text-main-color-school hover:underline"
+                        >
+                          {student.name}
+                        </Link>
+                      </td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>
@@ -324,7 +337,14 @@ function SchoolDashboard() {
                   {students.map((student) => (
                     <tr key={student.id} className="border-t">
                       <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                      <td className="px-4 py-2 w-[280px]">{student.name}</td>
+                      <td className="px-4 py-2 w-[280px]">
+                        <Link
+                          to={`/school_student_results/${student.name}`}
+                          className="hover:text-main-color-school hover:underline"
+                        >
+                          {student.name}
+                        </Link>
+                      </td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>

@@ -58,7 +58,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         </button>
       </div>
       {/* middle links */}
-      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none mt-5">
+      <div className="flex-1 flex flex-col pl-5 pr-2 gap-1 select-none mt-2">
         <SidebarSectionTitle title={"General"} />
         <Link
           to={{
@@ -142,7 +142,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Schools
         </Link>
         {/* section */}
-        {/* <SidebarSectionTitle title={"tweaks"} /> */}
+        <SidebarSectionTitle title={"tweaks"} />
         <Link
           to="/admin_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

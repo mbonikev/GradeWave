@@ -31,7 +31,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 import AdminNotifications from "./pages/admin/AdminNotifications";
 import AdminAnnounce from "./pages/admin/AdminAnnounce";
 import SchoolAnnounce from "./pages/school/SchoolAnnounce";
-import HelpPage from "./pages/HelpPage";
+import HelpPage from "./pages/student/HelpPageStudent";
 
 function App() {
   const [fetching, setFetching] = useState(true);

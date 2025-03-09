@@ -38,7 +38,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
-            className={`w-[980px] max-w-[95%] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
+            className={`w-[980px] max-w-[95%] h-fit max-h-[90%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
@@ -47,7 +47,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             </h1>
 
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4">
+            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20">
               {/* Basic Info */}
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
                 Basic Info <span className="text-red-500">*</span>
@@ -176,7 +176,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             </div>
 
             {/* save button */}
-            <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2 mt-7">
+            <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"

@@ -134,6 +134,7 @@ function AddEditStudent({
                   </h1>
                   <input
                     required
+                    value={editMode ? studentDetails.guardianName : ""}
                     placeholder="Guardian's Full Name"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -145,6 +146,7 @@ function AddEditStudent({
                   <input
                     required
                     type="tel"
+                    value={editMode ? studentDetails.guardianContact : ""}
                     placeholder="Phone Number"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

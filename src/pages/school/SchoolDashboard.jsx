@@ -128,7 +128,7 @@ function SchoolDashboard() {
                     <h3 className="text-sm font-medium mb-1 text-text-color-weak">
                       {stat.title}
                     </h3>
-                    <p className="text-2xl font-bold text-text-color">
+                    <p className="text-xl font-bold text-text-color">
                       {stat.value}
                     </p>
                   </div>

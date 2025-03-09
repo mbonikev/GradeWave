@@ -48,7 +48,35 @@ function SchoolManageStudents() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Manage Students
           </h1>
-          <div className="w-full grid grid-cols-2 max-md:grid-cols-1">
+          <div className="w-full grid grid-cols-2 max-md:grid-cols-1 gap-5">
+            {/* Students Table */}
+            <div className="w-full h-fit">
+              <div className="w-full flex items-center justify-between mt-6 mb-3">
+                <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+                  2024-2025 Promotion
+                </h1>
+              </div>
+
+              <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+                <table className="w-full text-left">
+                  <thead className="bg-card-bg-weak">
+                    <tr>
+                      <th className="px-4 py-2">Level</th>
+                      <th className="px-4 py-2">Total Students</th>
+                      <th className="px-4 py-2">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t">
+                      <td className="px-4 py-2 w-[120px]"></td>
+                      <td className="px-4 py-2"></td>
+                      <td className="px-4 py-2"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             {/* Students Table */}
             <div className="w-full h-fit">
               <div className="w-full flex items-center justify-between mt-6 mb-3">

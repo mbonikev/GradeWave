@@ -150,7 +150,6 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       <div className="flex flex-col py-2 pl-5 pr-2">
         <Link
           to={"/student_help"}
-          target="_blank"
           className={`rounded-xl min-w-fit text-sm cursor-pointer select-none relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"

@@ -126,7 +126,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <PiUsersDuotone className="text-xl max-lg:text-2xl" />
+          <PiUsersDuotone className="text-xl stroke-[3px] max-lg:text-2xl" />
           Admins
         </Link>
         <Link

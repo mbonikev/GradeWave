@@ -93,7 +93,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               </div>
 
               {/* Parent/Guardian Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-6 mb-2">
+              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Parent/Guardian Info <span className="text-red-500">*</span>
               </h1>
               <div className="w-full grid grid-cols-3 gap-5">
@@ -138,7 +138,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               </div>
 
               {/* Residence Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-6 mb-2">
+              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Residence Info <span className="text-red-500">*</span>
               </h1>
               <div className="w-full grid grid-cols-3 gap-5">

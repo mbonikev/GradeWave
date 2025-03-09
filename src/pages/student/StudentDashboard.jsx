@@ -315,7 +315,7 @@ function StudentDashboard() {
                 <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                   1st
                 </h1>
-                <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
                   <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base w-[35%]">Mugisha Kenny</span>
@@ -328,7 +328,7 @@ function StudentDashboard() {
                   </h1>
                 </div>
               </div>
-              <div className="w-full flex items-center justify-normal">
+              <div className="w-full flex items-center max-md:flex-col max-md:items-start justify-normal">
                 <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                   2nd
                 </h1>
@@ -345,7 +345,7 @@ function StudentDashboard() {
                   </h1>
                 </div>
               </div>
-              <div className="w-full flex items-center justify-normal">
+              <div className="w-full flex items-center max-md:flex-col max-md:items-start justify-normal">
                 <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                   3rd
                 </h1>

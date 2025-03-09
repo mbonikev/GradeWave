@@ -11,6 +11,7 @@ function SchoolPromotionDetails() {
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
+  const [filter, setFilter] = useState("All")
   const [filteredStudents, setFilteredStudents] = useState([])
   const openSidebar = () => {
     setShowSidebar(true);
@@ -27,7 +28,7 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     
-  },[])
+  },[filter])
 
 
   return (

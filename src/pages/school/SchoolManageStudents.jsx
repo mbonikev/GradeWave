@@ -24,6 +24,13 @@ function SchoolManageStudents() {
 
   const promotions = [
     {
+      year: "2025-2026",
+      levels: [
+        { name: "O-Level", totalStudents: 348, passed: "N/A" },
+        { name: "A-Level", totalStudents: 820, passed: "N/A" },
+      ],
+    },
+    {
       year: "2024-2025",
       levels: [
         { name: "O-Level", totalStudents: 348, passed: 321 },

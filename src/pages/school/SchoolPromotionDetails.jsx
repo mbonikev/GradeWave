@@ -39,6 +39,11 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     const Filtered = [...filteredStudents];
+    if(searchValue != ""){
+      
+    } else{
+      setFilteredStudents(Filtered)
+    }
   }, [searchValue]);
 
   return (

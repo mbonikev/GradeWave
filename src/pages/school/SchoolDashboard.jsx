@@ -97,7 +97,43 @@ function SchoolDashboard() {
       combination: "MCB",
     },
   ];
-
+  const oLevelStudents = [
+    {
+      id: 510534084,
+      name: "Ingabire Florence",
+      status: "Passed",
+      progress: "90%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 110534084,
+      name: "Hakizimana Yves",
+      status: "Passed",
+      progress: "88%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 210534084,
+      name: "Uwase Claudine",
+      status: "Passed",
+      progress: "79%",
+      promotion: "2023-2024",
+    },
+    {
+      id: 310534084,
+      name: "Mugisha Patrick",
+      status: "Passed",
+      progress: "78%",
+      promotion: "2025-2026",
+    },
+    {
+      id: 410534084,
+      name: "Niyonsaba Kevin",
+      status: "Passed",
+      progress: "75.93%",
+      promotion: "2024-2025",
+    },
+  ];
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -162,6 +198,7 @@ function SchoolDashboard() {
                 </div>
               ))}
             </div>
+            {/* a-level */}
             <div className="w-full flex items-center justify-between mt-6 mb-3">
               <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
                 Top 5 A-level Candidates

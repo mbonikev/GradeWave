@@ -37,25 +37,18 @@ function Login() {
 
   const handleRole = (e) => {
     setRole(e);
-    const favicon = document.getElementById("favicon");
     if (e === "school") {
       document.documentElement.style.setProperty("--main-color", "#00bc7d");
       document.documentElement.style.setProperty(
         "--main-color-weak",
         "#00bc7d27"
       );
-      if (favicon) {
-        favicon.href = "/favicon_green.svg";
-      }
     } else {
       document.documentElement.style.setProperty("--main-color", "#3277f0");
       document.documentElement.style.setProperty(
         "--main-color-weak",
         "#3277f027"
       );
-      if (favicon) {
-        favicon.href = "/favicon_blue.svg";
-      }
     }
   };
 

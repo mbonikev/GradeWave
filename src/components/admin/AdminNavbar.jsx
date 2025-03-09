@@ -3,7 +3,7 @@ import { FiCommand, FiLogOut } from "react-icons/fi";
 import { HiMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCardOutline, IoNotificationsOutline } from "react-icons/io5";
 import { LuQrCode, LuSearch, LuShare2 } from "react-icons/lu";
-import { LogoBlue, LogoGreen, LogoWhite, Pfp } from "../../assets";
+import { LogoBlue, LogoGreen, LogoOrange, LogoWhite, Pfp } from "../../assets";
 import { TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import {
   RiApps2AddFill,
@@ -104,7 +104,7 @@ function AdminNavbar({ title, openSidebar, setLogoutWarn }) {
               </h1>
             </div>
           )}
-          <img src={LogoGreen} className="hidden max-sm:flex h-8 ml-2" />
+          <img src={LogoOrange} className="hidden max-sm:flex h-8 ml-2" />
         </div>
         <div className="flex items-center justify-end gap-0 max-lg:gap-2 relative">
           {/* <button className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl">

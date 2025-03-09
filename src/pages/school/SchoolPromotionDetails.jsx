@@ -58,7 +58,7 @@ function SchoolPromotionDetails() {
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-2">
             <select
               name="Type"
-              className="block w-[130px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="block w-[130px] max-md:w-full px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               // value={level}
               // onChange={(e) => setLevel(e.target.value)}
             >
@@ -66,7 +66,7 @@ function SchoolPromotionDetails() {
               <option value="Passed Only">Passed Only</option>
               <option value="Failed Only">Failed Only</option>
             </select>
-            <div className="flex-1 max-w-[230px] h-fit relative">
+            <div className="flex-1 max-w-[230px] max-md:max-w-full h-fit relative">
               <LuSearch className="absolute top-0 bottom-0 my-auto left-2.5 text-text-color-weak " />
               <input
                 type="text"

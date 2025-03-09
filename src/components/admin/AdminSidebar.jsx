@@ -26,7 +26,7 @@ import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 import { BiBox } from "react-icons/bi";
 import { LogoWhite } from "../../assets";
 
-function SchoolSidebar({ closeSidebar, showSidebar }) {
+function AdminSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
   return (
     <div
@@ -164,4 +164,4 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
   );
 }
 
-export default SchoolSidebar;
+export default AdminSidebar;

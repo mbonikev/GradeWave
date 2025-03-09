@@ -88,7 +88,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
             className="text-lightBlackText/80 hover:text-mainColor p-1 h-[40px] aspect-square flex items-center justify-center max-sm:bg-card-bg-weak hover:bg-card-bg-weak hover:text-main-color rounded-xl relative"
           >
             <div className="bg-red-600 text-white aspect-square rounded-full h-[18px] w-[18px] text-xs font-medium absolute inset-y-0 right-0.5 ring-2 ring-body-bg flex items-center justify-center">
-              2
+              1
             </div>
             <IoNotificationsOutline className="text-2xl" />
           </button>
@@ -141,7 +141,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                       </h1>
                     </div>
                     <h1 className="text-sm text-text-color-weak/80 pl-[43px] mt-1">
-                      3w
+                      2d
                     </h1>
                   </Link>
                 ))}

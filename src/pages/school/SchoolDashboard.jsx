@@ -138,7 +138,7 @@ function SchoolDashboard() {
             </div>
 
             {/* Students Table */}
-            <div className="overflow-x-auto rounded-2xl border border-card-bg">
+            <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color">
               <table className="w-full text-left">
                 <thead className="bg-card-bg-weak">
                   <tr>

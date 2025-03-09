@@ -155,7 +155,7 @@ function AdminDashboard() {
           {/* o-level */}
           <div className="w-full flex items-center justify-between mt-6 mb-3">
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
-              O-level Glrobal Ranking 2024-2025
+              O-level Grobal Ranking 2024-2025
             </h1>
           </div>
           {/* Students Table */}
@@ -221,7 +221,7 @@ function AdminDashboard() {
           {/* a-level */}
           <div className="w-full flex items-center justify-between mt-6 mb-3">
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
-              A-level Glrobal Ranking 2024-2025
+              A-level Grobal Ranking 2024-2025
             </h1>
           </div>
           {/* Students Table */}

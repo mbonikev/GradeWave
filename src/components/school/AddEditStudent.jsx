@@ -4,7 +4,14 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
-function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentDetails, editMode }) {
+function AddEditStudent({
+  showEditModal,
+  setShowEditModal,
+  level,
+  year,
+  studentDetails,
+  editMode,
+}) {
   const [adding, setAdding] = useState(false);
   const handleAddStudent = () => {
     setAdding(true);
@@ -55,6 +62,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentD
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
                 Basic Info <span className="text-red-500">*</span>
               </h1>
+              {editMode ? studentDetails.studentName : ""}
               <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
@@ -63,7 +71,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentD
                   <input
                     required
                     placeholder="Full Names"
-                    value={editMode ? studentDetails.studentName : ''}
+                    value={editMode ? studentDetails.studentName : ""}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
@@ -74,7 +82,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentD
                   <input
                     required
                     type="number"
-                    value={editMode ? '' : ''}
+                    value={editMode ? "" : ""}
                     placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -86,7 +94,6 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentD
                     </h1>
                     <select
                       required
-                      
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
                       <option disabled hidden selected>

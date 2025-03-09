@@ -5,6 +5,7 @@ import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { FaUserGraduate, FaClipboardList, FaSchool } from "react-icons/fa";
 import { LuCalendarDays, LuChartPie, LuCircleCheckBig, LuSchool, LuUsers } from "react-icons/lu";
+import { HiMiniUsers } from "react-icons/hi2";
 
 function AdminDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -31,9 +32,9 @@ function AdminDashboard() {
     },
     {
       title: "Registered Candidates",
-      value: 900,
+      value: 92423,
       icon: (
-        <LuCircleCheckBig className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />
+        <HiMiniUsers className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />
       ),
     },
     {

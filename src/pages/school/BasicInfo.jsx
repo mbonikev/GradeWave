@@ -68,10 +68,6 @@ function BasicInfo() {
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
-
-        {/* section title */}
-        <h1 className="text-lg mt-5">Identification Numbers</h1>
-        
         <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
           <LuCheck className="text-lg" />
           Save Changes

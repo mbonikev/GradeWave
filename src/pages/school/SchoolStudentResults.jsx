@@ -106,12 +106,12 @@ function SchoolStudentResults() {
         <div className="w-full h-fit max-w-[1120px] px-5 max-sm:px-2 mb-10 mx-auto">
           <div className="w-full flex items-start gap-2 justify-between">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
-              <Link
-                to={() => navigate(-2)}
+              <button
+                onClick={() => navigate(-1)}
                 className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"
               >
                 <LuArrowLeft className="text-xl max-sm:text-lg stroke-[3px]" />
-              </Link>
+              </button>
               {name}
             </h1>
           </div>

@@ -125,7 +125,7 @@ function SchoolDashboard() {
                   className="p-5 max-md:p-3 flex items-center justify-between bg-white shadow-sm rounded-2xl border border-card-bg-weak"
                 >
                   <div>
-                    <h3 className="text-base font-medium mb-1 text-text-color-weak">
+                    <h3 className="text-sm font-medium mb-1 text-text-color-weak">
                       {stat.title}
                     </h3>
                     <p className="text-2xl font-bold text-text-color">
@@ -138,7 +138,7 @@ function SchoolDashboard() {
             </div>
 
             {/* Students Table */}
-            <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color">
+            <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
               <table className="w-full text-left">
                 <thead className="bg-card-bg-weak">
                   <tr>

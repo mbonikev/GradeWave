@@ -37,8 +37,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         <div
           className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
-            G
+          <div className="h-8 w-8 min-w-8 aspect-square rounded-full overflow-hidden bg-main-color p-1.5">
+            <img src={LogoWhite} className="h-full w-full object-cover" />
           </div>
           <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
             Guest

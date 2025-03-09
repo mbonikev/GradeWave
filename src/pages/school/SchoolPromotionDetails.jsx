@@ -37,7 +37,9 @@ function SchoolPromotionDetails() {
     }
   }, [filter]);
 
-  useEffect(() => {}, [searchValue]);
+  useEffect(() => {
+    const Filtered = [...filteredStudents];
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

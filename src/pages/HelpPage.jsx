@@ -4,7 +4,8 @@ import { BannerBlue } from "../assets";
 const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg py-5">
-      <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden">
+      <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
+        <h1 className="bg-main-color text-white">GradeWave</h1>
         <img src={BannerBlue} className="w-full h-fit min-h-full object-cover" />
       </div>
       <div className="min-h-screen px-6">

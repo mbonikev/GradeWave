@@ -1,6 +1,7 @@
 import React from "react";
 import { LuCheck } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { Pfp } from "../../assets";
 
 function BasicInfo() {
   return (
@@ -9,9 +10,9 @@ function BasicInfo() {
       <h1 className="text-lg ">Account</h1>
       {/* profile */}
       <div className="w-fit flex items-center gap-3 text-text-color/80">
-        <div className="h-[55px] aspect-square rounded-full overflow-hidden">
+        <div className="h-[55px] aspect-square rounded-full overflow-hidden bg-main-color p-1.5">
           <img
-            src="https://images.generated.photos/8XNA1ro5eHGfTVPn4AAkftQu8vOePXx4w7ZTb9AGABc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjU0NDIzLmpwZw.jpg"
+            src={Pfp}
             className="h-full w-full object-cover"
           />
         </div>

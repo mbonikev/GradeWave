@@ -322,7 +322,9 @@ function StudentDashboard() {
                     <span className="text-sm flex-1 text-text-color">
                       Groupe Scolaire Officiel de Butare
                     </span>
-                    <span className="text-sm text-text-color">MPC: 97.28%</span>
+                    <span className="text-sm text-text-color">
+                      MPC: <strong> 97.28%</strong>
+                    </span>
                   </h1>
                 </div>
               </div>
@@ -337,7 +339,9 @@ function StudentDashboard() {
                     <span className="text-sm flex-1 text-text-color">
                       Ecole des Sciences Byimana
                     </span>
-                    <span className="text-sm text-text-color">MCE: 94.92%</span>
+                    <span className="text-sm text-text-color">
+                      MCE: <strong> 94.92%</strong>
+                    </span>
                   </h1>
                 </div>
               </div>
@@ -348,11 +352,15 @@ function StudentDashboard() {
                 <div className="w-full flex items-center gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1">
                   <GiSportMedal className="text-4xl text-[#e3a782]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
-                    <span className="text-base w-[35%]">Uwase abatoni Stecy</span>
+                    <span className="text-base w-[35%]">
+                      Uwase abatoni Stecy
+                    </span>
                     <span className="text-sm flex-1 text-text-color">
                       Lycee de Kigali
                     </span>
-                    <span className="text-sm text-text-color">HEG: 91.28%</span>
+                    <span className="text-sm text-text-color">
+                      HEG: <strong> 91.28%</strong>
+                    </span>
                   </h1>
                 </div>
               </div>

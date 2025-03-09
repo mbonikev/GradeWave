@@ -12,7 +12,7 @@ function SchoolPromotionDetails() {
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
   const [filter, setFilter] = useState("All");
-  const [searchValue, setSearchValue] = useState(null);
+  const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const openSidebar = () => {
     setShowSidebar(true);

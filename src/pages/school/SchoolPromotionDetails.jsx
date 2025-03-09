@@ -40,8 +40,8 @@ function SchoolPromotionDetails() {
   useEffect(() => {
     const Filtered = [...filteredStudents];
     if (searchValue != "") {
-      const res = filteredStudents.filter(
-        (student) => student.name.toLowerCase() === searchValue.toLowerCase()
+      const res = filteredStudents.filter((student) =>
+        student.name.toLowerCase().includes(searchValue.toLowerCase())
       );
       setFilteredStudents(res);
     } else {

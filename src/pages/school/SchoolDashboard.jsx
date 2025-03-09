@@ -224,6 +224,7 @@ function SchoolDashboard() {
               name="level"
               className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               value={level}
+              defaultChecked2024-2025
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >
               <option value="2023-2024  ">2023-2024</option>

@@ -58,7 +58,7 @@ function SchoolPromotionDetails() {
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-2">
             <select
               name="Type"
-              className="block w-[130px] max-md:w-full px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="block w-[130px] max-md:w-fit px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               // value={level}
               // onChange={(e) => setLevel(e.target.value)}
             >

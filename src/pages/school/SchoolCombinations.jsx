@@ -4,6 +4,7 @@ import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuPlus } from "react-icons/lu";
+import { Combinations } from "../../content/Combinations";
 
 function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -126,10 +127,10 @@ function SchoolCombinations() {
                     </td>
                   </tr>
                 ))}
-                {filteredStudents.length === 0 && (
+                {Combinations.length === 0 && (
                   <tr>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2">Student not found!</td>
+                    <td className="px-4 py-2"> no Combination!</td>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
+import { LuArrowLeft } from "react-icons/lu";
 
 function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);

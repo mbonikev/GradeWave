@@ -24,6 +24,7 @@ import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
 import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 import { BiBox } from "react-icons/bi";
+import { LogoWhite } from "../../assets";
 
 function StudentSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();

@@ -28,7 +28,11 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    
+    if(filter !== "All"){
+
+    }else{
+      
+    }
   }, [filter]);
 
   useEffect(() => {

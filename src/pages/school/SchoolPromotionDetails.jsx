@@ -34,12 +34,17 @@ function SchoolPromotionDetails() {
         setFilteredStudents(res);
       } else if (searchValue !== "") {
         const res = Students.filter(
-          (student) => student.status === filter && student.name.toLowerCase().includes(searchValue.toLowerCase())
+          (student) =>
+            student.status === filter &&
+            student.name.toLowerCase().includes(searchValue.toLowerCase())
         );
         setFilteredStudents(res);
       }
     } else {
-      setFilteredStudents(Students);
+      if (searchValue === "") {
+        setFilteredStudents(Students);
+      } else if (searchValue !== "") {
+      }
     }
   }, [filter, searchValue]);
 

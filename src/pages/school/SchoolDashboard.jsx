@@ -156,12 +156,12 @@ function SchoolDashboard() {
             </div>
             <div className="w-full flex items-center justify-between ">
             <h1
-              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+              class="block text-sm font-medium text-text-color whitespace-nowrap"
             >
               Top 5 A-level Candidates
             </h1>
-            <Link to="/"
-              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+            <Link to="/school_dashboard"
+              class=" text-sm font-medium p-1 flex items-center gap-1 text-text-color whitespace-nowrap"
             >
               View all
               <LuArrowRight />

@@ -7,7 +7,7 @@ const HelpPage = () => {
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
       <div className="w-full h-fit relative">
         <h1 className="bg-white z-30 text-text-color font-bold tracking-tight text-2xl w-fit h-fit px-4 py-2 rounded-2xl  absolute left-0 -bottom-5 right-0 mx-auto">
-          GradeWave
+          Help Center
         </h1>
         <div className="w-full max-w-4xl mx-auto rounded-3xl h-[200px] bg-main-color overflow-hidden relative">
           <img
@@ -60,7 +60,7 @@ const HelpPage = () => {
               </div>
 
               {/* save button */}
-              <div className="w-full max-w-[300px] mt-8 max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
+              <div className="w-full max-w-[300px] mt-5 max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
                 <button className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]">
                   Cancel
                 </button>

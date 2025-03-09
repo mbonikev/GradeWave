@@ -4,7 +4,13 @@ import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { FaUserGraduate, FaClipboardList, FaSchool } from "react-icons/fa";
-import { LuCalendarDays, LuChartPie, LuCircleCheckBig, LuSchool, LuUsers } from "react-icons/lu";
+import {
+  LuCalendarDays,
+  LuChartPie,
+  LuCircleCheckBig,
+  LuSchool,
+  LuUsers,
+} from "react-icons/lu";
 import { HiMiniUsers } from "react-icons/hi2";
 
 function AdminDashboard() {
@@ -28,7 +34,9 @@ function AdminDashboard() {
     {
       title: "Total Schools",
       value: 1200,
-      icon: <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
+      icon: (
+        <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />
+      ),
     },
     {
       title: "Candidates",
@@ -79,6 +87,28 @@ function AdminDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
+          <div className="w-fit ml-auto max-sm:w-full flex items-center justify-start gap-3">
+            <label
+              for="level"
+              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+            >
+              Select Promotion:
+            </label>
+            <select
+              id="level"
+              name="level"
+              className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              value={level}
+              defaultChecked2024-2025
+              onChange={(e) => setLevel(e.target.value)} // Update level on selection change
+            >
+              <option value="2024-2025">2024-2025</option>
+              <option value="2023-2024">2023-2024</option>
+              <option value="2024-2025">2022-2023</option>
+              <option value="2024-2025">2021-2022</option>
+              <option value="2024-2025">2020-2021</option>
+            </select>
+          </div>
           <div className="py-6 space-y-6">
             {/* Stats Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

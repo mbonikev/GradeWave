@@ -1,6 +1,7 @@
 import React from "react";
 import { LuCheck } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { LogoWhite } from "../../assets";
 
 function BasicInfo() {
   return (
@@ -11,12 +12,12 @@ function BasicInfo() {
       <div className="w-fit flex items-center gap-3 text-text-color/80">
         <div className="h-[55px] aspect-square rounded-full overflow-hidden">
           <img
-            src="https://images.generated.photos/8XNA1ro5eHGfTVPn4AAkftQu8vOePXx4w7ZTb9AGABc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjU0NDIzLmpwZw.jpg"
+            src={LogoWhite}
             className="h-full w-full object-cover"
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h1 className="text-lg leading-6 font-medium">School Name</h1>
+          <h1 className="text-lg leading-6 font-medium">School</h1>
           <Link
             to="/"
             className="text-sm font-medium text-main-color hover:underline"

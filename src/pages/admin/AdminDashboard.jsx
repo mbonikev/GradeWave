@@ -35,7 +35,7 @@ function AdminDashboard() {
       title: "Total Schools",
       value: 1200,
       icon: (
-        <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />
+        <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-lime-500" />
       ),
     },
     {
@@ -98,9 +98,9 @@ function AdminDashboard() {
               id="level"
               name="level"
               className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
-              value={level}
+              // value={level}
               defaultChecked2024-2025
-              onChange={(e) => setLevel(e.target.value)} // Update level on selection change
+              // onChange={(e) => setLevel(e.target.value)} 
             >
               <option value="2024-2025">2024-2025</option>
               <option value="2023-2024">2023-2024</option>

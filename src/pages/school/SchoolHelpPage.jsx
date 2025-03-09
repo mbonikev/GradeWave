@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BannerBlue, LogoBlack } from "../../assets";
+import { BannerBlue, BannerGreen, LogoBlack, LogoGreen } from "../../assets";
 import { Combinations } from "../../content/Combinations";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const SchoolHelpPage = () => {
         to="/"
         className="flex items-center justify-start gap-1 mb-4 max-w-4xl mx-auto"
       >
-        <img src={LogoBlack} className="size-5" />
+        <img src={LogoGreen} className="size-5" />
         <h1 className="text-base font-medium">Grade Wave</h1>
       </Link>
       <div className="w-full h-fit relative">
@@ -19,7 +19,7 @@ const SchoolHelpPage = () => {
         </h1>
         <div className="w-full max-w-4xl mx-auto rounded-3xl h-[200px] bg-main-color overflow-hidden relative">
           <img
-            src={BannerBlue}
+            src={BannerGreen}
             className="w-full h-fit min-h-full object-cover"
           />
         </div>

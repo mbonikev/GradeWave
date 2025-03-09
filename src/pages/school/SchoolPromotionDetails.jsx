@@ -34,7 +34,10 @@ function SchoolPromotionDetails() {
         .includes(searchValue.toLowerCase());
       if (filter !== "All") {
         const matchesStatus = filter ? student.status === filter : true;
-        return matchesStatus
+        return matchesStatus;
+      } else if (filter === "All") {
+        const matchesStatus = filter ? student.status === filter : true;
+        return matchesStatus;
       }
       return matchesName && matchesStatus;
     });

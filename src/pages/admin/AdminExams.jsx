@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
+import { LuPlus } from "react-icons/lu";
 
 function AdminExams() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -47,6 +48,13 @@ function AdminExams() {
             <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-7 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
               Exams
             </h1>
+            <button
+              // onClick={() => setShowEditModal(true)}
+              className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit whitespace-nowrap rounded-xl flex items-center justify-center gap-1 bg-main-color active:scale-[.98] text-white text-sm font-medium"
+            >
+              <LuPlus className="text-xl" />
+              <span className="max-sm:hidden">Add Exam</span>
+            </button>
           </div>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">
             # Primary

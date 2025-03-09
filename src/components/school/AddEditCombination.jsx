@@ -4,9 +4,14 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
-function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }) {
+function AddEditCombination({
+  showEditModal,
+  setShowEditModal,
+  level,
+  editMode,
+}) {
   const [adding, setAdding] = useState(false);
-  const [combName, setCombName] = useState( editMode ? "MCB" : "");
+  const [combName, setCombName] = useState(editMode ? "MCB" : "");
 
   const handleAddStudent = () => {
     setAdding(true);
@@ -44,9 +49,7 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
           className="z-10"
         >
           <div
-            className={`w-[980px] max-w-[95%] h-fit max-h-[95%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
-              showEditModal ? "scale-100 transition-all " : "scale-75"
-            } `}
+            className={`w-full max-lg:max-w-[95%] h-fit max-h-[95vh] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20`}
           >
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
               Add Combination
@@ -72,7 +75,6 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
-                
               </div>
             </div>
 

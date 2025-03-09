@@ -168,7 +168,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         <Link to={'/admin_help'}
           className={`rounded-xl min-w-fit text-sm cursor-pointer select-none relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/help-center"
+            location.pathname === "/admin_help"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-colorschool"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

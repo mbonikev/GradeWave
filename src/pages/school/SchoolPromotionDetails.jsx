@@ -31,8 +31,7 @@ function SchoolPromotionDetails() {
     const Filtered = [...filteredStudents];
     if (filter !== "All") {
       const res = Students.filter(
-        (student) =>
-          student.progress.toLocaleLowerCase() === filter.toLocaleLowerCase()
+        (student) => student.progress.toLowerCase() === filter.toLowerCase()
       );
     } else {
       setFilteredStudents(Filtered);

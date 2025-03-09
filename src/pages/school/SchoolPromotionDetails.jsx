@@ -76,10 +76,12 @@ function SchoolPromotionDetails() {
               </Link>
               {level} - {year}
             </h1>
-            <button className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
-              <LuPlus className="text-xl" />
-              <span className="max-sm:hidden">Add Student</span>
-            </button>
+            {year === "2025-2026" && (
+              <button className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
+                <LuPlus className="text-xl" />
+                <span className="max-sm:hidden">Add Student</span>
+              </button>
+            )}
           </div>
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">
             <select

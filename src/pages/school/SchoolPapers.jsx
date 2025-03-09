@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IntroGif } from "../../assets";
-import StudentSidebar from "../../components/student/StudentSidebar";
-import StudentNavbar from "../../components/student/StudentNavbar";
 import { Exams, Levels } from "../../content/Exams";
 import { BsFolderFill } from "react-icons/bs";
 import { LuArrowLeft } from "react-icons/lu";

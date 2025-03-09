@@ -181,7 +181,10 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">
                       <Link
-                        to={{`/school_student_results/${student.name}`, state: {from: window.location.pathname}}}
+                        to={{
+                          pathname: `/school_student_results/${student.name}`,
+                          state: { from: window.location.pathname }, // Sending current pathname
+                        }}
                         className="hover:text-main-color-school hover:underline"
                       >
                         {student.name}

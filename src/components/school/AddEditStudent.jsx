@@ -47,7 +47,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             </h1>
 
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20">
+            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
               {/* Basic Info */}
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
                 Basic Info <span className="text-red-500">*</span>

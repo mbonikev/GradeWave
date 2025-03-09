@@ -42,7 +42,9 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            
+            <h1 className="text-[28px] font-bold tracking-tight text-text-color/80">
+              Manage Students
+            </h1>
             {/* save button */}
             <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
               <button

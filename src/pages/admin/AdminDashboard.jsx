@@ -187,28 +187,24 @@ function AdminDashboard() {
               </thead>
               <tbody>
                 {topStudentsOlevel.map((student, index) => (
-                  <tr key={student.id} className="border-t">
+                  <tr key={index} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
                     <td className="px-4 py-2 w-[130px]">{student.rank}</td>
                     <td className="px-4 py-2 w-[280px]">
-                        <Link
-                          // to={`/school_student_results/${student.name}`}
-                          className="hover:text-main-color-school hover:underline"
-                        >
-                          {student.name}
-                        </Link>
+                      <Link
+                        // to={`/school_student_results/${student.name}`}
+                        className="hover:text-main-color-school hover:underline"
+                      >
+                        {student.name}
+                      </Link>
                     </td>
-                    <td
-                      className={`px-4 py-2 `}
-                    >
-                        <span>{student.school}</span>
+                    <td className={`px-4 py-2 `}>
+                      <span>{student.school}</span>
                     </td>
-                    <td
-                      className={`px-4 py-2 `}
-                    >
-                        <span>{student.score}</span>
+                    <td className={`px-4 py-2 `}>
+                      <span>{student.score}</span>
                     </td>
                     <td className="px-4 py-2 w-[100px]">
                       <span className="text-text-color-weak/60">N/A</span>

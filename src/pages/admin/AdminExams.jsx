@@ -79,12 +79,20 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">2,239</span>
               </h1>
             </div>
-            <Link
-              to="/student_register_for_exams"
-              className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
-            >
-              Extend
-            </Link>
+            <div className="w-full flex items-end justify-end flex-col gap-3 max-md:mt-5">
+                <Link
+                  to="/student_register_for_exams"
+                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+                >
+                  Edit
+                </Link>
+                <Link
+                  to="/student_register_for_exams"
+                  className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+                >
+                  Extend
+                </Link>
+              </div>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # O-Level
@@ -109,12 +117,20 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">14,239</span>
               </h1>
             </div>
-            <Link
-              to="/student_register_for_exams"
-              className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
-            >
-              Extend
-            </Link>
+            <div className="w-full flex items-end justify-end flex-col gap-3 max-md:mt-5">
+                <Link
+                  to="/student_register_for_exams"
+                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+                >
+                  Edit
+                </Link>
+                <Link
+                  to="/student_register_for_exams"
+                  className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+                >
+                  Extend
+                </Link>
+              </div>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # A-Level

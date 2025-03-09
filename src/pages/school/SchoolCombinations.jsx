@@ -77,8 +77,8 @@ function SchoolCombinations() {
                 </tr>
               </thead>
               <tbody>
-                {Combinations.map((student, index) => (
-                  <tr key={student.id} className="border-t">
+                {Combinations.map((comb, index) => (
+                  <tr key={index} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
@@ -89,7 +89,7 @@ function SchoolCombinations() {
                     <td className="px-4 py-2 w-[100px]"></td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
-                        onClick={handleEdit}
+                        // onClick={handleEdit}
                         className="text-main-color-school"
                       >
                         Edit

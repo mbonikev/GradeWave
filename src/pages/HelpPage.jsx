@@ -2,14 +2,10 @@ import React from "react";
 
 const HelpPage = () => {
   return (
-    <div className="w-full max-w-4xl">
+    <div className="w-full bg-card-bg-weak">
       <div></div>
-      <div className="min-h-screen bg-card-bg-weak py-10 px-6">
-        <div className=" mx-auto bg-white rounded-lg shadow-lg p-6">
-          <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">
-            Help Center
-          </h1>
-
+      <div className="min-h-screen py-10 px-6">
+        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
           <div className="space-y-6">
             <section>
               <h2 className="text-base font-semibold text-gray-800 mb-3">

@@ -58,7 +58,7 @@ function SchoolDashboard() {
     {
       id: 1,
       name: "John Doe",
-      grade: "A",
+      status: "",
       progress: "85%",
       promotion: "2024-2025",
       combination: "Science",
@@ -66,7 +66,7 @@ function SchoolDashboard() {
     {
       id: 2,
       name: "Jane Smith",
-      grade: "B+",
+      status: "",
       progress: "78%",
       promotion: "2023-2024",
       combination: "Arts",
@@ -74,7 +74,7 @@ function SchoolDashboard() {
     {
       id: 3,
       name: "Michael Brown",
-      grade: "A-",
+      status: "",
       progress: "82%",
       promotion: "2025-2026",
       combination: "Commerce",
@@ -82,7 +82,7 @@ function SchoolDashboard() {
     {
       id: 4,
       name: "Emily White",
-      grade: "B",
+      status: "",
       progress: "75%",
       promotion: "2024-2025",
       combination: "Science",

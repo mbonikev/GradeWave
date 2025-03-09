@@ -17,7 +17,7 @@ import { Avatar, Space } from "antd";
 import SidebarSectionTitle from "../SidebarSectionTitle";
 import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
-import { HiOutlineChartBar, HiOutlineNewspaper, HiUsers } from "react-icons/hi";
+import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";
 import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
@@ -27,6 +27,7 @@ import { BiBox } from "react-icons/bi";
 import { LogoWhite } from "../../assets";
 import { FaRegFileLines } from "react-icons/fa6";
 import { TfiMarkerAlt } from "react-icons/tfi";
+import { HiMiniUsers } from "react-icons/hi2";
 
 function AdminSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -125,7 +126,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <HiUsers className="text-xl max-lg:text-2xl" />
+          <HiMiniUsers className="text-xl max-lg:text-2xl" />
           Admins
         </Link>
         <Link

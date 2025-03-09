@@ -123,7 +123,7 @@ function SchoolManageStudents() {
                             </Link>
                           </td>
                           <td className="px-4 py-2">{level.totalStudents}</td>
-                          <td className="px-4 py-2">{level.passed}</td>
+                          <td className={`px-4 py-2 ${level.passed === 'N/A' ? 'text-text-color-weak/60' : 'text-text-color-weak'}`}>{level.passed}</td>
                         </tr>
                       ))}
                     </tbody>

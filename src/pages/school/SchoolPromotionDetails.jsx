@@ -12,7 +12,7 @@ function SchoolPromotionDetails() {
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
   const [filter, setFilter] = useState("All");
-  const [searchValue, setSearchValue] = useState("")
+  const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState([]);
   const openSidebar = () => {
     setShowSidebar(true);
@@ -35,6 +35,11 @@ function SchoolPromotionDetails() {
       setFilteredStudents(Students);
     }
   }, [filter]);
+
+  useEffect(() => {
+    const res = Students.filter((student) => student.name === searchValue);
+    setFilteredStudents(res);
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

@@ -61,7 +61,7 @@ function SchoolDashboard() {
       status: "Passed",
       progress: "85%",
       promotion: "2024-2025",
-      combination: "Science",
+      combination: "SOD",
     },
     {
       id: 2,
@@ -69,7 +69,7 @@ function SchoolDashboard() {
       status: "Passed",
       progress: "78%",
       promotion: "2023-2024",
-      combination: "Arts",
+      combination: "MCE",
     },
     {
       id: 3,
@@ -77,7 +77,7 @@ function SchoolDashboard() {
       status: "Passed",
       progress: "82%",
       promotion: "2025-2026",
-      combination: "Commerce",
+      combination: "MPC",
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ function SchoolDashboard() {
       status: "Failed",
       progress: "45%",
       promotion: "2024-2025",
-      combination: "Science",
+      combination: "MCB",
     },
   ];
 
@@ -144,7 +144,7 @@ function SchoolDashboard() {
                   <tr>
                     <th className="px-4 py-2">ID</th>
                     <th className="px-4 py-2">Name</th>
-                    <th className="px-4 py-2">Grade</th>
+                    <th className="px-4 py-2">Status</th>
                     <th className="px-4 py-2">Progress</th>
                     <th className="px-4 py-2">Promotion/Year</th>
                     <th className="px-4 py-2">Combination</th>
@@ -155,7 +155,7 @@ function SchoolDashboard() {
                     <tr key={student.id} className="border-t">
                       <td className="px-4 py-2">{student.id}</td>
                       <td className="px-4 py-2">{student.name}</td>
-                      <td className="px-4 py-2">{student.grade}</td>
+                      <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>
                       <td className="px-4 py-2">{student.combination}</td>

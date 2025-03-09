@@ -77,24 +77,26 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year }) {
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Combination
-                  </h1>
-                  <select
-                    required
-                    className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  >
-                    <option disabled hidden selected>
-                      Select Combination
-                    </option>
-                    {Combinations.map((comb, index) => (
-                      <option key={index} value="MCB">
-                        {comb}
+                {level !== "O-Level" && (
+                  <div className="w-full h-fit">
+                    <h1 className="text-base font-normal opacity-80 mb-2">
+                      Combination
+                    </h1>
+                    <select
+                      required
+                      className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                    >
+                      <option disabled hidden selected>
+                        Select Combination
                       </option>
-                    ))}
-                  </select>
-                </div>
+                      {Combinations.map((comb, index) => (
+                        <option key={index} value="MCB">
+                          {comb}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
               </div>
 
               {/* Parent/Guardian Info */}

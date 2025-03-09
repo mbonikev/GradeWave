@@ -68,21 +68,18 @@ function AdminDashboard() {
       name: "Mugisha Kenny",
       school: "Groupe Scolaire APRED Ndera",
       score: "99.02%",
-      icon: <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />,
     },
     {
       rank: "2nd",
       name: "Ineza Raissa",
       school: "College Saint Andre",
       score: "95.39%",
-      icon: <GiSportMedal className="text-4xl text-stone-400" />,
     },
     {
       rank: "3rd",
       name: "Uwase Abatoni Stecy",
       school: "Groupe Scolaire Sainte Bernadette Save",
       score: "93.20%",
-      icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
     },
   ];
 

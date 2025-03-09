@@ -260,7 +260,11 @@ function Login() {
               onClick={handleLoginStudent}
               className="flex items-center justify-start gap-2 text-main-color hover:text-main-color-dark select-none"
             >
-              Continue as a Guest
+              Continue as a Guest{role === "student"
+                  ? "Student"
+                  : role === "school"
+                  ? "School"
+                  : "Admin"}
               <LuArrowRight className="text-lg translate-y-[1px]" />
             </button>
           ) : role === "school" ? (
@@ -276,7 +280,7 @@ function Login() {
               onClick={handleLoginAdmin}
               className="flex items-center justify-start gap-2 text-main-color select-none"
             >
-              Continue as a Guest School
+              Continue as a Guest Admin
               <LuArrowRight className="text-lg translate-y-[1px]" />
             </button>
           )}

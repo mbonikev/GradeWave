@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IntroGif, Pfp } from "../../assets";
+import { IntroGif, LogoWhite, Pfp } from "../../assets";
 import { LuShare2 } from "react-icons/lu";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
@@ -51,18 +51,10 @@ function SchoolNotifications() {
           <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
             {[
               {
-                pfp: Pfp,
-                name: "Adminstrator",
+                pfp: LogoWhite,
+                name: "System",
                 publishedAt: "24/02/2025",
-                message:
-                  "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
-              },
-              {
-                pfp: Pfp,
-                name: "Adminstrator",
-                publishedAt: "24/02/2025",
-                message:
-                  "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
+                message: "4 days left to register Your Students",
               },
             ].map((annoucement, index) => (
               <div
@@ -70,7 +62,7 @@ function SchoolNotifications() {
                 className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak ring-1 ring-card-bg-weak mb-1 rounded-2xl"
               >
                 <div className="w-full flex items-center justify-start gap-3 mb-3">
-                  <div className="size-9 rounded-full bg-main-color p-1 aspect-square">
+                  <div className="size-9 rounded-full bg-main-color p-1.5 aspect-square">
                     <img
                       src={annoucement.pfp}
                       className="w-full h-full object-cover rounded-full"

@@ -1,5 +1,6 @@
 import React from "react";
 import { BannerBlue } from "../assets";
+import { Combinations } from "../content/Combinations";
 
 const HelpPage = () => {
   return (

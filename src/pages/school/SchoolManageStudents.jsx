@@ -109,7 +109,7 @@ function SchoolManageStudents() {
                         <tr key={idx} className="border-t">
                           <td className="px-4 py-2 w-[120px]">
                             <Link
-                              to={`/school_promotion_details?year=${promotion.year}&level=${level.name}`}
+                              to={`/school_promotion_details/${promotion.year}/${level.name}`}
                               className="text-main-color-school hover:underline"
                             >
                               {level.name}

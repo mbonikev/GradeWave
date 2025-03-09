@@ -41,7 +41,7 @@ function SchoolPromotionDetails() {
       const res = filteredStudents.filter((student) => student.name.toLowerCase().includes(searchValue));
       setFilteredStudents(res);
     } else {
-      setFilteredStudents(filteredStudents);
+      setFilteredStudents(Students);
     }
   }, [searchValue]);
 

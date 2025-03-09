@@ -157,13 +157,6 @@ function AdminDashboard() {
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
               O-level Glrobal Ranking 2024-2025
             </h1>
-            <Link
-              to="/school_promotion_details/2024-2025/O-Level"
-              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color whitespace-nowrap"
-            >
-              View all
-              <LuArrowRight />
-            </Link>
           </div>
           {/* Students Table */}
           <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
@@ -230,7 +223,6 @@ function AdminDashboard() {
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
               A-level Glrobal Ranking 2024-2025
             </h1>
-            
           </div>
           {/* Students Table */}
           <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">

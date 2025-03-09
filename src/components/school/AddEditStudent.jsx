@@ -64,6 +64,16 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   />
                 </div>
                 <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80  mb-2">
+                    Student Age
+                  </h1>
+                  <input
+                    required
+                    placeholder="Age"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     Combination
                   </h1>

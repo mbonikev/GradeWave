@@ -67,10 +67,10 @@ function SchoolPromotionDetails() {
               <option value="Failed Only">Failed Only</option>
             </select>
             <div className="w-fit h-fit relative">
-              <LuSearch className="absolute top-0 bottom-0 my-auto left-3 text-text-color-weak " />
+              <LuSearch className="absolute top-0 bottom-0 my-auto left-2.5 text-text-color-weak " />
               <input
                 type="text"
-                className="block w-[130px] max-sm:flex-1 pl-9 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+                className="block w-[130px] max-sm:flex-1 pl-8 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm placeholder:text-text-color-weak"
                 placeholder="Search"
                 // value={level}
                 // onChange={(e) => setLevel(e.target.value)}

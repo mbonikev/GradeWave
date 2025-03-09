@@ -70,7 +70,7 @@ function AdminExams() {
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Closing on:</strong>{" "}
-                <span className="font-medium text-text-color/80">2,239</span>
+                <span className="font-medium text-text-color/80">Sept 3, 2025</span>
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Registered:</strong>{" "}

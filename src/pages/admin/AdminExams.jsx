@@ -82,6 +82,10 @@ function AdminExams() {
                 <strong className="font-medium">Registration Status:</strong>{" "}
                 <span className="text-green-700/80 font-medium">Open</span>
               </h1>
+              <h1 className="text-text-color/50">
+                <strong className="font-medium">Registered:</strong>{" "}
+                <span className="font-medium text-text-color/80">14,239</span>
+              </h1>
             </div>
             <Link
               to="/student_register_for_exams"

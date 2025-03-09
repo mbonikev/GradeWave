@@ -105,7 +105,7 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td className="px-4 py-2">{student.status}</td>
-                    <td className={`px-4 py-2 ${Number(student.progress) < 50 ? 'text-red-500' : ''}`}>{student.progress}</td>
+                    <td className={`px-4 py-2 ${student.progress < 50 ? 'text-red-500' : ''}`}>{student.progress}%</td>
                     <td className="px-4 py-2 text-text-color-weak/60">
                       {level === "A-Level" ? student.combination : "N/A"}
                     </td>

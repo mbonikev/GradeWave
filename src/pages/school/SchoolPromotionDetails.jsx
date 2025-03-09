@@ -44,6 +44,10 @@ function SchoolPromotionDetails() {
       if (searchValue === "") {
         setFilteredStudents(Students);
       } else if (searchValue !== "") {
+        const res = Students.filter((student) =>
+          student.name.toLowerCase().includes(searchValue.toLowerCase())
+        );
+        setFilteredStudents(res);
       }
     }
   }, [filter, searchValue]);

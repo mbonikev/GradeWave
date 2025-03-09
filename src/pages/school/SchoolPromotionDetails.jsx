@@ -212,7 +212,7 @@ function SchoolPromotionDetails() {
                           Edit
                         </button>
                       ) : (
-                        ""
+                        "-"
                       )}
                     </td>
                   </tr>

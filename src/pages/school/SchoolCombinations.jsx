@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { LuArrowLeft } from "react-icons/lu";
 
 function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -47,23 +46,15 @@ function SchoolCombinations() {
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <div className="w-full flex items-start gap-2 justify-between">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
-              <Link
-                to="/school_manage_students"
-                className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"
-              >
-                <LuArrowLeft className="text-xl max-sm:text-lg stroke-[3px]" />
-              </Link>
-              {level} - {year}
+              Combinations
             </h1>
-            {year === "2025-2026" && (
-              <button
-                onClick={() => setShowEditModal(true)}
-                className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
-              >
-                <LuPlus className="text-xl" />
-                <span className="max-sm:hidden">Add Student</span>
-              </button>
-            )}
+            <button
+            //   onClick={() => setShowEditModal(true)}
+              className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
+            >
+              <LuPlus className="text-xl" />
+              <span className="max-sm:hidden">Add Student</span>
+            </button>
           </div>
         </div>
       </div>

@@ -153,7 +153,20 @@ function SchoolDashboard() {
                 </div>
               ))}
             </div>
-
+            <div className="w-full flex items-center ">
+            <label
+              for="level"
+              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+            >
+              Select Promotion:
+            </label>
+            <label
+              for="level"
+              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+            >
+              Select Promotion:
+            </label>
+            </div>
             {/* Students Table */}
             <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
               <table className="w-full text-left">

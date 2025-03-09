@@ -43,7 +43,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             } `}
           >
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
-              Add Student
+              Add Student (O-Level)
             </h1>
             {/* content */}
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit grid grid-cols-3 gap-5">

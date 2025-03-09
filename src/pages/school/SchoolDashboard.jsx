@@ -88,6 +88,14 @@ function SchoolDashboard() {
       promotion: "2024-2025",
       combination: "MCB",
     },
+    {
+      id: 420534084,
+      name: "Emily White",
+      status: "Failed",
+      progress: "45%",
+      promotion: "2024-2025",
+      combination: "MCB",
+    },
   ];
 
   return (

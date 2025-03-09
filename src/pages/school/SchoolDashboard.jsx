@@ -111,7 +111,7 @@ function SchoolDashboard() {
             Dashboard
           </h1>
 
-          <div className="p-6 space-y-6">
+          <div className="py-6 space-y-6">
             {/* Stats Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (

@@ -3,7 +3,9 @@ import React from "react";
 const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg">
-      <div></div>
+      <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color">
+        
+      </div>
       <div className="min-h-screen py-10 px-6">
         <div className="max-w-4xl mx-auto p-6">
           <div className="space-y-6">

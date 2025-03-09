@@ -28,21 +28,17 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    const filtered = filteredStudents.filter((student) => {
-      const matchesName = student.name
-        .toLowerCase()
-        .includes(searchValue.toLowerCase());
-      if (filter !== "All") {
-        const matchesStatus = filter ? student.status === filter : true;
-        return matchesStatus;
-      } else if (filter === "All") {
-        const matchesStatus = filter ? student.status !== filter : true;
-        return matchesStatus;
-      }
-      return matchesName && matchesStatus;
-    });
-    setFilteredStudents(filtered);
-  }, [searchValue, filter]);
+    if (filter !== "All") {
+      const res = Students.filter((student) => student.status === filter);
+      setFilteredStudents(res);
+    } else {
+      setFilteredStudents(Students);
+    }
+  }, [filter]);
+
+  useEffect(() => {
+
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

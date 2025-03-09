@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { LuArrowLeft } from "react-icons/lu";
+import { LuArrowLeft, LuSearch } from "react-icons/lu";
 
 function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -66,14 +66,16 @@ function SchoolPromotionDetails() {
               <option value="Passed Only">Passed Only</option>
               <option value="Failed Only">Failed Only</option>
             </select>
-
-            <input
-              type="text"
-              className="block w-[130px] max-sm:flex-1 pl-9 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
-              placeholder="Search"
-              // value={level}
-              // onChange={(e) => setLevel(e.target.value)}
-            />
+            <div className="w-fit h-fit relative">
+              <LuSearch />
+              <input
+                type="text"
+                className="block w-[130px] max-sm:flex-1 pl-9 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+                placeholder="Search"
+                // value={level}
+                // onChange={(e) => setLevel(e.target.value)}
+              />
+            </div>
           </div>
         </div>
       </div>

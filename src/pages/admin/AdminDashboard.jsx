@@ -84,20 +84,6 @@ function AdminDashboard() {
       progress: "79%",
       promotion: "2023-2024",
     },
-    {
-      id: 310534084,
-      name: "Mugisha Patrick",
-      status: "Passed",
-      progress: "78%",
-      promotion: "2025-2026",
-    },
-    {
-      id: 410534084,
-      name: "Niyonsaba Kevin",
-      status: "Passed",
-      progress: "75.93%",
-      promotion: "2024-2025",
-    },
   ];
   return (
     <div className="w-full h-fit flex-1 flex relative">

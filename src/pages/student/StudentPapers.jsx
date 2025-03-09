@@ -118,7 +118,7 @@ function StudentPapers() {
                     className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
                   >
                     <div className="w-[60px] min-w-fit">
-                      <BsFolderFill className="text-2xl text-main-color/70" />
+                      <BsFolderFill className="text-2xl text-main-color" />
                     </div>
                     <div className="py-3 flex-1">{year.title}</div>
                   </div>
@@ -131,7 +131,7 @@ function StudentPapers() {
                     className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
                   >
                     <div className="w-[60px] min-w-fit">
-                      <BsFolderFill className="text-2xl text-main-color/70" />
+                      <BsFolderFill className="text-2xl text-main-color" />
                     </div>
                     <div className="py-3 flex-1">{level.name}</div>
                   </div>

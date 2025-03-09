@@ -42,7 +42,7 @@ function Login() {
   };
 
   const handleLoginAdmin = () => {
-    sessionStorage.setItem("loggedInSchool", true);
+    sessionStorage.setItem("loggedInAdmin", true);
     setLoading(true);
     setTimeout(() => {
       window.location.reload();

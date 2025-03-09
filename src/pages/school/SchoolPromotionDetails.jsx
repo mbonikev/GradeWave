@@ -76,9 +76,9 @@ function SchoolPromotionDetails() {
               </Link>
               {level} - {year}
             </h1>
-            <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
+            <button className="h-[35px] mt-3 px-4 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
               <LuPlus className="text-lg" />
-              Save Changes
+              Add Student
             </button>
           </div>
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">

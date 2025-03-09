@@ -4,7 +4,7 @@ import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 
-function NewPage() {
+function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
@@ -53,4 +53,4 @@ function NewPage() {
   );
 }
 
-export default NewPage;
+export default SchoolPromotionDetails;

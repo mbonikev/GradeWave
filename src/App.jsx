@@ -23,6 +23,7 @@ import SchoolSettings from "./pages/school/SchoolSettings";
 import SchoolStudentResults from "./pages/school/SchoolStudentResults";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ProtectedRouteAdmin from "./util/ProtectedRouteAdmin";
+import AdminExams from "./pages/admin/AdminExams";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -91,8 +92,10 @@ function App() {
       element: <SchoolStudentResults />,
     },
   ];
+
   const AdminRoutes = [
     { path: "/admin_dashboard", element: <AdminDashboard /> },
+    { path: "/admin_exams", element: <AdminExams /> },
   ];
   return (
     <div>

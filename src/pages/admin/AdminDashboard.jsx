@@ -170,7 +170,7 @@ function AdminDashboard() {
           </div>
           <div className="w-full flex items-center justify-between mt-6 mb-3">
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
-              Top 5 O-level Candidates
+              Top 3 O-level Candidates
             </h1>
             <Link
               to="/school_promotion_details/2024-2025/O-Level"

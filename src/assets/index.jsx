@@ -9,3 +9,5 @@ export { default as IntroGif } from "./intro.mp4";
 export { default as Pfp } from "./pfp.png";
 export { default as ImageSchool } from "./school.jpg";
 export { default as ImageAdmin } from "./admin.jpg";
+export { default as BannerBlue } from "./banner_blue.png";
+export { default as BannerGreen } from "./banner_green.png";

@@ -115,7 +115,24 @@ function SchoolDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
-
+          <div className="w-full max-w-[300px] max-md:w-[200px] ml-auto flex max-md:flex-col gap-2">
+            <label
+              for="level"
+              class="block text-sm font-medium text-text-color"
+            >
+              Select Level
+            </label>
+            <select
+              id="level"
+              name="level"
+              className="mt-1 block w-full px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              value={level}
+              onChange={(e) => setLevel(e.target.value)} // Update level on selection change
+            >
+              <option value="p6">PLE, 2021-2022</option>
+              <option value="senior-3">O-Level, 2025-2026</option>
+            </select>
+          </div>
           <div className="py-6 space-y-6">
             {/* Stats Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

@@ -38,15 +38,19 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     const Filtered = [...filteredStudents];
-    if (searchValue !== null) {
+    if (searchValue === "") {
+      const Filtered =
+        filter !== "All"
+          ? Students.filter((student) => student.status === filter)
+          : Students;
+      setFilteredStudents(Filtered);
+    } else {
       const res = filteredStudents.filter((student) =>
         student.name.toLowerCase().includes(searchValue.toLowerCase())
       );
       setFilteredStudents(res);
-    } else {
-      setFilteredStudents(Filtered);
     }
-  }, [searchValue]);
+  }, [searchValue, filter]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

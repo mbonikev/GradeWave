@@ -15,7 +15,6 @@ function SchoolPromotionDetails() {
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
-  const [addEdit, setAddEdit] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
@@ -46,6 +45,17 @@ function SchoolPromotionDetails() {
     setFilteredStudents(filtered);
   }, [filter, searchValue]);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setShowEditModal(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}

@@ -47,7 +47,7 @@ function SchoolPromotionDetails() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
-            <button className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"><LuArrowLeft className="text-xl stroke-[3px]" /></button>{level} - {year}
+            <Link to='/school_manage_students' className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"><LuArrowLeft className="text-xl stroke-[3px]" /></Link>{level} - {year}
           </h1>
         </div>
       </div>

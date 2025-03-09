@@ -52,10 +52,8 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   Student Names
                 </h1>
                 <input
-                  // disabled={!isAgree}
-                  // onClick={() => login()}
                   required
-                  placeholder="Full Names"
+                  placeholder="Choose Combination"
                   className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
                 />
               </div>
@@ -64,8 +62,6 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   Combinations
                 </h1>
                 <input
-                  // disabled={!isAgree}
-                  // onClick={() => login()}
                   required
                   placeholder="Full Names"
                   className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"

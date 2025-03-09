@@ -201,13 +201,13 @@ function Login() {
           ) : (
             <>
               <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
-                School ID
+                Admin ID
               </h1>
               <input
                 // disabled={!isAgree}
                 // onClick={() => login()}
                 required
-                placeholder="XXX-XXXX"
+                placeholder="XX-XXXX-XXXX"
                 className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
               />
               <h1 className="text-base font-normal opacity-80 mt-4 mb-3">

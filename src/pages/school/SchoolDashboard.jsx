@@ -26,6 +26,64 @@ function SchoolDashboard() {
     }, 100);
   };
 
+  const stats = [
+    {
+      title: "Total Students",
+      value: 1200,
+      icon: <Users className="w-6 h-6 text-blue-500" />,
+    },
+    {
+      title: "Passed Exams",
+      value: 900,
+      icon: <CheckCircle className="w-6 h-6 text-green-500" />,
+    },
+    {
+      title: "Average Score",
+      value: "78%",
+      icon: <BarChart className="w-6 h-6 text-yellow-500" />,
+    },
+    {
+      title: "Current Year",
+      value: "2025",
+      icon: <Calendar className="w-6 h-6 text-gray-500" />,
+    },
+  ];
+
+  const students = [
+    {
+      id: 1,
+      name: "John Doe",
+      grade: "A",
+      progress: "85%",
+      promotion: "2024",
+      combination: "Science",
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      grade: "B+",
+      progress: "78%",
+      promotion: "2023",
+      combination: "Arts",
+    },
+    {
+      id: 3,
+      name: "Michael Brown",
+      grade: "A-",
+      progress: "82%",
+      promotion: "2025",
+      combination: "Commerce",
+    },
+    {
+      id: 4,
+      name: "Emily White",
+      grade: "B",
+      progress: "75%",
+      promotion: "2024",
+      combination: "Science",
+    },
+  ];
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -52,6 +110,56 @@ function SchoolDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
+
+          <div className="p-6 space-y-6">
+            {/* Stats Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="p-4 flex items-center justify-between bg-white shadow-md rounded-lg border border-gray-200"
+                >
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-700">
+                      {stat.title}
+                    </h3>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {stat.value}
+                    </p>
+                  </div>
+                  {stat.icon}
+                </div>
+              ))}
+            </div>
+
+            {/* Students Table */}
+            <div className="overflow-x-auto bg-white shadow-md rounded-lg border border-gray-200">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="p-3 border-b">ID</th>
+                    <th className="p-3 border-b">Name</th>
+                    <th className="p-3 border-b">Grade</th>
+                    <th className="p-3 border-b">Progress</th>
+                    <th className="p-3 border-b">Promotion/Year</th>
+                    <th className="p-3 border-b">Combination</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {students.map((student) => (
+                    <tr key={student.id} className="hover:bg-gray-50">
+                      <td className="p-3 border-b">{student.id}</td>
+                      <td className="p-3 border-b">{student.name}</td>
+                      <td className="p-3 border-b">{student.grade}</td>
+                      <td className="p-3 border-b">{student.progress}</td>
+                      <td className="p-3 border-b">{student.promotion}</td>
+                      <td className="p-3 border-b">{student.combination}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

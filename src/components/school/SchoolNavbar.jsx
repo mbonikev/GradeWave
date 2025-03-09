@@ -38,6 +38,39 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
     };
   }, []);
 
+  const Notifications = [
+    {
+      pfp: LogoWhite,
+      name: "System",
+      publishedAt: "24/02/2025",
+      message: "4 days left to register your students.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Admin",
+      publishedAt: "22/02/2025",
+      message: "New guidelines for exam registration have been updated.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Support",
+      publishedAt: "20/02/2025",
+      message: "System maintenance scheduled for 28th February.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "System",
+      publishedAt: "18/02/2025",
+      message: "Your school performance report is available.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Admin",
+      publishedAt: "15/02/2025",
+      message: "Reminder: Ensure all student profiles are up to date.",
+    },
+  ];
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -110,14 +143,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                 Notifications
               </h1>
               <div className="w-full h-fit flex flex-col gap-1 pt-1.5">
-                {[
-                  {
-                    pfp: LogoWhite,
-                    name: "System",
-                    publishedAt: "24/02/2025",
-                    message: "4 days left to register Your Students",
-                  },
-                ].map((annoucement, index) => (
+                {Notifications.map((annoucement, index) => (
                   <Link
                     to="/school_notifications"
                     key={index}

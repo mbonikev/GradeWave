@@ -168,55 +168,55 @@ function SchoolPromotionDetails() {
               </thead>
               <tbody>
                 {filteredStudents.map((student, index) => (
-                  <tr key={student.id} className="border-t">
-                    <Link to="/school_student_results" className="w-full">
-                      <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
-                        {index + 1}
-                      </td>
-                      <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                      <td className="px-4 py-2 w-[280px]">{student.name}</td>
-                      <td
-                        className={`px-4 py-2 ${
-                          student.progress < 50 ? "text-red-500" : ""
-                        }`}
-                      >
-                        {year !== "2025-2026" ? (
-                          <span>{student.status}</span>
-                        ) : (
-                          <span className="text-text-color-weak/60">N/A</span>
-                        )}
-                      </td>
-                      <td
-                        className={`px-4 py-2 ${
-                          student.progress < 50 ? "text-red-500" : ""
-                        }`}
-                      >
-                        {year !== "2025-2026" ? (
-                          <span>{student.progress}%</span>
-                        ) : (
-                          <span className="text-text-color-weak/60">N/A</span>
-                        )}
-                      </td>
-                      <td className="px-4 py-2 w-[100px]">
-                        {level === "A-Level" ? (
-                          student.combination
-                        ) : (
-                          <span className="text-text-color-weak/60">N/A</span>
-                        )}
-                      </td>
-                      <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                        {year === "2025-2026" ? (
-                          <button
-                            onClick={handleEdit}
-                            className="text-main-color-school"
-                          >
-                            Edit
-                          </button>
-                        ) : (
-                          "-"
-                        )}
-                      </td>
-                    </Link>
+                  <tr key={student.id} onClick={() => {
+                    window.location('to="/school_student_results"')
+                  }} className="border-t">
+                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
+                      {index + 1}
+                    </td>
+                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
+                    <td className="px-4 py-2 w-[280px]">{student.name}</td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {year !== "2025-2026" ? (
+                        <span>{student.status}</span>
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {year !== "2025-2026" ? (
+                        <span>{student.progress}%</span>
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-2 w-[100px]">
+                      {level === "A-Level" ? (
+                        student.combination
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
+                      {year === "2025-2026" ? (
+                        <button
+                          onClick={handleEdit}
+                          className="text-main-color-school"
+                        >
+                          Edit
+                        </button>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
                   </tr>
                 ))}
                 {filteredStudents.length === 0 && (

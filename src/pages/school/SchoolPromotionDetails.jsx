@@ -127,7 +127,11 @@ function SchoolPromotionDetails() {
                         student.progress < 50 ? "text-red-500" : ""
                       }`}
                     >
-                      {student.status}
+                      {year !== "2025-2026" ? (
+                        <span>{student.status}</span>
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
                     </td>
                     <td
                       className={`px-4 py-2 ${

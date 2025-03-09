@@ -212,7 +212,7 @@ function SchoolDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
-          <div className="w-fit ml-auto flex max-md:flex-col items-center justify-start gap-3">
+          <div className="w-fit ml-auto max-sm:w-full flex items-center justify-start gap-3">
             <label
               for="level"
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"

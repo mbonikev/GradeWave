@@ -55,7 +55,6 @@ function AdminExams() {
         <EditExam
           showEditModal={showEditModal}
           setShowEditModal={setShowEditModal}
-          level={level}
           editMode={editMode}
         />
       )}

@@ -26,6 +26,7 @@ import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 import { BiBox } from "react-icons/bi";
 import { LogoWhite } from "../../assets";
 import { FaRegFileLines } from "react-icons/fa6";
+import { TfiMarkerAlt } from "react-icons/tfi";
 
 function AdminSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -87,6 +88,19 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         >
           <FaRegFileLines className="text-xl max-lg:text-2xl" />
           Exams
+        </Link>
+        <Link
+          to="/admin_exams"
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
+          ${
+            location.pathname === "/school_exams"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
+              : "text-text-color/85  hover:bg-card-bg-weak"
+          }
+          `}
+        >
+          <TfiMarkerAlt className="text-xl max-lg:text-2xl" />
+          Marking
         </Link>
         <Link
           to="/admin_exams"

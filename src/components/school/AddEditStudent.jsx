@@ -45,10 +45,13 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
               Add Student (O-Level)
             </h1>
-            
+
             {/* content */}
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit">
-              {/* 1 */}
+              {/* basic info */}
+              <h1 className="text-base font-normal opacity-80">
+                Student Names
+              </h1>
               <div className="w-full grid grid-cols-3 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mt-4 mb-2">

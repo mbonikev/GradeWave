@@ -46,7 +46,9 @@ function SchoolPromotionDetails() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
-      
+      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
+        
+      </div>
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />

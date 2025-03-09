@@ -157,13 +157,13 @@ function SchoolDashboard() {
             <h1
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              A-level
+              Top 5 A-level Candidates
             </h1>
             <label
               for="level"
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              Select Promotion:
+              View all:
             </label>
             </div>
             {/* Students Table */}

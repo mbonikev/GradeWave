@@ -28,15 +28,17 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}
     >
       <div className="w-full h-full relative flex items-center justify-center">
-        <div
-          onClick={() => setShowEditModal(false)}
-          className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
-        ></div>
+        <Fade duration={200} triggerOnce>
+          <div
+            onClick={() => setShowEditModal(false)}
+            className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
+          ></div>
+        </Fade>
         <Reveal
           duration={200}
           triggerOnce
           keyframes={customAnimation}
-          className="z-50"
+          className="z-10"
         >
           <div
             className={`w-[980px] max-w-[95%] h-fit max-h-[95%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${

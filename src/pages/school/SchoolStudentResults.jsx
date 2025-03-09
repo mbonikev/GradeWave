@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
@@ -17,6 +17,7 @@ function SchoolStudentResults() {
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const [showEditModal, setShowEditModal] = useState(false);
   const [editMode, setEditMode] = useState(false);
+  const navigate = useNavigate();
 
   const openSidebar = () => {
     setShowSidebar(true);

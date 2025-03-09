@@ -56,7 +56,7 @@ function SchoolDashboard() {
 
   const students = [
     {
-      id: 1,
+      id: 120534084,
       name: "John Doe",
       status: "Passed",
       progress: "85%",
@@ -64,7 +64,7 @@ function SchoolDashboard() {
       combination: "SOD",
     },
     {
-      id: 2,
+      id: 220534084,
       name: "Jane Smith",
       status: "Passed",
       progress: "78%",
@@ -72,7 +72,7 @@ function SchoolDashboard() {
       combination: "MCE",
     },
     {
-      id: 3,
+      id: 320534084,
       name: "Michael Brown",
       status: "Passed",
       progress: "82%",
@@ -80,7 +80,7 @@ function SchoolDashboard() {
       combination: "MPC",
     },
     {
-      id: 4,
+      id: 420534084,
       name: "Emily White",
       status: "Failed",
       progress: "45%",
@@ -142,7 +142,7 @@ function SchoolDashboard() {
               <table className="w-full text-left">
                 <thead className="bg-card-bg-weak">
                   <tr>
-                    <th className="px-4 py-2">ID</th>
+                    <th className="px-4 py-2">Student ID</th>
                     <th className="px-4 py-2">Name</th>
                     <th className="px-4 py-2">Status</th>
                     <th className="px-4 py-2">Progress</th>

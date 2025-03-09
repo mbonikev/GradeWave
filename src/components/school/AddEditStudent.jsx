@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
-import Loading from "./Loading";
-import LoadingWhite from "./LoadingWhite";
+import LoadingWhite from "../LoadingWhite";
 function AddEditStudent({logoutWarn, setLogoutWarn}) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {

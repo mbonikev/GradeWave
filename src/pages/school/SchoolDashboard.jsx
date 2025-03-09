@@ -37,22 +37,22 @@ function SchoolDashboard() {
     {
       title: "Total Candidates",
       value: 1200,
-      icon: <LuUsers className="w-6 h-6 text-blue-500" />,
+      icon: <LuUsers className="w-6 h-6 max-sm:w-8 max-sm:h-8 text-blue-500" />,
     },
     {
       title: "Passed Candidates",
       value: 900,
-      icon: <LuCircleCheckBig className="w-6 h-6 text-green-500" />,
+      icon: <LuCircleCheckBig className="w-6 h-6 max-sm:w-8 max-sm:h-8 text-green-500" />,
     },
     {
       title: "Average Score",
       value: "78%",
-      icon: <LuChartPie className="w-6 h-6 text-yellow-500" />,
+      icon: <LuChartPie className="w-6 h-6 max-sm:w-8 max-sm:h-8 text-yellow-500" />,
     },
     {
       title: "Promotion",
       value: "2024-2025",
-      icon: <LuCalendarDays className="w-6 h-6 text-purple-500" />,
+      icon: <LuCalendarDays className="w-6 h-6 max-sm:w-8 max-sm:h-8 text-purple-500" />,
     },
   ];
 

@@ -11,10 +11,7 @@ function BasicInfo() {
       {/* profile */}
       <div className="w-fit flex items-center gap-3 text-text-color/80">
         <div className="h-[55px] aspect-square rounded-full overflow-hidden bg-main-color p-3">
-          <img
-            src={LogoWhite}
-            className="h-full w-full object-cover"
-          />
+          <img src={LogoWhite} className="h-full w-full object-cover" />
         </div>
         <div className="flex-1 flex flex-col">
           <h1 className="text-lg leading-6 font-medium">School</h1>
@@ -49,7 +46,16 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">District</h1>
           <input
             type="text"
-            name="country"
+            name="district"
+            placeholder="School District"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
+          />
+        </div>
+        <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">District</h1>
+          <input
+            type="text"
+            name="district"
             placeholder="School District"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />

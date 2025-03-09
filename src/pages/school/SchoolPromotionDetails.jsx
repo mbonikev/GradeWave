@@ -63,6 +63,13 @@ function SchoolPromotionDetails() {
     setEditMode(true);
     setShowEditModal(true);
   };
+
+  useEffect(() => {
+    if (!showEditModal) {
+      
+    }
+  }, [showEditModal]);
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}

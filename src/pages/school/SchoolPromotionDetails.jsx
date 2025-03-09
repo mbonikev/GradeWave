@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { LuArrowLeft, LuSearch } from "react-icons/lu";
+import { LuArrowLeft, LuPlus, LuSearch } from "react-icons/lu";
 import { Students } from "../../content/Students";
 
 function SchoolPromotionDetails() {
@@ -76,6 +76,10 @@ function SchoolPromotionDetails() {
               </Link>
               {level} - {year}
             </h1>
+            <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
+              <LuPlus className="text-lg" />
+              Save Changes
+            </button>
           </div>
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">
             <select

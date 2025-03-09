@@ -60,9 +60,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
           className="z-10"
         >
           <div
-            className={`w-full max-lg:max-w-[95%] h-fit max-h-[95vh] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
-              showEditModal ? "scale-100 transition-all " : "scale-75"
-            } `}
+            className={`w-full max-lg:max-w-[95%] h-fit max-h-[95vh] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20`}
           >
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
               Add Student ({level})

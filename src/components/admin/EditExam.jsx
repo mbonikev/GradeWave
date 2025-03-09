@@ -7,22 +7,11 @@ import { Combinations } from "../../content/Combinations";
 function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
   const [studentName, setStudentName] = useState(
-    editMode ? "Ingabire Florence" : ""
+    editMode
+      ? "ORDINARY LEVEL NATIONAL EXAMINATION (O-Level Exam), 2025-2026"
+      : ""
   );
   const [due, setDue] = useState(editMode ? "2025-07-03" : "");
-  const [combination, setCombination] = useState(editMode ? "MCB" : "");
-  const [guardianName, setGuardianName] = useState(
-    editMode ? "Jeanne Muhoza" : ""
-  );
-  const [guardianContact, setGuardianContact] = useState(
-    editMode ? "+250788123456" : ""
-  );
-  const [guardianRelationship, setGuardianRelationship] = useState(
-    editMode ? "Mother" : ""
-  );
-  const [district, setDistrict] = useState(editMode ? "Kigali" : "");
-  const [sector, setSector] = useState(editMode ? "Nyarugenge" : "");
-  const [village, setVillage] = useState(editMode ? "Nyamirambo" : "");
 
   const handleAddStudent = () => {
     setAdding(true);
@@ -94,34 +83,6 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                     className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
-                {level !== "O-Level" && (
-                  <div className="w-full h-fit">
-                    <h1 className="text-base font-normal opacity-80 mb-2">
-                      Combination
-                    </h1>
-                    <select
-                      required
-                      value={combination}
-                      defaultValue={"Select Combination"}
-                      onChange={(e) => setCombination(e.target.value)}
-                      className="border-2 bg-transparent border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                    >
-                      <option
-                        value={"Select Combination"}
-                        disabled
-                        hidden
-                        selected
-                      >
-                        Select Combination
-                      </option>
-                      {Combinations.map((comb, index) => (
-                        <option key={index} value={comb}>
-                          {comb}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                )}
               </div>
             </div>
 

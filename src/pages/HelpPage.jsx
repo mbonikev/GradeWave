@@ -4,29 +4,29 @@ import { Combinations } from "../content/Combinations";
 import { Link } from "react-router-dom";
 
 const HelpPage = () => {
-  useEffect(() => {
-    if (sessionStorage.getItem("loggedInSchool") === "true") {
-      document.documentElement.style.setProperty("--main-color", "#00bc7d");
-      document.documentElement.style.setProperty(
-        "--main-color-weak",
-        "#00bc7d27"
-      );
-      const favicon = document.getElementById("favicon");
-      if (favicon) {
-        favicon.href = "/favicon_green.svg";
-      }
-    } else if (sessionStorage.getItem("loggedInAdmin") === "true") {
-      document.documentElement.style.setProperty("--main-color", "#fb923c");
-      document.documentElement.style.setProperty(
-        "--main-color-weak",
-        "#fb923c27"
-      );
-      const favicon = document.getElementById("favicon");
-      if (favicon) {
-        favicon.href = "/logo_orange.svg";
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (sessionStorage.getItem("loggedInSchool") === "true") {
+  //     document.documentElement.style.setProperty("--main-color", "#00bc7d");
+  //     document.documentElement.style.setProperty(
+  //       "--main-color-weak",
+  //       "#00bc7d27"
+  //     );
+  //     const favicon = document.getElementById("favicon");
+  //     if (favicon) {
+  //       favicon.href = "/favicon_green.svg";
+  //     }
+  //   } else if (sessionStorage.getItem("loggedInAdmin") === "true") {
+  //     document.documentElement.style.setProperty("--main-color", "#fb923c");
+  //     document.documentElement.style.setProperty(
+  //       "--main-color-weak",
+  //       "#fb923c27"
+  //     );
+  //     const favicon = document.getElementById("favicon");
+  //     if (favicon) {
+  //       favicon.href = "/logo_orange.svg";
+  //     }
+  //   }
+  // }, []);
   return (
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
       <Link

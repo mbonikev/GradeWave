@@ -65,7 +65,7 @@ function SchoolPromotionDetails() {
         )}
         <SchoolNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
-        <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
+        <div className="w-full h-fit max-w-[1120px] px-5 max-sm:px-2 mb-10 mx-auto">
           <div className="w-full flex items-start gap-2 justify-between">
             <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
               <Link

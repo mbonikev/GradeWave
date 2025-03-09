@@ -280,9 +280,7 @@ function SchoolDashboard() {
                   {oLevelStudents.map((student) => (
                     <tr key={student.id} className="border-t">
                       <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                      <td className="px-4 py-2 w-[280px]">
-                        {student.name}ofeipfwei
-                      </td>
+                      <td className="px-4 py-2 w-[280px]">{student.name}</td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>

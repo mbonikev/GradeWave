@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
+import { LuArrowLeft } from "react-icons/lu";
 
 function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -46,7 +47,7 @@ function SchoolPromotionDetails() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
-            {level} - {year}
+            <button className="size-9 rounded-full bg-card-bg-weak flex items-center justify-center"><LuArrowLeft className="text-xl" /></button>{level} - {year}
           </h1>
         </div>
       </div>

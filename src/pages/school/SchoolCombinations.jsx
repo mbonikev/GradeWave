@@ -46,13 +46,13 @@ function SchoolCombinations() {
         <SchoolNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
-          <div className="w-full flex items-center gap-2 justify-between mt-2">
+          <div className="w-full flex items-center gap-2 justify-between mt-4">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight text-text-color/80 flex items-center gap-2">
               Combinations
             </h1>
             <button
               //   onClick={() => setShowEditModal(true)}
-              className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
+              className="py-2 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
             >
               <LuPlus className="text-xl" />
               <span className="max-sm:hidden">Add Combination</span>

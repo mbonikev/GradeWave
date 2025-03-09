@@ -136,14 +136,7 @@ function SchoolDashboard() {
             <div className="overflow-x-auto bg-white shadow-md rounded-lg border border-gray-200">
               <table className="w-full text-left border-collapse">
                 <thead className="bg-gray-100">
-                  <tr>
-                    <th className="p-3 border-b">ID</th>
-                    <th className="p-3 border-b">Name</th>
-                    <th className="p-3 border-b">Grade</th>
-                    <th className="p-3 border-b">Progress</th>
-                    <th className="p-3 border-b">Promotion/Year</th>
-                    <th className="p-3 border-b">Combination</th>
-                  </tr>
+                  
                 </thead>
                 <tbody>
                   {students.map((student) => (
@@ -159,6 +152,35 @@ function SchoolDashboard() {
                 </tbody>
               </table>
             </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-card-bg">
+        <table className="w-full text-left">
+          <thead className="bg-card-bg-weak">
+          <tr>
+                    <th className="px-4 py-2">ID</th>
+                    <th className="px-4 py-2">Name</th>
+                    <th className="px-4 py-2">Grade</th>
+                    <th className="px-4 py-2">Progress</th>
+                    <th className="px-4 py-2">Promotion/Year</th>
+                    <th className="px-4 py-2">Combination</th>
+                  </tr>
+          </thead>
+          <tbody>
+            {grades.map((grade, index) => (
+              <tr key={index} className="border-t">
+                <td className="px-4 py-2">{grade.subject}</td>
+                <td className="px-4 py-2">{grade.percentage}%</td>
+                <td
+                  className="px-4 py-2 font-semibold"
+                  style={{ color: grade.color }}
+                >
+                  {grade.grade}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
           </div>
         </div>
       </div>

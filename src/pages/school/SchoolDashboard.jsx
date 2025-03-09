@@ -138,13 +138,6 @@ function SchoolDashboard() {
             </div>
 
             {/* Students Table */}
-            <div className="overflow-x-auto bg-white shadow-md rounded-lg border border-gray-200">
-              <table className="w-full text-left border-collapse">
-                <thead className="bg-gray-100"></thead>
-                <tbody></tbody>
-              </table>
-            </div>
-
             <div className="overflow-x-auto rounded-2xl border border-card-bg">
               <table className="w-full text-left">
                 <thead className="bg-card-bg-weak">
@@ -158,27 +151,14 @@ function SchoolDashboard() {
                   </tr>
                 </thead>
                 <tbody>
-                  {grades.map((grade, index) => (
-                    <tr key={index} className="border-t">
-                      <td className="px-4 py-2">{grade.subject}</td>
-                      <td className="px-4 py-2">{grade.percentage}%</td>
-                      <td
-                        className="px-4 py-2 font-semibold"
-                        style={{ color: grade.color }}
-                      >
-                        {grade.grade}
-                      </td>
-                    </tr>
-                  ))}
-
                   {students.map((student) => (
                     <tr key={student.id} className="border-t">
-                      <td className="p-3 border-b">{student.id}</td>
-                      <td className="p-3 border-b">{student.name}</td>
-                      <td className="p-3 border-b">{student.grade}</td>
-                      <td className="p-3 border-b">{student.progress}</td>
-                      <td className="p-3 border-b">{student.promotion}</td>
-                      <td className="p-3 border-b">{student.combination}</td>
+                      <td className="px-4 py-2">{student.id}</td>
+                      <td className="px-4 py-2">{student.name}</td>
+                      <td className="px-4 py-2">{student.grade}</td>
+                      <td className="px-4 py-2">{student.progress}</td>
+                      <td className="px-4 py-2">{student.promotion}</td>
+                      <td className="px-4 py-2">{student.combination}</td>
                     </tr>
                   ))}
                 </tbody>

@@ -9,7 +9,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
   const [studentName, setStudentName] = useState(
     editMode ? "Ingabire Florence" : ""
   );
-  const [due, setDue] = useState(editMode ? '2025-07-03' : "");
+  const [due, setDue] = useState(editMode ? "2025-07-03" : "");
   const [combination, setCombination] = useState(editMode ? "MCB" : "");
   const [guardianName, setGuardianName] = useState(
     editMode ? "Jeanne Muhoza" : ""
@@ -78,7 +78,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                     onChange={(e) => setStudentName(e.target.value)}
                     placeholder="Full Names"
                     value={studentName}
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
                 <div className="w-full h-fit">
@@ -91,7 +91,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                     value={due}
                     onChange={(e) => setDue(e.target.value)}
                     placeholder="Age"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
                 {level !== "O-Level" && (
@@ -104,9 +104,14 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                       value={combination}
                       defaultValue={"Select Combination"}
                       onChange={(e) => setCombination(e.target.value)}
-                      className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                      className="border-2 bg-transparent border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
-                      <option value={"Select Combination"} disabled hidden selected>
+                      <option
+                        value={"Select Combination"}
+                        disabled
+                        hidden
+                        selected
+                      >
                         Select Combination
                       </option>
                       {Combinations.map((comb, index) => (
@@ -117,102 +122,6 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                     </select>
                   </div>
                 )}
-              </div>
-
-              {/* Parent/Guardian Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
-                Parent/Guardian Info <span className="text-red-500">*</span>
-              </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Name
-                  </h1>
-                  <input
-                    required
-                    value={guardianName}
-                    onChange={(e) => setGuardianName(e.target.value)}
-                    placeholder="Guardian's Full Name"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Contact
-                  </h1>
-                  <input
-                    required
-                    type="tel"
-                    value={guardianContact}
-                    onChange={(e) => setGuardianContact(e.target.value)}
-                    placeholder="Phone Number"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Relationship
-                  </h1>
-                  <select
-                    required
-                    value={
-                      editMode ? guardianRelationship : "Select Relationship"
-                    }
-                    onChange={(e) => setGuardianRelationship(e.target.value)}
-                    className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  >
-                    <option disabled hidden selected>
-                      Select Relationship
-                    </option>
-                    <option value="Father">Father</option>
-                    <option value="Mother">Mother</option>
-                    <option value="Sibling">Sibling</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Residence Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
-                Residence Info <span className="text-red-500">*</span>
-              </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    District
-                  </h1>
-                  <input
-                    required
-                    value={district}
-                    onChange={(e) => setDistrict(e.target.value)}
-                    placeholder="Enter District"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Sector
-                  </h1>
-                  <input
-                    required
-                    value={sector}
-                    onChange={(e) => setSector(e.target.value)}
-                    placeholder="Enter Sector"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Village
-                  </h1>
-                  <input
-                    required
-                    value={village}
-                    onChange={(e) => setVillage(e.target.value)}
-                    placeholder="Enter Village"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
               </div>
             </div>
 

@@ -5,7 +5,7 @@ import { Combinations } from "../content/Combinations";
 const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
-      <div className="flex items-center justify-start gap-1">
+      <div className="flex items-center justify-start gap-1 mb-4 max-w-4xl mx-auto">
         <img src={LogoBlack} className="size-8" />
         <h1 className="text-xl font-medium">Grade Wave</h1>
       </div>

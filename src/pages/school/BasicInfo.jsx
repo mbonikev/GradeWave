@@ -10,7 +10,7 @@ function BasicInfo() {
       <h1 className="text-lg ">Account</h1>
       {/* profile */}
       <div className="w-fit flex items-center gap-3 text-text-color/80">
-        <div className="h-[55px] aspect-square rounded-full overflow-hidden">
+        <div className="h-[55px] aspect-square rounded-full overflow-hidden bg-main-color p-3">
           <img
             src={LogoWhite}
             className="h-full w-full object-cover"

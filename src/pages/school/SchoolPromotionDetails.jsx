@@ -152,7 +152,7 @@ function SchoolPromotionDetails() {
                 {filteredStudents.length === 0 && (
                   <tr>
                     <td className=""></td>
-                    <td className="row-span-3">Student not found</td>
+                    <td className="row-span-9 px-4 py-2">Student not found!</td>
                   </tr>
                 )}
               </tbody>

@@ -60,6 +60,7 @@ function SchoolManageStudents() {
               <LuArrowRight />
             </Link>
           </div>
+          <div className="w-full grid grid-cols-2 max-md:grid-cols-1"></div>
           {/* Students Table */}
           <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
             <table className="w-full text-left">

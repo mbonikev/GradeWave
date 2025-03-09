@@ -5,7 +5,7 @@ import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuArrowLeft, LuPlus, LuSearch } from "react-icons/lu";
 import { Students } from "../../content/Students";
-import AddEditCombination from "../../components/school/AddEditCombination";
+import AddEditStudent from "../../components/school/AddEditStudent";
 
 function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -74,7 +74,7 @@ function SchoolPromotionDetails() {
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
       {showEditModal && (
-        <AddEditCombination
+        <AddEditStudent
           showEditModal={showEditModal}
           setShowEditModal={setShowEditModal}
           year={year}

@@ -14,6 +14,8 @@ function ProtectedAuthStudent({ children }) {
       navigate("/student_dashboard");
     } else if (loggedInSchool === "true") {
       navigate("/school_dashboard");
+    } else if (loggedInAdmin === "true") {
+      navigate("/admin_dashboard");
     } else {
       setShowContent(true);
     }

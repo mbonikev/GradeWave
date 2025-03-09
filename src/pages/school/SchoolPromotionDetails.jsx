@@ -179,7 +179,14 @@ function SchoolPromotionDetails() {
                       {index + 1}
                     </td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                    <td className="px-4 py-2 w-[280px]">{student.name}</td>
+                    <td className="px-4 py-2 w-[280px]">
+                      <Link
+                        to={`/school_student_results/${student.name}`}
+                        className="hover:text-main-color-school hover:underline"
+                      >
+                        {student.name}
+                      </Link>
+                    </td>
                     <td
                       className={`px-4 py-2 ${
                         student.progress < 50 ? "text-red-500" : ""

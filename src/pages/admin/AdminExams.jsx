@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IntroGif } from "../../assets";
-import StudentSidebar from "../../components/student/StudentSidebar";
-import StudentNavbar from "../../components/student/StudentNavbar";
 import ConfirmLogout from "../../components/ConfirmLogout";
+import AdminSidebar from "../../components/admin/AdminSidebar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 
 function AdminExams() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,7 +26,7 @@ function AdminExams() {
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
       )}
-      <StudentSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
+      <AdminSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
           showSidebar && ""
@@ -41,7 +40,7 @@ function AdminExams() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
+        <AdminNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-10 text-text-color/80 w-full border-b border-card-bg-weak pb-2">

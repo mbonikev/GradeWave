@@ -71,8 +71,8 @@ function SchoolPromotionDetails() {
             <select
               name="Type"
               className="block w-[120px] max-md:w-fit px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
-              // value={level}
-              // onChange={(e) => setLevel(e.target.value)}
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
             >
               <option value="All">All</option>
               <option value="Passed">Passed</option>

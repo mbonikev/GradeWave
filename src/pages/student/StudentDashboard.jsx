@@ -322,7 +322,7 @@ function StudentDashboard() {
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Groupe Scolaire Officiel de Butare
                     </span>
-                    <span className="text-sm text-text-color-weak/80">MPC</span>
+                    <span className="text-sm text-text-color-weak/80">MPC: 78.5%</span>
                   </h1>
                 </div>
               </div>
@@ -337,7 +337,7 @@ function StudentDashboard() {
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Ecole des Sciences Byimana
                     </span>
-                    <span className="text-sm text-text-color-weak/80">MCE</span>
+                    <span className="text-sm text-text-color-weak/80">MCE: 78.5%</span>
                   </h1>
                 </div>
               </div>
@@ -352,7 +352,7 @@ function StudentDashboard() {
                     <span className="text-sm flex-1 text-text-color-weak/80">
                       Lycee de Kigali
                     </span>
-                    <span className="text-sm text-text-color-weak/80">HEG</span>
+                    <span className="text-sm text-text-color-weak/80">HEG: 78.5%</span>
                   </h1>
                 </div>
               </div>

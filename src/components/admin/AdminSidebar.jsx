@@ -65,7 +65,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_dashboard"
+            location.pathname === "/admin_dashboard"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -74,65 +74,11 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           <LuChartPie className="text-xl max-lg:text-2xl" />
           Dashboard
         </Link>
-        <Link
-          to="/school_manage_students"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_manage_students" ||
-            location.pathname.includes("school_promotion_details") ||
-            location.pathname.includes("school_student_results")
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <RiStickyNoteAddLine className="text-xl max-lg:text-2xl" />
-          Manage Students
-        </Link>
-        <Link
-          to="/school_combinations"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_combinations"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <LuMedal className="text-xl max-lg:text-2xl" />
-          Combinations
-        </Link>
-        <Link
-          to="/school_past_papers"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_past_papers"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <BiBox className="text-xl max-lg:text-2xl" />
-          Resources
-        </Link>
 
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />
-        {/* <Link
-          to="/school_profile"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_profile"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <PiUserBold className="text-xl max-lg:text-2xl" />
-          Profile
-        </Link> */}
         <Link
-          to="/school_settings"
+          to="/admin_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/school_settings"

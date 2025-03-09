@@ -174,7 +174,6 @@ function AdminDashboard() {
                       N <sub className="pt-1">o</sub>
                     </span>
                   </th>
-                  <th className="px-4 py-2">Rank</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">School</th>
                   <th className="px-4 py-2">Score</th>
@@ -188,7 +187,6 @@ function AdminDashboard() {
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
-                    <td className="px-4 py-2 w-[130px]">{student.rank}</td>
                     <td className="px-4 py-2 w-[280px]">
                       <Link
                         // to={`/school_student_results/${student.name}`}

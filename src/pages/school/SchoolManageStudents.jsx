@@ -66,7 +66,7 @@ function SchoolManageStudents() {
               <thead className="bg-card-bg-weak">
                 <tr>
                   <th className="px-4 py-2">Level</th>
-                  <th className="px-4 py-2">Name</th>
+                  <th className="px-4 py-2">Total Students</th>
                   <th className="px-4 py-2">Status</th>
                   <th className="px-4 py-2">Progress</th>
                   <th className="px-4 py-2">Promotion/Year</th>
@@ -75,7 +75,7 @@ function SchoolManageStudents() {
               </thead>
               <tbody>
                 <tr className="border-t">
-                  <td className="px-4 py-2 w-[130px]"></td>
+                  <td className="px-4 py-2"></td>
                   <td className="px-4 py-2 w-[280px]"></td>
                   <td className="px-4 py-2"></td>
                   <td className="px-4 py-2"></td>

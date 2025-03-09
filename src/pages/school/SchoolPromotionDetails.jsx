@@ -32,7 +32,10 @@ function SchoolPromotionDetails() {
       const matchesName = student.name
         .toLowerCase()
         .includes(searchValue.toLowerCase());
-      const matchesStatus = filter ? student.status === filter : true;
+      if (filter !== "All") {
+        const matchesStatus = filter ? student.status === filter : true;
+        return matchesStatus
+      }
       return matchesName && matchesStatus;
     });
     setFilteredStudents(filtered);

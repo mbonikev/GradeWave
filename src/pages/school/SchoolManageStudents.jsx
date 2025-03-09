@@ -50,7 +50,7 @@ function SchoolManageStudents() {
           </h1>
           <div className="w-full flex items-center justify-between mt-6 mb-3">
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
-              Top 5 A-level Candidates
+              2024-2025 Promotion
             </h1>
             <Link
               to="/school_dashboard"
@@ -65,7 +65,7 @@ function SchoolManageStudents() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2">Student ID</th>
+                  <th className="px-4 py-2">Level</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>
                   <th className="px-4 py-2">Progress</th>

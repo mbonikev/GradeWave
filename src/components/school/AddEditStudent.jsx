@@ -49,7 +49,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             {/* content */}
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4">
               {/* basic info */}
-              <h1 className="text-base font-normal opacity-80 text-text-color-weak/60 italic">
+              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
                 Basic info <span className="text-red-500">*</span>
               </h1>
               <div className="w-full grid grid-cols-3 gap-5">
@@ -76,6 +76,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   </select>
                 </div>
               </div>
+              
             </div>
             {/* save button */}
             <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">

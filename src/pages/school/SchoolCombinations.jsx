@@ -26,6 +26,11 @@ function SchoolCombinations() {
     }, 100);
   };
 
+  const handleEdit = () => {
+    setEditMode(true);
+    setShowEditModal(true);
+  };
+
   useEffect(() => {
     if (!showEditModal) {
       setEditMode(false);
@@ -102,7 +107,7 @@ function SchoolCombinations() {
                     <td className={`px-4 py-2`}>124</td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
-                        // onClick={handleEdit}
+                        onClick={handleEdit}
                         className="text-main-color-school"
                       >
                         Edit

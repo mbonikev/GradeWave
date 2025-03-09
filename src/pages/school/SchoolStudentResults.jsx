@@ -12,11 +12,6 @@ function SchoolStudentResults() {
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { name } = useParams();
-  const [filter, setFilter] = useState("All");
-  const [searchValue, setSearchValue] = useState("");
-  const [filteredStudents, setFilteredStudents] = useState(Students);
-  const [showEditModal, setShowEditModal] = useState(false);
-  const [editMode, setEditMode] = useState(false);
   const navigate = useNavigate();
 
   const openSidebar = () => {
@@ -31,45 +26,6 @@ function SchoolStudentResults() {
       setShowSidebar(false);
     }, 100);
   };
-
-  useEffect(() => {
-    let filtered = Students;
-
-    if (filter !== "All") {
-      filtered = filtered.filter((student) => student.status === filter);
-    }
-
-    if (searchValue !== "") {
-      filtered = filtered.filter((student) =>
-        student.name.toLowerCase().includes(searchValue.toLowerCase())
-      );
-    }
-
-    setFilteredStudents(filtered);
-  }, [filter, searchValue]);
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        setShowEditModal(false);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
-  const handleEdit = () => {
-    setEditMode(true);
-    setShowEditModal(true);
-  };
-
-  useEffect(() => {
-    if (!showEditModal) {
-      setEditMode(false);
-    }
-  }, [showEditModal]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

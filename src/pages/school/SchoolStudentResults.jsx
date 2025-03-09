@@ -95,7 +95,7 @@ function SchoolStudentResults() {
           textAnchor="middle"
           fill="#414141"
         >
-          {grade}
+          {marks}
         </text>
       </svg>
     );

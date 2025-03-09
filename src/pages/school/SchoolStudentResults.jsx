@@ -10,11 +10,8 @@ function SchoolStudentResults() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
-  const [role, setRole] = useState(1);
-  const [loading, setLoading] = useState(true);
-  const [level, setLevel] = useState(null);
+  const [marks, setMarks] = useState(87);
   const [gradesData, setGradesData] = useState([]);
-  const [fetching, setFetching] = useState(false);
   const { name } = useParams();
   const navigate = useNavigate();
 

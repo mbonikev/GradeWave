@@ -36,19 +36,19 @@ function SchoolPromotionDetails() {
     }
   }, [filter]);
 
-  useEffect(() => {
-    const backupStudents = [...filteredStudents];
-    if (searchValue !== "") {
-      const res = backupStudents.filter((student) =>
-        student.name.toLowerCase().includes(searchValue.toLowerCase())
-      );
-      setFilteredStudents(res);
-    } else if (filter === "All") {
-      setFilteredStudents(Students);
-    } else {
-      setFilteredStudents(backupStudents);
-    }
-  }, [searchValue]);
+  // useEffect(() => {
+  //   const backupStudents = [...filteredStudents];
+  //   if (searchValue !== "") {
+  //     const res = backupStudents.filter((student) =>
+  //       student.name.toLowerCase().includes(searchValue.toLowerCase())
+  //     );
+  //     setFilteredStudents(res);
+  //   } else if (filter === "All") {
+  //     setFilteredStudents(Students);
+  //   } else {
+  //     setFilteredStudents(backupStudents);
+  //   }
+  // }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

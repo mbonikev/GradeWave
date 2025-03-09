@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function ProtectedAuthStudent({ children }) {
+function ProtectedAuth({ children }) {
   const [showContent, setShowContent] = useState(false);
   const navigate = useNavigate();
 
@@ -27,4 +27,4 @@ function ProtectedAuthStudent({ children }) {
   return <>{showContent ? children : null}</>;
 }
 
-export default ProtectedAuthStudent;
+export default ProtectedAuth;

@@ -18,7 +18,7 @@ import SidebarSectionTitle from "../SidebarSectionTitle";
 import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";
-import { PiExam, PiUserBold, PiUsersDuotone } from "react-icons/pi";
+import { PiExam, PiUserBold, PiUsersBold, PiUsersDuotone } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
@@ -126,7 +126,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <PiUsersDuotone className="text-xl stroke-[3px] max-lg:text-2xl" />
+          <PiUsersBold className="text-xl max-lg:text-2xl" />
           Admins
         </Link>
         <Link

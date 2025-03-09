@@ -69,7 +69,8 @@ function SchoolPromotionDetails() {
 
             <input
               type="text"
-              className="block w-[130px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="block w-[130px] max-sm:flex-1 pl-9 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              placeholder="Search"
               // value={level}
               // onChange={(e) => setLevel(e.target.value)}
             />

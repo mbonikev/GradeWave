@@ -68,8 +68,8 @@ function SchoolManageStudents() {
                   </thead>
                   <tbody>
                     <tr className="border-t">
-                      <td className="px-4 py-2 w-[120px]"></td>
-                      <td className="px-4 py-2"><Link to={'/'}></Link></td>
+                      <td className="px-4 py-2 w-[120px]"><Link to={'/'} className="text-main-color-school hover:underline">O-Level</Link></td>
+                      <td className="px-4 py-2"></td>
                       <td className="px-4 py-2"></td>
                     </tr>
                   </tbody>

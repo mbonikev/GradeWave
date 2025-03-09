@@ -245,7 +245,12 @@ function Login() {
               }  pointer-events-none select-none`}
             >
               <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
-                Continue as a Guest {role === "school" && "School"}
+                Continue as a Guest{" "}
+                {role === "student"
+                  ? "Student"
+                  : role === "school"
+                  ? "School"
+                  : "Admin"}
                 <LuArrowRight className="text-lg translate-y-[1px]" />
               </div>
               <Loading size="small" />

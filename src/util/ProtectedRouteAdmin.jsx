@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function ProtectedRouteAdmin({ children }) {
-  const loggedIn = sessionStorage.getItem("loggedInSchool");
+  const loggedIn = sessionStorage.getItem("loggedInAdmin");
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -26,18 +26,16 @@ function App() {
       favicon.href = iconPath;
     }
   };
-  
-  const App = () => {
-    useEffect(() => {
-      // Get stored favicon or default
-      
-    }, []);
+
   useEffect(() => {
     if (sessionStorage.getItem("loggedInSchool") === "true") {
       document.documentElement.style.setProperty("--main-color", "#00bc7d");
-      document.documentElement.style.setProperty("--main-color-weak", "#00bc7d27");
+      document.documentElement.style.setProperty(
+        "--main-color-weak",
+        "#00bc7d27"
+      );
 
-      setFavicon("/favicon_blue.svg");
+      setFavicon("/favicon_green.svg");
     }
   }, []);
 

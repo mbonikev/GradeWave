@@ -16,7 +16,23 @@ function SchoolPromotionDetails() {
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const [showEditModal, setShowEditModal] = useState(false);
-  const studentDetails = []
+  const studentDetails = [
+    {
+      studentName: "John Doe",
+      studentAge: 17,
+      combination: "MCB",
+
+      guardianName: "Jane Doe",
+      guardianContact: "+250788123456",
+      guardianRelationship: "Mother",
+
+      residence: {
+        district: "Kigali",
+        sector: "Nyarugenge",
+        village: "Nyamirambo",
+      },
+    },
+  ];
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {

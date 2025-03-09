@@ -32,8 +32,9 @@ function SchoolPromotionDetails() {
       if (searchValue === "") {
         const res = Students.filter((student) => student.status === filter);
         setFilteredStudents(res);
-      } else{
-        
+      } else if (searchValue !== "") {
+        const res = Students.filter((student) => student.status === filter);
+        setFilteredStudents(res);
       }
     } else {
       setFilteredStudents(Students);

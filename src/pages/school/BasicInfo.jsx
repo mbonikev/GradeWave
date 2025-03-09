@@ -60,6 +60,15 @@ function BasicInfo() {
           />
         </div>
         <div className="w-full flex flex-col gap-1">
+          <h1 className="text-sm font-normal">Village</h1>
+          <input
+            type="text"
+            name="village"
+            placeholder="School Village"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
+          />
+        </div>
+        <div className="w-full flex flex-col gap-1">
           <h1 className="text-sm font-normal">School Contact</h1>
           <input
             type="text"

@@ -19,14 +19,6 @@ function App() {
   const [fetching, setFetching] = useState(true);
   const [animateFetching, setAnimateFetching] = useState(true);
 
-  const setFavicon = (iconPath) => {
-    sessionStorage.setItem("favicon", iconPath);
-    const favicon = document.getElementById("favicon");
-    if (favicon) {
-      favicon.href = iconPath;
-    }
-  };
-
   useEffect(() => {
     if (sessionStorage.getItem("loggedInSchool") === "true") {
       document.documentElement.style.setProperty("--main-color", "#00bc7d");
@@ -34,8 +26,10 @@ function App() {
         "--main-color-weak",
         "#00bc7d27"
       );
-
-      setFavicon("/favicon_green.svg");
+      const favicon = document.getElementById("favicon");
+      if (favicon) {
+        favicon.href = "/favicon_green.svg";
+      }
     }
   }, []);
 

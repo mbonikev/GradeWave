@@ -57,7 +57,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
           duration={200}
           triggerOnce
           keyframes={customAnimation}
-          className="z-10"
+          className="z-10 w-full"
         >
           <div
             className={`w-full max-lg:max-w-[95%] h-fit max-h-[95vh] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20`}
@@ -67,7 +67,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
             </h1>
 
             {/* content */}
-            <div className="w-[900px] h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
+            <div className="w-full max-w-[400px] h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
               <div className="w-full grid grid-cols-1 max-lg:grid-cols-1 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">

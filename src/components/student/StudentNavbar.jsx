@@ -151,7 +151,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
                       </h1>
                     </div>
                     <h1 className="text-sm text-text-color-weak/80 pl-[43px] mt-1">
-                      3w
+                      23m
                     </h1>
                   </Link>
                 ))}

@@ -341,7 +341,7 @@ function StudentDashboard() {
               {topStudents.map((student, index) => (
                 <div
                   key={index}
-                  className="w-full flex items-center justify-normal"
+                  className="w-full flex items-center max-md:items-start justify-normal"
                 >
                   <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                     {student.rank}

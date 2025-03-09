@@ -82,6 +82,7 @@ function SchoolPromotionDetails() {
           setShowEditModal={setShowEditModal}
           year={year}
           level={level}
+          studentDetails={studentDetails}
         />
       )}
       {/* confirm */}

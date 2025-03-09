@@ -15,6 +15,7 @@ import ProtectedRouteStudent from "./util/ProtectedRouteStudent";
 import ProtectedRouteSchool from "./util/ProtectedRouteSchool"; // Use a separate route protection for schools
 import ProtectedAuth from "./util/ProtectedAuth";
 import SchoolManageStudents from "./pages/school/SchoolManageStudents";
+import SchoolPromotionDetails from "./pages/school/SchoolPromotionDetails";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -60,6 +61,7 @@ function App() {
   const schoolRoutes = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
     { path: "/school_manage_students", element: <SchoolManageStudents /> },
+    { path: "/school_manage_students", element: <SchoolPromotionDetails /> },
   ];
 
   return (

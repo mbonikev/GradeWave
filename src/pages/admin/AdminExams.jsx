@@ -70,7 +70,9 @@ function AdminExams() {
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Closing on:</strong>{" "}
-                <span className="font-medium text-text-color/80">July 3, 2025</span>
+                <span className="font-medium text-text-color/80">
+                  July 3, 2025
+                </span>
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Registered:</strong>{" "}
@@ -87,7 +89,7 @@ function AdminExams() {
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # O-Level
           </h1>
-          <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-center max-md:flex-col mb-4">
+          <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-end max-md:flex-col mb-4">
             <div className="w-full flex flex-col gap-1 text-sm ">
               <h1 className="text-base font-bold text-text-color/80">
                 ORDINARY LEVEL NATIONAL EXAMINATION (O-Level Exam), 2025-2026
@@ -95,6 +97,12 @@ function AdminExams() {
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Registration Status:</strong>{" "}
                 <span className="text-green-700/80 font-medium">Open</span>
+              </h1>
+              <h1 className="text-text-color/50">
+                <strong className="font-medium">Closing on:</strong>{" "}
+                <span className="font-medium text-text-color/80">
+                  July 3, 2025
+                </span>
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Registered:</strong>{" "}
@@ -105,7 +113,7 @@ function AdminExams() {
               to="/student_register_for_exams"
               className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
             >
-              Close
+              Extend
             </Link>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">

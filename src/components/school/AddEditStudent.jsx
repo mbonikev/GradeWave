@@ -35,12 +35,12 @@ function AddEditStudent({logoutWarn, setLogoutWarn, showEditModal, setShowEditMo
       >
         <div className="w-full h-full relative flex items-center justify-center">
           <div
-            onClick={() => setLogoutWarn(false)}
+            onClick={() => setShowEditModal(false)}
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
             className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
-              logoutWarn ? "scale-100 transition-all " : "scale-75"
+              showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
             <TiWarning className="text-[40px] mx-auto text-amber-500" />

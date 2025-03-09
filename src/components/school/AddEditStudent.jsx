@@ -82,7 +82,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                     placeholder="Choose Combination"
                     className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
                   >
-                    <option disabled hidden>Select</option>
+                    <option disabled hidden>Select Combination</option>
                   </select>
                 </div>
               </div>

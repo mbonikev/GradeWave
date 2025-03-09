@@ -47,6 +47,18 @@ function SchoolManageStudents() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Manage Students
           </h1>
+          <div className="w-full flex items-center justify-between mt-6 mb-3">
+            <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+              Top 5 A-level Candidates
+            </h1>
+            <Link
+              to="/school_dashboard"
+              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
+            >
+              View all
+              <LuArrowRight />
+            </Link>
+          </div>
           {/* Students Table */}
           <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
             <table className="w-full text-left">

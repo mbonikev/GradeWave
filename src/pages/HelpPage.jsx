@@ -54,13 +54,13 @@ const HelpPage = () => {
                     type="email"
                     name="email"
                     placeholder="Write Request"
-                    className="border-2 w-full border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-base placeholder:text-text-color-weak/70"
+                    className="border-2 w-full overflow-hidden border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-base placeholder:text-text-color-weak/70"
                   />
                 </div>
               </div>
 
               {/* save button */}
-              <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
+              <div className="w-full max-w-[300px] mt-8 max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
                 <button className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]">
                   Cancel
                 </button>

@@ -78,7 +78,7 @@ function SchoolPromotionDetails() {
           <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">
             <select
               name="Type"
-              className="block w-[120px] max-md:w-fit px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="block w-[120px] max-md:w-fit max-md:pr-4 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
             >

@@ -13,7 +13,6 @@ import {
   LuUsers,
 } from "react-icons/lu";
 import { HiMiniUsers } from "react-icons/hi2";
-import EditExam from "../../components/admin/EditExam";
 
 function AdminDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -86,16 +85,6 @@ function AdminDashboard() {
 
   return (
     <div className="w-full h-fit flex-1 flex relative">
-      {/* add/edit exam */}
-      {showEditModal && (
-        <EditExam
-          showEditModal={showEditModal}
-          setShowEditModal={setShowEditModal}
-          year={year}
-          level={level}
-          editMode={editMode}
-        />
-      )}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />

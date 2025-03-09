@@ -9,7 +9,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
   const [studentName, setStudentName] = useState(
     editMode ? "Ingabire Florence" : ""
   );
-  const [due, setDue] = useState(editMode ? '22/02/2025' : "");
+  const [due, setDue] = useState(editMode ? '2025-07-03' : "");
   const [combination, setCombination] = useState(editMode ? "MCB" : "");
   const [guardianName, setGuardianName] = useState(
     editMode ? "Jeanne Muhoza" : ""

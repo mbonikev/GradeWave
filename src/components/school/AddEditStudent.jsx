@@ -6,12 +6,10 @@ import LoadingWhite from "../LoadingWhite";
 function AddEditStudent({ showEditModal, setShowEditModal }) {
   const [adding, setAdding] = useState(false);
   const handleAddStudent = () => {
-    // sessionStorage.removeItem("loggedInStudent");
-    // sessionStorage.removeItem("loggedInSchool");
-    setLoggingOut(true);
+    setAdding(true);
     setTimeout(() => {
       // window.location.reload();
-    }, 300);
+    }, 1300);
   };
   const customAnimation = keyframes`
   from{
@@ -43,7 +41,6 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            
             <div className="w-full flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}

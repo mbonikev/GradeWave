@@ -63,7 +63,7 @@ function Login() {
         </div>
 
         {/* form */}
-        <form className="w-full flex-1 py-[100px] flex flex-col items-start justify-center max-w-[400px] mx-auto">
+        <form className="w-full flex-1 py-[50px] flex flex-col items-start justify-center max-w-[400px] mx-auto">
           <h1 className="text-xl font-medium mb-5">Welcome Back</h1>
           {/* auth options */}
           <h1 className="text-base font-normal opacity-80 mt-2 mb-3">

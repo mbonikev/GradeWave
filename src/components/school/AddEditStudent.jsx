@@ -93,7 +93,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     required
                     type="number"
                     value={editMode ? studentAge : ""}
-                    onChange={(e) => setstudentAge(e.target.value)}
+                    onChange={(e) => setStudentAge(e.target.value)}
                     placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -110,7 +110,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                           ? combination
                           : "Select Combination"
                       }
-                      onChange={(e) => setcombination(e.target.value)}
+                      onChange={(e) => setCombination(e.target.value)}
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
                       <option disabled hidden selected>
@@ -138,7 +138,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? guardianName : ""}
-                    onChange={(e) => setguardianName(e.target.value)}
+                    onChange={(e) => setGuardianName(e.target.value)}
                     placeholder="Guardian's Full Name"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -151,7 +151,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     required
                     type="tel"
                     value={editMode ? guardianContact : ""}
-                    onChange={(e) => setguardianContact(e.target.value)}
+                    onChange={(e) => setGuardianContact(e.target.value)}
                     placeholder="Phone Number"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -167,7 +167,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                         ? guardianRelationship
                         : "Select Relationship"
                     }
-                    onChange={(e) => setguardianRelationship(e.target.value)}
+                    onChange={(e) => setGuardianRelationship(e.target.value)}
                     className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   >
                     <option disabled hidden selected>

@@ -28,7 +28,7 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">School Name</h1>
           <input
             type="text"
-            name="username"
+            name="name"
             placeholder="Enter school name"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
@@ -52,10 +52,10 @@ function BasicInfo() {
           />
         </div>
         <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">District</h1>
+          <h1 className="text-sm font-normal">Sector</h1>
           <input
             type="text"
-            name="district"
+            name="sector"
             placeholder="School District"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />

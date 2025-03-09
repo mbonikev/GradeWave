@@ -191,6 +191,33 @@ function StudentDashboard() {
     }, 600);
   }, [level]);
 
+  const topStudents = [
+    {
+      rank: "1st",
+      name: "Mugisha Kenny",
+      school: "Groupe Scolaire Officiel de Butare",
+      combination: "MPC",
+      score: "97.28%",
+      icon: <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />,
+    },
+    {
+      rank: "2nd",
+      name: "Ineza Raissa",
+      school: "Ecole des Sciences Byimana",
+      combination: "MCE",
+      score: "94.92%",
+      icon: <GiSportMedal className="text-4xl text-stone-400" />,
+    },
+    {
+      rank: "3rd",
+      name: "Uwase Abatoni Stecy",
+      school: "Lycee de Kigali",
+      combination: "HEG",
+      score: "91.28%",
+      icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
+    },
+  ];
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}

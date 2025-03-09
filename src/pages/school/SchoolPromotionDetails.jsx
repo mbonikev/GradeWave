@@ -59,11 +59,11 @@ function SchoolPromotionDetails() {
             <select
               name="Type"
               className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
-              value={level}
-              onChange={(e) => setLevel(e.target.value)} // Update level on selection change
+              // value={level}
+              // onChange={(e) => setLevel(e.target.value)}
             >
-              <option value="2023-2024  ">2023-2024</option>
-              <option value="2024-2025">2024-2025</option>
+              <option value="All">All</option>
+              <option value="Passed">Passed</option>
             </select>
           </div>
         </div>

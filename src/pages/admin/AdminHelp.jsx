@@ -26,25 +26,25 @@ function AdminHelp() {
   const Notifications = [
     {
       pfp: LogoWhite,
-      name: "System",
+      name: "School",
       publishedAt: "24/02/2025",
       message: "4 days left to register your students.",
     },
     {
       pfp: LogoWhite,
-      name: "Admin",
+      name: "Student",
       publishedAt: "22/02/2025",
       message: "New guidelines for exam registration have been updated.",
     },
     {
       pfp: LogoWhite,
-      name: "Support",
+      name: "Student",
       publishedAt: "20/02/2025",
-      message: "System maintenance scheduled for 28th February.",
+      message: "I can't login in my account, what should I do?",
     },
     {
       pfp: LogoWhite,
-      name: "System",
+      name: "School",
       publishedAt: "18/02/2025",
       message: "Your school performance report is available.",
     },

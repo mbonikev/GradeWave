@@ -42,7 +42,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            <div className="w-full max-w-[300px] ml-auto flex items-center max-sm:flex-col gap-2">
+            <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"

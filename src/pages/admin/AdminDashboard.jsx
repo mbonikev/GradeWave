@@ -62,7 +62,6 @@ function AdminDashboard() {
     },
   ];
 
-
   const topStudentsOlevel = [
     {
       rank: "1st",
@@ -173,32 +172,92 @@ function AdminDashboard() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2"></th>
+                  <th className="px-4 py-2 w-[40px] text-center">
+                    <span className="flex gap-0.5 justify-center pl-2 w-full ">
+                      N <sub className="pt-1">o</sub>
+                    </span>
+                  </th>
+                  <th className="px-4 py-2">Student ID</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>
-                  <th className="px-4 py-2">Progress</th>
-                  <th className="px-4 py-2">Promotion/Year</th>
-                  <th className="px-4 py-2">Combination</th>
+                  <th className="px-4 py-2">Grades</th>
+                  <th className="px-4 py-2 w-[100px]">Combination</th>
+                  <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
               </thead>
               <tbody>
-                {topStudentsOlevel.map((student) => (
+                {topStudentsOlevel.map((student, index) => (
                   <tr key={student.id} className="border-t">
-                    <td className="px-4 py-2 w-[130px]">{student.}</td>
-                    <td className="px-4 py-2 w-[280px]">
-                      <Link
-                        to={`/school_student_results/${student.name}`}
-                        className="hover:text-main-color-school hover:underline"
-                      >
-                        {student.name}
-                      </Link>
+                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
+                      {index + 1}
                     </td>
-                    <td className="px-4 py-2">{student.status}</td>
-                    <td className="px-4 py-2">{student.progress}</td>
-                    <td className="px-4 py-2">{student.promotion}</td>
-                    <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
+                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
+                    <td className="px-4 py-2 w-[280px]">
+                      {year !== "2025-2026" ? (
+                        <Link
+                          to={`/school_student_results/${student.name}`}
+                          className="hover:text-main-color-school hover:underline"
+                        >
+                          {student.name}
+                        </Link>
+                      ) : (
+                        `${student.name}`
+                      )}
+                    </td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {year !== "2025-2026" ? (
+                        <span>{student.status}</span>
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {year !== "2025-2026" ? (
+                        <span>{student.progress}%</span>
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-2 w-[100px]">
+                      {level === "A-Level" ? (
+                        student.combination
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
+                      {year === "2025-2026" ? (
+                        <button
+                          onClick={handleEdit}
+                          className="text-main-color-school"
+                        >
+                          Edit
+                        </button>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
                   </tr>
                 ))}
+                {topStudentsOlevel.length === 0 && (
+                  <tr>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2">Student not found!</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>

@@ -182,8 +182,9 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <TbHeadset className="text-xl max-lg:text-2xl" />
-          <div className="flex items-center justify-between gap-2">
-            Help Request
+          <div className="w-full flex items-center justify-between gap-2">
+            <span>Help Request</span>
+            <span className="text-main-color">2</span>
           </div>
         </div>
       </div>

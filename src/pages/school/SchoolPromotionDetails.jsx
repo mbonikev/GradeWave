@@ -213,11 +213,170 @@ function SchoolPromotionDetails() {
       status: "Failed",
       progress: "58%",
       promotion: "2023-2024",
-      combination: "PCB",
+      combination: "PCB ",
     },
-    // Add more students until you have at least 70
+    {
+      id: 1920534085,
+      name: "Munyaneza Philippe",
+      status: "Passed",
+      progress: "89%",
+      promotion: "2024-2025",
+      combination: "PCM",
+    },
+    {
+      id: 2020534085,
+      name: "Uwimana Charlotte",
+      status: "Failed",
+      progress: "56%",
+      promotion: "2024-2025",
+      combination: "TTC",
+    },
+    {
+      id: 2120534085,
+      name: "Tuyishime Jean Claude",
+      status: "Passed",
+      progress: "77%",
+      promotion: "2023-2024",
+      combination: "BCG",
+    },
+    {
+      id: 2220534085,
+      name: "Mugiraneza Rachel",
+      status: "Passed",
+      progress: "92%",
+      promotion: "2024-2025",
+      combination: "PCM",
+    },
+    {
+      id: 2320534085,
+      name: "Hakizimana Emmanuelle",
+      status: "Failed",
+      progress: "52%",
+      promotion: "2023-2024",
+      combination: "TTC",
+    },
+    {
+      id: 2420534085,
+      name: "Murebwayire Christine",
+      status: "Passed",
+      progress: "80%",
+      promotion: "2024-2025",
+      combination: "PCM",
+    },
+    {
+      id: 2520534085,
+      name: "Kanyange Adrienne",
+      status: "Failed",
+      progress: "61%",
+      promotion: "2025-2026",
+      combination: "BCG",
+    },
+    {
+      id: 2620534085,
+      name: "Bizimana Samuel",
+      status: "Passed",
+      progress: "85%",
+      promotion: "2023-2024",
+      combination: "TTC",
+    },
+    {
+      id: 2720534085,
+      name: "Niyomugabo Lillian",
+      status: "Failed",
+      progress: "57%",
+      promotion: "2025-2026",
+      combination: "PCM",
+    },
+    {
+      id: 2820534085,
+      name: "Munyankindi Fidele",
+      status: "Passed",
+      progress: "78%",
+      promotion: "2024-2025",
+      combination: "BCG",
+    },
+    {
+      id: 2920534085,
+      name: "Mukangwije Sandra",
+      status: "Passed",
+      progress: "83%",
+      promotion: "2023-2024",
+      combination: "PCM",
+    },
+    {
+      id: 3020534085,
+      name: "Niyonkuru Albert",
+      status: "Failed",
+      progress: "50%",
+      promotion: "2024-2025",
+      combination: "TTC",
+    },
+    {
+      id: 3120534085,
+      name: "Gahigi Dorcas",
+      status: "Passed",
+      progress: "88%",
+      promotion: "2025-2026",
+      combination: "BCG",
+    },
+    {
+      id: 3220534085,
+      name: "Uwimana Didier",
+      status: "Passed",
+      progress: "84%",
+      promotion: "2024-2025",
+      combination: "PCM",
+    },
+    {
+      id: 3320534085,
+      name: "Niyonsaba Isabelle",
+      status: "Failed",
+      progress: "62%",
+      promotion: "2023-2024",
+      combination: "TTC",
+    },
+    {
+      id: 3420534085,
+      name: "Gakuru Delphine",
+      status: "Passed",
+      progress: "91%",
+      promotion: "2024-2025",
+      combination: "BCG",
+    },
+    {
+      id: 3520534085,
+      name: "Munyaneza Charles",
+      status: "Failed",
+      progress: "59%",
+      promotion: "2025-2026",
+      combination: "PCM",
+    },
+    {
+      id: 3620534085,
+      name: "Rukundo Grace",
+      status: "Passed",
+      progress: "79%",
+      promotion: "2023-2024",
+      combination: "BCG",
+    },
+    {
+      id: 3720534085,
+      name: "Twagirimana Valence",
+      status: "Failed",
+      progress: "64%",
+      promotion: "2024-2025",
+      combination: "TTC",
+    },
+    {
+      id: 3820534085,
+      name: "Baziwe Jeanette",
+      status: "Passed",
+      progress: "90%",
+      promotion: "2025-2026",
+      combination: "PCM",
+    },
   ];
-  
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -292,12 +451,16 @@ function SchoolPromotionDetails() {
               <tbody>
                 {students.map((student, index) => (
                   <tr key={student.id} className="border-t">
-                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">{index + 1}</td>
+                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
+                      {index + 1}
+                    </td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td className="px-4 py-2">{student.status}</td>
                     <td className="px-4 py-2">{student.progress}</td>
-                    <td className="px-4 py-2 text-text-color-weak/60">{level === 'A-Level' ? student.combination : 'N/A'}</td>
+                    <td className="px-4 py-2 text-text-color-weak/60">
+                      {level === "A-Level" ? student.combination : "N/A"}
+                    </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <Link
                         to="/school_promotion_details/2024-2025/O-Level"

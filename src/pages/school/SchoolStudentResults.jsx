@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
@@ -12,6 +12,8 @@ function SchoolStudentResults() {
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { name } = useParams();
+  const location = useLocation();
+  const previousPath = location.state?.from || "/";
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
@@ -106,7 +108,7 @@ function SchoolStudentResults() {
           <div className="w-full flex items-start gap-2 justify-between">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
               <Link
-                to="/school_manage_students"
+                to={previousPath}
                 className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"
               >
                 <LuArrowLeft className="text-xl max-sm:text-lg stroke-[3px]" />

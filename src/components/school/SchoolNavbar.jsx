@@ -115,18 +115,12 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                 {[
                   {
                     pfp: LogoWhite,
-                    name: "Adminstrator",
-                    publishedAt: "24/02/2025",
-                    message:
-                      "System: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
-                  },
-                  {
-                    pfp: LogoWhite,
-                    name: "Adminstrator",
+                    name: "System",
                     publishedAt: "24/02/2025",
                     message:
                       "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
                   },
+                  
                 ].map((annoucement, index) => (
                   <Link
                     to="/student_notifications"

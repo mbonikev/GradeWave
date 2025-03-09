@@ -182,7 +182,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <TbHeadset className="text-xl max-lg:text-2xl" />
-          Get Help
+          Help Request
         </div>
       </div>
     </div>

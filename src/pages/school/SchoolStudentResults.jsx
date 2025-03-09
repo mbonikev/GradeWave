@@ -11,7 +11,7 @@ function SchoolStudentResults() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
-  const { year, level } = useParams();
+  const { name } = useParams();
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
@@ -111,7 +111,7 @@ function SchoolStudentResults() {
               >
                 <LuArrowLeft className="text-xl max-sm:text-lg stroke-[3px]" />
               </Link>
-              {level} - {year}
+              {name}
             </h1>
             {year === "2025-2026" && (
               <button
@@ -123,114 +123,7 @@ function SchoolStudentResults() {
               </button>
             )}
           </div>
-          <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">
-            <select
-              name="Type"
-              className="block w-[120px] max-md:w-fit max-md:pr-4 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-            >
-              <option value="All">All</option>
-              <option disabled={year === "2025-2026"} value="Passed">
-                Passed
-              </option>
-              <option disabled={year === "2025-2026"} value="Failed">
-                Failed
-              </option>
-            </select>
-            <div className="flex-1 max-w-[230px] max-md:max-w-full h-fit relative">
-              <LuSearch className="absolute top-0 bottom-0 my-auto left-2.5 text-text-color-weak " />
-              <input
-                type="text"
-                className="block w-full max-sm:flex-1 pl-8 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm placeholder:text-text-color-weak"
-                placeholder="Search"
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-              />
-            </div>
-          </div>
-          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
-            <table className="w-full text-left">
-              <thead className="bg-card-bg-weak">
-                <tr>
-                  <th className="px-4 py-2 w-[40px] text-center">
-                    <span className="flex gap-0.5 justify-center pl-2 w-full ">
-                      N <sub className="pt-1">o</sub>
-                    </span>
-                  </th>
-                  <th className="px-4 py-2">Student ID</th>
-                  <th className="px-4 py-2">Name</th>
-                  <th className="px-4 py-2">Status</th>
-                  <th className="px-4 py-2">Grades</th>
-                  <th className="px-4 py-2 w-[100px]">Combination</th>
-                  <th className="px-4 py-2 w-[90px]"></th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredStudents.map((student, index) => (
-                  <tr key={student.id} className="border-t">
-                    <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
-                      {index + 1}
-                    </td>
-                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                    <td className="px-4 py-2 w-[280px]">{student.name}</td>
-                    <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
-                    >
-                      {year !== "2025-2026" ? (
-                        <span>{student.status}</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
-                    </td>
-                    <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
-                    >
-                      {year !== "2025-2026" ? (
-                        <span>{student.progress}%</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
-                    </td>
-                    <td className="px-4 py-2 w-[100px]">
-                      {level === "A-Level" ? (
-                        student.combination
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
-                    </td>
-                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      {year === "2025-2026" ? (
-                        <button
-                          onClick={handleEdit}
-                          className="text-main-color-school"
-                        >
-                          Edit
-                        </button>
-                      ) : (
-                        "-"
-                      )}
-                    </td>
-                  </tr>
-                ))}
-                {filteredStudents.length === 0 && (
-                  <tr>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2">Student not found!</td>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
+          
         </div>
       </div>
     </div>

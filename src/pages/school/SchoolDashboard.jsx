@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { Users, LuChartPie, LuCircleCheckBig, Calendar } from "react-icons/lu";
+import { LuUsers, LuChartPie, LuCircleCheckBig, LuCalendarDays } from "react-icons/lu";
 
 function SchoolDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -30,7 +30,7 @@ function SchoolDashboard() {
     {
       title: "Total Students",
       value: 1200,
-      icon: <Users className="w-6 h-6 text-blue-500" />,
+      icon: <LuUsers className="w-6 h-6 text-blue-500" />,
     },
     {
       title: "Passed Exams",
@@ -45,7 +45,7 @@ function SchoolDashboard() {
     {
       title: "Current Year",
       value: "2025",
-      icon: <Calendar className="w-6 h-6 text-gray-500" />,
+      icon: <LuCalendarDays className="w-6 h-6 text-gray-500" />,
     },
   ];
 

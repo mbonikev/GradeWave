@@ -99,7 +99,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           `}
         >
           <LuMedal className="text-xl max-lg:text-2xl" />
-          Top Ranked
+          Glrobal Ranked
         </Link>
         {/* section */}
         <SidebarSectionTitle title={"tweaks"} />

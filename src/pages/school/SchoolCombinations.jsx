@@ -51,7 +51,7 @@ function SchoolCombinations() {
               Combinations
             </h1>
             <button
-            //   onClick={() => setShowEditModal(true)}
+              //   onClick={() => setShowEditModal(true)}
               className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
             >
               <LuPlus className="text-xl" />
@@ -85,45 +85,25 @@ function SchoolCombinations() {
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
+                      className={`px-4 py-2 `}
                     >
-                      {year !== "2025-2026" ? (
-                        <span>{student.status}</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
+                      
                     </td>
                     <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
+                      className={`px-4 py-2 `}
                     >
-                      {year !== "2025-2026" ? (
-                        <span>{student.progress}%</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
+                      
                     </td>
                     <td className="px-4 py-2 w-[100px]">
-                      {level === "A-Level" ? (
-                        student.combination
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
+                      
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      {year === "2025-2026" ? (
-                        <button
-                          onClick={handleEdit}
-                          className="text-main-color-school"
-                        >
-                          Edit
-                        </button>
-                      ) : (
-                        "-"
-                      )}
+                      <button
+                        onClick={handleEdit}
+                        className="text-main-color-school"
+                      >
+                        Edit
+                      </button>
                     </td>
                   </tr>
                 ))}

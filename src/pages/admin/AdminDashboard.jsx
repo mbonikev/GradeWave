@@ -61,6 +61,43 @@ function AdminDashboard() {
     },
   ];
 
+  const oLevelStudents = [
+    {
+      id: 510534084,
+      name: "Ingabire Florence",
+      status: "Passed",
+      progress: "90%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 110534084,
+      name: "Hakizimana Yves",
+      status: "Passed",
+      progress: "88%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 210534084,
+      name: "Uwase Claudine",
+      status: "Passed",
+      progress: "79%",
+      promotion: "2023-2024",
+    },
+    {
+      id: 310534084,
+      name: "Mugisha Patrick",
+      status: "Passed",
+      progress: "78%",
+      promotion: "2025-2026",
+    },
+    {
+      id: 410534084,
+      name: "Niyonsaba Kevin",
+      status: "Passed",
+      progress: "75.93%",
+      promotion: "2024-2025",
+    },
+  ];
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -100,7 +137,7 @@ function AdminDashboard() {
               className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               // value={level}
               defaultChecked2024-2025
-              // onChange={(e) => setLevel(e.target.value)} 
+              // onChange={(e) => setLevel(e.target.value)}
             >
               <option value="2024-2025">2024-2025</option>
               <option value="2023-2024">2023-2024</option>
@@ -129,6 +166,52 @@ function AdminDashboard() {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="w-full flex items-center justify-between mt-6 mb-3">
+            <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+              Top 5 O-level Candidates
+            </h1>
+            <Link
+              to="/school_promotion_details/2024-2025/O-Level"
+              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
+            >
+              View all
+              <LuArrowRight />
+            </Link>
+          </div>
+          {/* Students Table */}
+          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+            <table className="w-full text-left">
+              <thead className="bg-card-bg-weak">
+                <tr>
+                  <th className="px-4 py-2">Student ID</th>
+                  <th className="px-4 py-2">Name</th>
+                  <th className="px-4 py-2">Status</th>
+                  <th className="px-4 py-2">Progress</th>
+                  <th className="px-4 py-2">Promotion/Year</th>
+                  <th className="px-4 py-2">Combination</th>
+                </tr>
+              </thead>
+              <tbody>
+                {oLevelStudents.map((student) => (
+                  <tr key={student.id} className="border-t">
+                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
+                    <td className="px-4 py-2 w-[280px]">
+                      <Link
+                        to={`/school_student_results/${student.name}`}
+                        className="hover:text-main-color-school hover:underline"
+                      >
+                        {student.name}
+                      </Link>
+                    </td>
+                    <td className="px-4 py-2">{student.status}</td>
+                    <td className="px-4 py-2">{student.progress}</td>
+                    <td className="px-4 py-2">{student.promotion}</td>
+                    <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

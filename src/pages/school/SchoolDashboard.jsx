@@ -213,7 +213,7 @@ function SchoolDashboard() {
             </div>
             {/* Students Table */}
             <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
-              <table className="w-full text-left table-fixed">
+              <table className="w-full text-left">
                 <thead className="bg-card-bg-weak">
                   <tr>
                     <th className="px-4 py-2">Student ID</th>
@@ -226,7 +226,7 @@ function SchoolDashboard() {
                 <tbody>
                   {oLevelStudents.map((student) => (
                     <tr key={student.id} className="border-t">
-                      <td className="px-4 py-2 ">{student.id}</td>
+                      <td className="px-4 py-2 w-[110px]">{student.id}</td>
                       <td className="px-4 py-2">{student.name}</td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
@@ -265,7 +265,7 @@ function SchoolDashboard() {
                 <tbody>
                   {students.map((student) => (
                     <tr key={student.id} className="border-t">
-                      <td className="px-4 py-2 ">{student.id}</td>
+                      <td className="px-4 py-2 w-[110px]">{student.id}</td>
                       <td className="px-4 py-2">{student.name}</td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>

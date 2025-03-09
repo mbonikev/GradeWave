@@ -134,7 +134,7 @@ function SchoolDashboard() {
               <option value="2024-2025">2024-2025</option>
             </select>
           </div>
-          <div className="py-6 space-y-6">
+          <div className="py-6">
             {/* Stats Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
@@ -154,18 +154,17 @@ function SchoolDashboard() {
                 </div>
               ))}
             </div>
-            <div className="w-full flex items-center justify-between ">
-            <h1
-              class="block text-sm font-medium text-text-color whitespace-nowrap"
-            >
-              Top 5 A-level Candidates
-            </h1>
-            <Link to="/school_dashboard"
-              class=" text-sm font-medium p-1 flex items-center gap-1 text-text-color whitespace-nowrap"
-            >
-              View all
-              <LuArrowRight />
-            </Link>
+            <div className="w-full flex items-center justify-between mt-6 mb-3">
+              <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
+                Top 5 A-level Candidates
+              </h1>
+              <Link
+                to="/school_dashboard"
+                class=" text-sm font-medium p-1 flex items-center gap-1 text-text-color whitespace-nowrap"
+              >
+                View all
+                <LuArrowRight />
+              </Link>
             </div>
             {/* Students Table */}
             <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">

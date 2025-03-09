@@ -5,6 +5,7 @@ import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { FaUserGraduate, FaClipboardList, FaSchool } from "react-icons/fa";
 import {
+  LuArrowRight,
   LuCalendarDays,
   LuChartPie,
   LuCircleCheckBig,
@@ -173,7 +174,7 @@ function AdminDashboard() {
             </h1>
             <Link
               to="/school_promotion_details/2024-2025/O-Level"
-              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
+              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color whitespace-nowrap"
             >
               View all
               <LuArrowRight />

@@ -209,7 +209,7 @@ function StudentDashboard() {
     {
       rank: "3rd",
       name: "Uwase Abatoni Stecy",
-      school: "Lycee de Kigali",
+      school: "Groupe Scolaire Sainte Bernadette Save",
       score: "93.20%",
       icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
     },
@@ -375,7 +375,7 @@ function StudentDashboard() {
                         {student.school}
                       </span>
                       <span className="text-sm text-text-color">
-                        {student.combination}: <strong>{student.score}</strong>
+                        Score: <strong>{student.score}</strong>
                       </span>
                     </h1>
                   </div>

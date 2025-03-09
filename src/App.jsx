@@ -20,7 +20,7 @@ function App() {
   const [animateFetching, setAnimateFetching] = useState(true);
 
   const setFavicon = (iconPath) => {
-    sessionStorage.setItem("favicon", iconPath); // Store in sessionStorage
+    sessionStorage.setItem("favicon", iconPath);
     const favicon = document.getElementById("favicon");
     if (favicon) {
       favicon.href = iconPath;

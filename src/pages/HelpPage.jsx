@@ -52,26 +52,16 @@ const HelpPage = () => {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Parent/Guardian Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
+              <div className="w-full grid grid-cols-2 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Name
+                    How can we help you?
                   </h1>
-                  <input
-                    required
-                    placeholder="Guardian's Full Name"
-                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Contact
-                  </h1>
-                  <input
-                    required
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  <textarea
+                    type="email"
+                    name="email"
+                    placeholder="write message"
+                    className="border-2 w-full border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
                   />
                 </div>
                 <div className="w-full h-fit">

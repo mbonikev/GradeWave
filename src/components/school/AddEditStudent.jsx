@@ -36,7 +36,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
           duration={200}
           triggerOnce
           keyframes={customAnimation}
-          className="w-full h-full"
+          className="z-50"
         >
           <div
             className={`w-[980px] max-w-[95%] h-fit max-h-[95%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${

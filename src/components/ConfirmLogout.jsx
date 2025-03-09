@@ -9,11 +9,11 @@ function ConfirmLogout({ logoutWarn, setLogoutWarn }) {
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
     sessionStorage.removeItem("loggedInSchool");
-    sessionStorage.removeItem("loggedInAdmin")
+    sessionStorage.removeItem("loggedInAdmin");
     setLoggingOut(true);
     setTimeout(() => {
       window.location.reload();
-    }, 300);
+    }, 500);
   };
   const customAnimation = keyframes`
   from{

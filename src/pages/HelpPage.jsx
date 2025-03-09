@@ -5,7 +5,7 @@ const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg py-5">
       <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
-        <h1 className="bg-main-color text-white font-extrabold tracking-tight text-4xl w-fit absolute top-0 left-0 bottom-0 right-0 m-auto">GradeWave</h1>
+        <h1 className="bg-main-color text-white font-extrabold tracking-tight text-4xl w-fit h-fit p-5 rounded-3xl shadow-2xl absolute top-0 left-0 bottom-0 right-0 m-auto">GradeWave</h1>
         <img src={BannerBlue} className="w-full h-fit min-h-full object-cover" />
       </div>
       <div className="min-h-screen px-6">

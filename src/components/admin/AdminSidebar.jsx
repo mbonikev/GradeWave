@@ -18,7 +18,12 @@ import SidebarSectionTitle from "../SidebarSectionTitle";
 import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
 import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";
-import { PiExam, PiUserBold, PiUsersBold, PiUsersDuotone } from "react-icons/pi";
+import {
+  PiExam,
+  PiUserBold,
+  PiUsersBold,
+  PiUsersDuotone,
+} from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
@@ -126,19 +131,6 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <PiUsersBold className="text-xl max-lg:text-2xl" />
-          Admins
-        </Link>
-        <Link
-          to="/admin_exams"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_exams"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
           <LuSchool className="text-xl max-lg:text-2xl" />
           Schools
         </Link>
@@ -169,6 +161,19 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         >
           <LuSettings className="text-xl max-lg:text-2xl" />
           Settings
+        </Link>
+        <Link
+          to="/admin_exams"
+          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
+          ${
+            location.pathname === "/school_exams"
+              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
+              : "text-text-color/85  hover:bg-card-bg-weak"
+          }
+          `}
+        >
+          <PiUsersBold className="text-xl max-lg:text-2xl" />
+          Admins
         </Link>
       </div>
       {/* bottom link */}

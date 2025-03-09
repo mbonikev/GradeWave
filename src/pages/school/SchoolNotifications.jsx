@@ -62,7 +62,7 @@ function SchoolNotifications() {
                 className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak ring-1 ring-card-bg-weak mb-1 rounded-2xl"
               >
                 <div className="w-full flex items-center justify-start gap-3 mb-3">
-                  <div className="size-9 rounded-full bg-main-color p-1.5 aspect-square">
+                  <div className="size-9 rounded-full bg-main-color p-2 aspect-square">
                     <img
                       src={annoucement.pfp}
                       className="w-full h-full object-cover rounded-full"

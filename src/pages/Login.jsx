@@ -41,9 +41,13 @@ function Login() {
     }, 500);
   };
 
-  const handleLoginAdmin = () =>{
-    
-  }
+  const handleLoginAdmin = () => {
+    sessionStorage.setItem("loggedInSchool", true);
+    setLoading(true);
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
+  };
 
   const handleRole = (e) => {
     setRole(e);

@@ -33,14 +33,14 @@ function AdminDashboard() {
   const stats = [
     {
       title: "Total Schools",
-      value: 1200,
+      value: "1,200",
       icon: (
         <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-cyan-500" />
       ),
     },
     {
       title: "Candidates",
-      value: 92423,
+      value: "92,423",
       icon: (
         <HiMiniUsers className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />
       ),
@@ -90,7 +90,7 @@ function AdminDashboard() {
           <div className="w-fit ml-auto max-sm:w-full flex items-center justify-start gap-3">
             <label
               for="level"
-              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
+              class="block text-sm font-medium pt-1 text-text-color/80 whitespace-nowrap"
             >
               Select Promotion:
             </label>
@@ -121,7 +121,7 @@ function AdminDashboard() {
                     <h3 className="text-sm font-medium mb-1 text-text-color-weak">
                       {stat.title}
                     </h3>
-                    <p className="text-2xl font-bold text-text-color">
+                    <p className="text-2xl font-bold text-text-color/80">
                       {stat.value}
                     </p>
                   </div>

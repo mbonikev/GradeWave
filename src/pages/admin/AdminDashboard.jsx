@@ -172,7 +172,6 @@ function AdminDashboard() {
                   <th className="px-4 py-2">School</th>
                   <th className="px-4 py-2">Score</th>
                   <th className="px-4 py-2 w-[100px]">Combination</th>
-                  <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
               </thead>
               <tbody>
@@ -204,14 +203,6 @@ function AdminDashboard() {
                     </td>
                     <td className="px-4 py-2 w-[100px]">
                       <span className="text-text-color-weak/60">N/A</span>
-                    </td>
-                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      <button
-                        // onClick={handleEdit}
-                        className="text-main-color"
-                      >
-                        Edit
-                      </button>
                     </td>
                   </tr>
                 ))}
@@ -238,7 +229,6 @@ function AdminDashboard() {
                   <th className="px-4 py-2">School</th>
                   <th className="px-4 py-2">Score</th>
                   <th className="px-4 py-2 w-[100px]">Combination</th>
-                  <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
               </thead>
               <tbody>
@@ -270,14 +260,6 @@ function AdminDashboard() {
                     </td>
                     <td className="px-4 py-2 w-[100px]">
                       <span className="text-text-color-weak/60">N/A</span>
-                    </td>
-                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      <button
-                        // onClick={handleEdit}
-                        className="text-main-color"
-                      >
-                        Edit
-                      </button>
                     </td>
                   </tr>
                 ))}

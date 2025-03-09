@@ -52,33 +52,28 @@ function SchoolManageStudents() {
             <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
               2024-2025 Promotion
             </h1>
-            <Link
-              to="/school_dashboard"
-              class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
-            >
-              View all
-              <LuArrowRight />
-            </Link>
+            
           </div>
-          <div className="w-full grid grid-cols-2 max-md:grid-cols-1"></div>
-          {/* Students Table */}
-          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
-            <table className="w-full text-left">
-              <thead className="bg-card-bg-weak">
-                <tr>
-                  <th className="px-4 py-2">Level</th>
-                  <th className="px-4 py-2">Total Students</th>
-                  <th className="px-4 py-2">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t">
-                  <td className="px-4 py-2 w-[120px]"></td>
-                  <td className="px-4 py-2 w-[280px]"></td>
-                  <td className="px-4 py-2"></td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="w-full grid grid-cols-2 max-md:grid-cols-1">
+            {/* Students Table */}
+            <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+              <table className="w-full text-left">
+                <thead className="bg-card-bg-weak">
+                  <tr>
+                    <th className="px-4 py-2">Level</th>
+                    <th className="px-4 py-2">Total Students</th>
+                    <th className="px-4 py-2">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-t">
+                    <td className="px-4 py-2 w-[120px]"></td>
+                    <td className="px-4 py-2"></td>
+                    <td className="px-4 py-2"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

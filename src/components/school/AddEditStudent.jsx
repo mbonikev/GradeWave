@@ -63,6 +63,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentD
                   <input
                     required
                     placeholder="Full Names"
+                    value={editMode ? '' : ''}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>

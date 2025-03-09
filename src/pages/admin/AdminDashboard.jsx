@@ -190,7 +190,7 @@ function AdminDashboard() {
                     <td className="px-4 py-2 w-[200px] whitespace-nowrap">
                       <Link
                         // to={`/school_student_results/${student.name}`}
-                        className="hover:text-main-color-school hover:underline"
+                        className="hover:text-main-color hover:underline"
                       >
                         {student.name}
                       </Link>
@@ -199,7 +199,7 @@ function AdminDashboard() {
                       <span>
                         <Link
                           // to={`/school_student_results/${student.name}`}
-                          className="hover:text-main-color-school hover:underline"
+                          className="hover:text-main-color hover:underline"
                         >
                           {student.school}
                         </Link>
@@ -214,7 +214,7 @@ function AdminDashboard() {
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
                         // onClick={handleEdit}
-                        className="text-main-color-school"
+                        className="text-main-color"
                       >
                         Edit
                       </button>

@@ -153,13 +153,12 @@ function SchoolDashboard() {
                 </div>
               ))}
             </div>
-            <div className="w-full flex items-center ">
-            <label
-              for="level"
+            <div className="w-full flex items-center justify-between ">
+            <h1
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              Select Promotion:
-            </label>
+              A-level
+            </h1>
             <label
               for="level"
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"

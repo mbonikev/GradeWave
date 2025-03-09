@@ -22,6 +22,7 @@ import SchoolNotifications from "./pages/school/SchoolNotifications";
 import SchoolSettings from "./pages/school/SchoolSettings";
 import SchoolStudentResults from "./pages/school/SchoolStudentResults";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import ProtectedRouteAdmin from "./util/ProtectedRouteAdmin";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -115,7 +116,7 @@ function App() {
               key={`school-${index}`}
               path={route.path}
               element={
-                <ProtectedRouteSchool>{route.element}</ProtectedRouteSchool>
+                <ProtectedRouteAdmin>{route.element}</ProtectedRouteAdmin>
               }
             />
           ))}

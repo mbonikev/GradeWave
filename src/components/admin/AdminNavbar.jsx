@@ -145,7 +145,7 @@ function AdminNavbar({ title, openSidebar, setLogoutWarn }) {
               <div className="w-full h-fit flex flex-col gap-1 pt-1.5">
                 {Notifications.map((annoucement, index) => (
                   <Link
-                    to="/school_notifications"
+                    to="/admin_notification"
                     key={index}
                     className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                   >

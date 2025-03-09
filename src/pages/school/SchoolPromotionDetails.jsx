@@ -14,6 +14,7 @@ function SchoolPromotionDetails() {
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
+  const [addEdit, setAddEdit] = useState(false)
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -47,7 +48,7 @@ function SchoolPromotionDetails() {
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-        
+
       </div>
       {/* confirm */}
       {logoutWarn && (

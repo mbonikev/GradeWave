@@ -27,8 +27,12 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    const res = Students.filter((student) => student.status === filter);
-    setFilteredStudents(res);
+    if (filter !== "All") {
+      const res = Students.filter((student) => student.status === filter);
+      setFilteredStudents(res);
+    } else {
+      setFilteredStudents(Students);
+    }
   }, [filter]);
 
   return (
@@ -103,7 +107,7 @@ function SchoolPromotionDetails() {
                 </tr>
               </thead>
               <tbody>
-                {Students.map((student, index) => (
+                {filteredStudents.map((student, index) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}

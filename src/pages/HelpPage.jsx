@@ -52,7 +52,7 @@ const HelpPage = () => {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Parent/Guardian Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-1 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
+              <div className="w-full grid grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     How can we help you?
@@ -66,41 +66,20 @@ const HelpPage = () => {
                 </div>
               </div>
 
-              {/* Residence Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
-                Residence Info <span className="text-red-500">*</span>
-              </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    District
-                  </h1>
-                  <input
-                    required
-                    placeholder="Enter District"
-                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Sector
-                  </h1>
-                  <input
-                    required
-                    placeholder="Enter Sector"
-                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Village
-                  </h1>
-                  <input
-                    required
-                    placeholder="Enter Village"
-                    className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
+              {/* save button */}
+              <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
+                <button
+                  onClick={() => setShowEditModal(false)}
+                  className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleAddStudent}
+                  className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>

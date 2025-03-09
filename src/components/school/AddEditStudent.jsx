@@ -38,11 +38,11 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
-            className={`w-[980px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
+            className={`w-[980px] max-w-[95%] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            <div className="w-full flex items-center max-sm:flex-col gap-2">
+            <div className="w-full max-w-[300px] ml-auto flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"

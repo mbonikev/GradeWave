@@ -55,7 +55,7 @@ function BasicInfo() {
           />
         </div>
         <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">Phone number</h1>
+          <h1 className="text-sm font-normal">School Contact</h1>
           <input
             type="text"
             name="phone"

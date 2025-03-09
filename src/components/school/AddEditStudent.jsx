@@ -15,11 +15,11 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
   };
   const customAnimation = keyframes`
   from{
-    // transform: scale(.9);
+    transform: scale(.9);
     opacity: 0;
   }
   to{
-    // transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
   `;

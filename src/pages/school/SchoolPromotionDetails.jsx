@@ -160,8 +160,8 @@ function SchoolPromotionDetails() {
               <thead className="bg-card-bg-weak">
                 <tr>
                   <th className="px-4 py-2 w-[40px]">
-                    <span>
-                      N <sub>0</sub>
+                    <span className="flex gap-0.5">
+                      N <sub className="pt-1">o</sub>
                     </span>
                   </th>
                   <th className="px-4 py-2">Student ID</th>

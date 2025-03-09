@@ -31,6 +31,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 import AdminNotifications from "./pages/admin/AdminNotifications";
 import AdminAnnounce from "./pages/admin/AdminAnnounce";
 import SchoolAnnounce from "./pages/school/SchoolAnnounce";
+import HelpPage from "./pages/HelpPage";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -160,6 +161,7 @@ function App() {
           ))}
 
           <Route path="*" element={<NotFound />} />
+          <Route path="/help" element={<HelpPage />} />
         </Routes>
       </Router>
     </div>

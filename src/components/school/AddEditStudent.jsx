@@ -9,16 +9,12 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
   const [studentName, setStudentName] = useState("Ingabire Florence");
   const [studentAge, setStudentAge] = useState(17);
   const [combination, setCombination] = useState("MCB");
-
   const [guardianName, setGuardianName] = useState("Jeanne Muhoza");
   const [guardianContact, setGuardianContact] = useState("+250788123456");
   const [guardianRelationship, setGuardianRelationship] = useState("Mother");
-
-  const [residence, setResidence] = useState({
-    district: "Kigali",
-    sector: "Nyarugenge",
-    village: "Nyamirambo",
-  });
+  const [district, setDistrict] = useState("Kigali");
+  const [sector, setSector] = useState("Nyarugenge");
+  const [village, setVillage] = useState("Nyamirambo");
 
   const handleAddStudent = () => {
     setAdding(true);

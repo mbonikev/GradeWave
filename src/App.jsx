@@ -39,6 +39,12 @@ function App() {
       if (favicon) {
         favicon.href = "/favicon_green.svg";
       }
+    } else if (sessionStorage.getItem("loggedInAdmin" === "true")) {
+      document.documentElement.style.setProperty("--main-color", "#101828");
+      document.documentElement.style.setProperty(
+        "--main-color-weak",
+        "#10182827"
+      );
     }
   }, []);
 

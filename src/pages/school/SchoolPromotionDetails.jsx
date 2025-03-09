@@ -27,6 +27,18 @@ function SchoolPromotionDetails() {
     }, 100);
   };
 
+  useEffect(() => {
+    if (filter !== "All") {
+      const res = Students.filter((student) => student.status === filter);
+      setFilteredStudents(res);
+    } else {
+      setFilteredStudents(Students);
+    }
+  }, [filter]);
+
+  useEffect(() => {
+
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

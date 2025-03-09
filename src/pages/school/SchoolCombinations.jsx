@@ -69,7 +69,7 @@ function SchoolCombinations() {
                     </span>
                   </th>
                   <th className="px-4 py-2">Title</th>
-                  <th className="px-4 py-2">Status</th>
+                  <th className="px-4 py-2">Enrolled Students</th>
                   <th className="px-4 py-2">Grades</th>
                   <th className="px-4 py-2 w-[100px]">Combination</th>
                   <th className="px-4 py-2 w-[90px]"></th>

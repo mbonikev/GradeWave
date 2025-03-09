@@ -319,10 +319,10 @@ function StudentDashboard() {
                   <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base w-[35%]">Mugisha Kenny</span>
-                    <span className="text-sm flex-1 text-text-color-weak/80">
+                    <span className="text-sm flex-1 text-text-color">
                       Groupe Scolaire Officiel de Butare
                     </span>
-                    <span className="text-sm text-text-color-weak/80">MPC: 97.28%</span>
+                    <span className="text-sm text-text-color">MPC: 97.28%</span>
                   </h1>
                 </div>
               </div>
@@ -334,10 +334,10 @@ function StudentDashboard() {
                   <GiSportMedal className="text-4xl text-stone-400" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base w-[35%]">Ineza Raissa</span>
-                    <span className="text-sm flex-1 text-text-color-weak/80">
+                    <span className="text-sm flex-1 text-text-color">
                       Ecole des Sciences Byimana
                     </span>
-                    <span className="text-sm text-text-color-weak/80">MCE: 90.92%</span>
+                    <span className="text-sm text-text-color">MCE: 94.92%</span>
                   </h1>
                 </div>
               </div>
@@ -349,10 +349,10 @@ function StudentDashboard() {
                   <GiSportMedal className="text-4xl text-[#e3a782]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base w-[35%]">Uwase abatoni Stecy</span>
-                    <span className="text-sm flex-1 text-text-color-weak/80">
+                    <span className="text-sm flex-1 text-text-color">
                       Lycee de Kigali
                     </span>
-                    <span className="text-sm text-text-color-weak/80">HEG: 78.28%</span>
+                    <span className="text-sm text-text-color">HEG: 91.28%</span>
                   </h1>
                 </div>
               </div>

@@ -184,7 +184,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           <TbHeadset className="text-xl max-lg:text-2xl" />
           <div className="w-full flex items-center justify-between gap-2">
             <span>Help Request</span>
-            <span className="text-main-color text-sm">1.8K</span>
+            <span className="text-main-color text-xs">1.8K</span>
           </div>
         </div>
       </div>

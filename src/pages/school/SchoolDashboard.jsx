@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { LuUsers, LuChartPie, LuCircleCheckBig, LuCalendarDays } from "react-icons/lu";
+import {
+  LuUsers,
+  LuChartPie,
+  LuCircleCheckBig,
+  LuCalendarDays,
+} from "react-icons/lu";
 
 function SchoolDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -135,12 +140,39 @@ function SchoolDashboard() {
             {/* Students Table */}
             <div className="overflow-x-auto bg-white shadow-md rounded-lg border border-gray-200">
               <table className="w-full text-left border-collapse">
-                <thead className="bg-gray-100">
-                  
+                <thead className="bg-gray-100"></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-card-bg">
+              <table className="w-full text-left">
+                <thead className="bg-card-bg-weak">
+                  <tr>
+                    <th className="px-4 py-2">ID</th>
+                    <th className="px-4 py-2">Name</th>
+                    <th className="px-4 py-2">Grade</th>
+                    <th className="px-4 py-2">Progress</th>
+                    <th className="px-4 py-2">Promotion/Year</th>
+                    <th className="px-4 py-2">Combination</th>
+                  </tr>
                 </thead>
                 <tbody>
+                  {grades.map((grade, index) => (
+                    <tr key={index} className="border-t">
+                      <td className="px-4 py-2">{grade.subject}</td>
+                      <td className="px-4 py-2">{grade.percentage}%</td>
+                      <td
+                        className="px-4 py-2 font-semibold"
+                        style={{ color: grade.color }}
+                      >
+                        {grade.grade}
+                      </td>
+                    </tr>
+                  ))}
+
                   {students.map((student) => (
-                    <tr key={student.id} className="hover:bg-gray-50">
+                    <tr key={student.id} className="border-t">
                       <td className="p-3 border-b">{student.id}</td>
                       <td className="p-3 border-b">{student.name}</td>
                       <td className="p-3 border-b">{student.grade}</td>
@@ -152,35 +184,6 @@ function SchoolDashboard() {
                 </tbody>
               </table>
             </div>
-
-            <div className="overflow-x-auto rounded-2xl border border-card-bg">
-        <table className="w-full text-left">
-          <thead className="bg-card-bg-weak">
-          <tr>
-                    <th className="px-4 py-2">ID</th>
-                    <th className="px-4 py-2">Name</th>
-                    <th className="px-4 py-2">Grade</th>
-                    <th className="px-4 py-2">Progress</th>
-                    <th className="px-4 py-2">Promotion/Year</th>
-                    <th className="px-4 py-2">Combination</th>
-                  </tr>
-          </thead>
-          <tbody>
-            {grades.map((grade, index) => (
-              <tr key={index} className="border-t">
-                <td className="px-4 py-2">{grade.subject}</td>
-                <td className="px-4 py-2">{grade.percentage}%</td>
-                <td
-                  className="px-4 py-2 font-semibold"
-                  style={{ color: grade.color }}
-                >
-                  {grade.grade}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
           </div>
         </div>
       </div>

@@ -47,6 +47,31 @@ function SchoolManageStudents() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Manage Students
           </h1>
+          {/* Students Table */}
+          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+            <table className="w-full text-left">
+              <thead className="bg-card-bg-weak">
+                <tr>
+                  <th className="px-4 py-2">Student ID</th>
+                  <th className="px-4 py-2">Name</th>
+                  <th className="px-4 py-2">Status</th>
+                  <th className="px-4 py-2">Progress</th>
+                  <th className="px-4 py-2">Promotion/Year</th>
+                  <th className="px-4 py-2">Combination</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="px-4 py-2 w-[130px]"></td>
+                  <td className="px-4 py-2 w-[280px]"></td>
+                  <td className="px-4 py-2"></td>
+                  <td className="px-4 py-2"></td>
+                  <td className="px-4 py-2"></td>
+                  <td className="px-4 py-2"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

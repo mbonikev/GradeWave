@@ -159,7 +159,11 @@ function SchoolPromotionDetails() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2 w-[40px] flex items-center">N <sub>0</sub></th>
+                  <th className="px-4 py-2 w-[40px]">
+                    <span>
+                      N <sub>0</sub>
+                    </span>
+                  </th>
                   <th className="px-4 py-2">Student ID</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>

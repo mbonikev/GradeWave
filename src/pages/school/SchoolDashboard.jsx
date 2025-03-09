@@ -232,7 +232,7 @@ function SchoolDashboard() {
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>
-                      <td className="px-4 py-2">-</td>
+                      <td className="px-4 py-2"></td>
                     </tr>
                   ))}
                 </tbody>

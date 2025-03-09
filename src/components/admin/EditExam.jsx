@@ -9,7 +9,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
   const [studentName, setStudentName] = useState(
     editMode ? "Ingabire Florence" : ""
   );
-  const [studentAge, setStudentAge] = useState(editMode ? 17 : "");
+  const [due, setDue] = useState(editMode ? 17 : "");
   const [combination, setCombination] = useState(editMode ? "MCB" : "");
   const [guardianName, setGuardianName] = useState(
     editMode ? "Jeanne Muhoza" : ""
@@ -78,6 +78,19 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                     onChange={(e) => setStudentName(e.target.value)}
                     placeholder="Full Names"
                     value={studentName}
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Student Age
+                  </h1>
+                  <input
+                    required
+                    type="date"
+                    value={due}
+                    onChange={(e) => setdue(e.target.value)}
+                    placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>

@@ -5,6 +5,7 @@ import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuPlus } from "react-icons/lu";
 import { Combinations } from "../../content/Combinations";
+import AddEditStudent from "../../components/school/AddEditStudent";
 
 function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);

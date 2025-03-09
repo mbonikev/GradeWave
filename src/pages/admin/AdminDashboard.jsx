@@ -25,7 +25,7 @@ function AdminDashboard() {
 
   const stats = [
     {
-      title: "Total Candidates",
+      title: "Total Schools",
       value: 1200,
       icon: <LuUsers className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
     },

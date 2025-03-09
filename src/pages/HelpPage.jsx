@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { BannerBlue, LogoBlack } from "../assets";
 import { Combinations } from "../content/Combinations";
+import { Link } from "react-router-dom";
 
 const HelpPage = () => {
   useEffect(() => {
@@ -28,10 +29,13 @@ const HelpPage = () => {
   }, []);
   return (
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
-      <div className="flex items-center justify-start gap-1 mb-4 max-w-4xl mx-auto">
-        <img src={LogoBlack} className="size-8" />
-        <h1 className="text-xl font-medium">Grade Wave</h1>
-      </div>
+      <Link
+        to="/"
+        className="flex items-center justify-start gap-1 mb-4 max-w-4xl mx-auto"
+      >
+        <img src={LogoBlack} className="size-5" />
+        <h1 className="text-base font-medium">Grade Wave</h1>
+      </Link>
       <div className="w-full h-fit relative">
         <h1 className="bg-white z-30 text-text-color/80 font-bold tracking-tight text-2xl w-fit h-fit px-6 py-2 rounded-2xl  absolute left-0 -bottom-5 right-0 mx-auto">
           Help Center

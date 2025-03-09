@@ -168,21 +168,22 @@ function SchoolPromotionDetails() {
               </thead>
               <tbody>
                 {filteredStudents.map((student, index) => (
-                  <tr
-                    key={student.id}
-                    className="border-t"
-                  >
+                  <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">
-                      <Link
-                        to={`/school_student_results/${student.name}`}
-                        className="hover:text-main-color-school hover:underline"
-                      >
-                        {student.name}
-                      </Link>
+                      {year !== "2025-2026" ? (
+                        <Link
+                          to={`/school_student_results/${student.name}`}
+                          className="hover:text-main-color-school hover:underline"
+                        >
+                          {student.name}
+                        </Link>
+                      ) : (
+                        `${student.name}`
+                      )}
                     </td>
                     <td
                       className={`px-4 py-2 ${

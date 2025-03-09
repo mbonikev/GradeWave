@@ -24,6 +24,7 @@ import { SiReaddotcv } from "react-icons/si";
 import { RiStickyNoteAddLine } from "react-icons/ri";
 import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 import { BiBox } from "react-icons/bi";
+import { LogoWhite } from "../../assets";
 
 function SchoolSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -37,8 +38,8 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
         <div
           className={`w-[70%] max-w-fit flex items-center gap-2 pl-2 pr-4 h-[40px] font-medium rounded-xl`}
         >
-          <div className="h-[30px] text-lg aspect-square rounded-full flex items-center justify-center font-semibold bg-main-color text-white">
-            S
+          <div className="h-10 aspect-square rounded-full overflow-hidden bg-main-color p-3">
+            <img src={LogoWhite} className="h-full w-full object-cover" />
           </div>
           <h1 className="leading-4 text-sm relative font-medium text-text-color/85  truncate w-full">
             School
@@ -77,7 +78,8 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           to="/school_manage_students"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            (location.pathname === "/school_manage_students" || location.pathname.includes('school_promotion_details'))
+            location.pathname === "/school_manage_students" ||
+            location.pathname.includes("school_promotion_details")
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

@@ -48,12 +48,6 @@ function SchoolManageStudents() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Manage Students
           </h1>
-          <div className="w-full flex items-center justify-between mt-6 mb-3">
-            <h1 class="block text-sm font-medium text-text-color whitespace-nowrap">
-              2024-2025 Promotion
-            </h1>
-            
-          </div>
           <div className="w-full grid grid-cols-2 max-md:grid-cols-1">
             {/* Students Table */}
             <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">

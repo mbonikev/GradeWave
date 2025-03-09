@@ -178,7 +178,7 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td className="px-4 py-2">{student.status}</td>
                     <td className="px-4 py-2">{student.progress}</td>
-                    <td className="px-4 py-2 text-text-color-weak/60">{student.combination ? student.combination : 'N/A'}</td>
+                    <td className="px-4 py-2 text-text-color-weak/60">{level === 'A-Level' ? student.combination : 'N/A'}</td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <Link
                         to="/school_promotion_details/2024-2025/O-Level"

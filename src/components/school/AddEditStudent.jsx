@@ -51,11 +51,13 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
                   Student Names
                 </h1>
-                <input
+                <select
                   required
                   placeholder="Choose Combination"
                   className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
-                />
+                >
+                  <option value="">Option1</option>
+                </select>
               </div>
               <div className="w-full h-fit">
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">

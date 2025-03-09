@@ -338,63 +338,28 @@ function StudentDashboard() {
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 7,543 Students
               </h1>
-              <div className="w-full flex items-center justify-normal">
-                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
-                  1st
-                </h1>
-                <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
-                  <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
-                  <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
-                    <span className="text-base w-[35%]">Mugisha Kenny</span>
-                    <span className="text-sm flex-1 text-text-color">
-                      Groupe Scolaire Officiel de Butare
-                    </span>
-                    <span className="text-sm text-text-color">
-                      MPC: <strong> 97.28%</strong>
-                    </span>
-                  </h1>
-                </div>
-              </div>
-              <div className="w-full flex items-center justify-normal">
-                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
-                  2nd
-                </h1>
+              {topStudents.map((student, index) => (
                 <div
-                  className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1"
+                  key={index}
+                  className="w-full flex items-center justify-normal"
                 >
-                  <GiSportMedal className="text-4xl text-stone-400" />
-                  <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
-                    <span className="text-base w-[35%]">Ineza Raissa</span>
-                    <span className="text-sm flex-1 text-text-color">
-                      Ecole des Sciences Byimana
-                    </span>
-                    <span className="text-sm text-text-color">
-                      MCE: <strong> 94.92%</strong>
-                    </span>
+                  <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                    {student.rank}
                   </h1>
+                  <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                    {student.icon}
+                    <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
+                      <span className="text-base w-[35%]">{student.name}</span>
+                      <span className="text-sm flex-1 text-text-color">
+                        {student.school}
+                      </span>
+                      <span className="text-sm text-text-color">
+                        {student.combination}: <strong>{student.score}</strong>
+                      </span>
+                    </h1>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full flex items-center justify-normal">
-                <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
-                  3rd
-                </h1>
-                <div
-                  className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-2 mb-1"
-                >
-                  <GiSportMedal className="text-4xl text-[#e3a782]" />
-                  <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
-                    <span className="text-base w-[35%]">
-                      Uwase abatoni Stecy
-                    </span>
-                    <span className="text-sm flex-1 text-text-color">
-                      Lycee de Kigali
-                    </span>
-                    <span className="text-sm text-text-color">
-                      HEG: <strong> 91.28%</strong>
-                    </span>
-                  </h1>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

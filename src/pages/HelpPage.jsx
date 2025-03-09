@@ -3,13 +3,13 @@ import { BannerBlue } from "../assets";
 
 const HelpPage = () => {
   return (
-    <div className="w-full bg-body-bg p-5">
+    <div className="w-full bg-body-bg p-5 space-y-7">
       <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
         <h1 className="backdrop-blur-md text-white font-extrabold tracking-tight text-4xl w-fit h-fit p-5 rounded-3xl shadow-sm absolute top-0 left-0 bottom-0 right-0 m-auto">GradeWave</h1>
         <img src={BannerBlue} className="w-full h-fit min-h-full object-cover" />
       </div>
       <div className="min-h-screen px-6 max-lg:px-0">
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-4xl mx-auto p-6 max-lg:p-0">
           <div className="space-y-6">
             <section>
               <h2 className="text-base font-semibold text-gray-800 mb-3">

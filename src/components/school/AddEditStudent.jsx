@@ -3,6 +3,7 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
+import { Combinations } from "../../content/Combinations";
 function AddEditStudent({ showEditModal, setShowEditModal }) {
   const [adding, setAdding] = useState(false);
   const handleAddStudent = () => {
@@ -85,8 +86,11 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                     <option disabled hidden selected>
                       Select Combination
                     </option>
-                    {}
-                    <option value="MCB">MCB</option>
+                    {Combinations.map((comb, index) => (
+                      <option key={index} value="MCB">
+                        {comb}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>

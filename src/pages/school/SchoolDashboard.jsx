@@ -256,7 +256,7 @@ function SchoolDashboard() {
                 Top 5 O-level Candidates
               </h1>
               <Link
-                to="/school_dashboard"
+                to="/school_promotion_details/2024-2025/O-Level"
                 class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
               >
                 View all
@@ -296,7 +296,7 @@ function SchoolDashboard() {
                 Top 5 A-level Candidates
               </h1>
               <Link
-                to="/school_dashboard"
+                to="/school_promotion_details/2024-2025/A-Level"
                 class=" text-sm font-medium p-1 flex items-center gap-1 text-main-color-school hover:text-main-color-dark-school whitespace-nowrap"
               >
                 View all

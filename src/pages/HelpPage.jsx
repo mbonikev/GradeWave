@@ -30,8 +30,6 @@ const HelpPage = () => {
                     Student Names
                   </h1>
                   <input
-                    required
-                    onChange={(e) => setStudentName(e.target.value)}
                     placeholder="Full Names"
                     value={studentName}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -44,8 +42,6 @@ const HelpPage = () => {
                   <input
                     required
                     type="number"
-                    value={studentAge}
-                    onChange={(e) => setStudentAge(e.target.value)}
                     placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -58,8 +54,6 @@ const HelpPage = () => {
                     <select
                       required
                       value={combination}
-                      defaultValue={"Select Combination"}
-                      onChange={(e) => setCombination(e.target.value)}
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
                       <option
@@ -91,8 +85,6 @@ const HelpPage = () => {
                   </h1>
                   <input
                     required
-                    value={guardianName}
-                    onChange={(e) => setGuardianName(e.target.value)}
                     placeholder="Guardian's Full Name"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -104,8 +96,6 @@ const HelpPage = () => {
                   <input
                     required
                     type="tel"
-                    value={guardianContact}
-                    onChange={(e) => setGuardianContact(e.target.value)}
                     placeholder="Phone Number"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -116,10 +106,6 @@ const HelpPage = () => {
                   </h1>
                   <select
                     required
-                    value={
-                      editMode ? guardianRelationship : "Select Relationship"
-                    }
-                    onChange={(e) => setGuardianRelationship(e.target.value)}
                     className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   >
                     <option disabled hidden selected>
@@ -144,8 +130,6 @@ const HelpPage = () => {
                   </h1>
                   <input
                     required
-                    value={district}
-                    onChange={(e) => setDistrict(e.target.value)}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -156,8 +140,6 @@ const HelpPage = () => {
                   </h1>
                   <input
                     required
-                    value={sector}
-                    onChange={(e) => setSector(e.target.value)}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -168,8 +150,6 @@ const HelpPage = () => {
                   </h1>
                   <input
                     required
-                    value={village}
-                    onChange={(e) => setVillage(e.target.value)}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

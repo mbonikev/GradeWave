@@ -93,7 +93,7 @@ function SchoolPromotionDetails() {
       status: "Passed",
       progress: "78%",
       promotion: "2025-2026",
-      combination: "EDS",
+      combination: "SOD",
     },
     {
       id: 410534084,
@@ -101,7 +101,7 @@ function SchoolPromotionDetails() {
       status: "Failed",
       progress: "65.93%",
       promotion: "2024-2025",
-      combination: "BGB",
+      combination: "BCG",
     },
     {
       id: 510534085,
@@ -157,7 +157,7 @@ function SchoolPromotionDetails() {
       status: "Passed",
       progress: "74%",
       promotion: "2024-2025",
-      combination: "EDS",
+      combination: "PCM",
     },
     {
       id: 1210534085,
@@ -213,7 +213,7 @@ function SchoolPromotionDetails() {
       status: "Failed",
       progress: "58%",
       promotion: "2023-2024",
-      combination: "BGB",
+      combination: "PCB",
     },
     // Add more students until you have at least 70
   ];

@@ -64,10 +64,10 @@ function Login() {
         "#3277f027"
       );
     } else {
-      document.documentElement.style.setProperty("--main-color", "#101828");
+      document.documentElement.style.setProperty("--main-color", "#4A5859");
       document.documentElement.style.setProperty(
         "--main-color-weak",
-        "#10182827"
+        "#4A585927"
       );
     }
   };

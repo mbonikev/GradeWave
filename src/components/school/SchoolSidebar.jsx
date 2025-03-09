@@ -74,10 +74,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           Dashboard
         </Link>
         <Link
-          to="/school_register_for_exams"
+          to="/school_manage_students"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_register_for_exams"
+            location.pathname === "/school_manage_students"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

@@ -134,7 +134,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
                     className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                   >
                     <div className="w-full flex items-start justify-start gap-3">
-                      <div className={`size-8 rounded-full bg-main-color p-1.5 aspect-square ${annoucement.name === "school" ? '' : ''}`}>
+                      <div className={`size-8 rounded-full p-1.5 aspect-square ${annoucement.name === "school" ? 'bg-main-color-school' : ' bg-main-color'}`}>
                         <img
                           src={annoucement.pfp}
                           className="w-full h-full object-cover rounded-full"

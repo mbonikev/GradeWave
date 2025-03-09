@@ -159,6 +159,7 @@ function SchoolPromotionDetails() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
+                  <th className="px-4 py-2 w-[50px]"></th>
                   <th className="px-4 py-2">Student ID</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>
@@ -176,7 +177,12 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2">{student.progress}</td>
                     <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      <Link to='/school_promotion_details/2024-2025/O-Level' className="text-main-color-school">Edit</Link>
+                      <Link
+                        to="/school_promotion_details/2024-2025/O-Level"
+                        className="text-main-color-school"
+                      >
+                        Edit
+                      </Link>
                     </td>
                   </tr>
                 ))}

@@ -278,6 +278,69 @@ function SchoolDashboard() {
                 </tbody>
               </table>
             </div>
+
+            <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5 mt-3 py-1">
+            <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
+                O-level Glrobal Ranking 2024-2025
+              </h1>
+              <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
+                #3 of 9,438 Students
+              </h1>
+              {topStudentsOlevel.map((student, index) => (
+                <div
+                  key={index}
+                  className="w-full flex items-center max-md:items-start justify-normal"
+                >
+                  <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                    {student.rank}
+                  </h1>
+                  <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                    {student.icon}
+                    <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
+                      <span className="text-base w-[35%]">{student.name}</span>
+                      <span className="text-sm flex-1 text-text-color">
+                        {student.school}
+                      </span>
+                      <span className="text-sm text-text-color">
+                        Score: <strong>{student.score}</strong>
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="w-full h-fit flex flex-col gap-1 py-1">
+              <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
+                A-level Glrobal Ranking 2024-2025
+              </h1>
+              <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
+                #3 of 7,543 Students
+              </h1>
+              {topStudents.map((student, index) => (
+                <div
+                  key={index}
+                  className="w-full flex items-center max-md:items-start justify-normal"
+                >
+                  <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                    {student.rank}
+                  </h1>
+                  <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                    {student.icon}
+                    <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
+                      <span className="text-base w-[35%]">{student.name}</span>
+                      <span className="text-sm flex-1 text-text-color">
+                        {student.school}
+                      </span>
+                      <span className="text-sm text-text-color">
+                        {student.combination}: <strong>{student.score}</strong>
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           </div>
         </div>
       </div>

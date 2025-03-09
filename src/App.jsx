@@ -31,7 +31,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 import AdminNotifications from "./pages/admin/AdminNotifications";
 import AdminAnnounce from "./pages/admin/AdminAnnounce";
 import SchoolAnnounce from "./pages/school/SchoolAnnounce";
-import HelpPage from "./pages/student/StudentHelpPage";
+import StudentHelpPage from "./pages/student/StudentHelpPage";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -82,6 +82,7 @@ function App() {
     { path: "/student_check_results", element: <StudentCheckResults /> },
     { path: "/student_notifications", element: <StudentNotifications /> },
     { path: "/student_settings", element: <StudentSettings /> },
+    { path: "/student_help", element: <StudentHelpPage /> },
   ];
 
   const schoolRoutes = [
@@ -161,7 +162,6 @@ function App() {
           ))}
 
           <Route path="*" element={<NotFound />} />
-          <Route path="/help" element={<HelpPage />} />
         </Routes>
       </Router>
     </div>

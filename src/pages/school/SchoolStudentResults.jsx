@@ -6,6 +6,14 @@ import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuArrowLeft, LuPlus, LuSearch } from "react-icons/lu";
 import { Students } from "../../content/Students";
 import AddEditStudent from "../../components/school/AddEditStudent";
+import { IntroGif } from "../../assets";
+import StudentSidebar from "../../components/student/StudentSidebar";
+import StudentNavbar from "../../components/student/StudentNavbar";
+import { PiGraduationCapDuotone } from "react-icons/pi";
+import { LuArrowLeft, LuArrowRight, LuSchool } from "react-icons/lu";
+import { Fade } from "react-awesome-reveal";
+import Loading from "../../components/Loading";
+import ConfirmLogout from "../../components/ConfirmLogout";
 
 function SchoolStudentResults() {
   const [showSidebar, setShowSidebar] = useState(false);

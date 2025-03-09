@@ -80,7 +80,7 @@ function SchoolCombinations() {
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
-                    <td className="px-4 py-2 w-[130px]"></td>
+                    <td className="px-4 py-2 w-[130px]">{comb}</td>
                     <td className="px-4 py-2 w-[280px]"></td>
                     <td className={`px-4 py-2`}></td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">

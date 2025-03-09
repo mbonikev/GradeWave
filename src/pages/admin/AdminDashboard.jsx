@@ -35,7 +35,7 @@ function AdminDashboard() {
       title: "Total Schools",
       value: 1200,
       icon: (
-        <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-lime-500" />
+        <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-cyan-500" />
       ),
     },
     {

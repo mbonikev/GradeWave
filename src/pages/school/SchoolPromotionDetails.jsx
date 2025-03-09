@@ -204,12 +204,16 @@ function SchoolPromotionDetails() {
                       )}
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      <button
-                        onClick={handleEdit}
-                        className="text-main-color-school"
-                      >
-                        Edit
-                      </button>
+                      {year === "2025-2026" ? (
+                        <button
+                          onClick={handleEdit}
+                          className="text-main-color-school"
+                        >
+                          Edit
+                        </button>
+                      ) : (
+                        ""
+                      )}
                     </td>
                   </tr>
                 ))}

@@ -46,7 +46,7 @@ function SchoolCombinations() {
         <SchoolNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
-          <div className="w-full flex items-start gap-2 justify-between mt-2">
+          <div className="w-full flex items-center gap-2 justify-between mt-2">
             <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight text-text-color/80 flex items-center gap-2">
               Combinations
             </h1>
@@ -59,7 +59,7 @@ function SchoolCombinations() {
             </button>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm mt-5">
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>

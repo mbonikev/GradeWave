@@ -45,7 +45,7 @@ function SchoolDashboard() {
     {
       title: "Current Year",
       value: "2025",
-      icon: <LuCalendarDays className="w-6 h-6 text-gray-500" />,
+      icon: <LuCalendarDays className="w-6 h-6 text-purple-500" />,
     },
   ];
 

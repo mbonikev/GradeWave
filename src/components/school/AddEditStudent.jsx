@@ -38,7 +38,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
-            className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
+            className={`w-[980px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
@@ -53,7 +53,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                 onClick={handleAddStudent}
                 className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
               >
-                {!adding ? "Add Student" : <LoadingWhite size="small" />}
+                {!adding ? "Save" : <LoadingWhite size="small" />}
               </button>
             </div>
           </div>

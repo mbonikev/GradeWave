@@ -4,6 +4,7 @@ import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuArrowLeft, LuSearch } from "react-icons/lu";
+import { Students } from "../../content/Students";
 
 function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -96,7 +97,7 @@ function SchoolPromotionDetails() {
                 </tr>
               </thead>
               <tbody>
-                {students.map((student, index) => (
+                {Students.map((student, index) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}

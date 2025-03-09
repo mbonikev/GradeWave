@@ -198,7 +198,7 @@ function SchoolStudentResults() {
               {name}
             </h1>
           </div>
-          <div className="w-full h-fit relative flex flex-col gap-5">
+          <div className="w-full h-fit relative flex flex-col gap-5 mt-8">
             <Fade duration={200} triggerOnce>
               <div className="w-full flex items-start justify-between max-sm:flex-col-reverse">
                 <div className="w-full flex items-start flex-col gap-5">

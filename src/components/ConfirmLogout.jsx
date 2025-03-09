@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import Loading from "./Loading";
 import LoadingWhite from "./LoadingWhite";
-function ConfirmLogout({logoutWarn, setLogoutWarn}) {
+function ConfirmLogout({ logoutWarn, setLogoutWarn }) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     sessionStorage.removeItem("loggedInStudent");
@@ -40,7 +40,7 @@ function ConfirmLogout({logoutWarn, setLogoutWarn}) {
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
-            className={`w-[280px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
+            className={`w-[320px] h-fit rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
               logoutWarn ? "scale-100 transition-all " : "scale-75"
             } `}
           >
@@ -50,16 +50,16 @@ function ConfirmLogout({logoutWarn, setLogoutWarn}) {
             </h1>
             <div className="w-full flex items-center max-sm:flex-col-reverse gap-2">
               <button
-                onClick={handleLoginStudent}
-                className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
-              >
-                {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
-              </button>
-              <button
                 onClick={() => setLogoutWarn(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
               >
                 Cancel
+              </button>
+              <button
+                onClick={handleLoginStudent}
+                className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
+              >
+                {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
               </button>
             </div>
           </div>

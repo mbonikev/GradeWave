@@ -330,10 +330,10 @@ function StudentDashboard() {
           <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5 mt-3 py-1">
             <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
-                O-level Glrobal Ranking 2024
+                O-level Glrobal Ranking 2024-2025
               </h1>
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
-                #3 of 7,543 Students
+                #3 of 9,438 Students
               </h1>
               {topStudents.map((student, index) => (
                 <div
@@ -360,7 +360,7 @@ function StudentDashboard() {
             </div>
             <div className="w-full h-fit flex flex-col gap-1 py-1">
               <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
-                A-level Glrobal Ranking 2024
+                A-level Glrobal Ranking 2024-2025
               </h1>
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 7,543 Students

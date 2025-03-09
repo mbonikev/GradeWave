@@ -22,12 +22,6 @@ function AdminDashboard() {
     }, 100);
   };
 
-  const [students, setStudents] = useState([
-    { id: 1, name: "John Doe", grade: "A" },
-    { id: 2, name: "Jane Smith", grade: "B" },
-    { id: 3, name: "Alice Johnson", grade: "A" },
-  ]);
-
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -57,13 +51,6 @@ function AdminDashboard() {
           <div className="py-6 space-y-6">
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
-                <FaUserGraduate className="text-3xl text-blue-500" />
-                <div>
-                  <h2 className="text-lg font-medium">Total Students</h2>
-                  <p className="text-xl font-bold">{students.length}</p>
-                </div>
-              </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
                 <FaClipboardList className="text-3xl text-green-500" />
                 <div>
                   <h2 className="text-lg font-medium">Total Exams</h2>
@@ -75,6 +62,13 @@ function AdminDashboard() {
                 <div>
                   <h2 className="text-lg font-medium">School Accounts</h2>
                   <p className="text-xl font-bold">3</p>
+                </div>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
+                <FaUserGraduate className="text-3xl text-blue-500" />
+                <div>
+                  <h2 className="text-lg font-medium">Total Students</h2>
+                  <p className="text-xl font-bold">239</p>
                 </div>
               </div>
             </div>

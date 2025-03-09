@@ -118,7 +118,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                     name: "System",
                     publishedAt: "24/02/2025",
                     message:
-                      "Reminder: 4 days left to register Your Students",
+                      "4 days left to register Your Students",
                   },
                   
                 ].map((annoucement, index) => (
@@ -136,7 +136,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                       </div>
 
                       <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
-                        <strong>{annoucement.name}: </strong>
+                        <strong>{annoucement.name} </strong>
                         {annoucement.message} <br />
                       </h1>
                     </div>

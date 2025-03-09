@@ -40,6 +40,8 @@ function SchoolPromotionDetails() {
     if (searchValue !== "") {
       const res = Students.filter((student) => student.name === searchValue);
       setFilteredStudents(res);
+    } else {
+      setFilteredStudents(Students);
     }
   }, [searchValue]);
 
@@ -92,8 +94,8 @@ function SchoolPromotionDetails() {
                 type="text"
                 className="block w-full max-sm:flex-1 pl-8 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm placeholder:text-text-color-weak"
                 placeholder="Search"
-                // value={level}
-                // onChange={(e) => setLevel(e.target.value)}
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
               />
             </div>
           </div>

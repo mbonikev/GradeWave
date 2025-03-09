@@ -60,7 +60,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         <SidebarSectionTitle title={"General"} />
         <Link
           to={{
-            pathname: "/school_dashboard",
+            pathname: "/admin_dashboard",
             state: { pageBehavior: "silent" }, // Example state
           }}
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

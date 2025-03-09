@@ -47,14 +47,14 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             </h1>
 
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit">
+            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4">
               {/* basic info */}
               <h1 className="text-base font-normal opacity-80">
                 Student Names
               </h1>
               <div className="w-full grid grid-cols-3 gap-5">
                 <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
+                  <h1 className="text-base font-normal opacity-80  mb-2">
                     Student Names
                   </h1>
                   <input
@@ -64,7 +64,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   />
                 </div>
                 <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
                     Combination
                   </h1>
                   <select

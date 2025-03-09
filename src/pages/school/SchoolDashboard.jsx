@@ -222,7 +222,7 @@ function SchoolDashboard() {
             <select
               id="level"
               name="level"
-              className="mt-1 block w-[200px] px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="mt-1 block w-[200px] max-sm:flex-1 px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               value={level}
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >
@@ -236,7 +236,7 @@ function SchoolDashboard() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="p-5 max-md:p-3 flex items-center justify-between bg-white shadow-sm rounded-2xl border border-card-bg-weak"
+                  className="p-5 max-md:p-5 flex items-center justify-between bg-white shadow-sm rounded-2xl border border-card-bg-weak"
                 >
                   <div>
                     <h3 className="text-sm font-medium mb-1 text-text-color-weak">

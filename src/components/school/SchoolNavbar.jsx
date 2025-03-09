@@ -118,7 +118,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                     name: "Adminstrator",
                     publishedAt: "24/02/2025",
                     message:
-                      "Reminder: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
+                      "System: students 4 days left to register for exams, the applications are closing on 28th February. If you have any issue, reach out via email.",
                   },
                   {
                     pfp: LogoWhite,

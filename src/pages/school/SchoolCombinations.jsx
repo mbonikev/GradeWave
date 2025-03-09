@@ -5,7 +5,7 @@ import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuPlus } from "react-icons/lu";
 import { Combinations } from "../../content/Combinations";
-import AddEditStudent from "../../components/school/AddEditStudent";
+import AddEditCombination from "../../components/school/AddEditCombination";
 
 function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -42,7 +42,7 @@ function SchoolCombinations() {
     <div className="w-full h-fit flex-1 flex relative">
       {/* comb */}
       {showEditModal && (
-        <AddEditStudent
+        <AddEditCombination
           showEditModal={showEditModal}
           setShowEditModal={setShowEditModal}
           editMode={editMode}

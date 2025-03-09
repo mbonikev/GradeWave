@@ -74,6 +74,11 @@ function SchoolPromotionDetails() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+
+  const handleEdit = () => {
+    setEditMode(true);
+    setShowEditModal(true);
+  };
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
@@ -210,10 +215,7 @@ function SchoolPromotionDetails() {
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
-                        onClick={() => {
-                          setEditMode(true);
-                          setShowEditModal(true);
-                        }}
+                        onClick={handleEdit}
                         className="text-main-color-school"
                       >
                         Edit

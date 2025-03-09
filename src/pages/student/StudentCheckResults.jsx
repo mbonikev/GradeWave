@@ -355,7 +355,7 @@ function StudentCheckResults() {
                       <Fade duration={200} triggerOnce>
                         <div className="w-full flex items-start justify-between max-sm:flex-col-reverse">
                           <div className="w-full flex items-start flex-col gap-5">
-                            {level === "p6" ? "PLE Grades" : "O-level Grades"}
+                            {level === "p6" ? "PLE" : "O-level"}
                             <div className="w-ful h-fit flex items-center gap-10 max-sm:gap-5 mb-6">
                               <Progress percentage={marks} />
                               <div className="flex-1 flex flex-col gap-3">

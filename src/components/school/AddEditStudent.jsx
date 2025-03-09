@@ -59,14 +59,14 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               </div>
               <div className="w-full h-fit">
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
-                  Combinations
+                  Combination
                 </h1>
                 <select
                   required
                   placeholder="Choose Combination"
                   className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
                 >
-                  <option value="">Option1</option>
+                  <option>Option1</option>
                 </select>
               </div>
             </div>

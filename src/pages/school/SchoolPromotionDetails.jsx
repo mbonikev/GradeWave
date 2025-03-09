@@ -48,7 +48,7 @@ function SchoolPromotionDetails() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
-      {addEdit(<AddEditStudent />)}
+      {addEdit && <AddEditStudent />}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />

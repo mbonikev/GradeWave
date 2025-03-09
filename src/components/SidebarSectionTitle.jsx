@@ -2,7 +2,7 @@ import React from "react";
 
 function SidebarSectionTitle({ title }) {
   return (
-    <p className="py-2 text-xs uppercase font-medium text-text-color-weak/80">
+    <p className="py-2 mt-2 text-xs uppercase font-medium text-text-color-weak/80">
       {title}
     </p>
   );

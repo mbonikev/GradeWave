@@ -73,7 +73,7 @@ function AdminHelp() {
         <AdminNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
         <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto pb-10">
           <h1 className="text-[28px] font-bold text-left tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
-            Admin_help
+            Help Requests
           </h1>
 
           <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">

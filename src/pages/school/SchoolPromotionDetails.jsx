@@ -36,7 +36,7 @@ function SchoolPromotionDetails() {
         const matchesStatus = filter ? student.status === filter : true;
         return matchesStatus;
       } else if (filter === "All") {
-        const matchesStatus = filter ? student.status === filter : true;
+        const matchesStatus = filter ? student.status !== filter : true;
         return matchesStatus;
       }
       return matchesName && matchesStatus;

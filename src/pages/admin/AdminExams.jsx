@@ -24,6 +24,30 @@ function AdminExams() {
       setShowSidebar(false);
     }, 100);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setShowEditModal(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const handleEdit = () => {
+    setEditMode(true);
+    setShowEditModal(true);
+  };
+
+  useEffect(() => {
+    if (!showEditModal) {
+      setEditMode(false);
+    }
+  }, [showEditModal]);
+
   return (
     <div className="w-full h-fit overflow-y-auto flex-1 flex">
       {/* add/edit exam */}
@@ -161,12 +185,12 @@ function AdminExams() {
                   </span>
                 </h1>
               </div>
-              <Link
-                to="/student_register_for_exams"
+              <button
+                onClick={handleEdit}
                 className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
               >
                 Edit
-              </Link>
+              </button>
             </div>
           ))}
         </div>

@@ -133,7 +133,7 @@ function SchoolPromotionDetails() {
             </Link>
             {level} - {year}
           </h1>
-          <div className="w-full flex items-center justify-end gap-2 mt-5 mb-2">
+          <div className="w-full flex items-center justify-end gap-2 mt-5 mb-4">
             <select
               name="Type"
               className="block w-[120px] max-md:w-fit px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
@@ -168,7 +168,7 @@ function SchoolPromotionDetails() {
                 </tr>
               </thead>
               <tbody>
-                {oLeveltudents.map((student) => (
+                {oLevelStudents.map((student) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>

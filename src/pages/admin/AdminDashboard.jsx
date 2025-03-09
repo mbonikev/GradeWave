@@ -173,7 +173,7 @@ function AdminDashboard() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2">Student ID</th>
+                  <th className="px-4 py-2"></th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>
                   <th className="px-4 py-2">Progress</th>
@@ -184,7 +184,7 @@ function AdminDashboard() {
               <tbody>
                 {topStudentsOlevel.map((student) => (
                   <tr key={student.id} className="border-t">
-                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
+                    <td className="px-4 py-2 w-[130px]">{student.}</td>
                     <td className="px-4 py-2 w-[280px]">
                       <Link
                         to={`/school_student_results/${student.name}`}

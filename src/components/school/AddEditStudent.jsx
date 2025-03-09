@@ -52,7 +52,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
                 Basic Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 gap-5">
+              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     Student Names
@@ -96,7 +96,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Parent/Guardian Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 gap-5">
+              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     Guardian Name
@@ -141,7 +141,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Residence Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 gap-5">
+              <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     District

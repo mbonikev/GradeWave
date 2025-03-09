@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
-function AddEditStudent({ showEditModal, setShowEditModal, level, year }) {
+function AddEditStudent({ showEditModal, setShowEditModal, level, year, studentDetails, editMode }) {
   const [adding, setAdding] = useState(false);
   const handleAddStudent = () => {
     setAdding(true);

@@ -63,8 +63,6 @@ function SchoolPromotionDetails() {
       promotion: "2024-2025",
       combination: "MCB",
     },
-  ];
-  const oLevelStudents = [
     {
       id: 510534084,
       name: "Ingabire Florence",

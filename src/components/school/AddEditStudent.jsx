@@ -181,7 +181,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? residence.district : ""}
+                    value={editMode ? district : ""}
                     onChange={(e) => setDistrict(e.target.value)}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -193,7 +193,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? residence.sector : ""}
+                    value={editMode ? sector : ""}
                     onChange={(e) => setSector(e.target.value)}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -205,7 +205,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? residence.village : ""}
+                    value={editMode ? village : ""}
                     onChange={(e) => setVillage(e.target.value)}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"

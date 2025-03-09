@@ -22,7 +22,85 @@ function SchoolPromotionDetails() {
       setShowSidebar(false);
     }, 100);
   };
-
+  const students = [
+    {
+      id: 942534084,
+      name: "Mukamana Diane",
+      status: "Passed",
+      progress: "95%",
+      promotion: "2024-2025",
+      combination: "MCB",
+    },
+    {
+      id: 120534084,
+      name: "Kwizera Jean",
+      status: "Passed",
+      progress: "85%",
+      promotion: "2024-2025",
+      combination: "SOD",
+    },
+    {
+      id: 220534084,
+      name: "Iradukunda Aline",
+      status: "Passed",
+      progress: "78%",
+      promotion: "2023-2024",
+      combination: "MCE",
+    },
+    {
+      id: 320534084,
+      name: "Nshimiyimana Eric",
+      status: "Passed",
+      progress: "72%",
+      promotion: "2025-2026",
+      combination: "MPC",
+    },
+    {
+      id: 420534084,
+      name: "Umutoni Sandrine",
+      status: "Passed",
+      progress: "70%",
+      promotion: "2024-2025",
+      combination: "MCB",
+    },
+  ];
+  const oLevelStudents = [
+    {
+      id: 510534084,
+      name: "Ingabire Florence",
+      status: "Passed",
+      progress: "90%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 110534084,
+      name: "Hakizimana Yves",
+      status: "Passed",
+      progress: "88%",
+      promotion: "2024-2025",
+    },
+    {
+      id: 210534084,
+      name: "Uwase Claudine",
+      status: "Passed",
+      progress: "79%",
+      promotion: "2023-2024",
+    },
+    {
+      id: 310534084,
+      name: "Mugisha Patrick",
+      status: "Passed",
+      progress: "78%",
+      promotion: "2025-2026",
+    },
+    {
+      id: 410534084,
+      name: "Niyonsaba Kevin",
+      status: "Passed",
+      progress: "75.93%",
+      promotion: "2024-2025",
+    },
+  ];
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -76,6 +154,32 @@ function SchoolPromotionDetails() {
                 // onChange={(e) => setLevel(e.target.value)}
               />
             </div>
+          </div>
+          <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">
+            <table className="w-full text-left">
+              <thead className="bg-card-bg-weak">
+                <tr>
+                  <th className="px-4 py-2">Student ID</th>
+                  <th className="px-4 py-2">Name</th>
+                  <th className="px-4 py-2">Status</th>
+                  <th className="px-4 py-2">Progress</th>
+                  <th className="px-4 py-2">Promotion/Year</th>
+                  <th className="px-4 py-2">Combination</th>
+                </tr>
+              </thead>
+              <tbody>
+                {oLeveltudents.map((student) => (
+                  <tr key={student.id} className="border-t">
+                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
+                    <td className="px-4 py-2 w-[280px]">{student.name}</td>
+                    <td className="px-4 py-2">{student.status}</td>
+                    <td className="px-4 py-2">{student.progress}</td>
+                    <td className="px-4 py-2">{student.promotion}</td>
+                    <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

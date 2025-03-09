@@ -6,7 +6,7 @@ import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
 function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
-  const [studentName, setStudentName] = useState("MCB");
+  const [combName, setCombName] = useState("MCB");
 
   const handleAddStudent = () => {
     setAdding(true);
@@ -66,9 +66,9 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
                   </h1>
                   <input
                     required
-                    onChange={(e) => setStudentName(e.target.value)}
+                    onChange={(e) => setCombName(e.target.value)}
                     placeholder="Enter combination name"
-                    value={editMode ? studentName : ""}
+                    value={editMode ? combName : ""}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>

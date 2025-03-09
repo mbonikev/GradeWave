@@ -30,7 +30,10 @@ function SchoolPromotionDetails() {
   useEffect(() => {
     const Filtered = [...filteredStudents];
     if (filter !== "All") {
-      
+      const res = Students.filter(
+        (student) =>
+          student.progress.toLocaleLowerCase() === filter.toLocaleLowerCase()
+      );
     } else {
       setFilteredStudents(Filtered);
     }

@@ -74,7 +74,7 @@ function AdminExams() {
             </div>
             <Link
               to="/student_register_for_exams"
-              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
             >
               Edit
             </Link>
@@ -104,7 +104,7 @@ function AdminExams() {
             </div>
             <Link
               to="/student_register_for_exams"
-              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
             >
               Edit
             </Link>
@@ -150,7 +150,7 @@ function AdminExams() {
               </div>
               <Link
                 to="/student_register_for_exams"
-                className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+                className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
               >
                 Edit
               </Link>

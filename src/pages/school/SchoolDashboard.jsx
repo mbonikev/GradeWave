@@ -33,12 +33,12 @@ function SchoolDashboard() {
 
   const stats = [
     {
-      title: "Total Students",
+      title: "Total Candidates",
       value: 1200,
       icon: <LuUsers className="w-6 h-6 text-blue-500" />,
     },
     {
-      title: "Passed Exams",
+      title: "Passed Candidates",
       value: 900,
       icon: <LuCircleCheckBig className="w-6 h-6 text-green-500" />,
     },
@@ -129,7 +129,7 @@ function SchoolDashboard() {
               value={level}
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >
-              <option value="2023-2024">2023-2024</option>
+              <option value="2023-2024  ">2023-2024</option>
               <option value="2024-2025">2024-2025</option>
             </select>
           </div>

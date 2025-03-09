@@ -53,7 +53,7 @@ function AdminExams() {
               className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit whitespace-nowrap rounded-xl flex items-center justify-center gap-1 bg-transparent hover:bg-main-color active:scale-[.98] text-text-color hover:text-white text-sm font-medium"
             >
               <LuPlus className="text-xl" />
-              <span className="max-sm:hidden">Open Exam</span>
+              <span className="max-sm:hidden">New Exam</span>
             </button>
           </div>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">

@@ -38,10 +38,13 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     if (searchValue !== "") {
-      const res = filteredStudents.filter((student) => student.name.toLowerCase().includes(searchValue));
+      const backupStudents = filteredStudents;
+      const res = filteredStudents.filter((student) =>
+        student.name.toLowerCase().includes(searchValue)
+      );
       setFilteredStudents(res);
     } else {
-      setFilteredStudents(Students);
+      setFilteredStudents(backupStudents);
     }
   }, [searchValue]);
 

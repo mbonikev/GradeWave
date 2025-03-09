@@ -48,7 +48,7 @@ function ConfirmLogout({logoutWarn, setLogoutWarn}) {
             <h1 className="mb-5 text-lg text-center max-w-[200px] mx-auto">
               Are you sure you want to log out?
             </h1>
-            <div className="w-full flex items-center flex-col gap-2">
+            <div className="w-full flex items-center max-sm:flex-col-reverse gap-2">
               <button
                 onClick={handleLoginStudent}
                 className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"

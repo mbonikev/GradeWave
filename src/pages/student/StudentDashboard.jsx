@@ -202,7 +202,7 @@ function StudentDashboard() {
     {
       rank: "2nd",
       name: "Ineza Raissa",
-      school: "Ecole des Sciences Byimana",
+      school: "College Saint Andre",
       score: "95.39%",
       icon: <GiSportMedal className="text-4xl text-stone-400" />,
     },

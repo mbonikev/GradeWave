@@ -328,7 +328,7 @@ function StudentDashboard() {
                   </h1>
                 </div>
               </div>
-              <div className="w-full flex items-center max-md:flex-col max-md:items-start justify-normal">
+              <div className="w-full flex items-center justify-normal">
                 <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                   2nd
                 </h1>
@@ -347,7 +347,7 @@ function StudentDashboard() {
                   </h1>
                 </div>
               </div>
-              <div className="w-full flex items-center max-md:flex-col max-md:items-start justify-normal">
+              <div className="w-full flex items-center justify-normal">
                 <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
                   3rd
                 </h1>

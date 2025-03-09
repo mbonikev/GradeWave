@@ -319,6 +319,9 @@ function StudentDashboard() {
                   <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base">Mugisha Kenny</span>
+                    <span className="text-sm text-text-color-weak/80">
+                      Groupe Scolaire Officiel de Butare
+                    </span>
                     <span className="text-sm text-text-color-weak/80">MPC</span>
                   </h1>
                 </div>
@@ -331,7 +334,9 @@ function StudentDashboard() {
                   <GiSportMedal className="text-4xl text-stone-400" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base">Ineza Raissa</span>
-                    <span className="text-sm text-text-color-weak/80">Ecole des Sciences Byimana</span>
+                    <span className="text-sm text-text-color-weak/80">
+                      Ecole des Sciences Byimana
+                    </span>
                     <span className="text-sm text-text-color-weak/80">MCE</span>
                   </h1>
                 </div>
@@ -344,7 +349,9 @@ function StudentDashboard() {
                   <GiSportMedal className="text-4xl text-[#e3a782]" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base">Uwase abatoni Stecy</span>
-                    <span className="text-sm text-text-color-weak/80">Lycee de Kigali</span>
+                    <span className="text-sm text-text-color-weak/80">
+                      Lycee de Kigali
+                    </span>
                     <span className="text-sm text-text-color-weak/80">HEG</span>
                   </h1>
                 </div>

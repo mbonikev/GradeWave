@@ -181,6 +181,7 @@ function AddEditStudent({
                   </h1>
                   <input
                     required
+                    value={editMode ? studentDetails.residence.district : ""}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -191,6 +192,7 @@ function AddEditStudent({
                   </h1>
                   <input
                     required
+                    value={editMode ? studentDetails.residence.sector : ""}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -201,6 +203,7 @@ function AddEditStudent({
                   </h1>
                   <input
                     required
+                    value={editMode ? studentDetails.residence.village : ""}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

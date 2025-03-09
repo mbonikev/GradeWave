@@ -140,8 +140,12 @@ function SchoolPromotionDetails() {
                         <span className="text-text-color-weak/60">N/A</span>
                       )}
                     </td>
-                    <td className="px-4 py-2 text-text-color-weak/60 w-[100px]">
-                      {level === "A-Level" ? student.combination : "N/A"}
+                    <td className="px-4 py-2 w-[100px]">
+                      {level === "A-Level" ? (
+                        student.combination
+                      ) : (
+                        <span className="text-text-color-weak/60">N/A</span>
+                      )}
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <Link

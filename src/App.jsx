@@ -66,6 +66,8 @@ function App() {
     { path: "/school_promotion_details/:year/:level", element: <SchoolPromotionDetails /> },
     { path: "/school_combinations", element: <SchoolCombinations /> },
     { path: "/school_past_papers", element: <SchoolPapers /> },
+    { path: "/school_notifications", element: < /> },
+    { path: "/school_settings", element: < /> },
   ];
 
   return (

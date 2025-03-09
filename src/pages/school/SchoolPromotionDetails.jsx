@@ -12,7 +12,7 @@ function SchoolPromotionDetails() {
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
   const [filter, setFilter] = useState("All");
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState(null);
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const openSidebar = () => {
     setShowSidebar(true);
@@ -39,7 +39,7 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     const Filtered = [...filteredStudents];
-    if (searchValue != "") {
+    if (searchValue !== null) {
       const res = filteredStudents.filter((student) =>
         student.name.toLowerCase().includes(searchValue.toLowerCase())
       );

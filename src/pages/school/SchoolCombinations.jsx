@@ -69,9 +69,8 @@ function SchoolCombinations() {
                     </span>
                   </th>
                   <th className="px-4 py-2">Title</th>
-                  <th className="px-4 py-2">Enrolled Students</th>
-                  <th className="px-4 py-2">Grades</th>
-                  <th className="px-4 py-2 w-[100px]">Combination</th>
+                  <th className="px-4 py-2">Total Enrolled Students</th>
+                  <th className="px-4 py-2">Enrolled Students Now</th>
                   <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
               </thead>
@@ -84,8 +83,6 @@ function SchoolCombinations() {
                     <td className="px-4 py-2 w-[130px]"></td>
                     <td className="px-4 py-2 w-[280px]"></td>
                     <td className={`px-4 py-2`}></td>
-                    <td className={`px-4 py-2`}></td>
-                    <td className="px-4 py-2 w-[100px]"></td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
                         // onClick={handleEdit}

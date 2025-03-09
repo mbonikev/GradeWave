@@ -48,29 +48,30 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
 
             {/* content */}
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4">
-              {/* basic info */}
+              {/* Basic Info */}
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
-                Basic info <span className="text-red-500">*</span>
+                Basic Info <span className="text-red-500">*</span>
               </h1>
               <div className="w-full grid grid-cols-3 gap-5">
                 <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80  mb-2">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
                     Student Names
                   </h1>
                   <input
                     required
                     placeholder="Full Names"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
                 <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80  mb-2">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
                     Student Age
                   </h1>
                   <input
                     required
+                    type="number"
                     placeholder="Age"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
                 <div className="w-full h-fit">
@@ -79,16 +80,101 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   </h1>
                   <select
                     required
-                    placeholder="Choose Combination"
-                    className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
+                    className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   >
-                    <option disabled hidden>Select Combination</option>
+                    <option disabled hidden>
+                      Select Combination
+                    </option>
+                    <option value="MCB">MCB</option>
+                    <option value="PCB">PCB</option>
+                    <option value="HEG">HEG</option>
                   </select>
                 </div>
               </div>
-              {/* Parent/Guardian info */}
-              {/* Residance info */}
+
+              {/* Parent/Guardian Info */}
+              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-6 mb-2">
+                Parent/Guardian Info <span className="text-red-500">*</span>
+              </h1>
+              <div className="w-full grid grid-cols-3 gap-5">
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Guardian Name
+                  </h1>
+                  <input
+                    required
+                    placeholder="Guardian's Full Name"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Guardian Contact
+                  </h1>
+                  <input
+                    required
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Guardian Relationship
+                  </h1>
+                  <select
+                    required
+                    className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  >
+                    <option disabled hidden>
+                      Select Relationship
+                    </option>
+                    <option value="Father">Father</option>
+                    <option value="Mother">Mother</option>
+                    <option value="Sibling">Sibling</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Residence Info */}
+              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-6 mb-2">
+                Residence Info <span className="text-red-500">*</span>
+              </h1>
+              <div className="w-full grid grid-cols-3 gap-5">
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    District
+                  </h1>
+                  <input
+                    required
+                    placeholder="Enter District"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Sector
+                  </h1>
+                  <input
+                    required
+                    placeholder="Enter Sector"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+                <div className="w-full h-fit">
+                  <h1 className="text-base font-normal opacity-80 mb-2">
+                    Village
+                  </h1>
+                  <input
+                    required
+                    placeholder="Enter Village"
+                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
+                  />
+                </div>
+              </div>
             </div>
+
             {/* save button */}
             <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2 mt-7">
               <button

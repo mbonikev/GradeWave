@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
@@ -109,12 +109,12 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">2,239</span>
               </h1>
             </div>
-            <Link
-              to="/student_register_for_exams"
+            <button
+              onClick={handleEdit}
               className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
             >
               Edit
-            </Link>
+            </button>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # O-Level
@@ -139,12 +139,12 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">14,239</span>
               </h1>
             </div>
-            <Link
-              to="/student_register_for_exams"
+            <button
+              onClick={handleEdit}
               className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl mt-5"
             >
               Edit
-            </Link>
+            </button>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # A-Level

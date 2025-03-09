@@ -37,8 +37,10 @@ function SchoolPromotionDetails() {
   }, [filter]);
 
   useEffect(() => {
-    const res = Students.filter((student) => student.name === searchValue);
-    setFilteredStudents(res);
+    if (searchValue !== "") {
+      const res = Students.filter((student) => student.name === searchValue);
+      setFilteredStudents(res);
+    }
   }, [searchValue]);
 
   return (

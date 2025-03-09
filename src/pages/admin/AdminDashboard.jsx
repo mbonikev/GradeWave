@@ -62,29 +62,31 @@ function AdminDashboard() {
     },
   ];
 
-  const oLevelStudents = [
+
+  const topStudentsOlevel = [
     {
-      id: 510534084,
-      name: "Ingabire Florence",
-      status: "Passed",
-      progress: "90%",
-      promotion: "2024-2025",
+      rank: "1st",
+      name: "Mugisha Kenny",
+      school: "Groupe Scolaire APRED Ndera",
+      score: "99.02%",
+      icon: <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />,
     },
     {
-      id: 110534084,
-      name: "Hakizimana Yves",
-      status: "Passed",
-      progress: "88%",
-      promotion: "2024-2025",
+      rank: "2nd",
+      name: "Ineza Raissa",
+      school: "College Saint Andre",
+      score: "95.39%",
+      icon: <GiSportMedal className="text-4xl text-stone-400" />,
     },
     {
-      id: 210534084,
-      name: "Uwase Claudine",
-      status: "Passed",
-      progress: "79%",
-      promotion: "2023-2024",
+      rank: "3rd",
+      name: "Uwase Abatoni Stecy",
+      school: "Groupe Scolaire Sainte Bernadette Save",
+      score: "93.20%",
+      icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
     },
   ];
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -180,7 +182,7 @@ function AdminDashboard() {
                 </tr>
               </thead>
               <tbody>
-                {oLevelStudents.map((student) => (
+                {topStudentsOlevel.map((student) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">

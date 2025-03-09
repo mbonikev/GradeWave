@@ -49,28 +49,24 @@ function AdminDashboard() {
             Dashboard
           </h1>
           <div className="py-6 space-y-6">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
-                <FaClipboardList className="text-3xl text-green-500" />
-                <div>
-                  <h2 className="text-lg font-medium">Total Exams</h2>
-                  <p className="text-xl font-bold">5</p>
+            {/* Stats Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="p-5 max-md:p-5 flex items-center justify-between bg-white shadow-sm rounded-2xl border border-card-bg-weak"
+                >
+                  <div>
+                    <h3 className="text-sm font-medium mb-1 text-text-color-weak">
+                      {stat.title}
+                    </h3>
+                    <p className="text-2xl font-bold text-text-color">
+                      {stat.value}
+                    </p>
+                  </div>
+                  {stat.icon}
                 </div>
-              </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
-                <FaSchool className="text-3xl text-yellow-500" />
-                <div>
-                  <h2 className="text-lg font-medium">School Accounts</h2>
-                  <p className="text-xl font-bold">3</p>
-                </div>
-              </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
-                <FaUserGraduate className="text-3xl text-blue-500" />
-                <div>
-                  <h2 className="text-lg font-medium">Total Students</h2>
-                  <p className="text-xl font-bold">239</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

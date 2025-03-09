@@ -6,6 +6,19 @@ import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
 function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
+  const [studentName, setStudentName] = useState("Ingabire Florence");
+  const [studentAge, setStudentAge] = useState(17);
+  const [combination, setCombination] = useState("MCB");
+
+  const [guardianName, setGuardianName] = useState("Jeanne Muhoza");
+  const [guardianContact, setGuardianContact] = useState("+250788123456");
+  const [guardianRelationship, setGuardianRelationship] = useState("Mother");
+
+  const [residence, setResidence] = useState({
+    district: "Kigali",
+    sector: "Nyarugenge",
+    village: "Nyamirambo",
+  });
   const handleAddStudent = () => {
     setAdding(true);
     setTimeout(() => {

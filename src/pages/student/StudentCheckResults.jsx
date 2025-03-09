@@ -316,7 +316,7 @@ function StudentCheckResults() {
                   <div className="w-full flex flex-col gap-1 text-sm ">
                     <h1 className="text-base font-bold text-text-color/80">
                       ORDINARY LEVEL NATIONAL EXAMINATION (O-Level Exam),
-                      2025-2026
+                      2024-2025
                     </h1>
                     <h1 className="text-text-color/50">
                       <strong className="font-medium">Status:</strong>{" "}
@@ -355,7 +355,7 @@ function StudentCheckResults() {
                       <Fade duration={200} triggerOnce>
                         <div className="w-full flex items-start justify-between max-sm:flex-col-reverse">
                           <div className="w-full flex items-start flex-col gap-5">
-                            {level === "p6" ? "Primary Leaving Examination (PLE), 2021-2022" : "Ordinary Level Examination (PLE), 2024-2025"}
+                            {level === "p6" ? "Primary Leaving Examination (PLE), 2021-2022" : "Ordinary Level Examination (O-Level), 2024-2025"}
                             <div className="w-ful h-fit flex items-center gap-10 max-sm:gap-5 mb-6">
                               <Progress percentage={marks} />
                               <div className="flex-1 flex flex-col gap-3">

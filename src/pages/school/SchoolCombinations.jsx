@@ -81,8 +81,8 @@ function SchoolCombinations() {
                       {index + 1}
                     </td>
                     <td className="px-4 py-2 w-[130px]">{comb}</td>
-                    <td className="px-4 py-2 w-[280px]"></td>
-                    <td className={`px-4 py-2`}></td>
+                    <td className="px-4 py-2 w-[280px]">8,422</td>
+                    <td className={`px-4 py-2`}>124</td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
                         // onClick={handleEdit}

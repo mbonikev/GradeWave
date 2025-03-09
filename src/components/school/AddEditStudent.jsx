@@ -46,7 +46,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, year }) {
             } `}
           >
             <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
-              Add Student (O-Level)
+              Add Student ({level})
             </h1>
 
             {/* content */}

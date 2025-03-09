@@ -55,7 +55,6 @@ function AdminExams() {
         <EditExam
           showEditModal={showEditModal}
           setShowEditModal={setShowEditModal}
-          year={year}
           level={level}
           editMode={editMode}
         />

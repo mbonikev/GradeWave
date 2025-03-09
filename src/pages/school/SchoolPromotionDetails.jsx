@@ -16,6 +16,7 @@ function SchoolPromotionDetails() {
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const [showEditModal, setShowEditModal] = useState(false);
+  const studentDetails = []
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {

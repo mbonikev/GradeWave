@@ -67,7 +67,7 @@ function SchoolPromotionDetails() {
               <option value="Failed Only">Failed Only</option>
             </select>
             <div className="w-fit h-fit relative">
-              <LuSearch />
+              <LuSearch className="absolute top-0 bottom-0 my-auto left-3 text-text-color-weak " />
               <input
                 type="text"
                 className="block w-[130px] max-sm:flex-1 pl-9 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"

@@ -28,28 +28,19 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
+    let filtered = Students;
+
     if (filter !== "All") {
-      if (searchValue === "") {
-        const res = Students.filter((student) => student.status === filter);
-        setFilteredStudents(res);
-      } else if (searchValue !== "") {
-        const res = Students.filter(
-          (student) =>
-            student.status === filter &&
-            student.name.toLowerCase().includes(searchValue.toLowerCase())
-        );
-        setFilteredStudents(res);
-      }
-    } else {
-      if (searchValue === "") {
-        setFilteredStudents(Students);
-      } else if (searchValue !== "") {
-        const res = Students.filter((student) =>
-          student.name.toLowerCase().includes(searchValue.toLowerCase())
-        );
-        setFilteredStudents(res);
-      }
+      filtered = filtered.filter((student) => student.status === filter);
     }
+
+    if (searchValue !== "") {
+      filtered = filtered.filter((student) =>
+        student.name.toLowerCase().includes(searchValue.toLowerCase())
+      );
+    }
+
+    setFilteredStudents(filtered);
   }, [filter, searchValue]);
 
   return (

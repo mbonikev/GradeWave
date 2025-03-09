@@ -83,7 +83,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
                 </div>
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
-                    Student Age
+                    Closing Date
                   </h1>
                   <input
                     required

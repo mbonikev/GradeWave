@@ -8,6 +8,7 @@ import {
   LuChartPie,
   LuCircleCheckBig,
   LuCalendarDays,
+  LuArrowRight,
 } from "react-icons/lu";
 
 function SchoolDashboard() {
@@ -159,12 +160,12 @@ function SchoolDashboard() {
             >
               Top 5 A-level Candidates
             </h1>
-            <label
-              for="level"
+            <Link to="/"
               class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              View all:
-            </label>
+              View all
+              <LuArrowRight />
+            </Link>
             </div>
             {/* Students Table */}
             <div className="overflow-x-auto rounded-2xl border border-card-bg text-text-color text-sm">

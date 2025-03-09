@@ -46,14 +46,14 @@ function AdminExams() {
         <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
           <div className="w-full flex items-center justify-between gap-3 pb-2 border-b border-card-bg-weak">
             <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full">
-              Exams
+              Exams 2025-2026
             </h1>
             <button
               // onClick={() => setShowEditModal(true)}
               className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit whitespace-nowrap rounded-xl flex items-center justify-center gap-1 bg-transparent hover:bg-main-color active:scale-[.98] text-text-color hover:text-white text-sm font-medium"
             >
               <LuPlus className="text-xl" />
-              <span className="max-sm:hidden">New Exam</span>
+              <span className="max-sm:hidden">New Promotion</span>
             </button>
           </div>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">

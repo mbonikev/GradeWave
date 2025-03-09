@@ -10,7 +10,7 @@ function SchoolStudentResults() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
-  const [marks, setMarks] = useState(87);
+  const [marks, setMarks] = useState(90);
   const [gradesData, setGradesData] = useState([]);
   const { name } = useParams();
   const navigate = useNavigate();
@@ -95,7 +95,7 @@ function SchoolStudentResults() {
           textAnchor="middle"
           fill="#414141"
         >
-          {marks}
+          {marks}%
         </text>
       </svg>
     );

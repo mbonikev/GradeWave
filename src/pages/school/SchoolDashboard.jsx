@@ -48,8 +48,8 @@ function SchoolDashboard() {
       icon: <LuChartPie className="w-6 h-6 text-yellow-500" />,
     },
     {
-      title: "Current Year",
-      value: "2025",
+      title: "Promotion",
+      value: "2024-2025",
       icon: <LuCalendarDays className="w-6 h-6 text-purple-500" />,
     },
   ];

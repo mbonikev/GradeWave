@@ -100,11 +100,13 @@ function AdminExams() {
           {[
             {
               name: "ADVANCED LEVEL NATIONAL EXAMINATION (A-Level Exam) , 2025-2026",
+              count: "3,293",
             },
             {
               name: "Teacher Training College (TTC) National Examination, 2025-2026",
+              count: "941",
             },
-            { name: "TVET National Examinations, 2025-2026" },
+            { name: "TVET National Examinations, 2025-2026", count: "2,141" },
           ].map((exam, index) => (
             <div
               key={index}
@@ -117,6 +119,10 @@ function AdminExams() {
                 <h1 className="text-text-color/50">
                   <strong className="font-medium">Registration Status:</strong>{" "}
                   <span className="text-green-700/80 font-medium">Open</span>
+                </h1>
+                <h1 className="text-text-color/50">
+                  <strong className="font-medium">Registered:</strong>{" "}
+                  <span className="font-medium text-text-color/80">2,239</span>
                 </h1>
               </div>
               <Link

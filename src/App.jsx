@@ -14,6 +14,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import ProtectedRouteStudent from "./util/ProtectedRouteStudent";
 import ProtectedRouteSchool from "./util/ProtectedRouteSchool"; // Use a separate route protection for schools
 import ProtectedAuth from "./util/ProtectedAuth";
+import SchoolManageStudents from "./pages/school/SchoolManageStudents";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -58,6 +59,7 @@ function App() {
 
   const schoolRoutes = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
+    { path: "/school_manage_students", element: <SchoolManageStudents /> },
   ];
 
   return (

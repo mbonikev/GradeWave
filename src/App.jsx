@@ -74,9 +74,14 @@ function App() {
     { path: "/school_past_papers", element: <SchoolPapers /> },
     { path: "/school_notifications", element: <SchoolNotifications /> },
     { path: "/school_settings", element: <SchoolSettings /> },
-    { path: "/school_student_results/:name", element: <SchoolStudentResults /> },
+    {
+      path: "/school_student_results/:name",
+      element: <SchoolStudentResults />,
+    },
   ];
-
+  const AdminRoutes = [
+    { path: "/admin_dashboard", element: <SchoolDashboard /> },
+  ];
   return (
     <div>
       {fetching && <LoadingScreen animateFetching={animateFetching} />}

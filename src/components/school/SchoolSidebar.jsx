@@ -100,10 +100,10 @@ function SchoolSidebar({ closeSidebar, showSidebar }) {
           Combinations
         </Link>
         <Link
-          to="/school_past_papers"
+          to="/school_papers"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_past_papers"
+            location.pathname === "/school_papers"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }

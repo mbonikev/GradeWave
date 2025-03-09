@@ -4,7 +4,7 @@ import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { FaUserGraduate, FaClipboardList, FaSchool } from "react-icons/fa";
-import { LuCalendarDays, LuChartPie, LuCircleCheckBig, LuUsers } from "react-icons/lu";
+import { LuCalendarDays, LuChartPie, LuCircleCheckBig, LuSchool, LuUsers } from "react-icons/lu";
 
 function AdminDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,7 +27,7 @@ function AdminDashboard() {
     {
       title: "Total Schools",
       value: 1200,
-      icon: <LuUsers className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
+      icon: <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
     },
     {
       title: "Passed Candidates",

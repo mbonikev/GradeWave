@@ -13,7 +13,7 @@ function SchoolPromotionDetails() {
   const { year, level } = useParams();
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
-  const [filteredStudents, setFilteredStudents] = useState([]);
+  const [filteredStudents, setFilteredStudents] = useState(Students);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -28,27 +28,11 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    if (filter !== "All") {
-      const res = Students.filter((student) => student.status === filter);
-      setFilteredStudents(res);
-    } else {
-      setFilteredStudents(Students);
-    }
+    
   }, [filter]);
 
   useEffect(() => {
-    const backupStudents = [...filteredStudents];
-    if (searchValue !== "") {
-      const res = backupStudents.filter((student) =>
-        student.name.toLowerCase().includes(searchValue.toLowerCase())
-      );
-      setFilteredStudents(res);
-    } 
-    // else if (filter === "All") {
-    //   setFilteredStudents(Students);
-    // } else {
-    //   setFilteredStudents(backupStudents);
-    // }
+    
   }, [searchValue]);
 
   return (

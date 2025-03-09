@@ -132,7 +132,7 @@ function AdminExams() {
           ].map((exam, index) => (
             <div
               key={index}
-              className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-center max-md:flex-col mb-4"
+              className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-end max-md:flex-col mb-4"
             >
               <div className="w-full flex flex-col gap-1 text-sm ">
                 <h1 className="text-base font-bold text-text-color/80">
@@ -155,7 +155,13 @@ function AdminExams() {
                   </span>
                 </h1>
               </div>
-              <div className="w-full flex items-center justify-end gap-2">
+              <div className="w-full flex items-end justify-end flex-col gap-2">
+                <Link
+                  to="/student_register_for_exams"
+                  className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"
+                >
+                  Extend
+                </Link>
                 <Link
                   to="/student_register_for_exams"
                   className="bg-main-color hover:brightness-125 text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 max-md:mt-5 rounded-xl"

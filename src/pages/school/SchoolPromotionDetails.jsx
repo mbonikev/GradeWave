@@ -11,8 +11,8 @@ function SchoolPromotionDetails() {
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
-  const [filter, setFilter] = useState("All")
-  const [filteredStudents, setFilteredStudents] = useState([])
+  const [filter, setFilter] = useState("All");
+  const [filteredStudents, setFilteredStudents] = useState([]);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -27,9 +27,9 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    
-  },[filter])
-
+    const res = Students.filter((student) => student.status === filter);
+    setFilteredStudents(res);
+  }, [filter]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">
@@ -110,8 +110,20 @@ function SchoolPromotionDetails() {
                     </td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
-                    <td className={`px-4 py-2 ${student.progress < 50 ? 'text-red-500' : ''}`}>{student.status}</td>
-                    <td className={`px-4 py-2 ${student.progress < 50 ? 'text-red-500' : ''}`}>{student.progress}%</td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {student.status}
+                    </td>
+                    <td
+                      className={`px-4 py-2 ${
+                        student.progress < 50 ? "text-red-500" : ""
+                      }`}
+                    >
+                      {student.progress}%
+                    </td>
                     <td className="px-4 py-2 text-text-color-weak/60">
                       {level === "A-Level" ? student.combination : "N/A"}
                     </td>

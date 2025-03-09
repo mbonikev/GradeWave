@@ -179,8 +179,8 @@ function AdminDashboard() {
                   </th>
                   <th className="px-4 py-2">Rank</th>
                   <th className="px-4 py-2">Name</th>
-                  <th className="px-4 py-2">Status</th>
-                  <th className="px-4 py-2">Grades</th>
+                  <th className="px-4 py-2">School</th>
+                  <th className="px-4 py-2">Score</th>
                   <th className="px-4 py-2 w-[100px]">Combination</th>
                   <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
@@ -203,12 +203,12 @@ function AdminDashboard() {
                     <td
                       className={`px-4 py-2 `}
                     >
-                        <span>{student.status}</span>
+                        <span>{student.school}</span>
                     </td>
                     <td
                       className={`px-4 py-2 `}
                     >
-                        <span>{student.progress}%</span>
+                        <span>{student.score}</span>
                     </td>
                     <td className="px-4 py-2 w-[100px]">
                       <span className="text-text-color-weak/60">N/A</span>

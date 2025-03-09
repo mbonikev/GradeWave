@@ -63,14 +63,14 @@ function SchoolManageStudents() {
                     <tr>
                       <th className="px-4 py-2">Level</th>
                       <th className="px-4 py-2">Total Students</th>
-                      <th className="px-4 py-2">Status</th>
+                      <th className="px-4 py-2">Passed</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-t">
                       <td className="px-4 py-2 w-[120px]"><Link to={'/'} className="text-main-color-school hover:underline">O-Level</Link></td>
                       <td className="px-4 py-2">348</td>
-                      <td className="px-4 py-2"></td>
+                      <td className="px-4 py-2">321</td>
                     </tr>
                     <tr className="border-t">
                       <td className="px-4 py-2 w-[120px]"><Link to={'/'} className="text-main-color-school hover:underline">A-Level</Link></td>

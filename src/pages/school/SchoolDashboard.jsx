@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
-import { Users, BarChart, CheckCircle, Calendar } from "react-icons/lu";
+import { Users, LuChartPie, CheckCircle, Calendar } from "react-icons/lu";
 
 function SchoolDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -40,7 +40,7 @@ function SchoolDashboard() {
     {
       title: "Average Score",
       value: "78%",
-      icon: <BarChart className="w-6 h-6 text-yellow-500" />,
+      icon: <LuChartPie className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Current Year",

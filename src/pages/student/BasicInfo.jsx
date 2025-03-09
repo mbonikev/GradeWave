@@ -73,7 +73,7 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">National ID Number</h1>
           <input
             type="text"
-            name="phone"
+            name="nationalID"
             placeholder="11980XXXXXXXXXXX"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
@@ -82,7 +82,7 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">Primary Index Number</h1>
           <input
             type="text"
-            name="phone"
+            name="pIndex"
             placeholder="0000PR000000"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
@@ -91,7 +91,7 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">O-Level Index Number</h1>
           <input
             type="text"
-            name="phone"
+            name="oIndex"
             placeholder="0000PR000000"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
@@ -100,7 +100,7 @@ function BasicInfo() {
           <h1 className="text-sm font-normal">A-Level Index Number</h1>
           <input
             type="text"
-            name="phone"
+            name="aIndex"
             placeholder="XXXXXCODEXXXXX"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />

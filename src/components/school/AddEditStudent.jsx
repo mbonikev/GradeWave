@@ -42,9 +42,11 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg-weak">
+            <h1 className="text-2xl font-bold tracking-tight text-text-color/80 border-b border-card-bg pb-3">
               Add Student
             </h1>
+            {/* content */}
+            <div className="w-full"></div>
             {/* save button */}
             <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
               <button

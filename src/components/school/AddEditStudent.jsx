@@ -4,8 +4,8 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
 function AddEditStudent({ showEditModal, setShowEditModal }) {
-  const [loggingOut, setLoggingOut] = useState(false);
-  const handleLoginStudent = () => {
+  const [adding, setAdding] = useState(false);
+  const handleAddStudent = () => {
     // sessionStorage.removeItem("loggedInStudent");
     // sessionStorage.removeItem("loggedInSchool");
     setLoggingOut(true);
@@ -52,10 +52,10 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                 Cancel
               </button>
               <button
-                onClick={handleLoginStudent}
+                onClick={handleAddStudent}
                 className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
               >
-                {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
+                {!adding ? "Logout" : <LoadingWhite size="small" />}
               </button>
             </div>
           </div>

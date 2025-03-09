@@ -40,10 +40,10 @@ function App() {
         favicon.href = "/favicon_green.svg";
       }
     } else if (sessionStorage.getItem("loggedInAdmin") === "true") {
-      document.documentElement.style.setProperty("--main-color", "#A7333F");
+      document.documentElement.style.setProperty("--main-color", "#232528");
       document.documentElement.style.setProperty(
         "--main-color-weak",
-        "#A7333F27"
+        "#23252827"
       );
     }
   }, []);

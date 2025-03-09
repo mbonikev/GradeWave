@@ -3,7 +3,7 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
-function AddEditStudent({logoutWarn, setLogoutWarn}) {
+function AddEditStudent({logoutWarn, setLogoutWarn, showEditModal, setShowEditModal}) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     // sessionStorage.removeItem("loggedInStudent");

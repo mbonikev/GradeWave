@@ -33,6 +33,7 @@ import AdminAnnounce from "./pages/admin/AdminAnnounce";
 import SchoolAnnounce from "./pages/school/SchoolAnnounce";
 import StudentHelpPage from "./pages/student/StudentHelpPage";
 import SchoolHelpPage from "./pages/school/SchoolHelpPage";
+import AdminHelp from "./pages/admin/AdminHelp";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -114,6 +115,7 @@ function App() {
     { path: "/admin_settings", element: <AdminSettings /> },
     { path: "/admin_notification", element: <AdminNotifications /> },
     { path: "/admin_announce", element: <AdminAnnounce /> },
+    { path: "/admin_help", element: <AdminHelp /> },
   ];
   return (
     <div>

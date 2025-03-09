@@ -24,6 +24,13 @@ import SchoolStudentResults from "./pages/school/SchoolStudentResults";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ProtectedRouteAdmin from "./util/ProtectedRouteAdmin";
 import AdminExams from "./pages/admin/AdminExams";
+import AdminMarking from "./pages/admin/AdminMarking";
+import AdminPapers from "./pages/admin/AdminPapers";
+import AdminSchools from "./pages/admin/AdminSchools";
+import AdminSettings from "./pages/admin/AdminSettings";
+import AdminNotifications from "./pages/admin/AdminNotifications";
+import AdminAnnounce from "./pages/admin/AdminAnnounce";
+import SchoolAnnounce from "./pages/school/SchoolAnnounce";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -87,6 +94,7 @@ function App() {
     { path: "/school_past_papers", element: <SchoolPapers /> },
     { path: "/school_notifications", element: <SchoolNotifications /> },
     { path: "/school_settings", element: <SchoolSettings /> },
+    { path: "/school_announce", element: <SchoolAnnounce /> },
     {
       path: "/school_student_results/:name",
       element: <SchoolStudentResults />,
@@ -96,6 +104,12 @@ function App() {
   const AdminRoutes = [
     { path: "/admin_dashboard", element: <AdminDashboard /> },
     { path: "/admin_exams", element: <AdminExams /> },
+    { path: "/admin_marking", element: <AdminMarking /> },
+    { path: "/admin_papers", element: <AdminPapers /> },
+    { path: "/admin_schools", element: <AdminSchools /> },
+    { path: "/admin_settings", element: <AdminSettings /> },
+    { path: "/admin_notification", element: <AdminNotifications /> },
+    { path: "/admin_announce", element: <AdminAnnounce /> },
   ];
   return (
     <div>

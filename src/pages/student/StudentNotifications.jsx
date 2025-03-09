@@ -42,7 +42,10 @@ function StudentNotifications() {
             }`}
           ></div>
         )}
-        <StudentNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
+        <StudentNavbar
+          openSidebar={openSidebar}
+          setLogoutWarn={setLogoutWarn}
+        />
         <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto pb-10">
           <h1 className="text-[28px] font-bold text-left tracking-tight mt-3 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
             Announcements
@@ -67,31 +70,23 @@ function StudentNotifications() {
             ].map((annoucement, index) => (
               <div
                 key={index}
-                className="w-full h-fit p-4 cursor-pointer hover:bg-card-bg-weak ring-1 ring-card-bg-weak mb-1 rounded-2xl"
+                className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
               >
-                <div className="w-full flex items-center justify-start gap-3 mb-3">
-                  <div className="size-9 rounded-full bg-main-color p-1 aspect-square">
+                <div className="w-full flex items-start justify-start gap-3">
+                  <div className="size-8 rounded-full bg-main-color p-1.5 aspect-square">
                     <img
                       src={annoucement.pfp}
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-                  <div className="w-full flex items-start justify-center flex-col">
-                    <h1 className="text-sm">{annoucement.name}</h1>
-                    <h1 className="text-xs text-text-color-weak">
-                      {annoucement.publishedAt}
+                  <div className="w-full flex flex-col">
+                    <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
+                      <strong>{annoucement.name} </strong>
+                      {annoucement.message} <br />
                     </h1>
+                    <h1 className="text-sm text-text-color-weak/80 mt-1">2d</h1>
                   </div>
-                  <button
-                    title="share"
-                    className="outline-none border-none p-1 text-text-color-weak hover:text-main-color flex items-center justify-center"
-                  >
-                    <LuShare2 className="text-lg" />
-                  </button>
                 </div>
-                <h1 className="text-sm text-text-color/90 line-clamp-2 max-w-[700px]">
-                  {annoucement.message}
-                </h1>
               </div>
             ))}
           </div>

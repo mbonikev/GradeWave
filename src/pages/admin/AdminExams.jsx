@@ -44,7 +44,7 @@ function AdminExams() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-7 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
-            Published Exams
+            Open Exams Registration
           </h1>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">
             # Primary

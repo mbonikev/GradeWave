@@ -22,6 +22,40 @@ function SchoolNotifications() {
       setShowSidebar(false);
     }, 100);
   };
+
+  const notifications = [
+    {
+      pfp: LogoWhite,
+      name: "System",
+      publishedAt: "24/02/2025",
+      message: "4 days left to register your students.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Admin",
+      publishedAt: "22/02/2025",
+      message: "New guidelines for exam registration have been updated.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Support",
+      publishedAt: "20/02/2025",
+      message: "System maintenance scheduled for 28th February.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "System",
+      publishedAt: "18/02/2025",
+      message: "Your school performance report is available.",
+    },
+    {
+      pfp: LogoWhite,
+      name: "Admin",
+      publishedAt: "15/02/2025",
+      message: "Reminder: Ensure all student profiles are up to date.",
+    },
+  ];
+  
   return (
     <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
       {/* confirm */}

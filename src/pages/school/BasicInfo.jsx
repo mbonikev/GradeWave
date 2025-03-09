@@ -16,7 +16,7 @@ function BasicInfo() {
         <div className="flex-1 flex flex-col">
           <h1 className="text-lg leading-6 font-medium">School</h1>
           <div
-            className="text-sm font-medium cursor-pointer text-main-color hover:underline"
+            className="text-sm font-medium cursor-pointer select-none text-main-color hover:underline"
           >
             Change photo
           </div>
@@ -71,42 +71,7 @@ function BasicInfo() {
 
         {/* section title */}
         <h1 className="text-lg mt-5">Identification Numbers</h1>
-        <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">National ID Number</h1>
-          <input
-            type="text"
-            name="nationalID"
-            placeholder="11980XXXXXXXXXXX"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
-          />
-        </div>
-        <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">Primary Index Number</h1>
-          <input
-            type="text"
-            name="pIndex"
-            placeholder="0000PR000000"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
-          />
-        </div>
-        <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">O-Level Index Number</h1>
-          <input
-            type="text"
-            name="oIndex"
-            placeholder="0000PR000000"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
-          />
-        </div>
-        <div className="w-full flex flex-col gap-1">
-          <h1 className="text-sm font-normal">A-Level Index Number</h1>
-          <input
-            type="text"
-            name="aIndex"
-            placeholder="XXXXXCODEXXXXX"
-            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
-          />
-        </div>
+        
         <button className="h-[35px] mt-3 px-4 w-fit max-md:w-full rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
           <LuCheck className="text-lg" />
           Save Changes

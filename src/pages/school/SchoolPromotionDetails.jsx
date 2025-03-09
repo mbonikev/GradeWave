@@ -37,15 +37,18 @@ function SchoolPromotionDetails() {
   }, [filter]);
 
   useEffect(() => {
-    // Apply search filter on the already filtered students based on the 'filter' state
-    let filtered = [...filteredStudents]; // Create a copy of the filtered students
+    const backupStudents = [...filteredStudents];
     if (searchValue !== "") {
-      filtered = filtered.filter((student) =>
+      const res = backupStudents.filter((student) =>
         student.name.toLowerCase().includes(searchValue.toLowerCase())
       );
+      setFilteredStudents(res);
+    } else if (filter === "All") {
+      setFilteredStudents(Students);
+    } else {
+      setFilteredStudents(backupStudents);
     }
-    setFilteredStudents(filtered);
-  }, [searchValue, filter, filteredStudents]);
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

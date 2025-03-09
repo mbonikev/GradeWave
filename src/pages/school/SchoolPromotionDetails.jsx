@@ -49,7 +49,12 @@ function SchoolPromotionDetails() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
-      {showEditModal && <AddEditStudent showEditModal={showEditModal} setShowEditModal={setShowEditModal} />}
+      {showEditModal && (
+        <AddEditStudent
+          showEditModal={showEditModal}
+          setShowEditModal={setShowEditModal}
+        />
+      )}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
@@ -82,7 +87,10 @@ function SchoolPromotionDetails() {
               {level} - {year}
             </h1>
             {year === "2025-2026" && (
-              <button className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium">
+              <button
+                onClick={() => setShowEditModal(true)}
+                className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color hover:bg-main-color-dark-school active:scale-[.98] text-white text-sm font-medium"
+              >
                 <LuPlus className="text-xl" />
                 <span className="max-sm:hidden">Add Student</span>
               </button>

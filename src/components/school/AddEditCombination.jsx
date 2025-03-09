@@ -70,7 +70,7 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
               <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
-                    Student Names
+                    Combination Name
                   </h1>
                   <input
                     required
@@ -80,19 +80,7 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Student Age
-                  </h1>
-                  <input
-                    required
-                    type="number"
-                    value={editMode ? studentAge : ""}
-                    onChange={(e) => setStudentAge(e.target.value)}
-                    placeholder="Age"
-                    className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  />
-                </div>
+                
               </div>
             </div>
 

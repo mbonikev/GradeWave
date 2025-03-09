@@ -91,7 +91,7 @@ function SchoolManageStudents() {
               <div key={index} className="w-full h-fit">
                 <div className="w-full flex items-center justify-between mt-6 mb-3">
                   <h1 className="block text-sm font-medium text-text-color whitespace-nowrap">
-                    {promotion.year} Promotion
+                    Promotion: <strong>{promotion.year}</strong>
                   </h1>
                 </div>
 

@@ -331,8 +331,8 @@ function StudentDashboard() {
                   <GiSportMedal className="text-4xl text-stone-400" />
                   <h1 className="flex-1 text-left flex items-center justify-between gap-0">
                     <span className="text-base">Ineza Raissa</span>
+                    <span className="text-sm text-text-color-weak/80">Ecole des Sciences Byimana</span>
                     <span className="text-sm text-text-color-weak/80">MCE</span>
-                    <span className="text-sm text-text-color-weak/80"></span>
                   </h1>
                 </div>
               </div>

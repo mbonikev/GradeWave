@@ -96,10 +96,10 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Exams
         </Link>
         <Link
-          to="/admin_exams"
+          to="/admin_marking"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_exams"
+            location.pathname === "/admin_marking"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -109,10 +109,10 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Marking
         </Link>
         <Link
-          to="/admin_exams"
+          to="/admin_announce"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_exams"
+            location.pathname === "/admin_announce"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -122,10 +122,10 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Announce
         </Link>
         <Link
-          to="/admin_exams"
+          to="/admin_schools"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_exams"
+            location.pathname === "/admin_schools"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -135,10 +135,10 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Schools
         </Link>
         <Link
-          to="/admin_exams"
+          to="/admin_papers"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_exams"
+            location.pathname === "/admin_papers"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -153,7 +153,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           to="/admin_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
-            location.pathname === "/school_settings"
+            location.pathname === "/admin_settings"
               ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
               : "text-text-color/85  hover:bg-card-bg-weak"
           }
@@ -161,19 +161,6 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
         >
           <LuSettings className="text-xl max-lg:text-2xl" />
           Settings
-        </Link>
-        <Link
-          to="/admin_exams"
-          className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
-          ${
-            location.pathname === "/school_exams"
-              ? "active_sidebar_link hover:bg-card-bg-weak text-main-color"
-              : "text-text-color/85  hover:bg-card-bg-weak"
-          }
-          `}
-        >
-          <PiUsersBold className="text-xl max-lg:text-2xl" />
-          Admins
         </Link>
       </div>
       {/* bottom link */}

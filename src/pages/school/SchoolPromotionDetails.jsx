@@ -159,8 +159,8 @@ function SchoolPromotionDetails() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2 w-[40px] text-center">
-                    <span className="flex gap-0.5 justify-center w-full">
+                  <th className="px-4 py-2 w-[40px] text-center ">
+                    <span className="flex gap-0.5 justify-center w-full ">
                       N <sub className="pt-1">o</sub>
                     </span>
                   </th>

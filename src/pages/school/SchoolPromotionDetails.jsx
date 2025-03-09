@@ -11,6 +11,7 @@ function SchoolPromotionDetails() {
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
   const { year, level } = useParams();
+  const [filteredStudents, setFilteredStudents] = useState([])
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -23,6 +24,10 @@ function SchoolPromotionDetails() {
       setShowSidebar(false);
     }, 100);
   };
+
+  useEffect(() => {
+    
+  },[])
 
 
   return (

@@ -67,10 +67,10 @@ function SchoolPromotionDetails() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <div className="w-full flex items-center justify-between">
-            <h1 className="text-[28px] min-w-fit font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
+            <h1 className="text-[28px] line-clamp-1 font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
               <Link
                 to="/school_manage_students"
-                className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center flex-wrap"
+                className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"
               >
                 <LuArrowLeft className="text-xl stroke-[3px]" />
               </Link>

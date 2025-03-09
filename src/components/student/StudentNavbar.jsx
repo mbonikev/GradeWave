@@ -16,7 +16,6 @@ import LoadingWhite from "../LoadingWhite";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
-
 function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);
@@ -53,7 +52,6 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
   }, []);
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 bg-white border-stone-100">
-      
       <div className="w-full h-fit flex items-center justify-between gap-2 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 max-sm:gap-0">
           <button
@@ -114,7 +112,7 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
               <div className="w-full h-fit flex flex-col gap-1 pt-1.5">
                 {[
                   {
-                    pfp: ImageSchool,
+                    pfp: LogoWhite,
                     name: "School",
                     publishedAt: "24/02/2025",
                     message:
@@ -134,7 +132,13 @@ function StudentNavbar({ title, openSidebar, setLogoutWarn }) {
                     className="w-full h-fit p-2 cursor-pointer hover:bg-card-bg-weak rounded-2xl"
                   >
                     <div className="w-full flex items-start justify-start gap-3">
-                      <div className={`size-8 rounded-full aspect-square ${annoucement.name === "School" ? 'bg-main-color-school' : 'p-1.5 bg-main-color'}`}>
+                      <div
+                        className={`size-8 rounded-full aspect-square p-1.5 ${
+                          annoucement.name === "School"
+                            ? "bg-main-color-school"
+                            : " bg-main-color"
+                        }`}
+                      >
                         <img
                           src={annoucement.pfp}
                           className="w-full h-fit min-h-full object-cover rounded-full"

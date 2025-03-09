@@ -26,6 +26,12 @@ function SchoolCombinations() {
     }, 100);
   };
 
+  useEffect(() => {
+    if (!showEditModal) {
+      setEditMode(false);
+    }
+  }, [showEditModal]);
+
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* comb */}

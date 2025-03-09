@@ -164,7 +164,7 @@ function SchoolPromotionDetails() {
                   <th className="px-4 py-2">Status</th>
                   <th className="px-4 py-2">Progress</th>
                   <th className="px-4 py-2">Combination</th>
-                  <th className="px-4 py-2"></th>
+                  <th className="px-4 py-2 w-[90px]"></th>
                 </tr>
               </thead>
               <tbody>
@@ -175,7 +175,7 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2">{student.status}</td>
                     <td className="px-4 py-2">{student.progress}</td>
                     <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
-                    <td className="px-4 py-2 flex items-center justify-center gap-1">
+                    <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <Link to='/school_promotion_details/2024-2025/O-Level' className="text-main-color-school">Edit</Link>
                     </td>
                   </tr>

@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function ProtectedAuthStudent({ children }) {
-  const loggedIn = sessionStorage.getItem("loggedInStudent");
-  const loggedInSchool = sessionStorage.getItem("loggedInSchool");
-  const loggedInAdmin = sessionStorage.getItem("loggedInAdmin");
-  const navigate = useNavigate();
-  const [redirecting, setRedirecting] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    // Get login status only once on initial render
+    const loggedIn = sessionStorage.getItem("loggedInStudent");
+    const loggedInSchool = sessionStorage.getItem("loggedInSchool");
+    const loggedInAdmin = sessionStorage.getItem("loggedInAdmin");
+
+    // Handle redirects based on login status
     if (loggedIn === "true") {
       navigate("/student_dashboard");
     } else if (loggedInSchool === "true") {
@@ -17,10 +19,11 @@ function ProtectedAuthStudent({ children }) {
     } else if (loggedInAdmin === "true") {
       navigate("/admin_dashboard");
     } else {
-      setShowContent(true);
+      setShowContent(true); // Show content if not logged in
     }
-  }, [loggedIn]);
+  }, [navigate]); // Dependency array to ensure the effect runs only once
 
+  // Render children only if showContent is true
   return <>{showContent ? children : null}</>;
 }
 

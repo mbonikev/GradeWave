@@ -77,26 +77,16 @@ function SchoolCombinations() {
                 </tr>
               </thead>
               <tbody>
-                {filteredStudents.map((student, index) => (
+                {Combinations.map((student, index) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
-                    <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                    <td className="px-4 py-2 w-[280px]">{student.name}</td>
-                    <td
-                      className={`px-4 py-2 `}
-                    >
-                      
-                    </td>
-                    <td
-                      className={`px-4 py-2 `}
-                    >
-                      
-                    </td>
-                    <td className="px-4 py-2 w-[100px]">
-                      
-                    </td>
+                    <td className="px-4 py-2 w-[130px]"></td>
+                    <td className="px-4 py-2 w-[280px]"></td>
+                    <td className={`px-4 py-2`}></td>
+                    <td className={`px-4 py-2`}></td>
+                    <td className="px-4 py-2 w-[100px]"></td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <button
                         onClick={handleEdit}

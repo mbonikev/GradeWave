@@ -159,8 +159,8 @@ function SchoolPromotionDetails() {
             <table className="w-full text-left">
               <thead className="bg-card-bg-weak">
                 <tr>
-                  <th className="px-4 py-2 w-[40px]">
-                    <span className="flex gap-0.5">
+                  <th className="px-4 py-2 w-[40px] text-center">
+                    <span className="flex gap-0.5 justify-center w-full">
                       N <sub className="pt-1">o</sub>
                     </span>
                   </th>
@@ -175,7 +175,7 @@ function SchoolPromotionDetails() {
               <tbody>
                 {oLevelStudents.map((student, index) => (
                   <tr key={student.id} className="border-t">
-                    <td className="px-4 py-2 w-[40px]">{index + 1}</td>
+                    <td className="px-4 py-2 w-[40px] text-center">{index + 1}</td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td className="px-4 py-2">{student.status}</td>

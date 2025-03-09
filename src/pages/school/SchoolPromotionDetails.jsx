@@ -67,7 +67,7 @@ function SchoolPromotionDetails() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 max-sm:px-2 mb-10 mx-auto">
           <div className="w-full flex items-start gap-2 justify-between">
-            <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
+            <h1 className="text-[28px] max-sm:text-lg font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
               <Link
                 to="/school_manage_students"
                 className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"

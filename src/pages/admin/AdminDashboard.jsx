@@ -187,7 +187,7 @@ function AdminDashboard() {
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                       {index + 1}
                     </td>
-                    <td className="px-4 py-2 w-[180px]">
+                    <td className="px-4 py-2 w-[200px]">
                       <Link
                         // to={`/school_student_results/${student.name}`}
                         className="hover:text-main-color-school hover:underline"
@@ -195,7 +195,7 @@ function AdminDashboard() {
                         {student.name}
                       </Link>
                     </td>
-                    <td className={`px-4 py-2 `}>
+                    <td className={`px-4 py-2 whitespace`}>
                       <span>
                         <Link
                           // to={`/school_student_results/${student.name}`}

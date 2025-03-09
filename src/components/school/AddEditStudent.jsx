@@ -3,7 +3,7 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
-function AddEditStudent({logoutWarn, setLogoutWarn, showEditModal, setShowEditModal}) {
+function AddEditStudent({showEditModal, setShowEditModal}) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     // sessionStorage.removeItem("loggedInStudent");
@@ -55,7 +55,7 @@ function AddEditStudent({logoutWarn, setLogoutWarn, showEditModal, setShowEditMo
                 {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
               </button>
               <button
-                onClick={() => setLogoutWarn(false)}
+                onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
               >
                 Cancel

@@ -38,7 +38,7 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     if (searchValue !== "") {
-      const res = Students.filter((student) => student.name === searchValue);
+      const res = Students.filter((student) => student.name.toLowerCase().includes(searchValue));
       setFilteredStudents(res);
     } else {
       setFilteredStudents(Students);

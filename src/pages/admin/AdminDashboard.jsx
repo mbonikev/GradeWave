@@ -30,7 +30,7 @@ function AdminDashboard() {
       icon: <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
     },
     {
-      title: "Passed Candidates",
+      title: "Registered Candidates",
       value: 900,
       icon: (
         <LuCircleCheckBig className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />

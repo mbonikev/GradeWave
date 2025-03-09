@@ -4,6 +4,7 @@ import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { FaUserGraduate, FaClipboardList, FaSchool } from "react-icons/fa";
+import { LuCalendarDays, LuChartPie, LuCircleCheckBig, LuUsers } from "react-icons/lu";
 
 function AdminDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,6 +22,35 @@ function AdminDashboard() {
       setShowSidebar(false);
     }, 100);
   };
+
+  const stats = [
+    {
+      title: "Total Candidates",
+      value: 1200,
+      icon: <LuUsers className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-blue-500" />,
+    },
+    {
+      title: "Passed Candidates",
+      value: 900,
+      icon: (
+        <LuCircleCheckBig className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-green-500" />
+      ),
+    },
+    {
+      title: "Average Score",
+      value: "78%",
+      icon: (
+        <LuChartPie className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-yellow-500" />
+      ),
+    },
+    {
+      title: "Promotion",
+      value: "2024-2025",
+      icon: (
+        <LuCalendarDays className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-purple-500" />
+      ),
+    },
+  ];
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

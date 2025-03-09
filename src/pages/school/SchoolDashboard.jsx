@@ -10,6 +10,7 @@ import {
   LuCalendarDays,
   LuArrowRight,
 } from "react-icons/lu";
+import { GiSportMedal, GiTrophy } from "react-icons/gi";
 
 function SchoolDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -134,6 +135,57 @@ function SchoolDashboard() {
       promotion: "2024-2025",
     },
   ];
+
+  const topStudentsOlevel = [
+    {
+      rank: "1st",
+      name: "Mugisha Kenny",
+      school: "Groupe Scolaire APRED Ndera",
+      score: "99.02%",
+      icon: <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />,
+    },
+    {
+      rank: "2nd",
+      name: "Ineza Raissa",
+      school: "College Saint Andre",
+      score: "95.39%",
+      icon: <GiSportMedal className="text-4xl text-stone-400" />,
+    },
+    {
+      rank: "3rd",
+      name: "Uwase Abatoni Stecy",
+      school: "Groupe Scolaire Sainte Bernadette Save",
+      score: "93.20%",
+      icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
+    },
+  ];
+
+  const topStudents = [
+    {
+      rank: "1st",
+      name: "Mugisha Kenny",
+      school: "Groupe Scolaire Officiel de Butare",
+      combination: "MPC",
+      score: "97.28%",
+      icon: <GiTrophy className="text-3xl mx-[2px] text-[#e5a953]" />,
+    },
+    {
+      rank: "2nd",
+      name: "Ineza Raissa",
+      school: "Ecole des Sciences Byimana",
+      combination: "MCE",
+      score: "94.92%",
+      icon: <GiSportMedal className="text-4xl text-stone-400" />,
+    },
+    {
+      rank: "3rd",
+      name: "Uwase Abatoni Stecy",
+      school: "Lycee de Kigali",
+      combination: "HEG",
+      score: "91.28%",
+      icon: <GiSportMedal className="text-4xl text-[#e3a782]" />,
+    },
+  ];
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* confirm */}
@@ -228,7 +280,9 @@ function SchoolDashboard() {
                   {oLevelStudents.map((student) => (
                     <tr key={student.id} className="border-t">
                       <td className="px-4 py-2 w-[130px]">{student.id}</td>
-                      <td className="px-4 py-2 w-[280px]">{student.name}ofeipfwei</td>
+                      <td className="px-4 py-2 w-[280px]">
+                        {student.name}ofeipfwei
+                      </td>
                       <td className="px-4 py-2">{student.status}</td>
                       <td className="px-4 py-2">{student.progress}</td>
                       <td className="px-4 py-2">{student.promotion}</td>
@@ -280,67 +334,72 @@ function SchoolDashboard() {
             </div>
 
             <div className="w-full h-fit grid grid-cols-1 max-md:grid-cols-1 gap-5 mt-3 py-1">
-            <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
-                O-level Glrobal Ranking 2024-2025
-              </h1>
-              <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
-                #3 of 9,438 Students
-              </h1>
-              {topStudentsOlevel.map((student, index) => (
-                <div
-                  key={index}
-                  className="w-full flex items-center max-md:items-start justify-normal"
-                >
-                  <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
-                    {student.rank}
-                  </h1>
-                  <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
-                    {student.icon}
-                    <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
-                      <span className="text-base w-[35%]">{student.name}</span>
-                      <span className="text-sm flex-1 text-text-color">
-                        {student.school}
-                      </span>
-                      <span className="text-sm text-text-color">
-                        Score: <strong>{student.score}</strong>
-                      </span>
+              <div className="w-full h-fit flex flex-col gap-1 mt-3 py-1">
+                <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
+                  O-level Glrobal Ranking 2024-2025
+                </h1>
+                <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
+                  #3 of 9,438 Students
+                </h1>
+                {topStudentsOlevel.map((student, index) => (
+                  <div
+                    key={index}
+                    className="w-full flex items-center max-md:items-start justify-normal"
+                  >
+                    <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                      {student.rank}
                     </h1>
+                    <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                      {student.icon}
+                      <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
+                        <span className="text-base w-[35%]">
+                          {student.name}
+                        </span>
+                        <span className="text-sm flex-1 text-text-color">
+                          {student.school}
+                        </span>
+                        <span className="text-sm text-text-color">
+                          Score: <strong>{student.score}</strong>
+                        </span>
+                      </h1>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className="w-full h-fit flex flex-col gap-1 py-1">
-              <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
-                A-level Glrobal Ranking 2024-2025
-              </h1>
-              <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
-                #3 of 7,543 Students
-              </h1>
-              {topStudents.map((student, index) => (
-                <div
-                  key={index}
-                  className="w-full flex items-center max-md:items-start justify-normal"
-                >
-                  <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
-                    {student.rank}
-                  </h1>
-                  <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
-                    {student.icon}
-                    <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
-                      <span className="text-base w-[35%]">{student.name}</span>
-                      <span className="text-sm flex-1 text-text-color">
-                        {student.school}
-                      </span>
-                      <span className="text-sm text-text-color">
-                        {student.combination}: <strong>{student.score}</strong>
-                      </span>
+                ))}
+              </div>
+              <div className="w-full h-fit flex flex-col gap-1 py-1">
+                <h1 className="text-base font-medium tracking-tight mt-3 mb-1 text-text-color/80 flex items-center justify-between">
+                  A-level Glrobal Ranking 2024-2025
+                </h1>
+                <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
+                  #3 of 7,543 Students
+                </h1>
+                {topStudents.map((student, index) => (
+                  <div
+                    key={index}
+                    className="w-full flex items-center max-md:items-start justify-normal"
+                  >
+                    <h1 className="text-text-color-weak text-sm font-bold w-[40px]">
+                      {student.rank}
                     </h1>
+                    <div className="w-full flex items-center max-md:flex-col max-md:items-start gap-3 bg-card-bg-weak rounded-2xl px-3 py-3 mb-1">
+                      {student.icon}
+                      <h1 className="flex-1 text-left flex items-center justify-between max-md:flex-col max-md:items-start max-md:w-full max-md:gap-1 gap-0">
+                        <span className="text-base w-[35%]">
+                          {student.name}
+                        </span>
+                        <span className="text-sm flex-1 text-text-color">
+                          {student.school}
+                        </span>
+                        <span className="text-sm text-text-color">
+                          {student.combination}:{" "}
+                          <strong>{student.score}</strong>
+                        </span>
+                      </h1>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ import { GiSportMedal, GiTrophy } from "react-icons/gi";
 function SchoolDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
-  const [level, setLevel] = useState("senior-3"); // Default to Senior 3
+  const [level, setLevel] = useState("2024-2025"); // Default to Senior 3
   const [gradesData, setGradesData] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [marks, setMarks] = useState(87);

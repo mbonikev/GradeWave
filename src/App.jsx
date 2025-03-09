@@ -16,6 +16,7 @@ import ProtectedRouteSchool from "./util/ProtectedRouteSchool"; // Use a separat
 import ProtectedAuth from "./util/ProtectedAuth";
 import SchoolManageStudents from "./pages/school/SchoolManageStudents";
 import SchoolPromotionDetails from "./pages/school/SchoolPromotionDetails";
+import SchoolCombinations from "./pages/school/SchoolCombinations";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -62,7 +63,7 @@ function App() {
     { path: "/school_dashboard", element: <SchoolDashboard /> },
     { path: "/school_manage_students", element: <SchoolManageStudents /> },
     { path: "/school_promotion_details/:year/:level", element: <SchoolPromotionDetails /> },
-    { path: "/school_combinations", element: <SchoolPromotionDetails /> },
+    { path: "/school_combinations", element: <SchoolCombinations /> },
   ];
 
   return (

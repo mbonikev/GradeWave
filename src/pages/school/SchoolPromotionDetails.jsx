@@ -17,23 +17,7 @@ function SchoolPromotionDetails() {
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const [showEditModal, setShowEditModal] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const studentDetails = [
-    {
-      studentName: "Ingabire Florence",
-      studentAge: 17,
-      combination: "MCB",
 
-      guardianName: "Jeanne Muhoza",
-      guardianContact: "+250788123456",
-      guardianRelationship: "Mother",
-
-      residence: {
-        district: "Kigali",
-        sector: "Nyarugenge",
-        village: "Nyamirambo",
-      },
-    },
-  ];
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -88,7 +72,6 @@ function SchoolPromotionDetails() {
           setShowEditModal={setShowEditModal}
           year={year}
           level={level}
-          studentDetails={studentDetails}
           editMode={editMode}
         />
       )}

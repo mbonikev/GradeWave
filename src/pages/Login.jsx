@@ -212,7 +212,7 @@ function Login() {
         </p>
       </div>
       {/* 2 */}
-      <div className="w-full p-5 h-svh bg-red-500 sticky top-0 max-lg:hidden">
+      <div className="w-full p-5 h-svh sticky top-0 max-lg:hidden">
         <div
           className="w-full h-full rounded-2xl overflow-hidden relative"
           style={{

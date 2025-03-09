@@ -59,7 +59,7 @@ function AdminExams() {
           <h1 className="text-sm font-normal my-4 text-text-color-weak">
             # Primary
           </h1>
-          <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-center max-md:flex-col mb-4">
+          <div className="w-full rounded-2xl ring-1 ring-card-bg-weak bg-card-bg-weak shadow-sm p-5 flex items-end max-md:flex-col mb-4">
             <div className="w-full flex flex-col gap-1 text-sm ">
               <h1 className="text-base font-bold text-text-color/80">
                 Primary Leaving Examination (PLE), 2025-2026
@@ -70,7 +70,7 @@ function AdminExams() {
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Closing on:</strong>{" "}
-                <span className="font-medium text-text-color/80">Sept 3, 2025</span>
+                <span className="font-medium text-text-color/80">July 3, 2025</span>
               </h1>
               <h1 className="text-text-color/50">
                 <strong className="font-medium">Registered:</strong>{" "}

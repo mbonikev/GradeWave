@@ -49,6 +49,9 @@ function SchoolPromotionDetails() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 flex items-center gap-2">
             <Link to='/school_manage_students' className="size-9 rounded-full bg-card-bg-weak hover:bg-card-bg flex items-center justify-center"><LuArrowLeft className="text-xl stroke-[3px]" /></Link>{level} - {year}
           </h1>
+          <div className="w-full flex items-center justify-end gap-2">
+            
+          </div>
         </div>
       </div>
     </div>

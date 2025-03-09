@@ -10,6 +10,9 @@ function SchoolCombinations() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editMode, setEditMode] = useState(false);
+
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -25,6 +28,14 @@ function SchoolCombinations() {
 
   return (
     <div className="w-full h-fit flex-1 flex relative">
+      {/* comb */}
+      {showEditModal && (
+        <AddEditStudent
+          showEditModal={showEditModal}
+          setShowEditModal={setShowEditModal}
+          editMode={editMode}
+        />
+      )}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />

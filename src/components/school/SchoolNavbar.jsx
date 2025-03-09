@@ -16,7 +16,6 @@ import LoadingWhite from "../LoadingWhite";
 import Reveal, { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
-
 function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
   const [showNotifPopup, setShowNotifPopup] = useState(false);
   const notifRef = useRef(null);
@@ -53,7 +52,6 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
   }, []);
   return (
     <div className="flex items-center justify-between text-lightBlackText p-2 z-20 max-lg:border-b sticky top-0 bg-white border-stone-100">
-      
       <div className="w-full h-fit flex items-center justify-between gap-2 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 max-sm:gap-0">
           <button
@@ -117,10 +115,8 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                     pfp: LogoWhite,
                     name: "System",
                     publishedAt: "24/02/2025",
-                    message:
-                      "4 days left to register Your Students",
+                    message: "4 days left to register Your Students",
                   },
-                  
                 ].map((annoucement, index) => (
                   <Link
                     to="/school_notifications"
@@ -135,14 +131,16 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
                         />
                       </div>
 
-                      <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
-                        <strong>{annoucement.name} </strong>
-                        {annoucement.message} <br />
-                      </h1>
+                      <div className="w-full flex flex-col">
+                        <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
+                          <strong>{annoucement.name} </strong>
+                          {annoucement.message} <br />
+                        </h1>
+                        <h1 className="text-sm text-text-color-weak/80 mt-1">
+                          2d
+                        </h1>
+                      </div>
                     </div>
-                    <h1 className="text-sm text-text-color-weak/80 pl-[43px] mt-1">
-                      2d
-                    </h1>
                   </Link>
                 ))}
               </div>

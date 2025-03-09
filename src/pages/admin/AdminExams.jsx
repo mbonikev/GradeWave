@@ -69,6 +69,10 @@ function AdminExams() {
                 <span className="text-green-700/80 font-medium">Open</span>
               </h1>
               <h1 className="text-text-color/50">
+                <strong className="font-medium">Closing on:</strong>{" "}
+                <span className="font-medium text-text-color/80">2,239</span>
+              </h1>
+              <h1 className="text-text-color/50">
                 <strong className="font-medium">Registered:</strong>{" "}
                 <span className="font-medium text-text-color/80">2,239</span>
               </h1>

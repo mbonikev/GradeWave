@@ -57,6 +57,14 @@ function SchoolDashboard() {
 
   const students = [
     {
+      id: 942534084,
+      name: "Mukamana Diane",
+      status: "Passed",
+      progress: "95%",
+      promotion: "2024-2025",
+      combination: "MCB",
+    },
+    {
       id: 120534084,
       name: "Kwizera Jean",
       status: "Passed",
@@ -76,7 +84,7 @@ function SchoolDashboard() {
       id: 320534084,
       name: "Nshimiyimana Eric",
       status: "Passed",
-      progress: "82%",
+      progress: "72%",
       promotion: "2025-2026",
       combination: "MPC",
     },
@@ -84,15 +92,7 @@ function SchoolDashboard() {
       id: 420534084,
       name: "Umutoni Sandrine",
       status: "Passed",
-      progress: "75%",
-      promotion: "2024-2025",
-      combination: "MCB",
-    },
-    {
-      id: 942534084,
-      name: "Mukamana Diane",
-      status: "Passed",
-      progress: "95%",
+      progress: "70%",
       promotion: "2024-2025",
       combination: "MCB",
     },

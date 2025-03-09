@@ -227,7 +227,7 @@ function SchoolDashboard() {
               defaultChecked2024-2025
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >
-              <option value="2023-2024  ">2023-2024</option>
+              <option value="2023-2024">2023-2024</option>
               <option value="2024-2025">2024-2025</option>
             </select>
           </div>

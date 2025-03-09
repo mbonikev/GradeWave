@@ -53,9 +53,8 @@ function BasicInfo() {
           <input
             type="text"
             name="country"
-            readOnly={true}
             placeholder="School name"
-            className="ring-1 ring-stone-200 pointer-events-none rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
+            className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>
         <div className="w-full flex flex-col gap-1">

@@ -127,7 +127,7 @@ function App() {
               key={`admin-${index}`}
               path={route.path}
               element={
-                <ProtectedRouteSchool>{route.element}</ProtectedRouteSchool>
+                <ProtectedRouteAdmin>{route.element}</ProtectedRouteAdmin>
               }
             />
           ))}

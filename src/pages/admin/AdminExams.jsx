@@ -4,11 +4,14 @@ import ConfirmLogout from "../../components/ConfirmLogout";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { LuPlus } from "react-icons/lu";
+import EditExam from "../../components/admin/EditExam";
 
 function AdminExams() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editMode, setEditMode] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -23,6 +26,16 @@ function AdminExams() {
   };
   return (
     <div className="w-full h-fit overflow-y-auto flex-1 flex">
+      {/* add/edit exam */}
+      {showEditModal && (
+        <EditExam
+          showEditModal={showEditModal}
+          setShowEditModal={setShowEditModal}
+          year={year}
+          level={level}
+          editMode={editMode}
+        />
+      )}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />

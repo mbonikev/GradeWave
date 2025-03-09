@@ -21,6 +21,7 @@ import SchoolPapers from "./pages/school/SchoolPapers";
 import SchoolNotifications from "./pages/school/SchoolNotifications";
 import SchoolSettings from "./pages/school/SchoolSettings";
 import SchoolStudentResults from "./pages/school/SchoolStudentResults";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -80,7 +81,7 @@ function App() {
     },
   ];
   const AdminRoutes = [
-    { path: "/admin_dashboard", element: <SchoolDashboard /> },
+    { path: "/admin_dashboard", element: <AdminDashboard /> },
   ];
   return (
     <div>
@@ -120,7 +121,7 @@ function App() {
           ))}
 
           {/* Protect Admin routes */}
-          {schoolRoutes.map((route, index) => (
+          {AdminRoutes.map((route, index) => (
             <Route
               key={`admin-${index}`}
               path={route.path}

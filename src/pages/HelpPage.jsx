@@ -4,9 +4,16 @@ import { BannerBlue } from "../assets";
 const HelpPage = () => {
   return (
     <div className="w-full bg-body-bg p-5 max-lg:space-y-7">
-      <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
-        <h1 className="bg-white text-main-color font-bold tracking-tight text-2xl w-fit h-fit px-4 py-2 rounded-2xl shadow-sm absolute left-0 -bottom-5 right-0 mx-auto">GradeWave</h1>
-        <img src={BannerBlue} className="w-full h-fit min-h-full object-cover" />
+      <div className="w-full h-fit relative">
+        <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
+          <h1 className="bg-white text-main-color font-bold tracking-tight text-2xl w-fit h-fit px-4 py-2 rounded-2xl shadow-sm absolute left-0 -bottom-5 right-0 mx-auto">
+            GradeWave
+          </h1>
+          <img
+            src={BannerBlue}
+            className="w-full h-fit min-h-full object-cover"
+          />
+        </div>
       </div>
       <div className="min-h-screen px-6 max-lg:px-2">
         <div className="max-w-4xl mx-auto p-6 max-lg:p-0">

@@ -125,10 +125,10 @@ function SchoolDashboard() {
                   className="p-5 max-md:p-3 flex items-center justify-between bg-white shadow-sm rounded-2xl border border-card-bg-weak"
                 >
                   <div>
-                    <h3 className="text-base font-medium mb-1 text-gray-700">
+                    <h3 className="text-base font-medium mb-1 text-text-color">
                       {stat.title}
                     </h3>
-                    <p className="text-2xl font-bold text-gray-900">
+                    <p className="text-2xl font-bold text-text-color">
                       {stat.value}
                     </p>
                   </div>

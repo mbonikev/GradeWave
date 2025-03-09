@@ -84,6 +84,7 @@ function SchoolPromotionDetails() {
           year={year}
           level={level}
           studentDetails={studentDetails}
+          editMode={editMode}
         />
       )}
       {/* confirm */}

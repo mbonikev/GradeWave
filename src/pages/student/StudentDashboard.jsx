@@ -359,7 +359,7 @@ function StudentDashboard() {
               <h1 className="text-base font-medium tracking-tight mb-3 text-text-color-weak/70 flex items-center justify-between">
                 #3 of 9,438 Students
               </h1>
-              {topStudents.map((student, index) => (
+              {topStudentsOlevel.map((student, index) => (
                 <div
                   key={index}
                   className="w-full flex items-center max-md:items-start justify-normal"

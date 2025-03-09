@@ -18,6 +18,8 @@ import SchoolManageStudents from "./pages/school/SchoolManageStudents";
 import SchoolPromotionDetails from "./pages/school/SchoolPromotionDetails";
 import SchoolCombinations from "./pages/school/SchoolCombinations";
 import SchoolPapers from "./pages/school/SchoolPapers";
+import SchoolNotifications from "./pages/school/SchoolNotifications";
+import SchoolSettings from "./pages/school/SchoolSettings";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -63,11 +65,14 @@ function App() {
   const schoolRoutes = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
     { path: "/school_manage_students", element: <SchoolManageStudents /> },
-    { path: "/school_promotion_details/:year/:level", element: <SchoolPromotionDetails /> },
+    {
+      path: "/school_promotion_details/:year/:level",
+      element: <SchoolPromotionDetails />,
+    },
     { path: "/school_combinations", element: <SchoolCombinations /> },
     { path: "/school_past_papers", element: <SchoolPapers /> },
-    { path: "/school_notifications", element: < /> },
-    { path: "/school_settings", element: < /> },
+    { path: "/school_notifications", element: <SchoolNotifications /> },
+    { path: "/school_settings", element: <SchoolSettings /> },
   ];
 
   return (

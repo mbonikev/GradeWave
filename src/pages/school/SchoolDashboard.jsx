@@ -115,17 +115,17 @@ function SchoolDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
-          <div className="w-fit ml-auto flex max-md:flex-col items-center justify-start gap-2">
+          <div className="w-fit ml-auto flex max-md:flex-col items-center justify-start gap-3">
             <label
               for="level"
-              class="block text-sm font-medium text-text-color whitespace-nowrap"
+              class="block text-sm font-medium pt-1 text-text-color whitespace-nowrap"
             >
-              Select Level
+              Select Level:
             </label>
             <select
               id="level"
               name="level"
-              className="mt-1 block w-[300px] px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
+              className="mt-1 block w-[200px] px-4 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm"
               value={level}
               onChange={(e) => setLevel(e.target.value)} // Update level on selection change
             >

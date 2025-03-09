@@ -117,7 +117,7 @@ function SchoolDashboard() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="p-4 flex items-center justify-between bg-white shadow-md rounded-lg border border-gray-200"
+                  className="px-4 py-5 flex items-center justify-between bg-white shadow-md rounded-2xl border border-gray-200"
                 >
                   <div>
                     <h3 className="text-lg font-semibold text-gray-700">

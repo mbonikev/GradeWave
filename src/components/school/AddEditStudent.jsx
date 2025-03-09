@@ -46,7 +46,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               Add Student
             </h1>
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:max-h-fit"></div>
+            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit"></div>
             {/* save button */}
             <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
               <button

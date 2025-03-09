@@ -74,7 +74,7 @@ function App() {
     { path: "/school_past_papers", element: <SchoolPapers /> },
     { path: "/school_notifications", element: <SchoolNotifications /> },
     { path: "/school_settings", element: <SchoolSettings /> },
-    { path: "/school_student_results", element: <SchoolStudentResults /> },
+    { path: "/school_student_results/:name", element: <SchoolStudentResults /> },
   ];
 
   return (

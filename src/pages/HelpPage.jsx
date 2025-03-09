@@ -52,7 +52,7 @@ const HelpPage = () => {
               <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
                 Parent/Guardian Info <span className="text-red-500">*</span>
               </h1>
-              <div className="w-full grid grid-cols-2 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
+              <div className="w-full grid grid-cols-1 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     How can we help you?
@@ -60,26 +60,9 @@ const HelpPage = () => {
                   <textarea
                     type="email"
                     name="email"
-                    placeholder="write message"
-                    className="border-2 w-full border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
+                    placeholder="Write Request"
+                    className="border-2 w-full border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-base placeholder:text-text-color-weak/70"
                   />
-                </div>
-                <div className="w-full h-fit">
-                  <h1 className="text-base font-normal opacity-80 mb-2">
-                    Guardian Relationship
-                  </h1>
-                  <select
-                    required
-                    className="border-2 bg-transparent border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                  >
-                    <option disabled hidden selected>
-                      Select Relationship
-                    </option>
-                    <option value="Father">Father</option>
-                    <option value="Mother">Mother</option>
-                    <option value="Sibling">Sibling</option>
-                    <option value="Other">Other</option>
-                  </select>
                 </div>
               </div>
 

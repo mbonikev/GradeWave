@@ -66,7 +66,7 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     if (!showEditModal) {
-      
+      setEditMode(false);
     }
   }, [showEditModal]);
 

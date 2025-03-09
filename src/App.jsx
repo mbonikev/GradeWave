@@ -20,6 +20,7 @@ import SchoolCombinations from "./pages/school/SchoolCombinations";
 import SchoolPapers from "./pages/school/SchoolPapers";
 import SchoolNotifications from "./pages/school/SchoolNotifications";
 import SchoolSettings from "./pages/school/SchoolSettings";
+import SchoolStudentResults from "./pages/school/SchoolStudentResults";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -73,6 +74,7 @@ function App() {
     { path: "/school_past_papers", element: <SchoolPapers /> },
     { path: "/school_notifications", element: <SchoolNotifications /> },
     { path: "/school_settings", element: <SchoolSettings /> },
+    { path: "/school_student_results", element: <SchoolStudentResults /> },
   ];
 
   return (

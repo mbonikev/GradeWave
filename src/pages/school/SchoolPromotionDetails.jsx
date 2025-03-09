@@ -111,7 +111,7 @@ function SchoolPromotionDetails() {
                   <th className="px-4 py-2">Student ID</th>
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Status</th>
-                  <th className="px-4 py-2">Progress</th>
+                  <th className="px-4 py-2">Grades</th>
                   <th className="px-4 py-2">Combination</th>
                   <th className="px-4 py-2 w-[90px]"></th>
                 </tr>

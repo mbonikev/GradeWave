@@ -109,14 +109,15 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     <select
                       required
                       value={combination}
+                      defaultValue={}
                       onChange={(e) => setCombination(e.target.value)}
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
-                      <option disabled hidden selected>
+                      <option value={value} disabled hidden selected>
                         Select Combination
                       </option>
                       {Combinations.map((comb, index) => (
-                        <option key={index} value="MCB">
+                        <option key={index} value={comb}>
                           {comb}
                         </option>
                       ))}

@@ -68,7 +68,7 @@ function SchoolCombinations() {
                       N <sub className="pt-1">o</sub>
                     </span>
                   </th>
-                  <th className="px-4 py-2">Title</th>
+                  <th className="px-4 py-2 ">Title</th>
                   <th className="px-4 py-2">Total Enrolled Students</th>
                   <th className="px-4 py-2">Enrolled Students Now</th>
                   <th className="px-4 py-2 w-[90px]"></th>

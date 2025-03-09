@@ -182,12 +182,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.district : ""}
-                    onChange={(e) =>
-                      setResidence((prevResidence) => ({
-                        ...prevResidence,
-                        [e.target.name]: e.target.value,
-                      }))
-                    }
+                    onChange={(e) => setDistrict(e.target.value)}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -199,12 +194,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.sector : ""}
-                    onChange={(e) =>
-                      setResidence((prevResidence) => ({
-                        ...prevResidence,
-                        [e.target.name]: e.target.value,
-                      }))
-                    }
+                    onChange={(e) => setSector(e.target.value)}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -216,12 +206,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     value={editMode ? residence.village : ""}
-                    onChange={(e) =>
-                      setResidence((prevResidence) => ({
-                        ...prevResidence,
-                        [e.target.name]: e.target.value,
-                      }))
-                    }
+                    onChange={(e) => setVillage(e.target.value)}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

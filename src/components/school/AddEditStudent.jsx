@@ -76,7 +76,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     required
                     onChange={(e) => setStudentName(e.target.value)}
                     placeholder="Full Names"
-                    value={editMode ? studentName : ""}
+                    value={studentName}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
@@ -87,7 +87,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     type="number"
-                    value={editMode ? studentAge : ""}
+                    value={studentAge}
                     onChange={(e) => setStudentAge(e.target.value)}
                     placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -100,7 +100,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     </h1>
                     <select
                       required
-                      value={editMode ? combination : "Select Combination"}
+                      value={combination}Select Combination"}
                       onChange={(e) => setCombination(e.target.value)}
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                     >
@@ -128,7 +128,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? guardianName : ""}
+                    value={guardianName}
                     onChange={(e) => setGuardianName(e.target.value)}
                     placeholder="Guardian's Full Name"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -141,7 +141,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     type="tel"
-                    value={editMode ? guardianContact : ""}
+                    value={guardianContact}
                     onChange={(e) => setGuardianContact(e.target.value)}
                     placeholder="Phone Number"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -181,7 +181,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? district : ""}
+                    value={district}
                     onChange={(e) => setDistrict(e.target.value)}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -193,7 +193,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? sector : ""}
+                    value={sector}
                     onChange={(e) => setSector(e.target.value)}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -205,7 +205,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? village : ""}
+                    value={village}
                     onChange={(e) => setVillage(e.target.value)}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"

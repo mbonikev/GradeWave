@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SchoolNavbar from "../../components/school/SchoolNavbar";
 import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
@@ -8,6 +8,7 @@ function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
   const [logoutWarn, setLogoutWarn] = useState(false);
+  const { year, level } = useParams();
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -45,7 +46,7 @@ function SchoolPromotionDetails() {
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
-            Manage Students
+            {level} - {year}
           </h1>
         </div>
       </div>

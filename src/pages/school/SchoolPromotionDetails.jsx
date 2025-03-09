@@ -63,6 +63,8 @@ function SchoolPromotionDetails() {
         <AddEditStudent
           showEditModal={showEditModal}
           setShowEditModal={setShowEditModal}
+          year={year}
+          level={level}
         />
       )}
       {/* confirm */}

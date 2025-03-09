@@ -54,7 +54,7 @@ const HelpPage = () => {
                     type="email"
                     name="email"
                     placeholder="Write Request"
-                    className="border-2 w-full overflow-hidden border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-base placeholder:text-text-color-weak/70"
+                    className="border-2 w-full border-stone-200 focus:border-main-color outline-none rounded-xl h-[135px] py-2.5 px-4 max-md:w-full text-base placeholder:text-text-color-weak/70"
                   />
                 </div>
               </div>

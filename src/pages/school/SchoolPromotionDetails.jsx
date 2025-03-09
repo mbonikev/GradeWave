@@ -29,13 +29,16 @@ function SchoolPromotionDetails() {
 
   useEffect(() => {
     if (filter !== "All") {
-      const res = Students.filter((student) => student.status === filter);
-      setFilteredStudents(res);
+      if (searchValue === "") {
+        const res = Students.filter((student) => student.status === filter);
+        setFilteredStudents(res);
+      } else{
+        
+      }
     } else {
       setFilteredStudents(Students);
     }
   }, [filter, searchValue]);
-
 
   return (
     <div className="w-full h-fit flex-1 flex relative">

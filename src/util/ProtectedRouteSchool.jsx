@@ -7,7 +7,7 @@ function ProtectedRouteSchool({ children }) {
 
   useEffect(() => {
     const loggedInStatus = sessionStorage.getItem("loggedInSchool");
-    setLoggedIn(loggedInStatus); // Update state on first render
+    setLoggedIn(loggedInStatus);
   }, []);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function ProtectedRouteSchool({ children }) {
     }
   }, [loggedIn, navigate]);
 
-  if (loggedIn === null) { // Ensure it's only rendering after we check login state
+  if (loggedIn === null) {
     return null;
   }
 

@@ -142,7 +142,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           Schools
         </Link>
         {/* section */}
-        <SidebarSectionTitle title={"tweaks"} />
+        {/* <SidebarSectionTitle title={"tweaks"} /> */}
         <Link
           to="/admin_settings"
           className={`rounded-xl min-w-fit text-sm relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium

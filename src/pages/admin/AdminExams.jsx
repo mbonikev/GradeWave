@@ -44,8 +44,8 @@ function AdminExams() {
         <AdminNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 min-h-[1000px] mx-auto">
-          <div className="w-full flex items-center justify-between gap-3">
-            <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-7 text-text-color/80 w-full border-b border-card-bg-weak pb-2">
+          <div className="w-full flex items-center justify-between gap-3 border-b border-card-bg-weak">
+            <h1 className="text-[28px] font-bold tracking-tight mt-3 mb-7 text-text-color/80 w-full pb-2">
               Exams
             </h1>
             <button

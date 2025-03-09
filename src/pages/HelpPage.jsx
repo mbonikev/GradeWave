@@ -17,7 +17,7 @@ const HelpPage = () => {
         </div>
       </div>
       <div className=" px-6 max-lg:px-2">
-        <div className="max-w-4xl mx-auto p-6 max-lg:p-0 mt-5 mb-3">
+        <div className="max-w-4xl mx-auto p-6 max-lg:p-0 mt-5 max-lg:mt-10 mb-3">
           <h1 className="text-base font-normal opacity-80 mb-2"></h1>
           <div className="w-full h-fit min-h-[300px] max-md:min-h-fit">
             <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
@@ -61,7 +61,7 @@ const HelpPage = () => {
                 Cancel
               </button>
               <button className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]">
-                Send
+                Send Request
               </button>
             </div>
           </div>

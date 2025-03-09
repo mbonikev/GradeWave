@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ImageSchool, ImageStudents, LogoBlack, LogoWhite } from "../assets";
+import {
+  ImageAdmin,
+  ImageSchool,
+  ImageStudents,
+  LogoBlack,
+  LogoWhite,
+} from "../assets";
 import { PiGraduationCapDuotone } from "react-icons/pi";
-import { BsPersonVideo } from "react-icons/bs";
+import { BsPersonVideo, BsShieldShaded } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { CgSpinner } from "react-icons/cg";
 import { LuArrowRight, LuSchool } from "react-icons/lu";
@@ -35,6 +41,10 @@ function Login() {
     }, 500);
   };
 
+  const handleLoginAdmin = () =>{
+    
+  }
+
   const handleRole = (e) => {
     setRole(e);
     if (e === "school") {
@@ -43,11 +53,17 @@ function Login() {
         "--main-color-weak",
         "#00bc7d27"
       );
-    } else {
+    } else if (e === "student") {
       document.documentElement.style.setProperty("--main-color", "#3277f0");
       document.documentElement.style.setProperty(
         "--main-color-weak",
         "#3277f027"
+      );
+    } else {
+      document.documentElement.style.setProperty("--main-color", "#101828");
+      document.documentElement.style.setProperty(
+        "--main-color-weak",
+        "#10182827"
       );
     }
   };
@@ -73,33 +89,49 @@ function Login() {
             <div className="w-full flex select-none items-center justify-start gap-1 relative">
               {/* indicator */}
               <div
-                className={`w-1/2 h-full bg-white absolute top-0 left-0 transition-all duration-200 rounded-xl ease-in-out ${
-                  role === "student" ? "translate-x-0 " : "translate-x-full"
+                className={`w-1/3 h-full bg-white absolute top-0 left-0 transition-all duration-200 rounded-xl ease-in-out ${
+                  role === "student"
+                    ? "translate-x-0 "
+                    : role === "school"
+                    ? "translate-x-[100%]"
+                    : "translate-x-[200%]"
                 }`}
               ></div>
               {/* student */}
               <div
                 onClick={() => handleRole("student")}
-                className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
+                className={`w-full h-fit p-2.5 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center flex-col transition-all ${
                   role === "student"
-                    ? ""
+                    ? "text-main-color"
                     : "border-white/40 text-text-color-weak"
                 }`}
               >
                 <PiGraduationCapDuotone className="text-xl" />
-                <p className="text-sm font-medium">STUDENT</p>
+                <p className="text-xs font-medium">STUDENT</p>
               </div>
               {/* school */}
               <div
                 onClick={() => handleRole("school")}
-                className={`w-full h-fit px-2.5 py-3 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center transition-all ${
+                className={`w-full h-fit p-2.5 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center flex-col transition-all ${
                   role === "school"
-                    ? ""
+                    ? "text-main-color-school"
                     : "border-white/40 text-text-color-weak"
                 }`}
               >
                 <LuSchool className="text-xl" />
-                <p className="text-sm font-medium">SHOOOL</p>
+                <p className="text-xs font-medium">SHOOOL</p>
+              </div>
+              {/* admin */}
+              <div
+                onClick={() => handleRole("admin")}
+                className={`w-full h-fit p-2.5 z-10 rounded-xl cursor-pointer flex gap-1.5 items-center justify-center flex-col transition-all ${
+                  role === "admin"
+                    ? "text-main-color"
+                    : "border-white/40 text-text-color-weak"
+                }`}
+              >
+                <BsShieldShaded className="text-xl" />
+                <p className="text-xs font-medium">ADMIN</p>
               </div>
             </div>
           </div>
@@ -132,7 +164,7 @@ function Login() {
                 Continue
               </button>
             </>
-          ) : (
+          ) : role === "school" ? (
             <>
               <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
                 School ID
@@ -162,6 +194,36 @@ function Login() {
                 Continue
               </button>
             </>
+          ) : (
+            <>
+              <h1 className="text-base font-normal opacity-80 mt-6 mb-3">
+                School ID
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="XXX-XXXX"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+              <h1 className="text-base font-normal opacity-80 mt-4 mb-3">
+                Password
+              </h1>
+              <input
+                // disabled={!isAgree}
+                // onClick={() => login()}
+                required
+                placeholder="Password"
+                type="password"
+                className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2.5 w-full flex items-center justify-center gap-2"
+              />
+
+              <button
+                className={` bg-main-color text-white select-none text-base font-semibold px-3 py-2.5 w-full flex items-center justify-center gap-2 mt-5 rounded-2xl`}
+              >
+                Continue
+              </button>
+            </>
           )}
           <div className="my-7 w-full h-0.5 bg-stone-200 relative">
             <p className="bg-white absolute -top-3 left-0 right-0 mx-auto w-fit px-4">
@@ -173,7 +235,9 @@ function Login() {
               className={`group w-full flex items-center justify-between gap-2 ${
                 role === "student"
                   ? "text-main-color hover:text-main-color-dark"
-                  : "text-main-color-school hover:text-main-color-dark-school"
+                  : role === "school"
+                  ? "text-main-color-school hover:text-main-color-dark-school"
+                  : "text-main-color"
               }  pointer-events-none select-none`}
             >
               <div className="flex items-center justify-start gap-2 group-[]:opacity-50">
@@ -190,10 +254,18 @@ function Login() {
               Continue as a Guest
               <LuArrowRight className="text-lg translate-y-[1px]" />
             </button>
-          ) : (
+          ) : role === "school" ? (
             <button
               onClick={handleLoginSchool}
               className="flex items-center justify-start gap-2 text-main-color-school hover:text-main-color-dark-school select-none"
+            >
+              Continue as a Guest School
+              <LuArrowRight className="text-lg translate-y-[1px]" />
+            </button>
+          ) : (
+            <button
+              onClick={handleLoginAdmin}
+              className="flex items-center justify-start gap-2 text-main-color select-none"
             >
               Continue as a Guest School
               <LuArrowRight className="text-lg translate-y-[1px]" />
@@ -202,11 +274,11 @@ function Login() {
         </form>
         <p className="text-sm font-normal text-text-color-weak mb-2">
           By Signing in you agree to our{" "}
-          <a className="cursor-pointer text-main-color hover:text-main-color-dark">
+          <a className="cursor-pointer text-main-color hover:underline">
             Terms of service
           </a>{" "}
           and{" "}
-          <a className="cursor-pointer text-main-color hover:text-main-color-dark">
+          <a className="cursor-pointer text-main-color hover:underline">
             Privacy Policy
           </a>
         </p>
@@ -217,7 +289,11 @@ function Login() {
           className="w-full h-full rounded-2xl overflow-hidden relative"
           style={{
             backgroundImage: `url(${
-              role === "student" ? ImageStudents : ImageSchool
+              role === "student"
+                ? ImageStudents
+                : role === "school"
+                ? ImageSchool
+                : ImageAdmin
             })`,
             backgroundSize: "cover",
             backgroundPosition: "center",

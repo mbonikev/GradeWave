@@ -67,7 +67,7 @@ function EditExam({ showEditModal, setShowEditModal, level, editMode }) {
             </h1>
 
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
+            <div className="w-[900px] h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
               <div className="w-full grid grid-cols-1 max-lg:grid-cols-1 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">

@@ -61,7 +61,7 @@ function App() {
   const schoolRoutes = [
     { path: "/school_dashboard", element: <SchoolDashboard /> },
     { path: "/school_manage_students", element: <SchoolManageStudents /> },
-    { path: "/school_manage_students", element: <SchoolPromotionDetails /> },
+    { path: "/school_promotion_details/:year/:level", element: <SchoolPromotionDetails /> },
   ];
 
   return (

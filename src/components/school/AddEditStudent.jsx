@@ -8,8 +8,9 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
   const handleAddStudent = () => {
     setAdding(true);
     setTimeout(() => {
-      // window.location.reload();
-    }, 1300);
+      setAdding(false);
+      setShowEditModal(false);
+    }, 1000);
   };
   const customAnimation = keyframes`
   from{
@@ -52,7 +53,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                 onClick={handleAddStudent}
                 className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
               >
-                {!adding ? "Logout" : <LoadingWhite size="small" />}
+                {!adding ? "Add Student" : <LoadingWhite size="small" />}
               </button>
             </div>
           </div>

@@ -15,11 +15,11 @@ function BasicInfo() {
         </div>
         <div className="flex-1 flex flex-col">
           <h1 className="text-lg leading-6 font-medium">School</h1>
-          <
-            className="text-sm font-medium text-main-color hover:underline"
+          <div
+            className="text-sm font-medium cursor-pointer text-main-color hover:underline"
           >
             Change photo
-          </>
+          </div>
         </div>
       </div>
       <form className="w-full flex flex-col gap-4 mt-2 max-w-[500px] max-md:max-w-full">

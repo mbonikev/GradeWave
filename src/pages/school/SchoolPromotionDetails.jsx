@@ -137,7 +137,7 @@ function SchoolPromotionDetails() {
                       {year !== "2025-2026" ? (
                         <span>{student.progress}%</span>
                       ) : (
-                        <span className="text-text-color-weak/60">N/A"</span>
+                        <span className="text-text-color-weak/60">N/A</span>
                       )}
                     </td>
                     <td className="px-4 py-2 text-text-color-weak/60 w-[100px]">

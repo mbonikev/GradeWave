@@ -72,34 +72,6 @@ function AdminDashboard() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-white shadow-md rounded-lg p-4">
-              <h2 className="text-xl font-semibold mb-4">Students</h2>
-              <table className="w-full border-collapse border border-gray-200">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="border border-gray-300 px-4 py-2">ID</th>
-                    <th className="border border-gray-300 px-4 py-2">Name</th>
-                    <th className="border border-gray-300 px-4 py-2">Grade</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {students.map((student) => (
-                    <tr key={student.id} className="text-center">
-                      <td className="border border-gray-300 px-4 py-2">
-                        {student.id}
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {student.name}
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {student.grade}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
       </div>

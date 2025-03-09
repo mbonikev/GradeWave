@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import SchoolNavbar from "../../components/school/SchoolNavbar";
-import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
+import AdminSidebar from "../../components/admin/AdminSidebar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 
 function AdminDashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,7 +27,7 @@ function AdminDashboard() {
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
       )}
-      <SchoolSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
+      <AdminSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
       <div
         className={`${
           showSidebar && ""
@@ -41,7 +41,7 @@ function AdminDashboard() {
             }`}
           ></div>
         )}
-        <SchoolNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
+        <AdminNavbar setLogoutWarn={setLogoutWarn} openSidebar={openSidebar} />
         {/* content */}
         <div className="w-full h-fit max-w-[1120px] px-5 mb-10 mx-auto">
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">

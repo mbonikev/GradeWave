@@ -48,7 +48,6 @@ function AdminExams() {
             <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full">
               Exams 2025-2026
             </h1>
-            
           </div>
           <h1 className="text-sm font-normal my-4 text-text-color-weak">
             # Primary
@@ -73,20 +72,12 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">2,239</span>
               </h1>
             </div>
-            <div className="w-full flex items-end justify-end flex-col gap-2 max-md:gap-3 max-md:mt-5">
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Edit
-                </Link>
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Extend
-                </Link>
-              </div>
+            <Link
+              to="/student_register_for_exams"
+              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+            >
+              Edit
+            </Link>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # O-Level
@@ -111,20 +102,12 @@ function AdminExams() {
                 <span className="font-medium text-text-color/80">14,239</span>
               </h1>
             </div>
-            <div className="w-full flex items-end justify-end flex-col gap-2 max-md:gap-3 max-md:mt-5">
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Edit
-                </Link>
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Extend
-                </Link>
-              </div>
+            <Link
+              to="/student_register_for_exams"
+              className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+            >
+              Edit
+            </Link>
           </div>
           <h1 className="text-sm font-normal mb-4 mt-10 text-text-color-weak">
             # A-Level
@@ -165,20 +148,12 @@ function AdminExams() {
                   </span>
                 </h1>
               </div>
-              <div className="w-full flex items-end justify-end flex-col gap-2 max-md:gap-3 max-md:mt-5">
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-card-bg text-text-color select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Edit
-                </Link>
-                <Link
-                  to="/student_register_for_exams"
-                  className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
-                >
-                  Extend
-                </Link>
-              </div>
+              <Link
+                to="/student_register_for_exams"
+                className="bg-main-color text-white select-none text-sm font-medium px-3 py-2 w-full max-w-[120px] max-md:max-w-full flex items-center justify-center gap-2 rounded-xl"
+              >
+                Edit
+              </Link>
             </div>
           ))}
         </div>

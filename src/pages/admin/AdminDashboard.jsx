@@ -54,9 +54,7 @@ function AdminDashboard() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Dashboard
           </h1>
-          <div className="p-6 space-y-6">
-            <h1 className="text-2xl font-semibold">Admin Dashboard</h1>
-
+          <div className="py-6 space-y-6">
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-white shadow-md rounded-lg p-4 flex items-center gap-4">
                 <FaUserGraduate className="text-3xl text-blue-500" />

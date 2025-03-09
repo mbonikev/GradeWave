@@ -45,8 +45,9 @@ function SchoolPromotionDetails() {
           : Students;
       setFilteredStudents(Filtered);
     } else {
+      const name = searchValue.toLowerCase();
       const res = filteredStudents.filter((student) =>
-        student.name.toLowerCase().includes(searchValue.toLowerCase())
+        student.name.toLowerCase().includes(name)
       );
       setFilteredStudents(res);
     }

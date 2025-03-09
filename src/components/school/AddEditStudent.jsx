@@ -46,8 +46,8 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               Add Student
             </h1>
             {/* content */}
-            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit grid grid-cols-3">
-              <div className="w-fit h-fit">
+            <div className="w-full h-fit min-h-[300px] max-md:min-h-fit grid grid-cols-3 gap-5">
+              <div className="w-full h-fit">
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
                   Student Names
                 </h1>
@@ -59,7 +59,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
                   className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full flex items-center justify-center gap-2 placeholder:text-text-color-weak/60"
                 />
               </div>
-              <div className="w-fit h-fit">
+              <div className="w-full h-fit">
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
                   Student Names
                 </h1>

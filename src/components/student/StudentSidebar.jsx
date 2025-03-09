@@ -148,7 +148,8 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
       </div>
       {/* bottom link */}
       <div className="flex flex-col py-2 pl-5 pr-2">
-        <div
+        <Link
+        to={'/help'}
           className={`rounded-xl min-w-fit text-sm cursor-pointer select-none relative flex items-center border-transparent justify-start whitespace-nowrap gap-2 group px-3 h-[35px] font-medium
           ${
             location.pathname === "/help-center"
@@ -159,7 +160,7 @@ function StudentSidebar({ closeSidebar, showSidebar }) {
         >
           <TbHeadset className="text-xl max-lg:text-2xl" />
           Get Help
-        </div>
+        </Link>
       </div>
     </div>
   );

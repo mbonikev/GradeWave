@@ -6,3 +6,4 @@ export { default as ImageStudents } from "./student.jpg";
 export { default as IntroGif } from "./intro.mp4";
 export { default as Pfp } from "./pfp.png";
 export { default as ImageSchool } from "./school.jpg";
+export { default as ImageAdmin } from "./admin.jpg";

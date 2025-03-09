@@ -90,7 +90,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               {/* Residance info */}
             </div>
             {/* save button */}
-            <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
+            <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2 mt-7">
               <button
                 onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"

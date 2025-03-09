@@ -114,6 +114,17 @@ function App() {
             />
           ))}
 
+          {/* Protect Admin routes */}
+          {schoolRoutes.map((route, index) => (
+            <Route
+              key={`admin-${index}`}
+              path={route.path}
+              element={
+                <ProtectedRouteSchool>{route.element}</ProtectedRouteSchool>
+              }
+            />
+          ))}
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

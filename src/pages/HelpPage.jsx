@@ -20,10 +20,6 @@ const HelpPage = () => {
         <div className="max-w-4xl mx-auto p-6 max-lg:p-0">
           <div className="space-y-6">
             <div className="w-full h-fit min-h-[300px] max-md:min-h-fit mt-4 mb-20 max-md:mb-10">
-              {/* Basic Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mb-2">
-                Basic Info <span className="text-red-500">*</span>
-              </h1>
 
               <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <div className="w-full h-fit">
@@ -48,11 +44,8 @@ const HelpPage = () => {
                 </div>
               </div>
 
-              {/* Parent/Guardian Info */}
-              <h1 className="text-sm font-normal opacity-80 text-text-color-weak/60 italic mt-3 mb-2">
-                Parent/Guardian Info <span className="text-red-500">*</span>
-              </h1>
-              <div className="w-full grid grid-cols-1 gap-5">
+
+              <div className="w-full grid grid-cols-1 gap-5 mt-5">
                 <div className="w-full h-fit">
                   <h1 className="text-base font-normal opacity-80 mb-2">
                     How can we help you?
@@ -68,16 +61,10 @@ const HelpPage = () => {
 
               {/* save button */}
               <div className="w-full max-w-[300px] max-sm:max-w-full ml-auto max-sm:ml-0 flex items-center max-sm:flex-col gap-2">
-                <button
-                  onClick={() => setShowEditModal(false)}
-                  className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
-                >
+                <button className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]">
                   Cancel
                 </button>
-                <button
-                  onClick={handleAddStudent}
-                  className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
-                >
+                <button className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]">
                   Send
                 </button>
               </div>

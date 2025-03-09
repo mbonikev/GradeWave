@@ -8,8 +8,6 @@ function AddEditStudent({
   showEditModal,
   setShowEditModal,
   level,
-  year,
-  studentDetails,
   editMode,
 }) {
   const [adding, setAdding] = useState(false);
@@ -30,6 +28,22 @@ function AddEditStudent({
     opacity: 1;
   }
   `;
+  const studentDetails = {
+    studentName: "Ingabire Florence",
+    studentAge: 17,
+    combination: "MCB",
+
+    guardianName: "Jeanne Muhoza",
+    guardianContact: "+250788123456",
+    guardianRelationship: "Mother",
+
+    residence: {
+      district: "Kigali",
+      sector: "Nyarugenge",
+      village: "Nyamirambo",
+    },
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center z-50`}

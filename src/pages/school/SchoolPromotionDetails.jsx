@@ -168,8 +168,8 @@ function SchoolPromotionDetails() {
               </thead>
               <tbody>
                 {filteredStudents.map((student, index) => (
-                  <Link to="/school_student_results" className="w-full">
-                    <tr key={student.id} className="border-t">
+                  <tr key={student.id} className="border-t">
+                    <Link to="/school_student_results" className="w-full">
                       <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">
                         {index + 1}
                       </td>
@@ -216,8 +216,8 @@ function SchoolPromotionDetails() {
                           "-"
                         )}
                       </td>
-                    </tr>
-                  </Link>
+                    </Link>
+                  </tr>
                 ))}
                 {filteredStudents.length === 0 && (
                   <tr>

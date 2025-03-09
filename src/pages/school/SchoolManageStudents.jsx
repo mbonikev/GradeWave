@@ -86,10 +86,10 @@ function SchoolManageStudents() {
           <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80">
             Manage Students
           </h1>
-          <div className="w-full grid grid-cols-2 max-md:grid-cols-1 gap-5">
+          <div className="w-full grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-3">
             {promotions.map((promotion, index) => (
               <div key={index} className="w-full h-fit">
-                <div className="w-full flex items-center justify-between mt-3 mb-3">
+                <div className="w-full flex items-center justify-between my-3">
                   <h1 className="block text-sm font-medium text-text-color whitespace-nowrap">
                     Promotion: <strong>{promotion.year}</strong>
                   </h1>

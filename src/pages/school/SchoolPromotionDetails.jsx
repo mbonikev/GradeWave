@@ -5,6 +5,7 @@ import SchoolSidebar from "../../components/school/SchoolSidebar";
 import ConfirmLogout from "../../components/ConfirmLogout";
 import { LuArrowLeft, LuPlus, LuSearch } from "react-icons/lu";
 import { Students } from "../../content/Students";
+import AddEditStudent from "../../components/school/AddEditStudent";
 
 function SchoolPromotionDetails() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -14,7 +15,7 @@ function SchoolPromotionDetails() {
   const [filter, setFilter] = useState("All");
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
-  const [addEdit, setAddEdit] = useState(false)
+  const [addEdit, setAddEdit] = useState(false);
   const openSidebar = () => {
     setShowSidebar(true);
     setTimeout(() => {
@@ -47,9 +48,7 @@ function SchoolPromotionDetails() {
   return (
     <div className="w-full h-fit flex-1 flex relative">
       {/* add/edit Student */}
-      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-
-      </div>
+      {addEdit(<AddEditStudent />)}
       {/* confirm */}
       {logoutWarn && (
         <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
@@ -96,8 +95,12 @@ function SchoolPromotionDetails() {
               onChange={(e) => setFilter(e.target.value)}
             >
               <option value="All">All</option>
-              <option disabled={year === "2025-2026"} value="Passed">Passed</option>
-              <option disabled={year === "2025-2026"} value="Failed">Failed</option>
+              <option disabled={year === "2025-2026"} value="Passed">
+                Passed
+              </option>
+              <option disabled={year === "2025-2026"} value="Failed">
+                Failed
+              </option>
             </select>
             <div className="flex-1 max-w-[230px] max-md:max-w-full h-fit relative">
               <LuSearch className="absolute top-0 bottom-0 my-auto left-2.5 text-text-color-weak " />

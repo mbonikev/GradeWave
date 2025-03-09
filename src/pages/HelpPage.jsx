@@ -8,14 +8,14 @@ const HelpPage = () => {
         <h1 className="bg-white z-30 text-text-color font-bold tracking-tight text-2xl w-fit h-fit px-4 py-2 rounded-2xl  absolute left-0 -bottom-5 right-0 mx-auto">
           GradeWave
         </h1>
-        <div className="w-full max-w-4xl mx-auto rounded-3xl h-[250px] bg-main-color overflow-hidden relative">
+        <div className="w-full max-w-4xl mx-auto rounded-3xl h-[170px] bg-main-color overflow-hidden relative">
           <img
             src={BannerBlue}
             className="w-full h-fit min-h-full object-cover"
           />
         </div>
       </div>
-      <div className="min-h-screen px-6 max-lg:px-2">
+      <div className=" px-6 max-lg:px-2">
         <div className="max-w-4xl mx-auto p-6 max-lg:p-0">
           <div className="space-y-6">
             <section>

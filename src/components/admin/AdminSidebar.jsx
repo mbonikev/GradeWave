@@ -25,6 +25,7 @@ import { RiStickyNoteAddLine } from "react-icons/ri";
 import { GrAnnounce, GrDocumentText } from "react-icons/gr";
 import { BiBox } from "react-icons/bi";
 import { LogoWhite } from "../../assets";
+import { FaRegFileLines } from "react-icons/fa6";
 
 function AdminSidebar({ closeSidebar, showSidebar }) {
   const location = useLocation();
@@ -84,7 +85,7 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuSettings className="text-xl max-lg:text-2xl" />
+          <FaRegFileLines className="text-xl max-lg:text-2xl" />
           Exams
         </Link>
         {/* section */}

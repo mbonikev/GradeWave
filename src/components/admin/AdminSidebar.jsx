@@ -17,7 +17,7 @@ import { Avatar, Space } from "antd";
 import SidebarSectionTitle from "../SidebarSectionTitle";
 import { TbFileStack, TbHeadset } from "react-icons/tb";
 import { IoCardOutline, IoStatsChart } from "react-icons/io5";
-import { HiOutlineChartBar, HiOutlineNewspaper } from "react-icons/hi";
+import { HiOutlineChartBar, HiOutlineNewspaper, HiUsers } from "react-icons/hi";
 import { PiExam, PiUserBold } from "react-icons/pi";
 import { BsClipboardPlus } from "react-icons/bs";
 import { SiReaddotcv } from "react-icons/si";
@@ -125,8 +125,8 @@ function AdminSidebar({ closeSidebar, showSidebar }) {
           }
           `}
         >
-          <LuMedal className="text-xl max-lg:text-2xl" />
-          Grobal Ranking
+          <HiUsers className="text-xl max-lg:text-2xl" />
+          Admins
         </Link>
         <Link
           to="/admin_exams"

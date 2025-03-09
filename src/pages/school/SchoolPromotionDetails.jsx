@@ -28,12 +28,11 @@ function SchoolPromotionDetails() {
   };
 
   useEffect(() => {
-    const Filtered = [...filteredStudents];
     if (filter !== "All") {
       const res = Students.filter((student) => student.status === filter);
       setFilteredStudents(res);
     } else {
-      setFilteredStudents(Filtered);
+      setFilteredStudents(Students);
     }
   }, [filter]);
 

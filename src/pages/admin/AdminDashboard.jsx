@@ -34,7 +34,7 @@ function AdminDashboard() {
   const stats = [
     {
       title: "Total Schools",
-      value: "1,200",
+      value: "892",
       icon: (
         <LuSchool className="w-7 h-7 max-sm:w-8 max-sm:h-8 text-cyan-500" />
       ),

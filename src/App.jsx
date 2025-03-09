@@ -17,6 +17,7 @@ import ProtectedAuth from "./util/ProtectedAuth";
 import SchoolManageStudents from "./pages/school/SchoolManageStudents";
 import SchoolPromotionDetails from "./pages/school/SchoolPromotionDetails";
 import SchoolCombinations from "./pages/school/SchoolCombinations";
+import SchoolPapers from "./pages/school/SchoolPapers";
 
 function App() {
   const [fetching, setFetching] = useState(true);
@@ -64,6 +65,7 @@ function App() {
     { path: "/school_manage_students", element: <SchoolManageStudents /> },
     { path: "/school_promotion_details/:year/:level", element: <SchoolPromotionDetails /> },
     { path: "/school_combinations", element: <SchoolCombinations /> },
+    { path: "/school_papers", element: <SchoolPapers /> },
   ];
 
   return (

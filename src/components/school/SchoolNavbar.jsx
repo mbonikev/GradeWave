@@ -47,13 +47,13 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
     },
     {
       pfp: LogoWhite,
-      name: "Admin",
+      name: "System",
       publishedAt: "22/02/2025",
       message: "New guidelines for exam registration have been updated.",
     },
     {
       pfp: LogoWhite,
-      name: "Support",
+      name: "System",
       publishedAt: "20/02/2025",
       message: "System maintenance scheduled for 28th February.",
     },
@@ -65,7 +65,7 @@ function SchoolNavbar({ title, openSidebar, setLogoutWarn }) {
     },
     {
       pfp: LogoWhite,
-      name: "Admin",
+      name: "System",
       publishedAt: "15/02/2025",
       message: "Reminder: Ensure all student profiles are up to date.",
     },

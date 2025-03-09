@@ -220,30 +220,18 @@ function AdminDashboard() {
                         student.progress < 50 ? "text-red-500" : ""
                       }`}
                     >
-                      {year !== "2025-2026" ? (
                         <span>{student.progress}%</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
                     </td>
                     <td className="px-4 py-2 w-[100px]">
-                      {level === "A-Level" ? (
-                        student.combination
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
+                      <span className="text-text-color-weak/60">N/A</span>
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      {year === "2025-2026" ? (
-                        <button
-                          onClick={handleEdit}
-                          className="text-main-color-school"
-                        >
-                          Edit
-                        </button>
-                      ) : (
-                        "-"
-                      )}
+                      <button
+                        // onClick={handleEdit}
+                        className="text-main-color-school"
+                      >
+                        Edit
+                      </button>
                     </td>
                   </tr>
                 ))}

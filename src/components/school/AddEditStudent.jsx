@@ -61,7 +61,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               </div>
               <div className="w-full h-fit">
                 <h1 className="text-base font-normal opacity-80 mt-4 mb-2">
-                  Student Names
+                  Combinations
                 </h1>
                 <input
                   // disabled={!isAgree}

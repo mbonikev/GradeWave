@@ -6,7 +6,7 @@ import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
 function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
-  const [combName, setCombName] = useState("MCB");
+  const [combName, setCombName] = useState( editMode ? "MCB" : "");
 
   const handleAddStudent = () => {
     setAdding(true);

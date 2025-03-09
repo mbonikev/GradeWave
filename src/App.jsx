@@ -40,11 +40,15 @@ function App() {
         favicon.href = "/favicon_green.svg";
       }
     } else if (sessionStorage.getItem("loggedInAdmin") === "true") {
-      document.documentElement.style.setProperty("--main-color", "#4A5859");
+      document.documentElement.style.setProperty("--main-color", "#fb923c");
       document.documentElement.style.setProperty(
         "--main-color-weak",
-        "#4A585927"
+        "#fb923c27"
       );
+      const favicon = document.getElementById("favicon");
+      if (favicon) {
+        favicon.href = "/logo_orange.svg";
+      }
     }
   }, []);
 

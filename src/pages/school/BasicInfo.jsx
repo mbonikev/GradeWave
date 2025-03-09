@@ -32,7 +32,7 @@ function BasicInfo() {
           <input
             type="text"
             name="username"
-            placeholder="create a username"
+            placeholder="Enter school name"
             className="ring-1 ring-stone-200 rounded-xl h-[35px] px-4 max-md:w-full text-sm placeholder:text-text-color-weak/70"
           />
         </div>

@@ -33,7 +33,9 @@ function SchoolPromotionDetails() {
         const res = Students.filter((student) => student.status === filter);
         setFilteredStudents(res);
       } else if (searchValue !== "") {
-        const res = Students.filter((student) => student.status === filter);
+        const res = Students.filter(
+          (student) => student.status === filter && student.name.toLowerCase().includes(searchValue.toLowerCase())
+        );
         setFilteredStudents(res);
       }
     } else {

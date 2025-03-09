@@ -102,7 +102,7 @@ function SchoolPromotionDetails() {
                 className="block w-full max-sm:flex-1 pl-8 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm placeholder:text-text-color-weak"
                 placeholder="Search"
                 value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
+                onKeyUp={(e) => setSearchValue(e.target.value)}
               />
             </div>
           </div>

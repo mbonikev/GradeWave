@@ -18,11 +18,11 @@ function SchoolPromotionDetails() {
   const [showEditModal, setShowEditModal] = useState(false);
   const studentDetails = [
     {
-      studentName: "John Doe",
+      studentName: "Ingabire Florence",
       studentAge: 17,
       combination: "MCB",
 
-      guardianName: "Jane Doe",
+      guardianName: "Jeanne Muhoza",
       guardianContact: "+250788123456",
       guardianRelationship: "Mother",
 

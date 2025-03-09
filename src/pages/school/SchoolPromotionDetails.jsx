@@ -171,14 +171,14 @@ function SchoolPromotionDetails() {
                 </tr>
               </thead>
               <tbody>
-                {oLevelStudents.map((student, index) => (
+                {students.map((student, index) => (
                   <tr key={student.id} className="border-t">
                     <td className="px-4 py-2 w-[40px] text-center text-text-color-weak/70">{index + 1}</td>
                     <td className="px-4 py-2 w-[130px]">{student.id}</td>
                     <td className="px-4 py-2 w-[280px]">{student.name}</td>
                     <td className="px-4 py-2">{student.status}</td>
                     <td className="px-4 py-2">{student.progress}</td>
-                    <td className="px-4 py-2 text-text-color-weak/60">N/A</td>
+                    <td className="px-4 py-2 text-text-color-weak/60">{student.combination ? student.combination : 'N/A'}</td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
                       <Link
                         to="/school_promotion_details/2024-2025/O-Level"

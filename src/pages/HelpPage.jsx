@@ -41,34 +41,11 @@ const HelpPage = () => {
                   </h1>
                   <input
                     required
-                    type="number"
-                    placeholder="Age"
+                    type="email"
+                    placeholder="Enter email"
                     className="border-2 border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
-                  <div className="w-full h-fit">
-                    <h1 className="text-base font-normal opacity-80 mb-2">
-                      Combination
-                    </h1>
-                    <select
-                      required
-                      className="border-2 bg-transparent border-stone-200 focus:border-main-color outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
-                    >
-                      <option
-                        value={"Select Combination"}
-                        disabled
-                        hidden
-                        selected
-                      >
-                        Select Combination
-                      </option>
-                      {Combinations.map((comb, index) => (
-                        <option key={index} value={comb}>
-                          {comb}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
               </div>
 
               {/* Parent/Guardian Info */}

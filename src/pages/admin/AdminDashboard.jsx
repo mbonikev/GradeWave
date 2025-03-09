@@ -205,20 +205,12 @@ function AdminDashboard() {
                       )}
                     </td>
                     <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
+                      className={`px-4 py-2 `}
                     >
-                      {year !== "2025-2026" ? (
                         <span>{student.status}</span>
-                      ) : (
-                        <span className="text-text-color-weak/60">N/A</span>
-                      )}
                     </td>
                     <td
-                      className={`px-4 py-2 ${
-                        student.progress < 50 ? "text-red-500" : ""
-                      }`}
+                      className={`px-4 py-2 `}
                     >
                         <span>{student.progress}%</span>
                     </td>

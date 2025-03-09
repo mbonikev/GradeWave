@@ -4,14 +4,14 @@ import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import Loading from "./Loading";
 import LoadingWhite from "./LoadingWhite";
-function ConfirmLogout({logoutWarn, setLogoutWarn}) {
+function AddEditStudent({logoutWarn, setLogoutWarn}) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
-    sessionStorage.removeItem("loggedInStudent");
-    sessionStorage.removeItem("loggedInSchool");
+    // sessionStorage.removeItem("loggedInStudent");
+    // sessionStorage.removeItem("loggedInSchool");
     setLoggingOut(true);
     setTimeout(() => {
-      window.location.reload();
+      // window.location.reload();
     }, 300);
   };
   const customAnimation = keyframes`
@@ -69,4 +69,4 @@ function ConfirmLogout({logoutWarn, setLogoutWarn}) {
   );
 }
 
-export default ConfirmLogout;
+export default AddEditStudent;

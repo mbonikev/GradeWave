@@ -76,7 +76,7 @@ function SchoolPromotionDetails() {
               </Link>
               {level} - {year}
             </h1>
-            <button className="h-[35px] mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
+            <button className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center justify-center gap-1 bg-main-color text-white text-sm font-medium">
               <LuPlus className="text-xl" />
               <span className="max-sm:hidden">Add Student</span>
             </button>

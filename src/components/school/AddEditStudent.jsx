@@ -19,6 +19,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
     sector: "Nyarugenge",
     village: "Nyamirambo",
   });
+
   const handleAddStudent = () => {
     setAdding(true);
     setTimeout(() => {
@@ -36,21 +37,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
     opacity: 1;
   }
   `;
-  const studentDetails = {
-    studentName: "Ingabire Florence",
-    studentAge: 17,
-    combination: "MCB",
 
-    guardianName: "Jeanne Muhoza",
-    guardianContact: "+250788123456",
-    guardianRelationship: "Mother",
-
-    residence: {
-      district: "Kigali",
-      sector: "Nyarugenge",
-      village: "Nyamirambo",
-    },
-  };
 
   return (
     <div
@@ -93,7 +80,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     placeholder="Full Names"
-                    value={editMode ? studentDetails.studentName : ""}
+                    value={editMode ? studentName : ""}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
                 </div>
@@ -104,7 +91,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     type="number"
-                    value={editMode ? studentDetails.studentAge : ""}
+                    value={editMode ? studentAge : ""}
                     placeholder="Age"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -118,7 +105,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                       required
                       value={
                         editMode
-                          ? studentDetails.combination
+                          ? combination
                           : "Select Combination"
                       }
                       className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -147,7 +134,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? studentDetails.guardianName : ""}
+                    value={editMode ? guardianName : ""}
                     placeholder="Guardian's Full Name"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -159,7 +146,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   <input
                     required
                     type="tel"
-                    value={editMode ? studentDetails.guardianContact : ""}
+                    value={editMode ? guardianContact : ""}
                     placeholder="Phone Number"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -172,7 +159,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                     required
                     value={
                       editMode
-                        ? studentDetails.guardianRelationship
+                        ? guardianRelationship
                         : "Select Relationship"
                     }
                     className="border-2 bg-transparent border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
@@ -199,7 +186,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? studentDetails.residence.district : ""}
+                    value={editMode ? residence.district : ""}
                     placeholder="Enter District"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -210,7 +197,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? studentDetails.residence.sector : ""}
+                    value={editMode ? residence.sector : ""}
                     placeholder="Enter Sector"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />
@@ -221,7 +208,7 @@ function AddEditStudent({ showEditModal, setShowEditModal, level, editMode }) {
                   </h1>
                   <input
                     required
-                    value={editMode ? studentDetails.residence.village : ""}
+                    value={editMode ? residence.village : ""}
                     placeholder="Enter Village"
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

@@ -157,6 +157,7 @@ function SchoolPromotionDetails() {
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
                     <td className="px-4 py-2 text-text-color-weak/70">-</td>
+                    <td className="px-4 py-2 text-text-color-weak/70">-</td>
 
                   </tr>
                 )}

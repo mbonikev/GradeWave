@@ -227,7 +227,7 @@ function SchoolStudentResults() {
                 </div>
               </div>
             </Fade>
-            <GradeTable grades={gradesData} />
+            <GradeTable grades={senior3Subjects} />
           </div>
         </div>
       </div>

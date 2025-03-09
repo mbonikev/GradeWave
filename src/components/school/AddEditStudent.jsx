@@ -3,7 +3,7 @@ import Reveal, { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { TiWarning } from "react-icons/ti";
 import LoadingWhite from "../LoadingWhite";
-function AddEditStudent({showEditModal, setShowEditModal}) {
+function AddEditStudent({ showEditModal, setShowEditModal }) {
   const [loggingOut, setLoggingOut] = useState(false);
   const handleLoginStudent = () => {
     // sessionStorage.removeItem("loggedInStudent");
@@ -47,18 +47,18 @@ function AddEditStudent({showEditModal, setShowEditModal}) {
             <h1 className="mb-5 text-lg text-center max-w-[200px] mx-auto">
               Are you sure you want to log out?
             </h1>
-            <div className="w-full flex items-center flex-col gap-2">
-              <button
-                onClick={handleLoginStudent}
-                className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
-              >
-                {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
-              </button>
+            <div className="w-full flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}
                 className="border border-card-bg rounded-2xl transition active:scale-95 text-text-color w-full flex items-center justify-center h-[40px]"
               >
                 Cancel
+              </button>
+              <button
+                onClick={handleLoginStudent}
+                className="bg-main-color rounded-2xl border-none transition active:scale-95 text-white w-full flex items-center justify-center h-[42px]"
+              >
+                {!loggingOut ? "Logout" : <LoadingWhite size="small" />}
               </button>
             </div>
           </div>

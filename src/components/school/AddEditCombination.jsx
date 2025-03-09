@@ -6,15 +6,7 @@ import LoadingWhite from "../LoadingWhite";
 import { Combinations } from "../../content/Combinations";
 function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }) {
   const [adding, setAdding] = useState(false);
-  const [studentName, setStudentName] = useState("Ingabire Florence");
-  const [studentAge, setStudentAge] = useState(17);
-  const [combination, setCombination] = useState("MCB");
-  const [guardianName, setGuardianName] = useState("Jeanne Muhoza");
-  const [guardianContact, setGuardianContact] = useState("+250788123456");
-  const [guardianRelationship, setGuardianRelationship] = useState("Mother");
-  const [district, setDistrict] = useState("Kigali");
-  const [sector, setSector] = useState("Nyarugenge");
-  const [village, setVillage] = useState("Nyamirambo");
+  const [studentName, setStudentName] = useState("MCB");
 
   const handleAddStudent = () => {
     setAdding(true);
@@ -75,7 +67,7 @@ function AddEditCombination({ showEditModal, setShowEditModal, level, editMode }
                   <input
                     required
                     onChange={(e) => setStudentName(e.target.value)}
-                    placeholder="Full Names"
+                    placeholder="Enter combination name"
                     value={editMode ? studentName : ""}
                     className="border-2 border-stone-200 focus:border-main-color-school outline-none font-medium rounded-2xl px-3 py-2 w-full placeholder:text-text-color-weak/60"
                   />

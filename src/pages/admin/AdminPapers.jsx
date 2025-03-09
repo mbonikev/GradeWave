@@ -1,0 +1,201 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { IntroGif } from "../../assets";
+import { Exams, Levels } from "../../content/Exams";
+import { BsFolderFill } from "react-icons/bs";
+import { LuArrowLeft, LuPlus } from "react-icons/lu";
+import { FaFilePdf } from "react-icons/fa";
+import ConfirmLogout from "../../components/ConfirmLogout";
+import AdminSidebar from "../../components/admin/AdminSidebar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
+import AddPapers from "../../components/admin/AddPapers";
+
+function AdminPapers() {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [animateShowSidebar, setAnimateShowSidebar] = useState(false);
+  const [year, setYear] = useState(null);
+  const [level, setLevel] = useState(null);
+  const [results, setResults] = useState([]);
+  const [logoutWarn, setLogoutWarn] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editMode, setEditMode] = useState(false);
+  const openSidebar = () => {
+    setShowSidebar(true);
+    setTimeout(() => {
+      setAnimateShowSidebar(true);
+    }, 50);
+  };
+  const closeSidebar = () => {
+    setAnimateShowSidebar(false);
+    setTimeout(() => {
+      setShowSidebar(false);
+    }, 100);
+  };
+
+  const updateLevel = (e) => {
+    setLevel(e);
+  };
+
+  useEffect(() => {
+    const getExmas = () => {
+      if (level !== null) {
+        const res = Exams.find((x) => x.title === year);
+        if (res) {
+          const filteredRes = res.exams.filter((ex) => ex.levelId === level);
+          setResults(filteredRes);
+        }
+      }
+    };
+
+    getExmas();
+  }, [level]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setShowEditModal(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const handleEdit = () => {
+    setEditMode(true);
+    setShowEditModal(true);
+  };
+
+  useEffect(() => {
+    if (!showEditModal) {
+      setEditMode(false);
+    }
+  }, [showEditModal]);
+
+  return (
+    <div className="w-full min-h-svh overflow-y-auto flex-1 flex">
+      {/* add/edit exam */}
+      {showEditModal && (
+        <AddPapers
+          showEditModal={showEditModal}
+          setShowEditModal={setShowEditModal}
+          editMode={editMode}
+        />
+      )}
+      {/* confirm */}
+      {logoutWarn && (
+        <ConfirmLogout logoutWarn={logoutWarn} setLogoutWarn={setLogoutWarn} />
+      )}
+      <AdminSidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
+      <div
+        className={`${
+          showSidebar && ""
+        } max-lg:transition-all max-lg:duration-200 max-lg:ease-in-out w-fit max-lg:w-full flex-1 h-svh flex flex-col z-10 overflow-y-auto relative bg-body-bg`}
+      >
+        {showSidebar && (
+          <div
+            onClick={closeSidebar}
+            className={`w-full h-full absolute top-0 left-0 bg-black/60 z-30 transition-all duration-300 ease-in-out ${
+              animateShowSidebar ? "opacity-100" : "opacity-0"
+            }`}
+          ></div>
+        )}
+        <AdminNavbar openSidebar={openSidebar} setLogoutWarn={setLogoutWarn} />
+        <div className="w-full flex-1 max-w-[1120px] px-5 mx-auto pb-10">
+          <div className="w-full flex items-center justify-between gap-3 pb-2 border-b border-card-bg-weak">
+            <h1 className="text-[28px] font-bold tracking-tight mt-3 text-text-color/80 w-full">
+              Past Papers
+            </h1>
+            <button
+              onClick={() => setShowEditModal(true)}
+              className="py-2 mt-3 px-4 max-sm:px-2.5 w-fit rounded-xl flex items-center whitespace-nowrap justify-center gap-1 bg-main-color active:scale-[.98] text-white text-sm font-medium"
+            >
+              <LuPlus className="text-xl" />
+              <span className="max-sm:hidden">Add Paper</span>
+            </button>
+          </div>
+          <div className="mt-10 w-full text-text-color text-sm ">
+            <div className="flex items-center justify-start gap-2 px-0 mb-4 bg-transparent">
+              <div
+                onClick={() => {
+                  setYear(null);
+                  setLevel(null);
+                }}
+                className="w-fit py-3 hover:text-main-color cursor-pointer"
+              >
+                Documents{" "}
+              </div>
+              /
+              <div
+                onClick={() => setLevel(null)}
+                className="w-fit py-3 hover:text-main-color cursor-pointer"
+              >
+                {year}
+              </div>
+              {level !== null && (
+                <>
+                  /
+                  <div className="w-fit py-3 hover:text-main-color cursor-pointer">
+                    {Levels.find((lvl) => lvl.id === level).name}
+                  </div>
+                </>
+              )}
+            </div>
+            <div className="flex items-center justify-start gap-2 px-4">
+              <div className="w-[60px] min-w-fit"></div>
+              <div className="flex-1 py-3 font-normal ">Title</div>
+              <div className="w-[140px] py-3 font-normal max-sm:hidden">
+                Info
+              </div>
+              <div className="w-[140px] py-3 font-normal max-sm:hidden">
+                Modified
+              </div>
+            </div>
+            {year === null
+              ? Exams.map((year, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setYear(year.title)}
+                    className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
+                  >
+                    <div className="w-[60px] min-w-fit">
+                      <BsFolderFill className="text-2xl text-main-color" />
+                    </div>
+                    <div className="py-3 flex-1">{year.title}</div>
+                  </div>
+                ))
+              : level === null
+              ? Levels.map((level, index) => (
+                  <div
+                    key={index}
+                    onClick={() => updateLevel(level.id)}
+                    className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
+                  >
+                    <div className="w-[60px] min-w-fit">
+                      <BsFolderFill className="text-2xl text-main-color" />
+                    </div>
+                    <div className="py-3 flex-1">{level.name}</div>
+                  </div>
+                ))
+              : results.map((exam, index) => (
+                  <Link
+                    to={exam.url}
+                    target="_blank"
+                    key={index}
+                    className="flex items-center justify-start gap-2 hover:bg-card-bg/60 cursor-pointer px-4 border-t border-card-bg"
+                  >
+                    <div className="w-[60px] min-w-fit">
+                      <FaFilePdf className="text-2xl text-red-600/70" />
+                    </div>
+                    <div className="py-3 flex-1">{exam.name}</div>
+                  </Link>
+                ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AdminPapers;

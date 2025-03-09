@@ -68,15 +68,14 @@ function SchoolNotifications() {
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-
-                  <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
-                    <strong>{annoucement.name} </strong>
-                    {annoucement.message} <br />
-                  </h1>
+                  <div className="w-full flex flex-col">
+                    <h1 className="text-sm text-text-color/90 line-clamp-3 max-w-[700px]">
+                      <strong>{annoucement.name} </strong>
+                      {annoucement.message} <br />
+                    </h1>
+                    <h1 className="text-sm text-text-color-weak/80 mt-1">2d</h1>
+                  </div>
                 </div>
-                <h1 className="text-sm text-text-color-weak/80 pl-[43px] mt-1">
-                  2d
-                </h1>
               </div>
             ))}
           </div>

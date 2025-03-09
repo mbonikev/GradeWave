@@ -36,7 +36,9 @@ function SchoolPromotionDetails() {
     }
   }, [filter]);
 
-  useEffect(() => {}, [searchValue]);
+  useEffect(() => {
+    
+  }, [searchValue]);
 
   return (
     <div className="w-full h-fit flex-1 flex relative">
@@ -87,14 +89,8 @@ function SchoolPromotionDetails() {
                 type="text"
                 className="block w-full max-sm:flex-1 pl-8 py-2 bg-white border border-card-bg rounded-xl shadow-sm sm:text-sm placeholder:text-text-color-weak"
                 placeholder="Search"
-                // value={searchValue}
-                onChange={(e) => {
-                  setFilteredStudents(
-                    filteredStudents.filter((person) =>
-                      person.name.toLowerCase().includes(e.target.value)
-                    )
-                  );
-                }}
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
               />
             </div>
           </div>

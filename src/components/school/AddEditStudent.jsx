@@ -43,10 +43,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >
-            <TiWarning className="text-[40px] mx-auto text-amber-500" />
-            <h1 className="mb-5 text-lg text-center max-w-[200px] mx-auto">
-              Are you sure you want to log out?
-            </h1>
+            
             <div className="w-full flex items-center max-sm:flex-col gap-2">
               <button
                 onClick={() => setShowEditModal(false)}

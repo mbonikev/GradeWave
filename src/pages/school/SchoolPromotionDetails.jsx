@@ -16,7 +16,7 @@ function SchoolPromotionDetails() {
   const [searchValue, setSearchValue] = useState("");
   const [filteredStudents, setFilteredStudents] = useState(Students);
   const [showEditModal, setShowEditModal] = useState(false);
-  const [editMode, setEditMode] = useState(false)
+  const [editMode, setEditMode] = useState(false);
   const studentDetails = [
     {
       studentName: "Ingabire Florence",
@@ -208,12 +208,15 @@ function SchoolPromotionDetails() {
                       )}
                     </td>
                     <td className="px-4 py-2 flex items-center justify-center gap-1 w-[90px]">
-                      <Link
-                        to="/school_promotion_details/2024-2025/O-Level"
+                      <button
+                        onClick={() => {
+                          setEditMode(true);
+                          setShowEditModal(true);
+                        }}
                         className="text-main-color-school"
                       >
                         Edit
-                      </Link>
+                      </button>
                     </td>
                   </tr>
                 ))}

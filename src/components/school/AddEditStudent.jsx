@@ -38,7 +38,7 @@ function AddEditStudent({ showEditModal, setShowEditModal }) {
             className=" w-full h-full absolute top-0 left-0 bg-black/15 z-10"
           ></div>
           <div
-            className={`w-[980px] max-w-[95%] h-fit max-h-[90%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
+            className={`w-[980px] max-w-[95%] h-fit max-h-[95%] overflow-y-auto rounded-2xl bg-body-bg  shadow-lg p-5 z-20 ${
               showEditModal ? "scale-100 transition-all " : "scale-75"
             } `}
           >

@@ -280,7 +280,7 @@ function StudentDashboard() {
                 path: "/student_register_for_exams",
               },
               { name: "Resources", path: "/student_past_papers" },
-              { name: "Get Help", path: "/student_dashboard" },
+              { name: "Get Help", path: "/student_help" },
             ].map((service, index) => (
               <Link
                 to={service.path}
